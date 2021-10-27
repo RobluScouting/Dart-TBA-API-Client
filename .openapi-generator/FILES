@@ -139,7 +139,7 @@ lib/src/model/zebra.dart
 lib/src/model/zebra_alliances.dart
 lib/src/model/zebra_team.dart
 lib/src/serializers.dart
-lib/tba_api_client.dart
+lib/tba_api_v3.dart
 pubspec.yaml
 test/api_status_app_version_test.dart
 test/api_status_test.dart

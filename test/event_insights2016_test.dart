@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:tba_api_client/tba_api_client.dart';
+import 'package:tba_api_v3/tba_api_v3.dart';
 
 // tests for EventInsights2016
 void main() {

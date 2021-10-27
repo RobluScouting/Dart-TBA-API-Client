@@ -3,7 +3,7 @@
 //
 
 import 'package:dio/dio.dart';
-import 'package:tba_api_client/src/auth/auth.dart';
+import 'package:tba_api_v3/src/auth/auth.dart';
 
 class ApiKeyAuthInterceptor extends AuthInterceptor {
   final Map<String, String> apiKeys = {};

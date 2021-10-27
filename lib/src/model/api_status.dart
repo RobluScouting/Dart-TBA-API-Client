@@ -3,7 +3,7 @@
 //
 
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/api_status_app_version.dart';
+import 'package:tba_api_v3/src/model/api_status_app_version.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

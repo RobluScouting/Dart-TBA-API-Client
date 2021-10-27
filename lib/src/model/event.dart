@@ -3,9 +3,9 @@
 //
 
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/date.dart';
-import 'package:tba_api_client/src/model/district_list.dart';
-import 'package:tba_api_client/src/model/webcast.dart';
+import 'package:tba_api_v3/src/model/date.dart';
+import 'package:tba_api_v3/src/model/district_list.dart';
+import 'package:tba_api_v3/src/model/webcast.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

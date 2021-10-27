@@ -3,7 +3,7 @@
 //
 
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/zebra_team.dart';
+import 'package:tba_api_v3/src/model/zebra_team.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

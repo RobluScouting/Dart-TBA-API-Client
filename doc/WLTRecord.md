@@ -1,8 +1,8 @@
-# tba_api_client.model.WLTRecord
+# tba_api_v3.model.WLTRecord
 
 ## Load the model package
 ```dart
-import 'package:tba_api_client/api.dart';
+import 'package:tba_api_v3/api.dart';
 ```
 
 ## Properties

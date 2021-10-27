@@ -7,7 +7,7 @@ import 'dart:async';
 import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
-import 'package:tba_api_client/src/model/api_status.dart';
+import 'package:tba_api_v3/src/model/api_status.dart';
 
 class TBAApi {
   final Dio _dio;

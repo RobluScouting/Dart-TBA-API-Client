@@ -2,9 +2,9 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-import 'package:tba_api_client/src/model/match_videos.dart';
+import 'package:tba_api_v3/src/model/match_videos.dart';
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/match_simple_alliances.dart';
+import 'package:tba_api_v3/src/model/match_simple_alliances.dart';
 import 'package:built_value/json_object.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';

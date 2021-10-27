@@ -9,19 +9,19 @@ import 'package:dio/dio.dart';
 
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/json_object.dart';
-import 'package:tba_api_client/src/model/award.dart';
-import 'package:tba_api_client/src/model/elimination_alliance.dart';
-import 'package:tba_api_client/src/model/event.dart';
-import 'package:tba_api_client/src/model/event_district_points.dart';
-import 'package:tba_api_client/src/model/event_insights.dart';
-import 'package:tba_api_client/src/model/event_oprs.dart';
-import 'package:tba_api_client/src/model/event_ranking.dart';
-import 'package:tba_api_client/src/model/event_simple.dart';
-import 'package:tba_api_client/src/model/match.dart';
-import 'package:tba_api_client/src/model/match_simple.dart';
-import 'package:tba_api_client/src/model/team.dart';
-import 'package:tba_api_client/src/model/team_event_status.dart';
-import 'package:tba_api_client/src/model/team_simple.dart';
+import 'package:tba_api_v3/src/model/award.dart';
+import 'package:tba_api_v3/src/model/elimination_alliance.dart';
+import 'package:tba_api_v3/src/model/event.dart';
+import 'package:tba_api_v3/src/model/event_district_points.dart';
+import 'package:tba_api_v3/src/model/event_insights.dart';
+import 'package:tba_api_v3/src/model/event_oprs.dart';
+import 'package:tba_api_v3/src/model/event_ranking.dart';
+import 'package:tba_api_v3/src/model/event_simple.dart';
+import 'package:tba_api_v3/src/model/match.dart';
+import 'package:tba_api_v3/src/model/match_simple.dart';
+import 'package:tba_api_v3/src/model/team.dart';
+import 'package:tba_api_v3/src/model/team_event_status.dart';
+import 'package:tba_api_v3/src/model/team_simple.dart';
 
 class EventApi {
   final Dio _dio;

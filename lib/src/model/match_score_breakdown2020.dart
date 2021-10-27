@@ -2,7 +2,7 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-import 'package:tba_api_client/src/model/match_score_breakdown2020_alliance.dart';
+import 'package:tba_api_v3/src/model/match_score_breakdown2020_alliance.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

@@ -2,7 +2,7 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-import 'package:tba_api_client/src/model/team_event_status_alliance_backup.dart';
+import 'package:tba_api_v3/src/model/team_event_status_alliance_backup.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

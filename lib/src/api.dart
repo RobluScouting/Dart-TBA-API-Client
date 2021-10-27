@@ -4,16 +4,16 @@
 
 import 'package:dio/dio.dart';
 import 'package:built_value/serializer.dart';
-import 'package:tba_api_client/src/serializers.dart';
-import 'package:tba_api_client/src/auth/api_key_auth.dart';
-import 'package:tba_api_client/src/auth/basic_auth.dart';
-import 'package:tba_api_client/src/auth/oauth.dart';
-import 'package:tba_api_client/src/api/district_api.dart';
-import 'package:tba_api_client/src/api/event_api.dart';
-import 'package:tba_api_client/src/api/list_api.dart';
-import 'package:tba_api_client/src/api/match_api.dart';
-import 'package:tba_api_client/src/api/tba_api.dart';
-import 'package:tba_api_client/src/api/team_api.dart';
+import 'package:tba_api_v3/src/serializers.dart';
+import 'package:tba_api_v3/src/auth/api_key_auth.dart';
+import 'package:tba_api_v3/src/auth/basic_auth.dart';
+import 'package:tba_api_v3/src/auth/oauth.dart';
+import 'package:tba_api_v3/src/api/district_api.dart';
+import 'package:tba_api_v3/src/api/event_api.dart';
+import 'package:tba_api_v3/src/api/list_api.dart';
+import 'package:tba_api_v3/src/api/match_api.dart';
+import 'package:tba_api_v3/src/api/tba_api.dart';
+import 'package:tba_api_v3/src/api/team_api.dart';
 
 class TbaApiClient {
   static const String basePath = r'https://www.thebluealliance.com/api/v3';

@@ -1,8 +1,8 @@
-# tba_api_client.model.MatchScoreBreakdown2018
+# tba_api_v3.model.MatchScoreBreakdown2018
 
 ## Load the model package
 ```dart
-import 'package:tba_api_client/api.dart';
+import 'package:tba_api_v3/api.dart';
 ```
 
 ## Properties

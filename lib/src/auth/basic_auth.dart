@@ -5,7 +5,7 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:tba_api_client/src/auth/auth.dart';
+import 'package:tba_api_v3/src/auth/auth.dart';
 
 class BasicAuthInfo {
   final String username;

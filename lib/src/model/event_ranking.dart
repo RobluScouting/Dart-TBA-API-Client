@@ -2,10 +2,10 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-import 'package:tba_api_client/src/model/event_ranking_extra_stats_info.dart';
+import 'package:tba_api_v3/src/model/event_ranking_extra_stats_info.dart';
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/event_ranking_sort_order_info.dart';
-import 'package:tba_api_client/src/model/event_ranking_rankings.dart';
+import 'package:tba_api_v3/src/model/event_ranking_sort_order_info.dart';
+import 'package:tba_api_v3/src/model/event_ranking_rankings.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 

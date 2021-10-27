@@ -8,12 +8,12 @@ import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
 import 'package:built_collection/built_collection.dart';
-import 'package:tba_api_client/src/model/district_ranking.dart';
-import 'package:tba_api_client/src/model/event.dart';
-import 'package:tba_api_client/src/model/event_simple.dart';
-import 'package:tba_api_client/src/model/team.dart';
-import 'package:tba_api_client/src/model/team_event_status.dart';
-import 'package:tba_api_client/src/model/team_simple.dart';
+import 'package:tba_api_v3/src/model/district_ranking.dart';
+import 'package:tba_api_v3/src/model/event.dart';
+import 'package:tba_api_v3/src/model/event_simple.dart';
+import 'package:tba_api_v3/src/model/team.dart';
+import 'package:tba_api_v3/src/model/team_event_status.dart';
+import 'package:tba_api_v3/src/model/team_simple.dart';
 
 class ListApi {
   final Dio _dio;

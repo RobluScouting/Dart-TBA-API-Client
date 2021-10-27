@@ -1,8 +1,8 @@
-# tba_api_client.model.AwardRecipient
+# tba_api_v3.model.AwardRecipient
 
 ## Load the model package
 ```dart
-import 'package:tba_api_client/api.dart';
+import 'package:tba_api_v3/api.dart';
 ```
 
 ## Properties
