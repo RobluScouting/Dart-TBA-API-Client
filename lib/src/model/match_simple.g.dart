@@ -6,11 +6,16 @@ part of 'match_simple.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_qm = const MatchSimpleCompLevelEnum._('qm');
-const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_ef = const MatchSimpleCompLevelEnum._('ef');
-const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_qf = const MatchSimpleCompLevelEnum._('qf');
-const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_sf = const MatchSimpleCompLevelEnum._('sf');
-const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_f = const MatchSimpleCompLevelEnum._('f');
+const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_qm =
+    const MatchSimpleCompLevelEnum._('qm');
+const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_ef =
+    const MatchSimpleCompLevelEnum._('ef');
+const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_qf =
+    const MatchSimpleCompLevelEnum._('qf');
+const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_sf =
+    const MatchSimpleCompLevelEnum._('sf');
+const MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnum_f =
+    const MatchSimpleCompLevelEnum._('f');
 
 MatchSimpleCompLevelEnum _$matchSimpleCompLevelEnumValueOf(String name) {
   switch (name) {
@@ -45,7 +50,8 @@ const MatchSimpleWinningAllianceEnum _$matchSimpleWinningAllianceEnum_blue =
 const MatchSimpleWinningAllianceEnum _$matchSimpleWinningAllianceEnum_empty =
     const MatchSimpleWinningAllianceEnum._('empty');
 
-MatchSimpleWinningAllianceEnum _$matchSimpleWinningAllianceEnumValueOf(String name) {
+MatchSimpleWinningAllianceEnum _$matchSimpleWinningAllianceEnumValueOf(
+    String name) {
   switch (name) {
     case 'red':
       return _$matchSimpleWinningAllianceEnum_red;
@@ -58,18 +64,22 @@ MatchSimpleWinningAllianceEnum _$matchSimpleWinningAllianceEnumValueOf(String na
   }
 }
 
-final BuiltSet<MatchSimpleWinningAllianceEnum> _$matchSimpleWinningAllianceEnumValues =
-    new BuiltSet<MatchSimpleWinningAllianceEnum>(const <MatchSimpleWinningAllianceEnum>[
+final BuiltSet<MatchSimpleWinningAllianceEnum>
+    _$matchSimpleWinningAllianceEnumValues = new BuiltSet<
+        MatchSimpleWinningAllianceEnum>(const <MatchSimpleWinningAllianceEnum>[
   _$matchSimpleWinningAllianceEnum_red,
   _$matchSimpleWinningAllianceEnum_blue,
   _$matchSimpleWinningAllianceEnum_empty,
 ]);
 
-Serializer<MatchSimpleCompLevelEnum> _$matchSimpleCompLevelEnumSerializer = new _$MatchSimpleCompLevelEnumSerializer();
-Serializer<MatchSimpleWinningAllianceEnum> _$matchSimpleWinningAllianceEnumSerializer =
+Serializer<MatchSimpleCompLevelEnum> _$matchSimpleCompLevelEnumSerializer =
+    new _$MatchSimpleCompLevelEnumSerializer();
+Serializer<MatchSimpleWinningAllianceEnum>
+    _$matchSimpleWinningAllianceEnumSerializer =
     new _$MatchSimpleWinningAllianceEnumSerializer();
 
-class _$MatchSimpleCompLevelEnumSerializer implements PrimitiveSerializer<MatchSimpleCompLevelEnum> {
+class _$MatchSimpleCompLevelEnumSerializer
+    implements PrimitiveSerializer<MatchSimpleCompLevelEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'qm': 'qm',
     'ef': 'ef',
@@ -96,12 +106,15 @@ class _$MatchSimpleCompLevelEnumSerializer implements PrimitiveSerializer<MatchS
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchSimpleCompLevelEnum deserialize(Serializers serializers, Object serialized,
+  MatchSimpleCompLevelEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      MatchSimpleCompLevelEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      MatchSimpleCompLevelEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
-class _$MatchSimpleWinningAllianceEnumSerializer implements PrimitiveSerializer<MatchSimpleWinningAllianceEnum> {
+class _$MatchSimpleWinningAllianceEnumSerializer
+    implements PrimitiveSerializer<MatchSimpleWinningAllianceEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'red': 'red',
     'blue': 'blue',
@@ -119,14 +132,17 @@ class _$MatchSimpleWinningAllianceEnumSerializer implements PrimitiveSerializer<
   final String wireName = 'MatchSimpleWinningAllianceEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchSimpleWinningAllianceEnum object,
+  Object serialize(
+          Serializers serializers, MatchSimpleWinningAllianceEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchSimpleWinningAllianceEnum deserialize(Serializers serializers, Object serialized,
+  MatchSimpleWinningAllianceEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      MatchSimpleWinningAllianceEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      MatchSimpleWinningAllianceEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$MatchSimple extends MatchSimple {
@@ -167,14 +183,18 @@ class _$MatchSimple extends MatchSimple {
       this.actualTime})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(key, 'MatchSimple', 'key');
-    BuiltValueNullFieldError.checkNotNull(compLevel, 'MatchSimple', 'compLevel');
-    BuiltValueNullFieldError.checkNotNull(setNumber, 'MatchSimple', 'setNumber');
-    BuiltValueNullFieldError.checkNotNull(matchNumber, 'MatchSimple', 'matchNumber');
+    BuiltValueNullFieldError.checkNotNull(
+        compLevel, 'MatchSimple', 'compLevel');
+    BuiltValueNullFieldError.checkNotNull(
+        setNumber, 'MatchSimple', 'setNumber');
+    BuiltValueNullFieldError.checkNotNull(
+        matchNumber, 'MatchSimple', 'matchNumber');
     BuiltValueNullFieldError.checkNotNull(eventKey, 'MatchSimple', 'eventKey');
   }
 
   @override
-  MatchSimple rebuild(void Function(MatchSimpleBuilder) updates) => (toBuilder()..update(updates)).build();
+  MatchSimple rebuild(void Function(MatchSimpleBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   MatchSimpleBuilder toBuilder() => new MatchSimpleBuilder()..replace(this);
@@ -203,7 +223,11 @@ class _$MatchSimple extends MatchSimple {
                 $jc(
                     $jc(
                         $jc(
-                            $jc($jc($jc($jc(0, key.hashCode), compLevel.hashCode), setNumber.hashCode),
+                            $jc(
+                                $jc(
+                                    $jc($jc(0, key.hashCode),
+                                        compLevel.hashCode),
+                                    setNumber.hashCode),
                                 matchNumber.hashCode),
                             alliances.hashCode),
                         winningAlliance.hashCode),
@@ -239,7 +263,8 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
 
   MatchSimpleCompLevelEnum? _compLevel;
   MatchSimpleCompLevelEnum? get compLevel => _$this._compLevel;
-  set compLevel(MatchSimpleCompLevelEnum? compLevel) => _$this._compLevel = compLevel;
+  set compLevel(MatchSimpleCompLevelEnum? compLevel) =>
+      _$this._compLevel = compLevel;
 
   int? _setNumber;
   int? get setNumber => _$this._setNumber;
@@ -250,12 +275,16 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
   set matchNumber(int? matchNumber) => _$this._matchNumber = matchNumber;
 
   MatchSimpleAlliancesBuilder? _alliances;
-  MatchSimpleAlliancesBuilder get alliances => _$this._alliances ??= new MatchSimpleAlliancesBuilder();
-  set alliances(MatchSimpleAlliancesBuilder? alliances) => _$this._alliances = alliances;
+  MatchSimpleAlliancesBuilder get alliances =>
+      _$this._alliances ??= new MatchSimpleAlliancesBuilder();
+  set alliances(MatchSimpleAlliancesBuilder? alliances) =>
+      _$this._alliances = alliances;
 
   MatchSimpleWinningAllianceEnum? _winningAlliance;
-  MatchSimpleWinningAllianceEnum? get winningAlliance => _$this._winningAlliance;
-  set winningAlliance(MatchSimpleWinningAllianceEnum? winningAlliance) => _$this._winningAlliance = winningAlliance;
+  MatchSimpleWinningAllianceEnum? get winningAlliance =>
+      _$this._winningAlliance;
+  set winningAlliance(MatchSimpleWinningAllianceEnum? winningAlliance) =>
+      _$this._winningAlliance = winningAlliance;
 
   String? _eventKey;
   String? get eventKey => _$this._eventKey;
@@ -267,7 +296,8 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
 
   int? _predictedTime;
   int? get predictedTime => _$this._predictedTime;
-  set predictedTime(int? predictedTime) => _$this._predictedTime = predictedTime;
+  set predictedTime(int? predictedTime) =>
+      _$this._predictedTime = predictedTime;
 
   int? _actualTime;
   int? get actualTime => _$this._actualTime;
@@ -312,13 +342,18 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
     try {
       _$result = _$v ??
           new _$MatchSimple._(
-              key: BuiltValueNullFieldError.checkNotNull(key, 'MatchSimple', 'key'),
-              compLevel: BuiltValueNullFieldError.checkNotNull(compLevel, 'MatchSimple', 'compLevel'),
-              setNumber: BuiltValueNullFieldError.checkNotNull(setNumber, 'MatchSimple', 'setNumber'),
-              matchNumber: BuiltValueNullFieldError.checkNotNull(matchNumber, 'MatchSimple', 'matchNumber'),
+              key: BuiltValueNullFieldError.checkNotNull(
+                  key, 'MatchSimple', 'key'),
+              compLevel: BuiltValueNullFieldError.checkNotNull(
+                  compLevel, 'MatchSimple', 'compLevel'),
+              setNumber: BuiltValueNullFieldError.checkNotNull(
+                  setNumber, 'MatchSimple', 'setNumber'),
+              matchNumber: BuiltValueNullFieldError.checkNotNull(
+                  matchNumber, 'MatchSimple', 'matchNumber'),
               alliances: _alliances?.build(),
               winningAlliance: winningAlliance,
-              eventKey: BuiltValueNullFieldError.checkNotNull(eventKey, 'MatchSimple', 'eventKey'),
+              eventKey: BuiltValueNullFieldError.checkNotNull(
+                  eventKey, 'MatchSimple', 'eventKey'),
               time: time,
               predictedTime: predictedTime,
               actualTime: actualTime);
@@ -328,7 +363,8 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
         _$failedField = 'alliances';
         _alliances?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('MatchSimple', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'MatchSimple', _$failedField, e.toString());
       }
       rethrow;
     }

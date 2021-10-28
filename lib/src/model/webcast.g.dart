@@ -6,18 +6,28 @@ part of 'webcast.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const WebcastTypeEnum _$webcastTypeEnum_youtube = const WebcastTypeEnum._('youtube');
-const WebcastTypeEnum _$webcastTypeEnum_twitch = const WebcastTypeEnum._('twitch');
-const WebcastTypeEnum _$webcastTypeEnum_ustream = const WebcastTypeEnum._('ustream');
-const WebcastTypeEnum _$webcastTypeEnum_iframe = const WebcastTypeEnum._('iframe');
-const WebcastTypeEnum _$webcastTypeEnum_html5 = const WebcastTypeEnum._('html5');
+const WebcastTypeEnum _$webcastTypeEnum_youtube =
+    const WebcastTypeEnum._('youtube');
+const WebcastTypeEnum _$webcastTypeEnum_twitch =
+    const WebcastTypeEnum._('twitch');
+const WebcastTypeEnum _$webcastTypeEnum_ustream =
+    const WebcastTypeEnum._('ustream');
+const WebcastTypeEnum _$webcastTypeEnum_iframe =
+    const WebcastTypeEnum._('iframe');
+const WebcastTypeEnum _$webcastTypeEnum_html5 =
+    const WebcastTypeEnum._('html5');
 const WebcastTypeEnum _$webcastTypeEnum_rtmp = const WebcastTypeEnum._('rtmp');
-const WebcastTypeEnum _$webcastTypeEnum_livestream = const WebcastTypeEnum._('livestream');
-const WebcastTypeEnum _$webcastTypeEnum_directLink = const WebcastTypeEnum._('directLink');
+const WebcastTypeEnum _$webcastTypeEnum_livestream =
+    const WebcastTypeEnum._('livestream');
+const WebcastTypeEnum _$webcastTypeEnum_directLink =
+    const WebcastTypeEnum._('directLink');
 const WebcastTypeEnum _$webcastTypeEnum_mms = const WebcastTypeEnum._('mms');
-const WebcastTypeEnum _$webcastTypeEnum_justin = const WebcastTypeEnum._('justin');
-const WebcastTypeEnum _$webcastTypeEnum_stemtv = const WebcastTypeEnum._('stemtv');
-const WebcastTypeEnum _$webcastTypeEnum_dacast = const WebcastTypeEnum._('dacast');
+const WebcastTypeEnum _$webcastTypeEnum_justin =
+    const WebcastTypeEnum._('justin');
+const WebcastTypeEnum _$webcastTypeEnum_stemtv =
+    const WebcastTypeEnum._('stemtv');
+const WebcastTypeEnum _$webcastTypeEnum_dacast =
+    const WebcastTypeEnum._('dacast');
 
 WebcastTypeEnum _$webcastTypeEnumValueOf(String name) {
   switch (name) {
@@ -50,7 +60,8 @@ WebcastTypeEnum _$webcastTypeEnumValueOf(String name) {
   }
 }
 
-final BuiltSet<WebcastTypeEnum> _$webcastTypeEnumValues = new BuiltSet<WebcastTypeEnum>(const <WebcastTypeEnum>[
+final BuiltSet<WebcastTypeEnum> _$webcastTypeEnumValues =
+    new BuiltSet<WebcastTypeEnum>(const <WebcastTypeEnum>[
   _$webcastTypeEnum_youtube,
   _$webcastTypeEnum_twitch,
   _$webcastTypeEnum_ustream,
@@ -65,9 +76,11 @@ final BuiltSet<WebcastTypeEnum> _$webcastTypeEnumValues = new BuiltSet<WebcastTy
   _$webcastTypeEnum_dacast,
 ]);
 
-Serializer<WebcastTypeEnum> _$webcastTypeEnumSerializer = new _$WebcastTypeEnumSerializer();
+Serializer<WebcastTypeEnum> _$webcastTypeEnumSerializer =
+    new _$WebcastTypeEnumSerializer();
 
-class _$WebcastTypeEnumSerializer implements PrimitiveSerializer<WebcastTypeEnum> {
+class _$WebcastTypeEnumSerializer
+    implements PrimitiveSerializer<WebcastTypeEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'youtube': 'youtube',
     'twitch': 'twitch',
@@ -103,13 +116,15 @@ class _$WebcastTypeEnumSerializer implements PrimitiveSerializer<WebcastTypeEnum
   final String wireName = 'WebcastTypeEnum';
 
   @override
-  Object serialize(Serializers serializers, WebcastTypeEnum object, {FullType specifiedType = FullType.unspecified}) =>
+  Object serialize(Serializers serializers, WebcastTypeEnum object,
+          {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
   WebcastTypeEnum deserialize(Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      WebcastTypeEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      WebcastTypeEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$Webcast extends Webcast {
@@ -122,15 +137,18 @@ class _$Webcast extends Webcast {
   @override
   final String? file;
 
-  factory _$Webcast([void Function(WebcastBuilder)? updates]) => (new WebcastBuilder()..update(updates)).build();
+  factory _$Webcast([void Function(WebcastBuilder)? updates]) =>
+      (new WebcastBuilder()..update(updates)).build();
 
-  _$Webcast._({required this.type, required this.channel, this.date, this.file}) : super._() {
+  _$Webcast._({required this.type, required this.channel, this.date, this.file})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(type, 'Webcast', 'type');
     BuiltValueNullFieldError.checkNotNull(channel, 'Webcast', 'channel');
   }
 
   @override
-  Webcast rebuild(void Function(WebcastBuilder) updates) => (toBuilder()..update(updates)).build();
+  Webcast rebuild(void Function(WebcastBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   WebcastBuilder toBuilder() => new WebcastBuilder()..replace(this);
@@ -147,7 +165,9 @@ class _$Webcast extends Webcast {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, type.hashCode), channel.hashCode), date.hashCode), file.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, type.hashCode), channel.hashCode), date.hashCode),
+        file.hashCode));
   }
 
   @override
@@ -211,8 +231,10 @@ class WebcastBuilder implements Builder<Webcast, WebcastBuilder> {
   _$Webcast build() {
     final _$result = _$v ??
         new _$Webcast._(
-            type: BuiltValueNullFieldError.checkNotNull(type, 'Webcast', 'type'),
-            channel: BuiltValueNullFieldError.checkNotNull(channel, 'Webcast', 'channel'),
+            type:
+                BuiltValueNullFieldError.checkNotNull(type, 'Webcast', 'type'),
+            channel: BuiltValueNullFieldError.checkNotNull(
+                channel, 'Webcast', 'channel'),
             date: date,
             file: file);
     replace(_$result);

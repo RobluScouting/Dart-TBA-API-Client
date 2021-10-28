@@ -14,16 +14,19 @@ class _$ZebraTeam extends ZebraTeam {
   @override
   final BuiltList<double> ys;
 
-  factory _$ZebraTeam([void Function(ZebraTeamBuilder)? updates]) => (new ZebraTeamBuilder()..update(updates)).build();
+  factory _$ZebraTeam([void Function(ZebraTeamBuilder)? updates]) =>
+      (new ZebraTeamBuilder()..update(updates)).build();
 
-  _$ZebraTeam._({required this.teamKey, required this.xs, required this.ys}) : super._() {
+  _$ZebraTeam._({required this.teamKey, required this.xs, required this.ys})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(teamKey, 'ZebraTeam', 'teamKey');
     BuiltValueNullFieldError.checkNotNull(xs, 'ZebraTeam', 'xs');
     BuiltValueNullFieldError.checkNotNull(ys, 'ZebraTeam', 'ys');
   }
 
   @override
-  ZebraTeam rebuild(void Function(ZebraTeamBuilder) updates) => (toBuilder()..update(updates)).build();
+  ZebraTeam rebuild(void Function(ZebraTeamBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   ZebraTeamBuilder toBuilder() => new ZebraTeamBuilder()..replace(this);
@@ -31,7 +34,10 @@ class _$ZebraTeam extends ZebraTeam {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is ZebraTeam && teamKey == other.teamKey && xs == other.xs && ys == other.ys;
+    return other is ZebraTeam &&
+        teamKey == other.teamKey &&
+        xs == other.xs &&
+        ys == other.ys;
   }
 
   @override
@@ -41,7 +47,11 @@ class _$ZebraTeam extends ZebraTeam {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('ZebraTeam')..add('teamKey', teamKey)..add('xs', xs)..add('ys', ys)).toString();
+    return (newBuiltValueToStringHelper('ZebraTeam')
+          ..add('teamKey', teamKey)
+          ..add('xs', xs)
+          ..add('ys', ys))
+        .toString();
   }
 }
 
@@ -92,7 +102,8 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
     try {
       _$result = _$v ??
           new _$ZebraTeam._(
-              teamKey: BuiltValueNullFieldError.checkNotNull(teamKey, 'ZebraTeam', 'teamKey'),
+              teamKey: BuiltValueNullFieldError.checkNotNull(
+                  teamKey, 'ZebraTeam', 'teamKey'),
               xs: xs.build(),
               ys: ys.build());
     } catch (_) {
@@ -103,7 +114,8 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
         _$failedField = 'ys';
         ys.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('ZebraTeam', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'ZebraTeam', _$failedField, e.toString());
       }
       rethrow;
     }

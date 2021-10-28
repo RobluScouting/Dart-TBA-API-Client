@@ -8,7 +8,8 @@ import 'package:built_value/serializer.dart';
 
 part 'match_score_breakdown2017.g.dart';
 
-abstract class MatchScoreBreakdown2017 implements Built<MatchScoreBreakdown2017, MatchScoreBreakdown2017Builder> {
+abstract class MatchScoreBreakdown2017
+    implements Built<MatchScoreBreakdown2017, MatchScoreBreakdown2017Builder> {
   @BuiltValueField(wireName: r'blue')
   MatchScoreBreakdown2017Alliance? get blue;
 
@@ -19,38 +20,49 @@ abstract class MatchScoreBreakdown2017 implements Built<MatchScoreBreakdown2017,
 
   static void _initializeBuilder(MatchScoreBreakdown2017Builder b) => b;
 
-  factory MatchScoreBreakdown2017([void updates(MatchScoreBreakdown2017Builder b)]) = _$MatchScoreBreakdown2017;
+  factory MatchScoreBreakdown2017(
+          [void updates(MatchScoreBreakdown2017Builder b)]) =
+      _$MatchScoreBreakdown2017;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchScoreBreakdown2017> get serializer => _$MatchScoreBreakdown2017Serializer();
+  static Serializer<MatchScoreBreakdown2017> get serializer =>
+      _$MatchScoreBreakdown2017Serializer();
 }
 
-class _$MatchScoreBreakdown2017Serializer implements StructuredSerializer<MatchScoreBreakdown2017> {
+class _$MatchScoreBreakdown2017Serializer
+    implements StructuredSerializer<MatchScoreBreakdown2017> {
   @override
-  final Iterable<Type> types = const [MatchScoreBreakdown2017, _$MatchScoreBreakdown2017];
+  final Iterable<Type> types = const [
+    MatchScoreBreakdown2017,
+    _$MatchScoreBreakdown2017
+  ];
 
   @override
   final String wireName = r'MatchScoreBreakdown2017';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, MatchScoreBreakdown2017 object,
+  Iterable<Object?> serialize(
+      Serializers serializers, MatchScoreBreakdown2017 object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.blue != null) {
       result
         ..add(r'blue')
-        ..add(serializers.serialize(object.blue, specifiedType: const FullType(MatchScoreBreakdown2017Alliance)));
+        ..add(serializers.serialize(object.blue,
+            specifiedType: const FullType(MatchScoreBreakdown2017Alliance)));
     }
     if (object.red != null) {
       result
         ..add(r'red')
-        ..add(serializers.serialize(object.red, specifiedType: const FullType(MatchScoreBreakdown2017Alliance)));
+        ..add(serializers.serialize(object.red,
+            specifiedType: const FullType(MatchScoreBreakdown2017Alliance)));
     }
     return result;
   }
 
   @override
-  MatchScoreBreakdown2017 deserialize(Serializers serializers, Iterable<Object?> serialized,
+  MatchScoreBreakdown2017 deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = MatchScoreBreakdown2017Builder();
 
@@ -62,11 +74,15 @@ class _$MatchScoreBreakdown2017Serializer implements StructuredSerializer<MatchS
       switch (key) {
         case r'blue':
           result.blue.replace(serializers.deserialize(value,
-              specifiedType: const FullType(MatchScoreBreakdown2017Alliance)) as MatchScoreBreakdown2017Alliance);
+                  specifiedType:
+                      const FullType(MatchScoreBreakdown2017Alliance))
+              as MatchScoreBreakdown2017Alliance);
           break;
         case r'red':
           result.red.replace(serializers.deserialize(value,
-              specifiedType: const FullType(MatchScoreBreakdown2017Alliance)) as MatchScoreBreakdown2017Alliance);
+                  specifiedType:
+                      const FullType(MatchScoreBreakdown2017Alliance))
+              as MatchScoreBreakdown2017Alliance);
           break;
       }
     }

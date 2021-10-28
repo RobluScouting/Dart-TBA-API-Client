@@ -12,25 +12,33 @@ class _$EventRankingExtraStatsInfo extends EventRankingExtraStatsInfo {
   @override
   final String name;
 
-  factory _$EventRankingExtraStatsInfo([void Function(EventRankingExtraStatsInfoBuilder)? updates]) =>
+  factory _$EventRankingExtraStatsInfo(
+          [void Function(EventRankingExtraStatsInfoBuilder)? updates]) =>
       (new EventRankingExtraStatsInfoBuilder()..update(updates)).build();
 
-  _$EventRankingExtraStatsInfo._({required this.precision, required this.name}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(precision, 'EventRankingExtraStatsInfo', 'precision');
-    BuiltValueNullFieldError.checkNotNull(name, 'EventRankingExtraStatsInfo', 'name');
+  _$EventRankingExtraStatsInfo._({required this.precision, required this.name})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        precision, 'EventRankingExtraStatsInfo', 'precision');
+    BuiltValueNullFieldError.checkNotNull(
+        name, 'EventRankingExtraStatsInfo', 'name');
   }
 
   @override
-  EventRankingExtraStatsInfo rebuild(void Function(EventRankingExtraStatsInfoBuilder) updates) =>
+  EventRankingExtraStatsInfo rebuild(
+          void Function(EventRankingExtraStatsInfoBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventRankingExtraStatsInfoBuilder toBuilder() => new EventRankingExtraStatsInfoBuilder()..replace(this);
+  EventRankingExtraStatsInfoBuilder toBuilder() =>
+      new EventRankingExtraStatsInfoBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EventRankingExtraStatsInfo && precision == other.precision && name == other.name;
+    return other is EventRankingExtraStatsInfo &&
+        precision == other.precision &&
+        name == other.name;
   }
 
   @override
@@ -40,13 +48,16 @@ class _$EventRankingExtraStatsInfo extends EventRankingExtraStatsInfo {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventRankingExtraStatsInfo')..add('precision', precision)..add('name', name))
+    return (newBuiltValueToStringHelper('EventRankingExtraStatsInfo')
+          ..add('precision', precision)
+          ..add('name', name))
         .toString();
   }
 }
 
 class EventRankingExtraStatsInfoBuilder
-    implements Builder<EventRankingExtraStatsInfo, EventRankingExtraStatsInfoBuilder> {
+    implements
+        Builder<EventRankingExtraStatsInfo, EventRankingExtraStatsInfoBuilder> {
   _$EventRankingExtraStatsInfo? _$v;
 
   num? _precision;
@@ -86,8 +97,10 @@ class EventRankingExtraStatsInfoBuilder
   _$EventRankingExtraStatsInfo build() {
     final _$result = _$v ??
         new _$EventRankingExtraStatsInfo._(
-            precision: BuiltValueNullFieldError.checkNotNull(precision, 'EventRankingExtraStatsInfo', 'precision'),
-            name: BuiltValueNullFieldError.checkNotNull(name, 'EventRankingExtraStatsInfo', 'name'));
+            precision: BuiltValueNullFieldError.checkNotNull(
+                precision, 'EventRankingExtraStatsInfo', 'precision'),
+            name: BuiltValueNullFieldError.checkNotNull(
+                name, 'EventRankingExtraStatsInfo', 'name'));
     replace(_$result);
     return _$result;
   }

@@ -12,22 +12,27 @@ class _$MatchScoreBreakdown2016 extends MatchScoreBreakdown2016 {
   @override
   final MatchScoreBreakdown2016Alliance? red;
 
-  factory _$MatchScoreBreakdown2016([void Function(MatchScoreBreakdown2016Builder)? updates]) =>
+  factory _$MatchScoreBreakdown2016(
+          [void Function(MatchScoreBreakdown2016Builder)? updates]) =>
       (new MatchScoreBreakdown2016Builder()..update(updates)).build();
 
   _$MatchScoreBreakdown2016._({this.blue, this.red}) : super._();
 
   @override
-  MatchScoreBreakdown2016 rebuild(void Function(MatchScoreBreakdown2016Builder) updates) =>
+  MatchScoreBreakdown2016 rebuild(
+          void Function(MatchScoreBreakdown2016Builder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2016Builder toBuilder() => new MatchScoreBreakdown2016Builder()..replace(this);
+  MatchScoreBreakdown2016Builder toBuilder() =>
+      new MatchScoreBreakdown2016Builder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is MatchScoreBreakdown2016 && blue == other.blue && red == other.red;
+    return other is MatchScoreBreakdown2016 &&
+        blue == other.blue &&
+        red == other.red;
   }
 
   @override
@@ -37,19 +42,26 @@ class _$MatchScoreBreakdown2016 extends MatchScoreBreakdown2016 {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('MatchScoreBreakdown2016')..add('blue', blue)..add('red', red)).toString();
+    return (newBuiltValueToStringHelper('MatchScoreBreakdown2016')
+          ..add('blue', blue)
+          ..add('red', red))
+        .toString();
   }
 }
 
-class MatchScoreBreakdown2016Builder implements Builder<MatchScoreBreakdown2016, MatchScoreBreakdown2016Builder> {
+class MatchScoreBreakdown2016Builder
+    implements
+        Builder<MatchScoreBreakdown2016, MatchScoreBreakdown2016Builder> {
   _$MatchScoreBreakdown2016? _$v;
 
   MatchScoreBreakdown2016AllianceBuilder? _blue;
-  MatchScoreBreakdown2016AllianceBuilder get blue => _$this._blue ??= new MatchScoreBreakdown2016AllianceBuilder();
+  MatchScoreBreakdown2016AllianceBuilder get blue =>
+      _$this._blue ??= new MatchScoreBreakdown2016AllianceBuilder();
   set blue(MatchScoreBreakdown2016AllianceBuilder? blue) => _$this._blue = blue;
 
   MatchScoreBreakdown2016AllianceBuilder? _red;
-  MatchScoreBreakdown2016AllianceBuilder get red => _$this._red ??= new MatchScoreBreakdown2016AllianceBuilder();
+  MatchScoreBreakdown2016AllianceBuilder get red =>
+      _$this._red ??= new MatchScoreBreakdown2016AllianceBuilder();
   set red(MatchScoreBreakdown2016AllianceBuilder? red) => _$this._red = red;
 
   MatchScoreBreakdown2016Builder() {
@@ -81,7 +93,9 @@ class MatchScoreBreakdown2016Builder implements Builder<MatchScoreBreakdown2016,
   _$MatchScoreBreakdown2016 build() {
     _$MatchScoreBreakdown2016 _$result;
     try {
-      _$result = _$v ?? new _$MatchScoreBreakdown2016._(blue: _blue?.build(), red: _red?.build());
+      _$result = _$v ??
+          new _$MatchScoreBreakdown2016._(
+              blue: _blue?.build(), red: _red?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -90,7 +104,8 @@ class MatchScoreBreakdown2016Builder implements Builder<MatchScoreBreakdown2016,
         _$failedField = 'red';
         _red?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('MatchScoreBreakdown2016', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'MatchScoreBreakdown2016', _$failedField, e.toString());
       }
       rethrow;
     }

@@ -103,64 +103,116 @@ class _$TeamSerializer implements StructuredSerializer<Team> {
   final String wireName = r'Team';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Team object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Team object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'team_number')..add(serializers.serialize(object.teamNumber, specifiedType: const FullType(int)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'team_number')
+      ..add(serializers.serialize(object.teamNumber,
+          specifiedType: const FullType(int)));
     if (object.nickname != null) {
-      result..add(r'nickname')..add(serializers.serialize(object.nickname, specifiedType: const FullType(String)));
+      result
+        ..add(r'nickname')
+        ..add(serializers.serialize(object.nickname,
+            specifiedType: const FullType(String)));
     }
-    result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
+    result
+      ..add(r'name')
+      ..add(serializers.serialize(object.name,
+          specifiedType: const FullType(String)));
     if (object.schoolName != null) {
-      result..add(r'school_name')..add(serializers.serialize(object.schoolName, specifiedType: const FullType(String)));
+      result
+        ..add(r'school_name')
+        ..add(serializers.serialize(object.schoolName,
+            specifiedType: const FullType(String)));
     }
     if (object.city != null) {
-      result..add(r'city')..add(serializers.serialize(object.city, specifiedType: const FullType(String)));
+      result
+        ..add(r'city')
+        ..add(serializers.serialize(object.city,
+            specifiedType: const FullType(String)));
     }
     if (object.stateProv != null) {
-      result..add(r'state_prov')..add(serializers.serialize(object.stateProv, specifiedType: const FullType(String)));
+      result
+        ..add(r'state_prov')
+        ..add(serializers.serialize(object.stateProv,
+            specifiedType: const FullType(String)));
     }
     if (object.country != null) {
-      result..add(r'country')..add(serializers.serialize(object.country, specifiedType: const FullType(String)));
+      result
+        ..add(r'country')
+        ..add(serializers.serialize(object.country,
+            specifiedType: const FullType(String)));
     }
     if (object.address != null) {
-      result..add(r'address')..add(serializers.serialize(object.address, specifiedType: const FullType(String)));
+      result
+        ..add(r'address')
+        ..add(serializers.serialize(object.address,
+            specifiedType: const FullType(String)));
     }
     if (object.postalCode != null) {
-      result..add(r'postal_code')..add(serializers.serialize(object.postalCode, specifiedType: const FullType(String)));
+      result
+        ..add(r'postal_code')
+        ..add(serializers.serialize(object.postalCode,
+            specifiedType: const FullType(String)));
     }
     if (object.gmapsPlaceId != null) {
       result
         ..add(r'gmaps_place_id')
-        ..add(serializers.serialize(object.gmapsPlaceId, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.gmapsPlaceId,
+            specifiedType: const FullType(String)));
     }
     if (object.gmapsUrl != null) {
-      result..add(r'gmaps_url')..add(serializers.serialize(object.gmapsUrl, specifiedType: const FullType(String)));
+      result
+        ..add(r'gmaps_url')
+        ..add(serializers.serialize(object.gmapsUrl,
+            specifiedType: const FullType(String)));
     }
     if (object.lat != null) {
-      result..add(r'lat')..add(serializers.serialize(object.lat, specifiedType: const FullType(double)));
+      result
+        ..add(r'lat')
+        ..add(serializers.serialize(object.lat,
+            specifiedType: const FullType(double)));
     }
     if (object.lng != null) {
-      result..add(r'lng')..add(serializers.serialize(object.lng, specifiedType: const FullType(double)));
+      result
+        ..add(r'lng')
+        ..add(serializers.serialize(object.lng,
+            specifiedType: const FullType(double)));
     }
     if (object.locationName != null) {
       result
         ..add(r'location_name')
-        ..add(serializers.serialize(object.locationName, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.locationName,
+            specifiedType: const FullType(String)));
     }
     if (object.website != null) {
-      result..add(r'website')..add(serializers.serialize(object.website, specifiedType: const FullType(String)));
+      result
+        ..add(r'website')
+        ..add(serializers.serialize(object.website,
+            specifiedType: const FullType(String)));
     }
     if (object.rookieYear != null) {
-      result..add(r'rookie_year')..add(serializers.serialize(object.rookieYear, specifiedType: const FullType(int)));
+      result
+        ..add(r'rookie_year')
+        ..add(serializers.serialize(object.rookieYear,
+            specifiedType: const FullType(int)));
     }
     if (object.motto != null) {
-      result..add(r'motto')..add(serializers.serialize(object.motto, specifiedType: const FullType(String)));
+      result
+        ..add(r'motto')
+        ..add(serializers.serialize(object.motto,
+            specifiedType: const FullType(String)));
     }
     if (object.homeChampionship != null) {
       result
         ..add(r'home_championship')
-        ..add(serializers.serialize(object.homeChampionship, specifiedType: const FullType(JsonObject)));
+        ..add(serializers.serialize(object.homeChampionship,
+            specifiedType: const FullType(JsonObject)));
     }
     return result;
   }
@@ -177,62 +229,80 @@ class _$TeamSerializer implements StructuredSerializer<Team> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'team_number':
-          result.teamNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.teamNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'nickname':
-          result.nickname = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.nickname = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'school_name':
-          result.schoolName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.schoolName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'city':
-          result.city = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.city = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'state_prov':
-          result.stateProv = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.stateProv = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'country':
-          result.country = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.country = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'address':
-          result.address = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.address = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'postal_code':
-          result.postalCode = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.postalCode = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'gmaps_place_id':
-          result.gmapsPlaceId = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.gmapsPlaceId = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'gmaps_url':
-          result.gmapsUrl = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.gmapsUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'lat':
-          result.lat = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.lat = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'lng':
-          result.lng = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.lng = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'location_name':
-          result.locationName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.locationName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'website':
-          result.website = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.website = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'rookie_year':
-          result.rookieYear = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.rookieYear = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'motto':
-          result.motto = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.motto = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'home_championship':
-          result.homeChampionship =
-              serializers.deserialize(value, specifiedType: const FullType(JsonObject)) as JsonObject;
+          result.homeChampionship = serializers.deserialize(value,
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
       }
     }

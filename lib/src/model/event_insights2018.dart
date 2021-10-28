@@ -8,7 +8,8 @@ import 'package:built_value/serializer.dart';
 
 part 'event_insights2018.g.dart';
 
-abstract class EventInsights2018 implements Built<EventInsights2018, EventInsights2018Builder> {
+abstract class EventInsights2018
+    implements Built<EventInsights2018, EventInsights2018Builder> {
   /// An array with three values, number of times auto quest was completed, number of opportunities to complete the auto quest, and percentage.
   @BuiltValueField(wireName: r'auto_quest_achieved')
   BuiltList<double> get autoQuestAchieved;
@@ -161,13 +162,16 @@ abstract class EventInsights2018 implements Built<EventInsights2018, EventInsigh
 
   static void _initializeBuilder(EventInsights2018Builder b) => b;
 
-  factory EventInsights2018([void updates(EventInsights2018Builder b)]) = _$EventInsights2018;
+  factory EventInsights2018([void updates(EventInsights2018Builder b)]) =
+      _$EventInsights2018;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<EventInsights2018> get serializer => _$EventInsights2018Serializer();
+  static Serializer<EventInsights2018> get serializer =>
+      _$EventInsights2018Serializer();
 }
 
-class _$EventInsights2018Serializer implements StructuredSerializer<EventInsights2018> {
+class _$EventInsights2018Serializer
+    implements StructuredSerializer<EventInsights2018> {
   @override
   final Iterable<Type> types = const [EventInsights2018, _$EventInsights2018];
 
@@ -184,62 +188,80 @@ class _$EventInsights2018Serializer implements StructuredSerializer<EventInsight
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'average_boost_played')
-      ..add(serializers.serialize(object.averageBoostPlayed, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageBoostPlayed,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_endgame_points')
-      ..add(serializers.serialize(object.averageEndgamePoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageEndgamePoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_force_played')
-      ..add(serializers.serialize(object.averageForcePlayed, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageForcePlayed,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_foul_score')
-      ..add(serializers.serialize(object.averageFoulScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageFoulScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_points_auto')
-      ..add(serializers.serialize(object.averagePointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averagePointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_points_teleop')
-      ..add(serializers.serialize(object.averagePointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averagePointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_run_points_auto')
-      ..add(serializers.serialize(object.averageRunPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageRunPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_scale_ownership_points')
-      ..add(serializers.serialize(object.averageScaleOwnershipPoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageScaleOwnershipPoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_scale_ownership_points_auto')
-      ..add(serializers.serialize(object.averageScaleOwnershipPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageScaleOwnershipPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_scale_ownership_points_teleop')
-      ..add(serializers.serialize(object.averageScaleOwnershipPointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageScaleOwnershipPointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_score')
-      ..add(serializers.serialize(object.averageScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_switch_ownership_points')
-      ..add(serializers.serialize(object.averageSwitchOwnershipPoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageSwitchOwnershipPoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_switch_ownership_points_auto')
-      ..add(serializers.serialize(object.averageSwitchOwnershipPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageSwitchOwnershipPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_switch_ownership_points_teleop')
-      ..add(serializers.serialize(object.averageSwitchOwnershipPointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageSwitchOwnershipPointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_vault_points')
-      ..add(serializers.serialize(object.averageVaultPoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageVaultPoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_win_margin')
-      ..add(serializers.serialize(object.averageWinMargin, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageWinMargin,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_win_score')
-      ..add(serializers.serialize(object.averageWinScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageWinScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'boost_played_counts')
       ..add(serializers.serialize(object.boostPlayedCounts,
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'climb_counts')
-      ..add(serializers.serialize(object.climbCounts, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.climbCounts,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'face_the_boss_achieved')
       ..add(serializers.serialize(object.faceTheBossAchieved,
@@ -250,59 +272,72 @@ class _$EventInsights2018Serializer implements StructuredSerializer<EventInsight
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'high_score')
-      ..add(serializers.serialize(object.highScore, specifiedType: const FullType(BuiltList, [FullType(String)])));
+      ..add(serializers.serialize(object.highScore,
+          specifiedType: const FullType(BuiltList, [FullType(String)])));
     result
       ..add(r'levitate_played_counts')
       ..add(serializers.serialize(object.levitatePlayedCounts,
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'run_counts_auto')
-      ..add(serializers.serialize(object.runCountsAuto, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.runCountsAuto,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'scale_neutral_percentage')
-      ..add(serializers.serialize(object.scaleNeutralPercentage, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.scaleNeutralPercentage,
+          specifiedType: const FullType(double)));
     result
       ..add(r'scale_neutral_percentage_auto')
-      ..add(serializers.serialize(object.scaleNeutralPercentageAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.scaleNeutralPercentageAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'scale_neutral_percentage_teleop')
-      ..add(serializers.serialize(object.scaleNeutralPercentageTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.scaleNeutralPercentageTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'switch_owned_counts_auto')
       ..add(serializers.serialize(object.switchOwnedCountsAuto,
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'unicorn_matches')
-      ..add(serializers.serialize(object.unicornMatches, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.unicornMatches,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'winning_opp_switch_denial_percentage_teleop')
-      ..add(
-          serializers.serialize(object.winningOppSwitchDenialPercentageTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.winningOppSwitchDenialPercentageTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'winning_own_switch_ownership_percentage')
-      ..add(serializers.serialize(object.winningOwnSwitchOwnershipPercentage, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.winningOwnSwitchOwnershipPercentage,
+          specifiedType: const FullType(double)));
     result
       ..add(r'winning_own_switch_ownership_percentage_auto')
-      ..add(
-          serializers.serialize(object.winningOwnSwitchOwnershipPercentageAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(
+          object.winningOwnSwitchOwnershipPercentageAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'winning_own_switch_ownership_percentage_teleop')
-      ..add(serializers.serialize(object.winningOwnSwitchOwnershipPercentageTeleop,
+      ..add(serializers.serialize(
+          object.winningOwnSwitchOwnershipPercentageTeleop,
           specifiedType: const FullType(double)));
     result
       ..add(r'winning_scale_ownership_percentage')
-      ..add(serializers.serialize(object.winningScaleOwnershipPercentage, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.winningScaleOwnershipPercentage,
+          specifiedType: const FullType(double)));
     result
       ..add(r'winning_scale_ownership_percentage_auto')
-      ..add(serializers.serialize(object.winningScaleOwnershipPercentageAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.winningScaleOwnershipPercentageAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'winning_scale_ownership_percentage_teleop')
-      ..add(serializers.serialize(object.winningScaleOwnershipPercentageTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.winningScaleOwnershipPercentageTeleop,
+          specifiedType: const FullType(double)));
     return result;
   }
 
   @override
-  EventInsights2018 deserialize(Serializers serializers, Iterable<Object?> serialized,
+  EventInsights2018 deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = EventInsights2018Builder();
 
@@ -314,140 +349,172 @@ class _$EventInsights2018Serializer implements StructuredSerializer<EventInsight
       switch (key) {
         case r'auto_quest_achieved':
           result.autoQuestAchieved.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'average_boost_played':
-          result.averageBoostPlayed = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageBoostPlayed = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_endgame_points':
-          result.averageEndgamePoints = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageEndgamePoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_force_played':
-          result.averageForcePlayed = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageForcePlayed = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_foul_score':
-          result.averageFoulScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageFoulScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_points_auto':
-          result.averagePointsAuto = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averagePointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_points_teleop':
-          result.averagePointsTeleop = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averagePointsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_run_points_auto':
-          result.averageRunPointsAuto = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageRunPointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_scale_ownership_points':
-          result.averageScaleOwnershipPoints =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageScaleOwnershipPoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_scale_ownership_points_auto':
-          result.averageScaleOwnershipPointsAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageScaleOwnershipPointsAuto = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_scale_ownership_points_teleop':
-          result.averageScaleOwnershipPointsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageScaleOwnershipPointsTeleop = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_score':
-          result.averageScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_switch_ownership_points':
-          result.averageSwitchOwnershipPoints =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageSwitchOwnershipPoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_switch_ownership_points_auto':
-          result.averageSwitchOwnershipPointsAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageSwitchOwnershipPointsAuto = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_switch_ownership_points_teleop':
-          result.averageSwitchOwnershipPointsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageSwitchOwnershipPointsTeleop = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_vault_points':
-          result.averageVaultPoints = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageVaultPoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_win_margin':
-          result.averageWinMargin = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageWinMargin = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_win_score':
-          result.averageWinScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageWinScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'boost_played_counts':
           result.boostPlayedCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'climb_counts':
           result.climbCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'face_the_boss_achieved':
           result.faceTheBossAchieved.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'force_played_counts':
           result.forcePlayedCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'high_score':
           result.highScore.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(String)])) as BuiltList<String>);
+                  specifiedType: const FullType(BuiltList, [FullType(String)]))
+              as BuiltList<String>);
           break;
         case r'levitate_played_counts':
           result.levitatePlayedCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'run_counts_auto':
           result.runCountsAuto.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'scale_neutral_percentage':
-          result.scaleNeutralPercentage =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.scaleNeutralPercentage = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'scale_neutral_percentage_auto':
-          result.scaleNeutralPercentageAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.scaleNeutralPercentageAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'scale_neutral_percentage_teleop':
-          result.scaleNeutralPercentageTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.scaleNeutralPercentageTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'switch_owned_counts_auto':
           result.switchOwnedCountsAuto.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'unicorn_matches':
           result.unicornMatches.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'winning_opp_switch_denial_percentage_teleop':
-          result.winningOppSwitchDenialPercentageTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningOppSwitchDenialPercentageTeleop = serializers
+                  .deserialize(value, specifiedType: const FullType(double))
+              as double;
           break;
         case r'winning_own_switch_ownership_percentage':
-          result.winningOwnSwitchOwnershipPercentage =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningOwnSwitchOwnershipPercentage = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'winning_own_switch_ownership_percentage_auto':
-          result.winningOwnSwitchOwnershipPercentageAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningOwnSwitchOwnershipPercentageAuto = serializers
+                  .deserialize(value, specifiedType: const FullType(double))
+              as double;
           break;
         case r'winning_own_switch_ownership_percentage_teleop':
-          result.winningOwnSwitchOwnershipPercentageTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningOwnSwitchOwnershipPercentageTeleop = serializers
+                  .deserialize(value, specifiedType: const FullType(double))
+              as double;
           break;
         case r'winning_scale_ownership_percentage':
-          result.winningScaleOwnershipPercentage =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningScaleOwnershipPercentage = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'winning_scale_ownership_percentage_auto':
-          result.winningScaleOwnershipPercentageAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningScaleOwnershipPercentageAuto = serializers.deserialize(
+              value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'winning_scale_ownership_percentage_teleop':
-          result.winningScaleOwnershipPercentageTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.winningScaleOwnershipPercentageTeleop = serializers
+                  .deserialize(value, specifiedType: const FullType(double))
+              as double;
           break;
       }
     }

@@ -16,17 +16,22 @@ class _$TeamEventStatusRank extends TeamEventStatusRank {
   @override
   final String? status;
 
-  factory _$TeamEventStatusRank([void Function(TeamEventStatusRankBuilder)? updates]) =>
+  factory _$TeamEventStatusRank(
+          [void Function(TeamEventStatusRankBuilder)? updates]) =>
       (new TeamEventStatusRankBuilder()..update(updates)).build();
 
-  _$TeamEventStatusRank._({this.numTeams, this.ranking, this.sortOrderInfo, this.status}) : super._();
+  _$TeamEventStatusRank._(
+      {this.numTeams, this.ranking, this.sortOrderInfo, this.status})
+      : super._();
 
   @override
-  TeamEventStatusRank rebuild(void Function(TeamEventStatusRankBuilder) updates) =>
+  TeamEventStatusRank rebuild(
+          void Function(TeamEventStatusRankBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TeamEventStatusRankBuilder toBuilder() => new TeamEventStatusRankBuilder()..replace(this);
+  TeamEventStatusRankBuilder toBuilder() =>
+      new TeamEventStatusRankBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -40,7 +45,10 @@ class _$TeamEventStatusRank extends TeamEventStatusRank {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, numTeams.hashCode), ranking.hashCode), sortOrderInfo.hashCode), status.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, numTeams.hashCode), ranking.hashCode),
+            sortOrderInfo.hashCode),
+        status.hashCode));
   }
 
   @override
@@ -54,7 +62,8 @@ class _$TeamEventStatusRank extends TeamEventStatusRank {
   }
 }
 
-class TeamEventStatusRankBuilder implements Builder<TeamEventStatusRank, TeamEventStatusRankBuilder> {
+class TeamEventStatusRankBuilder
+    implements Builder<TeamEventStatusRank, TeamEventStatusRankBuilder> {
   _$TeamEventStatusRank? _$v;
 
   int? _numTeams;
@@ -62,13 +71,17 @@ class TeamEventStatusRankBuilder implements Builder<TeamEventStatusRank, TeamEve
   set numTeams(int? numTeams) => _$this._numTeams = numTeams;
 
   TeamEventStatusRankRankingBuilder? _ranking;
-  TeamEventStatusRankRankingBuilder get ranking => _$this._ranking ??= new TeamEventStatusRankRankingBuilder();
-  set ranking(TeamEventStatusRankRankingBuilder? ranking) => _$this._ranking = ranking;
+  TeamEventStatusRankRankingBuilder get ranking =>
+      _$this._ranking ??= new TeamEventStatusRankRankingBuilder();
+  set ranking(TeamEventStatusRankRankingBuilder? ranking) =>
+      _$this._ranking = ranking;
 
   ListBuilder<TeamEventStatusRankSortOrderInfo>? _sortOrderInfo;
   ListBuilder<TeamEventStatusRankSortOrderInfo> get sortOrderInfo =>
-      _$this._sortOrderInfo ??= new ListBuilder<TeamEventStatusRankSortOrderInfo>();
-  set sortOrderInfo(ListBuilder<TeamEventStatusRankSortOrderInfo>? sortOrderInfo) =>
+      _$this._sortOrderInfo ??=
+          new ListBuilder<TeamEventStatusRankSortOrderInfo>();
+  set sortOrderInfo(
+          ListBuilder<TeamEventStatusRankSortOrderInfo>? sortOrderInfo) =>
       _$this._sortOrderInfo = sortOrderInfo;
 
   String? _status;
@@ -108,7 +121,10 @@ class TeamEventStatusRankBuilder implements Builder<TeamEventStatusRank, TeamEve
     try {
       _$result = _$v ??
           new _$TeamEventStatusRank._(
-              numTeams: numTeams, ranking: _ranking?.build(), sortOrderInfo: _sortOrderInfo?.build(), status: status);
+              numTeams: numTeams,
+              ranking: _ranking?.build(),
+              sortOrderInfo: _sortOrderInfo?.build(),
+              status: status);
     } catch (_) {
       late String _$failedField;
       try {
@@ -117,7 +133,8 @@ class TeamEventStatusRankBuilder implements Builder<TeamEventStatusRank, TeamEve
         _$failedField = 'sortOrderInfo';
         _sortOrderInfo?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('TeamEventStatusRank', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'TeamEventStatusRank', _$failedField, e.toString());
       }
       rethrow;
     }

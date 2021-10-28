@@ -82,7 +82,8 @@ class _$EventInsights2018 extends EventInsights2018 {
   @override
   final double winningScaleOwnershipPercentageTeleop;
 
-  factory _$EventInsights2018([void Function(EventInsights2018Builder)? updates]) =>
+  factory _$EventInsights2018(
+          [void Function(EventInsights2018Builder)? updates]) =>
       (new EventInsights2018Builder()..update(updates)).build();
 
   _$EventInsights2018._(
@@ -124,65 +125,95 @@ class _$EventInsights2018 extends EventInsights2018 {
       required this.winningScaleOwnershipPercentageAuto,
       required this.winningScaleOwnershipPercentageTeleop})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(autoQuestAchieved, 'EventInsights2018', 'autoQuestAchieved');
-    BuiltValueNullFieldError.checkNotNull(averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed');
-    BuiltValueNullFieldError.checkNotNull(averageEndgamePoints, 'EventInsights2018', 'averageEndgamePoints');
-    BuiltValueNullFieldError.checkNotNull(averageForcePlayed, 'EventInsights2018', 'averageForcePlayed');
-    BuiltValueNullFieldError.checkNotNull(averageFoulScore, 'EventInsights2018', 'averageFoulScore');
-    BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2018', 'averagePointsAuto');
-    BuiltValueNullFieldError.checkNotNull(averagePointsTeleop, 'EventInsights2018', 'averagePointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageRunPointsAuto, 'EventInsights2018', 'averageRunPointsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averageScaleOwnershipPoints, 'EventInsights2018', 'averageScaleOwnershipPoints');
+        autoQuestAchieved, 'EventInsights2018', 'autoQuestAchieved');
     BuiltValueNullFieldError.checkNotNull(
-        averageScaleOwnershipPointsAuto, 'EventInsights2018', 'averageScaleOwnershipPointsAuto');
+        averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed');
     BuiltValueNullFieldError.checkNotNull(
-        averageScaleOwnershipPointsTeleop, 'EventInsights2018', 'averageScaleOwnershipPointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2018', 'averageScore');
+        averageEndgamePoints, 'EventInsights2018', 'averageEndgamePoints');
     BuiltValueNullFieldError.checkNotNull(
-        averageSwitchOwnershipPoints, 'EventInsights2018', 'averageSwitchOwnershipPoints');
+        averageForcePlayed, 'EventInsights2018', 'averageForcePlayed');
     BuiltValueNullFieldError.checkNotNull(
-        averageSwitchOwnershipPointsAuto, 'EventInsights2018', 'averageSwitchOwnershipPointsAuto');
+        averageFoulScore, 'EventInsights2018', 'averageFoulScore');
     BuiltValueNullFieldError.checkNotNull(
-        averageSwitchOwnershipPointsTeleop, 'EventInsights2018', 'averageSwitchOwnershipPointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageVaultPoints, 'EventInsights2018', 'averageVaultPoints');
-    BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2018', 'averageWinMargin');
-    BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2018', 'averageWinScore');
-    BuiltValueNullFieldError.checkNotNull(boostPlayedCounts, 'EventInsights2018', 'boostPlayedCounts');
-    BuiltValueNullFieldError.checkNotNull(climbCounts, 'EventInsights2018', 'climbCounts');
-    BuiltValueNullFieldError.checkNotNull(faceTheBossAchieved, 'EventInsights2018', 'faceTheBossAchieved');
-    BuiltValueNullFieldError.checkNotNull(forcePlayedCounts, 'EventInsights2018', 'forcePlayedCounts');
-    BuiltValueNullFieldError.checkNotNull(highScore, 'EventInsights2018', 'highScore');
-    BuiltValueNullFieldError.checkNotNull(levitatePlayedCounts, 'EventInsights2018', 'levitatePlayedCounts');
-    BuiltValueNullFieldError.checkNotNull(runCountsAuto, 'EventInsights2018', 'runCountsAuto');
-    BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage');
+        averagePointsAuto, 'EventInsights2018', 'averagePointsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        scaleNeutralPercentageAuto, 'EventInsights2018', 'scaleNeutralPercentageAuto');
+        averagePointsTeleop, 'EventInsights2018', 'averagePointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        scaleNeutralPercentageTeleop, 'EventInsights2018', 'scaleNeutralPercentageTeleop');
-    BuiltValueNullFieldError.checkNotNull(switchOwnedCountsAuto, 'EventInsights2018', 'switchOwnedCountsAuto');
-    BuiltValueNullFieldError.checkNotNull(unicornMatches, 'EventInsights2018', 'unicornMatches');
+        averageRunPointsAuto, 'EventInsights2018', 'averageRunPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPoints,
+        'EventInsights2018', 'averageScaleOwnershipPoints');
+    BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsAuto,
+        'EventInsights2018', 'averageScaleOwnershipPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsTeleop,
+        'EventInsights2018', 'averageScaleOwnershipPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        winningOppSwitchDenialPercentageTeleop, 'EventInsights2018', 'winningOppSwitchDenialPercentageTeleop');
+        averageScore, 'EventInsights2018', 'averageScore');
+    BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPoints,
+        'EventInsights2018', 'averageSwitchOwnershipPoints');
+    BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsAuto,
+        'EventInsights2018', 'averageSwitchOwnershipPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsTeleop,
+        'EventInsights2018', 'averageSwitchOwnershipPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        winningOwnSwitchOwnershipPercentage, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentage');
+        averageVaultPoints, 'EventInsights2018', 'averageVaultPoints');
     BuiltValueNullFieldError.checkNotNull(
-        winningOwnSwitchOwnershipPercentageAuto, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentageAuto');
+        averageWinMargin, 'EventInsights2018', 'averageWinMargin');
     BuiltValueNullFieldError.checkNotNull(
-        winningOwnSwitchOwnershipPercentageTeleop, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentageTeleop');
+        averageWinScore, 'EventInsights2018', 'averageWinScore');
     BuiltValueNullFieldError.checkNotNull(
-        winningScaleOwnershipPercentage, 'EventInsights2018', 'winningScaleOwnershipPercentage');
+        boostPlayedCounts, 'EventInsights2018', 'boostPlayedCounts');
     BuiltValueNullFieldError.checkNotNull(
-        winningScaleOwnershipPercentageAuto, 'EventInsights2018', 'winningScaleOwnershipPercentageAuto');
+        climbCounts, 'EventInsights2018', 'climbCounts');
     BuiltValueNullFieldError.checkNotNull(
-        winningScaleOwnershipPercentageTeleop, 'EventInsights2018', 'winningScaleOwnershipPercentageTeleop');
+        faceTheBossAchieved, 'EventInsights2018', 'faceTheBossAchieved');
+    BuiltValueNullFieldError.checkNotNull(
+        forcePlayedCounts, 'EventInsights2018', 'forcePlayedCounts');
+    BuiltValueNullFieldError.checkNotNull(
+        highScore, 'EventInsights2018', 'highScore');
+    BuiltValueNullFieldError.checkNotNull(
+        levitatePlayedCounts, 'EventInsights2018', 'levitatePlayedCounts');
+    BuiltValueNullFieldError.checkNotNull(
+        runCountsAuto, 'EventInsights2018', 'runCountsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage');
+    BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageAuto,
+        'EventInsights2018', 'scaleNeutralPercentageAuto');
+    BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageTeleop,
+        'EventInsights2018', 'scaleNeutralPercentageTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        switchOwnedCountsAuto, 'EventInsights2018', 'switchOwnedCountsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        unicornMatches, 'EventInsights2018', 'unicornMatches');
+    BuiltValueNullFieldError.checkNotNull(
+        winningOppSwitchDenialPercentageTeleop,
+        'EventInsights2018',
+        'winningOppSwitchDenialPercentageTeleop');
+    BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentage,
+        'EventInsights2018', 'winningOwnSwitchOwnershipPercentage');
+    BuiltValueNullFieldError.checkNotNull(
+        winningOwnSwitchOwnershipPercentageAuto,
+        'EventInsights2018',
+        'winningOwnSwitchOwnershipPercentageAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        winningOwnSwitchOwnershipPercentageTeleop,
+        'EventInsights2018',
+        'winningOwnSwitchOwnershipPercentageTeleop');
+    BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentage,
+        'EventInsights2018', 'winningScaleOwnershipPercentage');
+    BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageAuto,
+        'EventInsights2018', 'winningScaleOwnershipPercentageAuto');
+    BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageTeleop,
+        'EventInsights2018', 'winningScaleOwnershipPercentageTeleop');
   }
 
   @override
-  EventInsights2018 rebuild(void Function(EventInsights2018Builder) updates) => (toBuilder()..update(updates)).build();
+  EventInsights2018 rebuild(void Function(EventInsights2018Builder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  EventInsights2018Builder toBuilder() => new EventInsights2018Builder()..replace(this);
+  EventInsights2018Builder toBuilder() =>
+      new EventInsights2018Builder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -197,12 +228,16 @@ class _$EventInsights2018 extends EventInsights2018 {
         averagePointsTeleop == other.averagePointsTeleop &&
         averageRunPointsAuto == other.averageRunPointsAuto &&
         averageScaleOwnershipPoints == other.averageScaleOwnershipPoints &&
-        averageScaleOwnershipPointsAuto == other.averageScaleOwnershipPointsAuto &&
-        averageScaleOwnershipPointsTeleop == other.averageScaleOwnershipPointsTeleop &&
+        averageScaleOwnershipPointsAuto ==
+            other.averageScaleOwnershipPointsAuto &&
+        averageScaleOwnershipPointsTeleop ==
+            other.averageScaleOwnershipPointsTeleop &&
         averageScore == other.averageScore &&
         averageSwitchOwnershipPoints == other.averageSwitchOwnershipPoints &&
-        averageSwitchOwnershipPointsAuto == other.averageSwitchOwnershipPointsAuto &&
-        averageSwitchOwnershipPointsTeleop == other.averageSwitchOwnershipPointsTeleop &&
+        averageSwitchOwnershipPointsAuto ==
+            other.averageSwitchOwnershipPointsAuto &&
+        averageSwitchOwnershipPointsTeleop ==
+            other.averageSwitchOwnershipPointsTeleop &&
         averageVaultPoints == other.averageVaultPoints &&
         averageWinMargin == other.averageWinMargin &&
         averageWinScore == other.averageWinScore &&
@@ -218,13 +253,20 @@ class _$EventInsights2018 extends EventInsights2018 {
         scaleNeutralPercentageTeleop == other.scaleNeutralPercentageTeleop &&
         switchOwnedCountsAuto == other.switchOwnedCountsAuto &&
         unicornMatches == other.unicornMatches &&
-        winningOppSwitchDenialPercentageTeleop == other.winningOppSwitchDenialPercentageTeleop &&
-        winningOwnSwitchOwnershipPercentage == other.winningOwnSwitchOwnershipPercentage &&
-        winningOwnSwitchOwnershipPercentageAuto == other.winningOwnSwitchOwnershipPercentageAuto &&
-        winningOwnSwitchOwnershipPercentageTeleop == other.winningOwnSwitchOwnershipPercentageTeleop &&
-        winningScaleOwnershipPercentage == other.winningScaleOwnershipPercentage &&
-        winningScaleOwnershipPercentageAuto == other.winningScaleOwnershipPercentageAuto &&
-        winningScaleOwnershipPercentageTeleop == other.winningScaleOwnershipPercentageTeleop;
+        winningOppSwitchDenialPercentageTeleop ==
+            other.winningOppSwitchDenialPercentageTeleop &&
+        winningOwnSwitchOwnershipPercentage ==
+            other.winningOwnSwitchOwnershipPercentage &&
+        winningOwnSwitchOwnershipPercentageAuto ==
+            other.winningOwnSwitchOwnershipPercentageAuto &&
+        winningOwnSwitchOwnershipPercentageTeleop ==
+            other.winningOwnSwitchOwnershipPercentageTeleop &&
+        winningScaleOwnershipPercentage ==
+            other.winningScaleOwnershipPercentage &&
+        winningScaleOwnershipPercentageAuto ==
+            other.winningScaleOwnershipPercentageAuto &&
+        winningScaleOwnershipPercentageTeleop ==
+            other.winningScaleOwnershipPercentageTeleop;
   }
 
   @override
@@ -247,27 +289,7 @@ class _$EventInsights2018 extends EventInsights2018 {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoQuestAchieved.hashCode), averageBoostPlayed.hashCode), averageEndgamePoints.hashCode), averageForcePlayed.hashCode), averageFoulScore.hashCode), averagePointsAuto.hashCode), averagePointsTeleop.hashCode), averageRunPointsAuto.hashCode),
-                                                                                                                        averageScaleOwnershipPoints.hashCode),
-                                                                                                                    averageScaleOwnershipPointsAuto.hashCode),
-                                                                                                                averageScaleOwnershipPointsTeleop.hashCode),
-                                                                                                            averageScore.hashCode),
-                                                                                                        averageSwitchOwnershipPoints.hashCode),
-                                                                                                    averageSwitchOwnershipPointsAuto.hashCode),
-                                                                                                averageSwitchOwnershipPointsTeleop.hashCode),
-                                                                                            averageVaultPoints.hashCode),
-                                                                                        averageWinMargin.hashCode),
-                                                                                    averageWinScore.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoQuestAchieved.hashCode), averageBoostPlayed.hashCode), averageEndgamePoints.hashCode), averageForcePlayed.hashCode), averageFoulScore.hashCode), averagePointsAuto.hashCode), averagePointsTeleop.hashCode), averageRunPointsAuto.hashCode), averageScaleOwnershipPoints.hashCode), averageScaleOwnershipPointsAuto.hashCode), averageScaleOwnershipPointsTeleop.hashCode), averageScore.hashCode), averageSwitchOwnershipPoints.hashCode), averageSwitchOwnershipPointsAuto.hashCode), averageSwitchOwnershipPointsTeleop.hashCode), averageVaultPoints.hashCode), averageWinMargin.hashCode), averageWinScore.hashCode),
                                                                                 boostPlayedCounts.hashCode),
                                                                             climbCounts.hashCode),
                                                                         faceTheBossAchieved.hashCode),
@@ -301,12 +323,16 @@ class _$EventInsights2018 extends EventInsights2018 {
           ..add('averagePointsTeleop', averagePointsTeleop)
           ..add('averageRunPointsAuto', averageRunPointsAuto)
           ..add('averageScaleOwnershipPoints', averageScaleOwnershipPoints)
-          ..add('averageScaleOwnershipPointsAuto', averageScaleOwnershipPointsAuto)
-          ..add('averageScaleOwnershipPointsTeleop', averageScaleOwnershipPointsTeleop)
+          ..add('averageScaleOwnershipPointsAuto',
+              averageScaleOwnershipPointsAuto)
+          ..add('averageScaleOwnershipPointsTeleop',
+              averageScaleOwnershipPointsTeleop)
           ..add('averageScore', averageScore)
           ..add('averageSwitchOwnershipPoints', averageSwitchOwnershipPoints)
-          ..add('averageSwitchOwnershipPointsAuto', averageSwitchOwnershipPointsAuto)
-          ..add('averageSwitchOwnershipPointsTeleop', averageSwitchOwnershipPointsTeleop)
+          ..add('averageSwitchOwnershipPointsAuto',
+              averageSwitchOwnershipPointsAuto)
+          ..add('averageSwitchOwnershipPointsTeleop',
+              averageSwitchOwnershipPointsTeleop)
           ..add('averageVaultPoints', averageVaultPoints)
           ..add('averageWinMargin', averageWinMargin)
           ..add('averageWinScore', averageWinScore)
@@ -322,131 +348,177 @@ class _$EventInsights2018 extends EventInsights2018 {
           ..add('scaleNeutralPercentageTeleop', scaleNeutralPercentageTeleop)
           ..add('switchOwnedCountsAuto', switchOwnedCountsAuto)
           ..add('unicornMatches', unicornMatches)
-          ..add('winningOppSwitchDenialPercentageTeleop', winningOppSwitchDenialPercentageTeleop)
-          ..add('winningOwnSwitchOwnershipPercentage', winningOwnSwitchOwnershipPercentage)
-          ..add('winningOwnSwitchOwnershipPercentageAuto', winningOwnSwitchOwnershipPercentageAuto)
-          ..add('winningOwnSwitchOwnershipPercentageTeleop', winningOwnSwitchOwnershipPercentageTeleop)
-          ..add('winningScaleOwnershipPercentage', winningScaleOwnershipPercentage)
-          ..add('winningScaleOwnershipPercentageAuto', winningScaleOwnershipPercentageAuto)
-          ..add('winningScaleOwnershipPercentageTeleop', winningScaleOwnershipPercentageTeleop))
+          ..add('winningOppSwitchDenialPercentageTeleop',
+              winningOppSwitchDenialPercentageTeleop)
+          ..add('winningOwnSwitchOwnershipPercentage',
+              winningOwnSwitchOwnershipPercentage)
+          ..add('winningOwnSwitchOwnershipPercentageAuto',
+              winningOwnSwitchOwnershipPercentageAuto)
+          ..add('winningOwnSwitchOwnershipPercentageTeleop',
+              winningOwnSwitchOwnershipPercentageTeleop)
+          ..add('winningScaleOwnershipPercentage',
+              winningScaleOwnershipPercentage)
+          ..add('winningScaleOwnershipPercentageAuto',
+              winningScaleOwnershipPercentageAuto)
+          ..add('winningScaleOwnershipPercentageTeleop',
+              winningScaleOwnershipPercentageTeleop))
         .toString();
   }
 }
 
-class EventInsights2018Builder implements Builder<EventInsights2018, EventInsights2018Builder> {
+class EventInsights2018Builder
+    implements Builder<EventInsights2018, EventInsights2018Builder> {
   _$EventInsights2018? _$v;
 
   ListBuilder<double>? _autoQuestAchieved;
-  ListBuilder<double> get autoQuestAchieved => _$this._autoQuestAchieved ??= new ListBuilder<double>();
-  set autoQuestAchieved(ListBuilder<double>? autoQuestAchieved) => _$this._autoQuestAchieved = autoQuestAchieved;
+  ListBuilder<double> get autoQuestAchieved =>
+      _$this._autoQuestAchieved ??= new ListBuilder<double>();
+  set autoQuestAchieved(ListBuilder<double>? autoQuestAchieved) =>
+      _$this._autoQuestAchieved = autoQuestAchieved;
 
   double? _averageBoostPlayed;
   double? get averageBoostPlayed => _$this._averageBoostPlayed;
-  set averageBoostPlayed(double? averageBoostPlayed) => _$this._averageBoostPlayed = averageBoostPlayed;
+  set averageBoostPlayed(double? averageBoostPlayed) =>
+      _$this._averageBoostPlayed = averageBoostPlayed;
 
   double? _averageEndgamePoints;
   double? get averageEndgamePoints => _$this._averageEndgamePoints;
-  set averageEndgamePoints(double? averageEndgamePoints) => _$this._averageEndgamePoints = averageEndgamePoints;
+  set averageEndgamePoints(double? averageEndgamePoints) =>
+      _$this._averageEndgamePoints = averageEndgamePoints;
 
   double? _averageForcePlayed;
   double? get averageForcePlayed => _$this._averageForcePlayed;
-  set averageForcePlayed(double? averageForcePlayed) => _$this._averageForcePlayed = averageForcePlayed;
+  set averageForcePlayed(double? averageForcePlayed) =>
+      _$this._averageForcePlayed = averageForcePlayed;
 
   double? _averageFoulScore;
   double? get averageFoulScore => _$this._averageFoulScore;
-  set averageFoulScore(double? averageFoulScore) => _$this._averageFoulScore = averageFoulScore;
+  set averageFoulScore(double? averageFoulScore) =>
+      _$this._averageFoulScore = averageFoulScore;
 
   double? _averagePointsAuto;
   double? get averagePointsAuto => _$this._averagePointsAuto;
-  set averagePointsAuto(double? averagePointsAuto) => _$this._averagePointsAuto = averagePointsAuto;
+  set averagePointsAuto(double? averagePointsAuto) =>
+      _$this._averagePointsAuto = averagePointsAuto;
 
   double? _averagePointsTeleop;
   double? get averagePointsTeleop => _$this._averagePointsTeleop;
-  set averagePointsTeleop(double? averagePointsTeleop) => _$this._averagePointsTeleop = averagePointsTeleop;
+  set averagePointsTeleop(double? averagePointsTeleop) =>
+      _$this._averagePointsTeleop = averagePointsTeleop;
 
   double? _averageRunPointsAuto;
   double? get averageRunPointsAuto => _$this._averageRunPointsAuto;
-  set averageRunPointsAuto(double? averageRunPointsAuto) => _$this._averageRunPointsAuto = averageRunPointsAuto;
+  set averageRunPointsAuto(double? averageRunPointsAuto) =>
+      _$this._averageRunPointsAuto = averageRunPointsAuto;
 
   double? _averageScaleOwnershipPoints;
-  double? get averageScaleOwnershipPoints => _$this._averageScaleOwnershipPoints;
+  double? get averageScaleOwnershipPoints =>
+      _$this._averageScaleOwnershipPoints;
   set averageScaleOwnershipPoints(double? averageScaleOwnershipPoints) =>
       _$this._averageScaleOwnershipPoints = averageScaleOwnershipPoints;
 
   double? _averageScaleOwnershipPointsAuto;
-  double? get averageScaleOwnershipPointsAuto => _$this._averageScaleOwnershipPointsAuto;
-  set averageScaleOwnershipPointsAuto(double? averageScaleOwnershipPointsAuto) =>
+  double? get averageScaleOwnershipPointsAuto =>
+      _$this._averageScaleOwnershipPointsAuto;
+  set averageScaleOwnershipPointsAuto(
+          double? averageScaleOwnershipPointsAuto) =>
       _$this._averageScaleOwnershipPointsAuto = averageScaleOwnershipPointsAuto;
 
   double? _averageScaleOwnershipPointsTeleop;
-  double? get averageScaleOwnershipPointsTeleop => _$this._averageScaleOwnershipPointsTeleop;
-  set averageScaleOwnershipPointsTeleop(double? averageScaleOwnershipPointsTeleop) =>
-      _$this._averageScaleOwnershipPointsTeleop = averageScaleOwnershipPointsTeleop;
+  double? get averageScaleOwnershipPointsTeleop =>
+      _$this._averageScaleOwnershipPointsTeleop;
+  set averageScaleOwnershipPointsTeleop(
+          double? averageScaleOwnershipPointsTeleop) =>
+      _$this._averageScaleOwnershipPointsTeleop =
+          averageScaleOwnershipPointsTeleop;
 
   double? _averageScore;
   double? get averageScore => _$this._averageScore;
   set averageScore(double? averageScore) => _$this._averageScore = averageScore;
 
   double? _averageSwitchOwnershipPoints;
-  double? get averageSwitchOwnershipPoints => _$this._averageSwitchOwnershipPoints;
+  double? get averageSwitchOwnershipPoints =>
+      _$this._averageSwitchOwnershipPoints;
   set averageSwitchOwnershipPoints(double? averageSwitchOwnershipPoints) =>
       _$this._averageSwitchOwnershipPoints = averageSwitchOwnershipPoints;
 
   double? _averageSwitchOwnershipPointsAuto;
-  double? get averageSwitchOwnershipPointsAuto => _$this._averageSwitchOwnershipPointsAuto;
-  set averageSwitchOwnershipPointsAuto(double? averageSwitchOwnershipPointsAuto) =>
-      _$this._averageSwitchOwnershipPointsAuto = averageSwitchOwnershipPointsAuto;
+  double? get averageSwitchOwnershipPointsAuto =>
+      _$this._averageSwitchOwnershipPointsAuto;
+  set averageSwitchOwnershipPointsAuto(
+          double? averageSwitchOwnershipPointsAuto) =>
+      _$this._averageSwitchOwnershipPointsAuto =
+          averageSwitchOwnershipPointsAuto;
 
   double? _averageSwitchOwnershipPointsTeleop;
-  double? get averageSwitchOwnershipPointsTeleop => _$this._averageSwitchOwnershipPointsTeleop;
-  set averageSwitchOwnershipPointsTeleop(double? averageSwitchOwnershipPointsTeleop) =>
-      _$this._averageSwitchOwnershipPointsTeleop = averageSwitchOwnershipPointsTeleop;
+  double? get averageSwitchOwnershipPointsTeleop =>
+      _$this._averageSwitchOwnershipPointsTeleop;
+  set averageSwitchOwnershipPointsTeleop(
+          double? averageSwitchOwnershipPointsTeleop) =>
+      _$this._averageSwitchOwnershipPointsTeleop =
+          averageSwitchOwnershipPointsTeleop;
 
   double? _averageVaultPoints;
   double? get averageVaultPoints => _$this._averageVaultPoints;
-  set averageVaultPoints(double? averageVaultPoints) => _$this._averageVaultPoints = averageVaultPoints;
+  set averageVaultPoints(double? averageVaultPoints) =>
+      _$this._averageVaultPoints = averageVaultPoints;
 
   double? _averageWinMargin;
   double? get averageWinMargin => _$this._averageWinMargin;
-  set averageWinMargin(double? averageWinMargin) => _$this._averageWinMargin = averageWinMargin;
+  set averageWinMargin(double? averageWinMargin) =>
+      _$this._averageWinMargin = averageWinMargin;
 
   double? _averageWinScore;
   double? get averageWinScore => _$this._averageWinScore;
-  set averageWinScore(double? averageWinScore) => _$this._averageWinScore = averageWinScore;
+  set averageWinScore(double? averageWinScore) =>
+      _$this._averageWinScore = averageWinScore;
 
   ListBuilder<double>? _boostPlayedCounts;
-  ListBuilder<double> get boostPlayedCounts => _$this._boostPlayedCounts ??= new ListBuilder<double>();
-  set boostPlayedCounts(ListBuilder<double>? boostPlayedCounts) => _$this._boostPlayedCounts = boostPlayedCounts;
+  ListBuilder<double> get boostPlayedCounts =>
+      _$this._boostPlayedCounts ??= new ListBuilder<double>();
+  set boostPlayedCounts(ListBuilder<double>? boostPlayedCounts) =>
+      _$this._boostPlayedCounts = boostPlayedCounts;
 
   ListBuilder<double>? _climbCounts;
-  ListBuilder<double> get climbCounts => _$this._climbCounts ??= new ListBuilder<double>();
-  set climbCounts(ListBuilder<double>? climbCounts) => _$this._climbCounts = climbCounts;
+  ListBuilder<double> get climbCounts =>
+      _$this._climbCounts ??= new ListBuilder<double>();
+  set climbCounts(ListBuilder<double>? climbCounts) =>
+      _$this._climbCounts = climbCounts;
 
   ListBuilder<double>? _faceTheBossAchieved;
-  ListBuilder<double> get faceTheBossAchieved => _$this._faceTheBossAchieved ??= new ListBuilder<double>();
+  ListBuilder<double> get faceTheBossAchieved =>
+      _$this._faceTheBossAchieved ??= new ListBuilder<double>();
   set faceTheBossAchieved(ListBuilder<double>? faceTheBossAchieved) =>
       _$this._faceTheBossAchieved = faceTheBossAchieved;
 
   ListBuilder<double>? _forcePlayedCounts;
-  ListBuilder<double> get forcePlayedCounts => _$this._forcePlayedCounts ??= new ListBuilder<double>();
-  set forcePlayedCounts(ListBuilder<double>? forcePlayedCounts) => _$this._forcePlayedCounts = forcePlayedCounts;
+  ListBuilder<double> get forcePlayedCounts =>
+      _$this._forcePlayedCounts ??= new ListBuilder<double>();
+  set forcePlayedCounts(ListBuilder<double>? forcePlayedCounts) =>
+      _$this._forcePlayedCounts = forcePlayedCounts;
 
   ListBuilder<String>? _highScore;
-  ListBuilder<String> get highScore => _$this._highScore ??= new ListBuilder<String>();
-  set highScore(ListBuilder<String>? highScore) => _$this._highScore = highScore;
+  ListBuilder<String> get highScore =>
+      _$this._highScore ??= new ListBuilder<String>();
+  set highScore(ListBuilder<String>? highScore) =>
+      _$this._highScore = highScore;
 
   ListBuilder<double>? _levitatePlayedCounts;
-  ListBuilder<double> get levitatePlayedCounts => _$this._levitatePlayedCounts ??= new ListBuilder<double>();
+  ListBuilder<double> get levitatePlayedCounts =>
+      _$this._levitatePlayedCounts ??= new ListBuilder<double>();
   set levitatePlayedCounts(ListBuilder<double>? levitatePlayedCounts) =>
       _$this._levitatePlayedCounts = levitatePlayedCounts;
 
   ListBuilder<double>? _runCountsAuto;
-  ListBuilder<double> get runCountsAuto => _$this._runCountsAuto ??= new ListBuilder<double>();
-  set runCountsAuto(ListBuilder<double>? runCountsAuto) => _$this._runCountsAuto = runCountsAuto;
+  ListBuilder<double> get runCountsAuto =>
+      _$this._runCountsAuto ??= new ListBuilder<double>();
+  set runCountsAuto(ListBuilder<double>? runCountsAuto) =>
+      _$this._runCountsAuto = runCountsAuto;
 
   double? _scaleNeutralPercentage;
   double? get scaleNeutralPercentage => _$this._scaleNeutralPercentage;
-  set scaleNeutralPercentage(double? scaleNeutralPercentage) => _$this._scaleNeutralPercentage = scaleNeutralPercentage;
+  set scaleNeutralPercentage(double? scaleNeutralPercentage) =>
+      _$this._scaleNeutralPercentage = scaleNeutralPercentage;
 
   double? _scaleNeutralPercentageAuto;
   double? get scaleNeutralPercentageAuto => _$this._scaleNeutralPercentageAuto;
@@ -454,53 +526,77 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
       _$this._scaleNeutralPercentageAuto = scaleNeutralPercentageAuto;
 
   double? _scaleNeutralPercentageTeleop;
-  double? get scaleNeutralPercentageTeleop => _$this._scaleNeutralPercentageTeleop;
+  double? get scaleNeutralPercentageTeleop =>
+      _$this._scaleNeutralPercentageTeleop;
   set scaleNeutralPercentageTeleop(double? scaleNeutralPercentageTeleop) =>
       _$this._scaleNeutralPercentageTeleop = scaleNeutralPercentageTeleop;
 
   ListBuilder<double>? _switchOwnedCountsAuto;
-  ListBuilder<double> get switchOwnedCountsAuto => _$this._switchOwnedCountsAuto ??= new ListBuilder<double>();
+  ListBuilder<double> get switchOwnedCountsAuto =>
+      _$this._switchOwnedCountsAuto ??= new ListBuilder<double>();
   set switchOwnedCountsAuto(ListBuilder<double>? switchOwnedCountsAuto) =>
       _$this._switchOwnedCountsAuto = switchOwnedCountsAuto;
 
   ListBuilder<double>? _unicornMatches;
-  ListBuilder<double> get unicornMatches => _$this._unicornMatches ??= new ListBuilder<double>();
-  set unicornMatches(ListBuilder<double>? unicornMatches) => _$this._unicornMatches = unicornMatches;
+  ListBuilder<double> get unicornMatches =>
+      _$this._unicornMatches ??= new ListBuilder<double>();
+  set unicornMatches(ListBuilder<double>? unicornMatches) =>
+      _$this._unicornMatches = unicornMatches;
 
   double? _winningOppSwitchDenialPercentageTeleop;
-  double? get winningOppSwitchDenialPercentageTeleop => _$this._winningOppSwitchDenialPercentageTeleop;
-  set winningOppSwitchDenialPercentageTeleop(double? winningOppSwitchDenialPercentageTeleop) =>
-      _$this._winningOppSwitchDenialPercentageTeleop = winningOppSwitchDenialPercentageTeleop;
+  double? get winningOppSwitchDenialPercentageTeleop =>
+      _$this._winningOppSwitchDenialPercentageTeleop;
+  set winningOppSwitchDenialPercentageTeleop(
+          double? winningOppSwitchDenialPercentageTeleop) =>
+      _$this._winningOppSwitchDenialPercentageTeleop =
+          winningOppSwitchDenialPercentageTeleop;
 
   double? _winningOwnSwitchOwnershipPercentage;
-  double? get winningOwnSwitchOwnershipPercentage => _$this._winningOwnSwitchOwnershipPercentage;
-  set winningOwnSwitchOwnershipPercentage(double? winningOwnSwitchOwnershipPercentage) =>
-      _$this._winningOwnSwitchOwnershipPercentage = winningOwnSwitchOwnershipPercentage;
+  double? get winningOwnSwitchOwnershipPercentage =>
+      _$this._winningOwnSwitchOwnershipPercentage;
+  set winningOwnSwitchOwnershipPercentage(
+          double? winningOwnSwitchOwnershipPercentage) =>
+      _$this._winningOwnSwitchOwnershipPercentage =
+          winningOwnSwitchOwnershipPercentage;
 
   double? _winningOwnSwitchOwnershipPercentageAuto;
-  double? get winningOwnSwitchOwnershipPercentageAuto => _$this._winningOwnSwitchOwnershipPercentageAuto;
-  set winningOwnSwitchOwnershipPercentageAuto(double? winningOwnSwitchOwnershipPercentageAuto) =>
-      _$this._winningOwnSwitchOwnershipPercentageAuto = winningOwnSwitchOwnershipPercentageAuto;
+  double? get winningOwnSwitchOwnershipPercentageAuto =>
+      _$this._winningOwnSwitchOwnershipPercentageAuto;
+  set winningOwnSwitchOwnershipPercentageAuto(
+          double? winningOwnSwitchOwnershipPercentageAuto) =>
+      _$this._winningOwnSwitchOwnershipPercentageAuto =
+          winningOwnSwitchOwnershipPercentageAuto;
 
   double? _winningOwnSwitchOwnershipPercentageTeleop;
-  double? get winningOwnSwitchOwnershipPercentageTeleop => _$this._winningOwnSwitchOwnershipPercentageTeleop;
-  set winningOwnSwitchOwnershipPercentageTeleop(double? winningOwnSwitchOwnershipPercentageTeleop) =>
-      _$this._winningOwnSwitchOwnershipPercentageTeleop = winningOwnSwitchOwnershipPercentageTeleop;
+  double? get winningOwnSwitchOwnershipPercentageTeleop =>
+      _$this._winningOwnSwitchOwnershipPercentageTeleop;
+  set winningOwnSwitchOwnershipPercentageTeleop(
+          double? winningOwnSwitchOwnershipPercentageTeleop) =>
+      _$this._winningOwnSwitchOwnershipPercentageTeleop =
+          winningOwnSwitchOwnershipPercentageTeleop;
 
   double? _winningScaleOwnershipPercentage;
-  double? get winningScaleOwnershipPercentage => _$this._winningScaleOwnershipPercentage;
-  set winningScaleOwnershipPercentage(double? winningScaleOwnershipPercentage) =>
+  double? get winningScaleOwnershipPercentage =>
+      _$this._winningScaleOwnershipPercentage;
+  set winningScaleOwnershipPercentage(
+          double? winningScaleOwnershipPercentage) =>
       _$this._winningScaleOwnershipPercentage = winningScaleOwnershipPercentage;
 
   double? _winningScaleOwnershipPercentageAuto;
-  double? get winningScaleOwnershipPercentageAuto => _$this._winningScaleOwnershipPercentageAuto;
-  set winningScaleOwnershipPercentageAuto(double? winningScaleOwnershipPercentageAuto) =>
-      _$this._winningScaleOwnershipPercentageAuto = winningScaleOwnershipPercentageAuto;
+  double? get winningScaleOwnershipPercentageAuto =>
+      _$this._winningScaleOwnershipPercentageAuto;
+  set winningScaleOwnershipPercentageAuto(
+          double? winningScaleOwnershipPercentageAuto) =>
+      _$this._winningScaleOwnershipPercentageAuto =
+          winningScaleOwnershipPercentageAuto;
 
   double? _winningScaleOwnershipPercentageTeleop;
-  double? get winningScaleOwnershipPercentageTeleop => _$this._winningScaleOwnershipPercentageTeleop;
-  set winningScaleOwnershipPercentageTeleop(double? winningScaleOwnershipPercentageTeleop) =>
-      _$this._winningScaleOwnershipPercentageTeleop = winningScaleOwnershipPercentageTeleop;
+  double? get winningScaleOwnershipPercentageTeleop =>
+      _$this._winningScaleOwnershipPercentageTeleop;
+  set winningScaleOwnershipPercentageTeleop(
+          double? winningScaleOwnershipPercentageTeleop) =>
+      _$this._winningScaleOwnershipPercentageTeleop =
+          winningScaleOwnershipPercentageTeleop;
 
   EventInsights2018Builder() {
     EventInsights2018._initializeBuilder(this);
@@ -523,7 +619,8 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
       _averageScore = $v.averageScore;
       _averageSwitchOwnershipPoints = $v.averageSwitchOwnershipPoints;
       _averageSwitchOwnershipPointsAuto = $v.averageSwitchOwnershipPointsAuto;
-      _averageSwitchOwnershipPointsTeleop = $v.averageSwitchOwnershipPointsTeleop;
+      _averageSwitchOwnershipPointsTeleop =
+          $v.averageSwitchOwnershipPointsTeleop;
       _averageVaultPoints = $v.averageVaultPoints;
       _averageWinMargin = $v.averageWinMargin;
       _averageWinScore = $v.averageWinScore;
@@ -539,13 +636,19 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
       _scaleNeutralPercentageTeleop = $v.scaleNeutralPercentageTeleop;
       _switchOwnedCountsAuto = $v.switchOwnedCountsAuto.toBuilder();
       _unicornMatches = $v.unicornMatches.toBuilder();
-      _winningOppSwitchDenialPercentageTeleop = $v.winningOppSwitchDenialPercentageTeleop;
-      _winningOwnSwitchOwnershipPercentage = $v.winningOwnSwitchOwnershipPercentage;
-      _winningOwnSwitchOwnershipPercentageAuto = $v.winningOwnSwitchOwnershipPercentageAuto;
-      _winningOwnSwitchOwnershipPercentageTeleop = $v.winningOwnSwitchOwnershipPercentageTeleop;
+      _winningOppSwitchDenialPercentageTeleop =
+          $v.winningOppSwitchDenialPercentageTeleop;
+      _winningOwnSwitchOwnershipPercentage =
+          $v.winningOwnSwitchOwnershipPercentage;
+      _winningOwnSwitchOwnershipPercentageAuto =
+          $v.winningOwnSwitchOwnershipPercentageAuto;
+      _winningOwnSwitchOwnershipPercentageTeleop =
+          $v.winningOwnSwitchOwnershipPercentageTeleop;
       _winningScaleOwnershipPercentage = $v.winningScaleOwnershipPercentage;
-      _winningScaleOwnershipPercentageAuto = $v.winningScaleOwnershipPercentageAuto;
-      _winningScaleOwnershipPercentageTeleop = $v.winningScaleOwnershipPercentageTeleop;
+      _winningScaleOwnershipPercentageAuto =
+          $v.winningScaleOwnershipPercentageAuto;
+      _winningScaleOwnershipPercentageTeleop =
+          $v.winningScaleOwnershipPercentageTeleop;
       _$v = null;
     }
     return this;
@@ -569,39 +672,30 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
       _$result = _$v ??
           new _$EventInsights2018._(
               autoQuestAchieved: autoQuestAchieved.build(),
-              averageBoostPlayed:
-                  BuiltValueNullFieldError.checkNotNull(averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed'),
+              averageBoostPlayed: BuiltValueNullFieldError.checkNotNull(
+                  averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed'),
               averageEndgamePoints: BuiltValueNullFieldError.checkNotNull(
                   averageEndgamePoints, 'EventInsights2018', 'averageEndgamePoints'),
-              averageForcePlayed:
-                  BuiltValueNullFieldError.checkNotNull(averageForcePlayed, 'EventInsights2018', 'averageForcePlayed'),
-              averageFoulScore:
-                  BuiltValueNullFieldError.checkNotNull(averageFoulScore, 'EventInsights2018', 'averageFoulScore'),
-              averagePointsAuto:
-                  BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2018', 'averagePointsAuto'),
+              averageForcePlayed: BuiltValueNullFieldError.checkNotNull(
+                  averageForcePlayed, 'EventInsights2018', 'averageForcePlayed'),
+              averageFoulScore: BuiltValueNullFieldError.checkNotNull(
+                  averageFoulScore, 'EventInsights2018', 'averageFoulScore'),
+              averagePointsAuto: BuiltValueNullFieldError.checkNotNull(
+                  averagePointsAuto, 'EventInsights2018', 'averagePointsAuto'),
               averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(
                   averagePointsTeleop, 'EventInsights2018', 'averagePointsTeleop'),
               averageRunPointsAuto: BuiltValueNullFieldError.checkNotNull(
                   averageRunPointsAuto, 'EventInsights2018', 'averageRunPointsAuto'),
-              averageScaleOwnershipPoints: BuiltValueNullFieldError.checkNotNull(
-                  averageScaleOwnershipPoints, 'EventInsights2018', 'averageScaleOwnershipPoints'),
-              averageScaleOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageScaleOwnershipPointsAuto, 'EventInsights2018', 'averageScaleOwnershipPointsAuto'),
-              averageScaleOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageScaleOwnershipPointsTeleop, 'EventInsights2018', 'averageScaleOwnershipPointsTeleop'),
+              averageScaleOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPoints, 'EventInsights2018', 'averageScaleOwnershipPoints'),
+              averageScaleOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsAuto, 'EventInsights2018', 'averageScaleOwnershipPointsAuto'),
+              averageScaleOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsTeleop, 'EventInsights2018', 'averageScaleOwnershipPointsTeleop'),
               averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2018', 'averageScore'),
-              averageSwitchOwnershipPoints: BuiltValueNullFieldError.checkNotNull(
-                  averageSwitchOwnershipPoints, 'EventInsights2018', 'averageSwitchOwnershipPoints'),
-              averageSwitchOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageSwitchOwnershipPointsAuto, 'EventInsights2018', 'averageSwitchOwnershipPointsAuto'),
-              averageSwitchOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageSwitchOwnershipPointsTeleop, 'EventInsights2018', 'averageSwitchOwnershipPointsTeleop'),
-              averageVaultPoints:
-                  BuiltValueNullFieldError.checkNotNull(averageVaultPoints, 'EventInsights2018', 'averageVaultPoints'),
-              averageWinMargin:
-                  BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2018', 'averageWinMargin'),
-              averageWinScore:
-                  BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2018', 'averageWinScore'),
+              averageSwitchOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPoints, 'EventInsights2018', 'averageSwitchOwnershipPoints'),
+              averageSwitchOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsAuto, 'EventInsights2018', 'averageSwitchOwnershipPointsAuto'),
+              averageSwitchOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsTeleop, 'EventInsights2018', 'averageSwitchOwnershipPointsTeleop'),
+              averageVaultPoints: BuiltValueNullFieldError.checkNotNull(averageVaultPoints, 'EventInsights2018', 'averageVaultPoints'),
+              averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2018', 'averageWinMargin'),
+              averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2018', 'averageWinScore'),
               boostPlayedCounts: boostPlayedCounts.build(),
               climbCounts: climbCounts.build(),
               faceTheBossAchieved: faceTheBossAchieved.build(),
@@ -609,8 +703,7 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
               highScore: highScore.build(),
               levitatePlayedCounts: levitatePlayedCounts.build(),
               runCountsAuto: runCountsAuto.build(),
-              scaleNeutralPercentage:
-                  BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage'),
+              scaleNeutralPercentage: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage'),
               scaleNeutralPercentageAuto: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageAuto, 'EventInsights2018', 'scaleNeutralPercentageAuto'),
               scaleNeutralPercentageTeleop: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageTeleop, 'EventInsights2018', 'scaleNeutralPercentageTeleop'),
               switchOwnedCountsAuto: switchOwnedCountsAuto.build(),
@@ -648,7 +741,8 @@ class EventInsights2018Builder implements Builder<EventInsights2018, EventInsigh
         _$failedField = 'unicornMatches';
         unicornMatches.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventInsights2018', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventInsights2018', _$failedField, e.toString());
       }
       rethrow;
     }

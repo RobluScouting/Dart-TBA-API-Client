@@ -53,21 +53,40 @@ class _$MediaSerializer implements StructuredSerializer<Media> {
   final String wireName = r'Media';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Media object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Media object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'type')..add(serializers.serialize(object.type, specifiedType: const FullType(MediaTypeEnum)));
-    result..add(r'foreign_key')..add(serializers.serialize(object.foreignKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'type')
+      ..add(serializers.serialize(object.type,
+          specifiedType: const FullType(MediaTypeEnum)));
+    result
+      ..add(r'foreign_key')
+      ..add(serializers.serialize(object.foreignKey,
+          specifiedType: const FullType(String)));
     if (object.details != null) {
-      result..add(r'details')..add(serializers.serialize(object.details, specifiedType: const FullType(JsonObject)));
+      result
+        ..add(r'details')
+        ..add(serializers.serialize(object.details,
+            specifiedType: const FullType(JsonObject)));
     }
     if (object.preferred != null) {
-      result..add(r'preferred')..add(serializers.serialize(object.preferred, specifiedType: const FullType(bool)));
+      result
+        ..add(r'preferred')
+        ..add(serializers.serialize(object.preferred,
+            specifiedType: const FullType(bool)));
     }
     if (object.directUrl != null) {
-      result..add(r'direct_url')..add(serializers.serialize(object.directUrl, specifiedType: const FullType(String)));
+      result
+        ..add(r'direct_url')
+        ..add(serializers.serialize(object.directUrl,
+            specifiedType: const FullType(String)));
     }
     if (object.viewUrl != null) {
-      result..add(r'view_url')..add(serializers.serialize(object.viewUrl, specifiedType: const FullType(String)));
+      result
+        ..add(r'view_url')
+        ..add(serializers.serialize(object.viewUrl,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
@@ -84,22 +103,28 @@ class _$MediaSerializer implements StructuredSerializer<Media> {
       final Object? value = iterator.current;
       switch (key) {
         case r'type':
-          result.type = serializers.deserialize(value, specifiedType: const FullType(MediaTypeEnum)) as MediaTypeEnum;
+          result.type = serializers.deserialize(value,
+              specifiedType: const FullType(MediaTypeEnum)) as MediaTypeEnum;
           break;
         case r'foreign_key':
-          result.foreignKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.foreignKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'details':
-          result.details = serializers.deserialize(value, specifiedType: const FullType(JsonObject)) as JsonObject;
+          result.details = serializers.deserialize(value,
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
         case r'preferred':
-          result.preferred = serializers.deserialize(value, specifiedType: const FullType(bool)) as bool;
+          result.preferred = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool;
           break;
         case r'direct_url':
-          result.directUrl = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.directUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'view_url':
-          result.viewUrl = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.viewUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }
@@ -138,11 +163,13 @@ class MediaTypeEnum extends EnumClass {
 
   /// String type of the media element.
   @BuiltValueEnumConst(wireName: r'instagram-profile')
-  static const MediaTypeEnum instagramProfile = _$mediaTypeEnum_instagramProfile;
+  static const MediaTypeEnum instagramProfile =
+      _$mediaTypeEnum_instagramProfile;
 
   /// String type of the media element.
   @BuiltValueEnumConst(wireName: r'periscope-profile')
-  static const MediaTypeEnum periscopeProfile = _$mediaTypeEnum_periscopeProfile;
+  static const MediaTypeEnum periscopeProfile =
+      _$mediaTypeEnum_periscopeProfile;
 
   /// String type of the media element.
   @BuiltValueEnumConst(wireName: r'grabcad')

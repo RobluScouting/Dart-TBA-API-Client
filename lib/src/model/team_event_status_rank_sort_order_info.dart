@@ -8,7 +8,9 @@ import 'package:built_value/serializer.dart';
 part 'team_event_status_rank_sort_order_info.g.dart';
 
 abstract class TeamEventStatusRankSortOrderInfo
-    implements Built<TeamEventStatusRankSortOrderInfo, TeamEventStatusRankSortOrderInfoBuilder> {
+    implements
+        Built<TeamEventStatusRankSortOrderInfo,
+            TeamEventStatusRankSortOrderInfoBuilder> {
   /// The number of digits of precision used for this value, eg `2` would correspond to a value of `101.11` while `0` would correspond to `101`.
   @BuiltValueField(wireName: r'precision')
   int? get precision;
@@ -19,37 +21,52 @@ abstract class TeamEventStatusRankSortOrderInfo
 
   TeamEventStatusRankSortOrderInfo._();
 
-  static void _initializeBuilder(TeamEventStatusRankSortOrderInfoBuilder b) => b;
+  static void _initializeBuilder(TeamEventStatusRankSortOrderInfoBuilder b) =>
+      b;
 
-  factory TeamEventStatusRankSortOrderInfo([void updates(TeamEventStatusRankSortOrderInfoBuilder b)]) =
+  factory TeamEventStatusRankSortOrderInfo(
+          [void updates(TeamEventStatusRankSortOrderInfoBuilder b)]) =
       _$TeamEventStatusRankSortOrderInfo;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<TeamEventStatusRankSortOrderInfo> get serializer => _$TeamEventStatusRankSortOrderInfoSerializer();
+  static Serializer<TeamEventStatusRankSortOrderInfo> get serializer =>
+      _$TeamEventStatusRankSortOrderInfoSerializer();
 }
 
-class _$TeamEventStatusRankSortOrderInfoSerializer implements StructuredSerializer<TeamEventStatusRankSortOrderInfo> {
+class _$TeamEventStatusRankSortOrderInfoSerializer
+    implements StructuredSerializer<TeamEventStatusRankSortOrderInfo> {
   @override
-  final Iterable<Type> types = const [TeamEventStatusRankSortOrderInfo, _$TeamEventStatusRankSortOrderInfo];
+  final Iterable<Type> types = const [
+    TeamEventStatusRankSortOrderInfo,
+    _$TeamEventStatusRankSortOrderInfo
+  ];
 
   @override
   final String wireName = r'TeamEventStatusRankSortOrderInfo';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, TeamEventStatusRankSortOrderInfo object,
+  Iterable<Object?> serialize(
+      Serializers serializers, TeamEventStatusRankSortOrderInfo object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.precision != null) {
-      result..add(r'precision')..add(serializers.serialize(object.precision, specifiedType: const FullType(int)));
+      result
+        ..add(r'precision')
+        ..add(serializers.serialize(object.precision,
+            specifiedType: const FullType(int)));
     }
     if (object.name != null) {
-      result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
+      result
+        ..add(r'name')
+        ..add(serializers.serialize(object.name,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
 
   @override
-  TeamEventStatusRankSortOrderInfo deserialize(Serializers serializers, Iterable<Object?> serialized,
+  TeamEventStatusRankSortOrderInfo deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = TeamEventStatusRankSortOrderInfoBuilder();
 
@@ -60,10 +77,12 @@ class _$TeamEventStatusRankSortOrderInfoSerializer implements StructuredSerializ
       final Object? value = iterator.current;
       switch (key) {
         case r'precision':
-          result.precision = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.precision = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

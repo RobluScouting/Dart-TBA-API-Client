@@ -24,7 +24,8 @@ class _$EventRankingRankings extends EventRankingRankings {
   @override
   final String teamKey;
 
-  factory _$EventRankingRankings([void Function(EventRankingRankingsBuilder)? updates]) =>
+  factory _$EventRankingRankings(
+          [void Function(EventRankingRankingsBuilder)? updates]) =>
       (new EventRankingRankingsBuilder()..update(updates)).build();
 
   _$EventRankingRankings._(
@@ -37,19 +38,24 @@ class _$EventRankingRankings extends EventRankingRankings {
       required this.dq,
       required this.teamKey})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(matchesPlayed, 'EventRankingRankings', 'matchesPlayed');
-    BuiltValueNullFieldError.checkNotNull(record, 'EventRankingRankings', 'record');
+    BuiltValueNullFieldError.checkNotNull(
+        matchesPlayed, 'EventRankingRankings', 'matchesPlayed');
+    BuiltValueNullFieldError.checkNotNull(
+        record, 'EventRankingRankings', 'record');
     BuiltValueNullFieldError.checkNotNull(rank, 'EventRankingRankings', 'rank');
     BuiltValueNullFieldError.checkNotNull(dq, 'EventRankingRankings', 'dq');
-    BuiltValueNullFieldError.checkNotNull(teamKey, 'EventRankingRankings', 'teamKey');
+    BuiltValueNullFieldError.checkNotNull(
+        teamKey, 'EventRankingRankings', 'teamKey');
   }
 
   @override
-  EventRankingRankings rebuild(void Function(EventRankingRankingsBuilder) updates) =>
+  EventRankingRankings rebuild(
+          void Function(EventRankingRankingsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventRankingRankingsBuilder toBuilder() => new EventRankingRankingsBuilder()..replace(this);
+  EventRankingRankingsBuilder toBuilder() =>
+      new EventRankingRankingsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -71,7 +77,11 @@ class _$EventRankingRankings extends EventRankingRankings {
         $jc(
             $jc(
                 $jc(
-                    $jc($jc($jc($jc(0, matchesPlayed.hashCode), qualAverage.hashCode), extraStats.hashCode),
+                    $jc(
+                        $jc(
+                            $jc($jc(0, matchesPlayed.hashCode),
+                                qualAverage.hashCode),
+                            extraStats.hashCode),
                         sortOrders.hashCode),
                     record.hashCode),
                 rank.hashCode),
@@ -94,24 +104,30 @@ class _$EventRankingRankings extends EventRankingRankings {
   }
 }
 
-class EventRankingRankingsBuilder implements Builder<EventRankingRankings, EventRankingRankingsBuilder> {
+class EventRankingRankingsBuilder
+    implements Builder<EventRankingRankings, EventRankingRankingsBuilder> {
   _$EventRankingRankings? _$v;
 
   int? _matchesPlayed;
   int? get matchesPlayed => _$this._matchesPlayed;
-  set matchesPlayed(int? matchesPlayed) => _$this._matchesPlayed = matchesPlayed;
+  set matchesPlayed(int? matchesPlayed) =>
+      _$this._matchesPlayed = matchesPlayed;
 
   int? _qualAverage;
   int? get qualAverage => _$this._qualAverage;
   set qualAverage(int? qualAverage) => _$this._qualAverage = qualAverage;
 
   ListBuilder<num>? _extraStats;
-  ListBuilder<num> get extraStats => _$this._extraStats ??= new ListBuilder<num>();
-  set extraStats(ListBuilder<num>? extraStats) => _$this._extraStats = extraStats;
+  ListBuilder<num> get extraStats =>
+      _$this._extraStats ??= new ListBuilder<num>();
+  set extraStats(ListBuilder<num>? extraStats) =>
+      _$this._extraStats = extraStats;
 
   ListBuilder<num>? _sortOrders;
-  ListBuilder<num> get sortOrders => _$this._sortOrders ??= new ListBuilder<num>();
-  set sortOrders(ListBuilder<num>? sortOrders) => _$this._sortOrders = sortOrders;
+  ListBuilder<num> get sortOrders =>
+      _$this._sortOrders ??= new ListBuilder<num>();
+  set sortOrders(ListBuilder<num>? sortOrders) =>
+      _$this._sortOrders = sortOrders;
 
   WLTRecordBuilder? _record;
   WLTRecordBuilder get record => _$this._record ??= new WLTRecordBuilder();
@@ -166,15 +182,18 @@ class EventRankingRankingsBuilder implements Builder<EventRankingRankings, Event
     try {
       _$result = _$v ??
           new _$EventRankingRankings._(
-              matchesPlayed:
-                  BuiltValueNullFieldError.checkNotNull(matchesPlayed, 'EventRankingRankings', 'matchesPlayed'),
+              matchesPlayed: BuiltValueNullFieldError.checkNotNull(
+                  matchesPlayed, 'EventRankingRankings', 'matchesPlayed'),
               qualAverage: qualAverage,
               extraStats: _extraStats?.build(),
               sortOrders: _sortOrders?.build(),
               record: record.build(),
-              rank: BuiltValueNullFieldError.checkNotNull(rank, 'EventRankingRankings', 'rank'),
-              dq: BuiltValueNullFieldError.checkNotNull(dq, 'EventRankingRankings', 'dq'),
-              teamKey: BuiltValueNullFieldError.checkNotNull(teamKey, 'EventRankingRankings', 'teamKey'));
+              rank: BuiltValueNullFieldError.checkNotNull(
+                  rank, 'EventRankingRankings', 'rank'),
+              dq: BuiltValueNullFieldError.checkNotNull(
+                  dq, 'EventRankingRankings', 'dq'),
+              teamKey: BuiltValueNullFieldError.checkNotNull(
+                  teamKey, 'EventRankingRankings', 'teamKey'));
     } catch (_) {
       late String _$failedField;
       try {
@@ -185,7 +204,8 @@ class EventRankingRankingsBuilder implements Builder<EventRankingRankings, Event
         _$failedField = 'record';
         record.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventRankingRankings', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventRankingRankings', _$failedField, e.toString());
       }
       rethrow;
     }

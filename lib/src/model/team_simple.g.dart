@@ -35,12 +35,14 @@ class _$TeamSimple extends TeamSimple {
       this.country})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(key, 'TeamSimple', 'key');
-    BuiltValueNullFieldError.checkNotNull(teamNumber, 'TeamSimple', 'teamNumber');
+    BuiltValueNullFieldError.checkNotNull(
+        teamNumber, 'TeamSimple', 'teamNumber');
     BuiltValueNullFieldError.checkNotNull(name, 'TeamSimple', 'name');
   }
 
   @override
-  TeamSimple rebuild(void Function(TeamSimpleBuilder) updates) => (toBuilder()..update(updates)).build();
+  TeamSimple rebuild(void Function(TeamSimpleBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   TeamSimpleBuilder toBuilder() => new TeamSimpleBuilder()..replace(this);
@@ -62,7 +64,11 @@ class _$TeamSimple extends TeamSimple {
   int get hashCode {
     return $jf($jc(
         $jc(
-            $jc($jc($jc($jc($jc(0, key.hashCode), teamNumber.hashCode), nickname.hashCode), name.hashCode),
+            $jc(
+                $jc(
+                    $jc($jc($jc(0, key.hashCode), teamNumber.hashCode),
+                        nickname.hashCode),
+                    name.hashCode),
                 city.hashCode),
             stateProv.hashCode),
         country.hashCode));
@@ -147,10 +153,13 @@ class TeamSimpleBuilder implements Builder<TeamSimple, TeamSimpleBuilder> {
   _$TeamSimple build() {
     final _$result = _$v ??
         new _$TeamSimple._(
-            key: BuiltValueNullFieldError.checkNotNull(key, 'TeamSimple', 'key'),
-            teamNumber: BuiltValueNullFieldError.checkNotNull(teamNumber, 'TeamSimple', 'teamNumber'),
+            key:
+                BuiltValueNullFieldError.checkNotNull(key, 'TeamSimple', 'key'),
+            teamNumber: BuiltValueNullFieldError.checkNotNull(
+                teamNumber, 'TeamSimple', 'teamNumber'),
             nickname: nickname,
-            name: BuiltValueNullFieldError.checkNotNull(name, 'TeamSimple', 'name'),
+            name: BuiltValueNullFieldError.checkNotNull(
+                name, 'TeamSimple', 'name'),
             city: city,
             stateProv: stateProv,
             country: country);

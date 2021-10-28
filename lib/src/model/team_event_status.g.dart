@@ -39,10 +39,12 @@ class _$TeamEventStatus extends TeamEventStatus {
       : super._();
 
   @override
-  TeamEventStatus rebuild(void Function(TeamEventStatusBuilder) updates) => (toBuilder()..update(updates)).build();
+  TeamEventStatus rebuild(void Function(TeamEventStatusBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  TeamEventStatusBuilder toBuilder() => new TeamEventStatusBuilder()..replace(this);
+  TeamEventStatusBuilder toBuilder() =>
+      new TeamEventStatusBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -64,7 +66,9 @@ class _$TeamEventStatus extends TeamEventStatus {
         $jc(
             $jc(
                 $jc(
-                    $jc($jc($jc($jc(0, qual.hashCode), alliance.hashCode), playoff.hashCode),
+                    $jc(
+                        $jc($jc($jc(0, qual.hashCode), alliance.hashCode),
+                            playoff.hashCode),
                         allianceStatusStr.hashCode),
                     playoffStatusStr.hashCode),
                 overallStatusStr.hashCode),
@@ -87,32 +91,41 @@ class _$TeamEventStatus extends TeamEventStatus {
   }
 }
 
-class TeamEventStatusBuilder implements Builder<TeamEventStatus, TeamEventStatusBuilder> {
+class TeamEventStatusBuilder
+    implements Builder<TeamEventStatus, TeamEventStatusBuilder> {
   _$TeamEventStatus? _$v;
 
   TeamEventStatusRankBuilder? _qual;
-  TeamEventStatusRankBuilder get qual => _$this._qual ??= new TeamEventStatusRankBuilder();
+  TeamEventStatusRankBuilder get qual =>
+      _$this._qual ??= new TeamEventStatusRankBuilder();
   set qual(TeamEventStatusRankBuilder? qual) => _$this._qual = qual;
 
   TeamEventStatusAllianceBuilder? _alliance;
-  TeamEventStatusAllianceBuilder get alliance => _$this._alliance ??= new TeamEventStatusAllianceBuilder();
-  set alliance(TeamEventStatusAllianceBuilder? alliance) => _$this._alliance = alliance;
+  TeamEventStatusAllianceBuilder get alliance =>
+      _$this._alliance ??= new TeamEventStatusAllianceBuilder();
+  set alliance(TeamEventStatusAllianceBuilder? alliance) =>
+      _$this._alliance = alliance;
 
   TeamEventStatusPlayoffBuilder? _playoff;
-  TeamEventStatusPlayoffBuilder get playoff => _$this._playoff ??= new TeamEventStatusPlayoffBuilder();
-  set playoff(TeamEventStatusPlayoffBuilder? playoff) => _$this._playoff = playoff;
+  TeamEventStatusPlayoffBuilder get playoff =>
+      _$this._playoff ??= new TeamEventStatusPlayoffBuilder();
+  set playoff(TeamEventStatusPlayoffBuilder? playoff) =>
+      _$this._playoff = playoff;
 
   String? _allianceStatusStr;
   String? get allianceStatusStr => _$this._allianceStatusStr;
-  set allianceStatusStr(String? allianceStatusStr) => _$this._allianceStatusStr = allianceStatusStr;
+  set allianceStatusStr(String? allianceStatusStr) =>
+      _$this._allianceStatusStr = allianceStatusStr;
 
   String? _playoffStatusStr;
   String? get playoffStatusStr => _$this._playoffStatusStr;
-  set playoffStatusStr(String? playoffStatusStr) => _$this._playoffStatusStr = playoffStatusStr;
+  set playoffStatusStr(String? playoffStatusStr) =>
+      _$this._playoffStatusStr = playoffStatusStr;
 
   String? _overallStatusStr;
   String? get overallStatusStr => _$this._overallStatusStr;
-  set overallStatusStr(String? overallStatusStr) => _$this._overallStatusStr = overallStatusStr;
+  set overallStatusStr(String? overallStatusStr) =>
+      _$this._overallStatusStr = overallStatusStr;
 
   String? _nextMatchKey;
   String? get nextMatchKey => _$this._nextMatchKey;
@@ -177,7 +190,8 @@ class TeamEventStatusBuilder implements Builder<TeamEventStatus, TeamEventStatus
         _$failedField = 'playoff';
         _playoff?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('TeamEventStatus', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'TeamEventStatus', _$failedField, e.toString());
       }
       rethrow;
     }

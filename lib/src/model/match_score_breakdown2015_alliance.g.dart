@@ -6,7 +6,8 @@ part of 'match_score_breakdown2015_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-class _$MatchScoreBreakdown2015Alliance extends MatchScoreBreakdown2015Alliance {
+class _$MatchScoreBreakdown2015Alliance
+    extends MatchScoreBreakdown2015Alliance {
   @override
   final int? autoPoints;
   @override
@@ -56,7 +57,8 @@ class _$MatchScoreBreakdown2015Alliance extends MatchScoreBreakdown2015Alliance 
   @override
   final bool? robotSet;
 
-  factory _$MatchScoreBreakdown2015Alliance([void Function(MatchScoreBreakdown2015AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2015Alliance(
+          [void Function(MatchScoreBreakdown2015AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2015AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2015Alliance._(
@@ -87,11 +89,13 @@ class _$MatchScoreBreakdown2015Alliance extends MatchScoreBreakdown2015Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2015Alliance rebuild(void Function(MatchScoreBreakdown2015AllianceBuilder) updates) =>
+  MatchScoreBreakdown2015Alliance rebuild(
+          void Function(MatchScoreBreakdown2015AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2015AllianceBuilder toBuilder() => new MatchScoreBreakdown2015AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2015AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2015AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -143,19 +147,7 @@ class _$MatchScoreBreakdown2015Alliance extends MatchScoreBreakdown2015Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    0,
-                                                                                                    autoPoints
-                                                                                                        .hashCode),
-                                                                                                teleopPoints.hashCode),
-                                                                                            containerPoints.hashCode),
-                                                                                        totePoints.hashCode),
-                                                                                    litterPoints.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc(0, autoPoints.hashCode), teleopPoints.hashCode), containerPoints.hashCode), totePoints.hashCode), litterPoints.hashCode),
                                                                                 foulPoints.hashCode),
                                                                             adjustPoints.hashCode),
                                                                         totalPoints.hashCode),
@@ -209,7 +201,9 @@ class _$MatchScoreBreakdown2015Alliance extends MatchScoreBreakdown2015Alliance 
 }
 
 class MatchScoreBreakdown2015AllianceBuilder
-    implements Builder<MatchScoreBreakdown2015Alliance, MatchScoreBreakdown2015AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2015Alliance,
+            MatchScoreBreakdown2015AllianceBuilder> {
   _$MatchScoreBreakdown2015Alliance? _$v;
 
   int? _autoPoints;
@@ -222,7 +216,8 @@ class MatchScoreBreakdown2015AllianceBuilder
 
   int? _containerPoints;
   int? get containerPoints => _$this._containerPoints;
-  set containerPoints(int? containerPoints) => _$this._containerPoints = containerPoints;
+  set containerPoints(int? containerPoints) =>
+      _$this._containerPoints = containerPoints;
 
   int? _totePoints;
   int? get totePoints => _$this._totePoints;
@@ -254,7 +249,8 @@ class MatchScoreBreakdown2015AllianceBuilder
 
   int? _toteCountNear;
   int? get toteCountNear => _$this._toteCountNear;
-  set toteCountNear(int? toteCountNear) => _$this._toteCountNear = toteCountNear;
+  set toteCountNear(int? toteCountNear) =>
+      _$this._toteCountNear = toteCountNear;
 
   bool? _toteSet;
   bool? get toteSet => _$this._toteSet;
@@ -266,27 +262,33 @@ class MatchScoreBreakdown2015AllianceBuilder
 
   int? _containerCountLevel1;
   int? get containerCountLevel1 => _$this._containerCountLevel1;
-  set containerCountLevel1(int? containerCountLevel1) => _$this._containerCountLevel1 = containerCountLevel1;
+  set containerCountLevel1(int? containerCountLevel1) =>
+      _$this._containerCountLevel1 = containerCountLevel1;
 
   int? _containerCountLevel2;
   int? get containerCountLevel2 => _$this._containerCountLevel2;
-  set containerCountLevel2(int? containerCountLevel2) => _$this._containerCountLevel2 = containerCountLevel2;
+  set containerCountLevel2(int? containerCountLevel2) =>
+      _$this._containerCountLevel2 = containerCountLevel2;
 
   int? _containerCountLevel3;
   int? get containerCountLevel3 => _$this._containerCountLevel3;
-  set containerCountLevel3(int? containerCountLevel3) => _$this._containerCountLevel3 = containerCountLevel3;
+  set containerCountLevel3(int? containerCountLevel3) =>
+      _$this._containerCountLevel3 = containerCountLevel3;
 
   int? _containerCountLevel4;
   int? get containerCountLevel4 => _$this._containerCountLevel4;
-  set containerCountLevel4(int? containerCountLevel4) => _$this._containerCountLevel4 = containerCountLevel4;
+  set containerCountLevel4(int? containerCountLevel4) =>
+      _$this._containerCountLevel4 = containerCountLevel4;
 
   int? _containerCountLevel5;
   int? get containerCountLevel5 => _$this._containerCountLevel5;
-  set containerCountLevel5(int? containerCountLevel5) => _$this._containerCountLevel5 = containerCountLevel5;
+  set containerCountLevel5(int? containerCountLevel5) =>
+      _$this._containerCountLevel5 = containerCountLevel5;
 
   int? _containerCountLevel6;
   int? get containerCountLevel6 => _$this._containerCountLevel6;
-  set containerCountLevel6(int? containerCountLevel6) => _$this._containerCountLevel6 = containerCountLevel6;
+  set containerCountLevel6(int? containerCountLevel6) =>
+      _$this._containerCountLevel6 = containerCountLevel6;
 
   bool? _containerSet;
   bool? get containerSet => _$this._containerSet;
@@ -294,15 +296,18 @@ class MatchScoreBreakdown2015AllianceBuilder
 
   int? _litterCountContainer;
   int? get litterCountContainer => _$this._litterCountContainer;
-  set litterCountContainer(int? litterCountContainer) => _$this._litterCountContainer = litterCountContainer;
+  set litterCountContainer(int? litterCountContainer) =>
+      _$this._litterCountContainer = litterCountContainer;
 
   int? _litterCountLandfill;
   int? get litterCountLandfill => _$this._litterCountLandfill;
-  set litterCountLandfill(int? litterCountLandfill) => _$this._litterCountLandfill = litterCountLandfill;
+  set litterCountLandfill(int? litterCountLandfill) =>
+      _$this._litterCountLandfill = litterCountLandfill;
 
   int? _litterCountUnprocessed;
   int? get litterCountUnprocessed => _$this._litterCountUnprocessed;
-  set litterCountUnprocessed(int? litterCountUnprocessed) => _$this._litterCountUnprocessed = litterCountUnprocessed;
+  set litterCountUnprocessed(int? litterCountUnprocessed) =>
+      _$this._litterCountUnprocessed = litterCountUnprocessed;
 
   bool? _robotSet;
   bool? get robotSet => _$this._robotSet;

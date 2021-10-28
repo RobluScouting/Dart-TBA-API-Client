@@ -8,7 +8,9 @@ import 'package:built_value/serializer.dart';
 part 'team_event_status_alliance_backup.g.dart';
 
 abstract class TeamEventStatusAllianceBackup
-    implements Built<TeamEventStatusAllianceBackup, TeamEventStatusAllianceBackupBuilder> {
+    implements
+        Built<TeamEventStatusAllianceBackup,
+            TeamEventStatusAllianceBackupBuilder> {
   /// TBA key for the team replaced by the backup.
   @BuiltValueField(wireName: r'out')
   String? get out_;
@@ -21,35 +23,49 @@ abstract class TeamEventStatusAllianceBackup
 
   static void _initializeBuilder(TeamEventStatusAllianceBackupBuilder b) => b;
 
-  factory TeamEventStatusAllianceBackup([void updates(TeamEventStatusAllianceBackupBuilder b)]) =
+  factory TeamEventStatusAllianceBackup(
+          [void updates(TeamEventStatusAllianceBackupBuilder b)]) =
       _$TeamEventStatusAllianceBackup;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<TeamEventStatusAllianceBackup> get serializer => _$TeamEventStatusAllianceBackupSerializer();
+  static Serializer<TeamEventStatusAllianceBackup> get serializer =>
+      _$TeamEventStatusAllianceBackupSerializer();
 }
 
-class _$TeamEventStatusAllianceBackupSerializer implements StructuredSerializer<TeamEventStatusAllianceBackup> {
+class _$TeamEventStatusAllianceBackupSerializer
+    implements StructuredSerializer<TeamEventStatusAllianceBackup> {
   @override
-  final Iterable<Type> types = const [TeamEventStatusAllianceBackup, _$TeamEventStatusAllianceBackup];
+  final Iterable<Type> types = const [
+    TeamEventStatusAllianceBackup,
+    _$TeamEventStatusAllianceBackup
+  ];
 
   @override
   final String wireName = r'TeamEventStatusAllianceBackup';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, TeamEventStatusAllianceBackup object,
+  Iterable<Object?> serialize(
+      Serializers serializers, TeamEventStatusAllianceBackup object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.out_ != null) {
-      result..add(r'out')..add(serializers.serialize(object.out_, specifiedType: const FullType(String)));
+      result
+        ..add(r'out')
+        ..add(serializers.serialize(object.out_,
+            specifiedType: const FullType(String)));
     }
     if (object.in_ != null) {
-      result..add(r'in')..add(serializers.serialize(object.in_, specifiedType: const FullType(String)));
+      result
+        ..add(r'in')
+        ..add(serializers.serialize(object.in_,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
 
   @override
-  TeamEventStatusAllianceBackup deserialize(Serializers serializers, Iterable<Object?> serialized,
+  TeamEventStatusAllianceBackup deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = TeamEventStatusAllianceBackupBuilder();
 
@@ -60,10 +76,12 @@ class _$TeamEventStatusAllianceBackupSerializer implements StructuredSerializer<
       final Object? value = iterator.current;
       switch (key) {
         case r'out':
-          result.out_ = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.out_ = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'in':
-          result.in_ = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.in_ = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

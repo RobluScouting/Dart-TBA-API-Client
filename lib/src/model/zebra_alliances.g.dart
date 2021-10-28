@@ -18,10 +18,12 @@ class _$ZebraAlliances extends ZebraAlliances {
   _$ZebraAlliances._({this.red, this.blue}) : super._();
 
   @override
-  ZebraAlliances rebuild(void Function(ZebraAlliancesBuilder) updates) => (toBuilder()..update(updates)).build();
+  ZebraAlliances rebuild(void Function(ZebraAlliancesBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  ZebraAlliancesBuilder toBuilder() => new ZebraAlliancesBuilder()..replace(this);
+  ZebraAlliancesBuilder toBuilder() =>
+      new ZebraAlliancesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -36,19 +38,25 @@ class _$ZebraAlliances extends ZebraAlliances {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('ZebraAlliances')..add('red', red)..add('blue', blue)).toString();
+    return (newBuiltValueToStringHelper('ZebraAlliances')
+          ..add('red', red)
+          ..add('blue', blue))
+        .toString();
   }
 }
 
-class ZebraAlliancesBuilder implements Builder<ZebraAlliances, ZebraAlliancesBuilder> {
+class ZebraAlliancesBuilder
+    implements Builder<ZebraAlliances, ZebraAlliancesBuilder> {
   _$ZebraAlliances? _$v;
 
   ListBuilder<ZebraTeam>? _red;
-  ListBuilder<ZebraTeam> get red => _$this._red ??= new ListBuilder<ZebraTeam>();
+  ListBuilder<ZebraTeam> get red =>
+      _$this._red ??= new ListBuilder<ZebraTeam>();
   set red(ListBuilder<ZebraTeam>? red) => _$this._red = red;
 
   ListBuilder<ZebraTeam>? _blue;
-  ListBuilder<ZebraTeam> get blue => _$this._blue ??= new ListBuilder<ZebraTeam>();
+  ListBuilder<ZebraTeam> get blue =>
+      _$this._blue ??= new ListBuilder<ZebraTeam>();
   set blue(ListBuilder<ZebraTeam>? blue) => _$this._blue = blue;
 
   ZebraAlliancesBuilder() {
@@ -80,7 +88,8 @@ class ZebraAlliancesBuilder implements Builder<ZebraAlliances, ZebraAlliancesBui
   _$ZebraAlliances build() {
     _$ZebraAlliances _$result;
     try {
-      _$result = _$v ?? new _$ZebraAlliances._(red: _red?.build(), blue: _blue?.build());
+      _$result = _$v ??
+          new _$ZebraAlliances._(red: _red?.build(), blue: _blue?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -89,7 +98,8 @@ class ZebraAlliancesBuilder implements Builder<ZebraAlliances, ZebraAlliancesBui
         _$failedField = 'blue';
         _blue?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('ZebraAlliances', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'ZebraAlliances', _$failedField, e.toString());
       }
       rethrow;
     }

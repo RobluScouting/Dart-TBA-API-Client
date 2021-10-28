@@ -70,7 +70,8 @@ class _$MatchTimeseries2018 extends MatchTimeseries2018 {
   @override
   final int? redSwitchOwned;
 
-  factory _$MatchTimeseries2018([void Function(MatchTimeseries2018Builder)? updates]) =>
+  factory _$MatchTimeseries2018(
+          [void Function(MatchTimeseries2018Builder)? updates]) =>
       (new MatchTimeseries2018Builder()..update(updates)).build();
 
   _$MatchTimeseries2018._(
@@ -108,11 +109,13 @@ class _$MatchTimeseries2018 extends MatchTimeseries2018 {
       : super._();
 
   @override
-  MatchTimeseries2018 rebuild(void Function(MatchTimeseries2018Builder) updates) =>
+  MatchTimeseries2018 rebuild(
+          void Function(MatchTimeseries2018Builder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchTimeseries2018Builder toBuilder() => new MatchTimeseries2018Builder()..replace(this);
+  MatchTimeseries2018Builder toBuilder() =>
+      new MatchTimeseries2018Builder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -171,27 +174,7 @@ class _$MatchTimeseries2018 extends MatchTimeseries2018 {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc(0, eventKey.hashCode), matchId.hashCode),
-                                                                                                                        mode.hashCode),
-                                                                                                                    play.hashCode),
-                                                                                                                timeRemaining.hashCode),
-                                                                                                            blueAutoQuest.hashCode),
-                                                                                                        blueBoostCount.hashCode),
-                                                                                                    blueBoostPlayed.hashCode),
-                                                                                                blueCurrentPowerup.hashCode),
-                                                                                            blueFaceTheBoss.hashCode),
-                                                                                        blueForceCount.hashCode),
-                                                                                    blueForcePlayed.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, eventKey.hashCode), matchId.hashCode), mode.hashCode), play.hashCode), timeRemaining.hashCode), blueAutoQuest.hashCode), blueBoostCount.hashCode), blueBoostPlayed.hashCode), blueCurrentPowerup.hashCode), blueFaceTheBoss.hashCode), blueForceCount.hashCode), blueForcePlayed.hashCode),
                                                                                 blueLevitateCount.hashCode),
                                                                             blueLevitatePlayed.hashCode),
                                                                         bluePowerupTimeRemaining.hashCode),
@@ -251,7 +234,8 @@ class _$MatchTimeseries2018 extends MatchTimeseries2018 {
   }
 }
 
-class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTimeseries2018Builder> {
+class MatchTimeseries2018Builder
+    implements Builder<MatchTimeseries2018, MatchTimeseries2018Builder> {
   _$MatchTimeseries2018? _$v;
 
   String? _eventKey;
@@ -272,43 +256,53 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _timeRemaining;
   int? get timeRemaining => _$this._timeRemaining;
-  set timeRemaining(int? timeRemaining) => _$this._timeRemaining = timeRemaining;
+  set timeRemaining(int? timeRemaining) =>
+      _$this._timeRemaining = timeRemaining;
 
   int? _blueAutoQuest;
   int? get blueAutoQuest => _$this._blueAutoQuest;
-  set blueAutoQuest(int? blueAutoQuest) => _$this._blueAutoQuest = blueAutoQuest;
+  set blueAutoQuest(int? blueAutoQuest) =>
+      _$this._blueAutoQuest = blueAutoQuest;
 
   int? _blueBoostCount;
   int? get blueBoostCount => _$this._blueBoostCount;
-  set blueBoostCount(int? blueBoostCount) => _$this._blueBoostCount = blueBoostCount;
+  set blueBoostCount(int? blueBoostCount) =>
+      _$this._blueBoostCount = blueBoostCount;
 
   int? _blueBoostPlayed;
   int? get blueBoostPlayed => _$this._blueBoostPlayed;
-  set blueBoostPlayed(int? blueBoostPlayed) => _$this._blueBoostPlayed = blueBoostPlayed;
+  set blueBoostPlayed(int? blueBoostPlayed) =>
+      _$this._blueBoostPlayed = blueBoostPlayed;
 
   String? _blueCurrentPowerup;
   String? get blueCurrentPowerup => _$this._blueCurrentPowerup;
-  set blueCurrentPowerup(String? blueCurrentPowerup) => _$this._blueCurrentPowerup = blueCurrentPowerup;
+  set blueCurrentPowerup(String? blueCurrentPowerup) =>
+      _$this._blueCurrentPowerup = blueCurrentPowerup;
 
   int? _blueFaceTheBoss;
   int? get blueFaceTheBoss => _$this._blueFaceTheBoss;
-  set blueFaceTheBoss(int? blueFaceTheBoss) => _$this._blueFaceTheBoss = blueFaceTheBoss;
+  set blueFaceTheBoss(int? blueFaceTheBoss) =>
+      _$this._blueFaceTheBoss = blueFaceTheBoss;
 
   int? _blueForceCount;
   int? get blueForceCount => _$this._blueForceCount;
-  set blueForceCount(int? blueForceCount) => _$this._blueForceCount = blueForceCount;
+  set blueForceCount(int? blueForceCount) =>
+      _$this._blueForceCount = blueForceCount;
 
   int? _blueForcePlayed;
   int? get blueForcePlayed => _$this._blueForcePlayed;
-  set blueForcePlayed(int? blueForcePlayed) => _$this._blueForcePlayed = blueForcePlayed;
+  set blueForcePlayed(int? blueForcePlayed) =>
+      _$this._blueForcePlayed = blueForcePlayed;
 
   int? _blueLevitateCount;
   int? get blueLevitateCount => _$this._blueLevitateCount;
-  set blueLevitateCount(int? blueLevitateCount) => _$this._blueLevitateCount = blueLevitateCount;
+  set blueLevitateCount(int? blueLevitateCount) =>
+      _$this._blueLevitateCount = blueLevitateCount;
 
   int? _blueLevitatePlayed;
   int? get blueLevitatePlayed => _$this._blueLevitatePlayed;
-  set blueLevitatePlayed(int? blueLevitatePlayed) => _$this._blueLevitatePlayed = blueLevitatePlayed;
+  set blueLevitatePlayed(int? blueLevitatePlayed) =>
+      _$this._blueLevitatePlayed = blueLevitatePlayed;
 
   String? _bluePowerupTimeRemaining;
   String? get bluePowerupTimeRemaining => _$this._bluePowerupTimeRemaining;
@@ -317,7 +311,8 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _blueScaleOwned;
   int? get blueScaleOwned => _$this._blueScaleOwned;
-  set blueScaleOwned(int? blueScaleOwned) => _$this._blueScaleOwned = blueScaleOwned;
+  set blueScaleOwned(int? blueScaleOwned) =>
+      _$this._blueScaleOwned = blueScaleOwned;
 
   int? _blueScore;
   int? get blueScore => _$this._blueScore;
@@ -325,7 +320,8 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _blueSwitchOwned;
   int? get blueSwitchOwned => _$this._blueSwitchOwned;
-  set blueSwitchOwned(int? blueSwitchOwned) => _$this._blueSwitchOwned = blueSwitchOwned;
+  set blueSwitchOwned(int? blueSwitchOwned) =>
+      _$this._blueSwitchOwned = blueSwitchOwned;
 
   int? _redAutoQuest;
   int? get redAutoQuest => _$this._redAutoQuest;
@@ -333,35 +329,43 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _redBoostCount;
   int? get redBoostCount => _$this._redBoostCount;
-  set redBoostCount(int? redBoostCount) => _$this._redBoostCount = redBoostCount;
+  set redBoostCount(int? redBoostCount) =>
+      _$this._redBoostCount = redBoostCount;
 
   int? _redBoostPlayed;
   int? get redBoostPlayed => _$this._redBoostPlayed;
-  set redBoostPlayed(int? redBoostPlayed) => _$this._redBoostPlayed = redBoostPlayed;
+  set redBoostPlayed(int? redBoostPlayed) =>
+      _$this._redBoostPlayed = redBoostPlayed;
 
   String? _redCurrentPowerup;
   String? get redCurrentPowerup => _$this._redCurrentPowerup;
-  set redCurrentPowerup(String? redCurrentPowerup) => _$this._redCurrentPowerup = redCurrentPowerup;
+  set redCurrentPowerup(String? redCurrentPowerup) =>
+      _$this._redCurrentPowerup = redCurrentPowerup;
 
   int? _redFaceTheBoss;
   int? get redFaceTheBoss => _$this._redFaceTheBoss;
-  set redFaceTheBoss(int? redFaceTheBoss) => _$this._redFaceTheBoss = redFaceTheBoss;
+  set redFaceTheBoss(int? redFaceTheBoss) =>
+      _$this._redFaceTheBoss = redFaceTheBoss;
 
   int? _redForceCount;
   int? get redForceCount => _$this._redForceCount;
-  set redForceCount(int? redForceCount) => _$this._redForceCount = redForceCount;
+  set redForceCount(int? redForceCount) =>
+      _$this._redForceCount = redForceCount;
 
   int? _redForcePlayed;
   int? get redForcePlayed => _$this._redForcePlayed;
-  set redForcePlayed(int? redForcePlayed) => _$this._redForcePlayed = redForcePlayed;
+  set redForcePlayed(int? redForcePlayed) =>
+      _$this._redForcePlayed = redForcePlayed;
 
   int? _redLevitateCount;
   int? get redLevitateCount => _$this._redLevitateCount;
-  set redLevitateCount(int? redLevitateCount) => _$this._redLevitateCount = redLevitateCount;
+  set redLevitateCount(int? redLevitateCount) =>
+      _$this._redLevitateCount = redLevitateCount;
 
   int? _redLevitatePlayed;
   int? get redLevitatePlayed => _$this._redLevitatePlayed;
-  set redLevitatePlayed(int? redLevitatePlayed) => _$this._redLevitatePlayed = redLevitatePlayed;
+  set redLevitatePlayed(int? redLevitatePlayed) =>
+      _$this._redLevitatePlayed = redLevitatePlayed;
 
   String? _redPowerupTimeRemaining;
   String? get redPowerupTimeRemaining => _$this._redPowerupTimeRemaining;
@@ -370,7 +374,8 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _redScaleOwned;
   int? get redScaleOwned => _$this._redScaleOwned;
-  set redScaleOwned(int? redScaleOwned) => _$this._redScaleOwned = redScaleOwned;
+  set redScaleOwned(int? redScaleOwned) =>
+      _$this._redScaleOwned = redScaleOwned;
 
   int? _redScore;
   int? get redScore => _$this._redScore;
@@ -378,7 +383,8 @@ class MatchTimeseries2018Builder implements Builder<MatchTimeseries2018, MatchTi
 
   int? _redSwitchOwned;
   int? get redSwitchOwned => _$this._redSwitchOwned;
-  set redSwitchOwned(int? redSwitchOwned) => _$this._redSwitchOwned = redSwitchOwned;
+  set redSwitchOwned(int? redSwitchOwned) =>
+      _$this._redSwitchOwned = redSwitchOwned;
 
   MatchTimeseries2018Builder() {
     MatchTimeseries2018._initializeBuilder(this);

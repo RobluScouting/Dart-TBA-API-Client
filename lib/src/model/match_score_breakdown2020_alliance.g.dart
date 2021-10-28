@@ -6,7 +6,8 @@ part of 'match_score_breakdown2020_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance {
+class _$MatchScoreBreakdown2020Alliance
+    extends MatchScoreBreakdown2020Alliance {
   @override
   final String? initLineRobot1;
   @override
@@ -76,7 +77,8 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
   @override
   final int? totalPoints;
 
-  factory _$MatchScoreBreakdown2020Alliance([void Function(MatchScoreBreakdown2020AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2020Alliance(
+          [void Function(MatchScoreBreakdown2020AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2020AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2020Alliance._(
@@ -117,11 +119,13 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2020Alliance rebuild(void Function(MatchScoreBreakdown2020AllianceBuilder) updates) =>
+  MatchScoreBreakdown2020Alliance rebuild(
+          void Function(MatchScoreBreakdown2020AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2020AllianceBuilder toBuilder() => new MatchScoreBreakdown2020AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2020AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2020AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -153,7 +157,8 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
         teleopPoints == other.teleopPoints &&
         shieldOperationalRankingPoint == other.shieldOperationalRankingPoint &&
         shieldEnergizedRankingPoint == other.shieldEnergizedRankingPoint &&
-        tbaShieldEnergizedRankingPointFromFoul == other.tbaShieldEnergizedRankingPointFromFoul &&
+        tbaShieldEnergizedRankingPointFromFoul ==
+            other.tbaShieldEnergizedRankingPointFromFoul &&
         tbaNumRobotsHanging == other.tbaNumRobotsHanging &&
         foulCount == other.foulCount &&
         techFoulCount == other.techFoulCount &&
@@ -183,27 +188,7 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc($jc(0, initLineRobot1.hashCode), endgameRobot1.hashCode), initLineRobot2.hashCode), endgameRobot2.hashCode), initLineRobot3.hashCode),
-                                                                                                                        endgameRobot3.hashCode),
-                                                                                                                    autoCellsBottom.hashCode),
-                                                                                                                autoCellsOuter.hashCode),
-                                                                                                            autoCellsInner.hashCode),
-                                                                                                        teleopCellsBottom.hashCode),
-                                                                                                    teleopCellsOuter.hashCode),
-                                                                                                teleopCellsInner.hashCode),
-                                                                                            stage1Activated.hashCode),
-                                                                                        stage2Activated.hashCode),
-                                                                                    stage3Activated.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, initLineRobot1.hashCode), endgameRobot1.hashCode), initLineRobot2.hashCode), endgameRobot2.hashCode), initLineRobot3.hashCode), endgameRobot3.hashCode), autoCellsBottom.hashCode), autoCellsOuter.hashCode), autoCellsInner.hashCode), teleopCellsBottom.hashCode), teleopCellsOuter.hashCode), teleopCellsInner.hashCode), stage1Activated.hashCode), stage2Activated.hashCode), stage3Activated.hashCode),
                                                                                 stage3TargetColor.hashCode),
                                                                             endgameRungIsLevel.hashCode),
                                                                         autoInitLinePoints.hashCode),
@@ -254,7 +239,8 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
           ..add('teleopPoints', teleopPoints)
           ..add('shieldOperationalRankingPoint', shieldOperationalRankingPoint)
           ..add('shieldEnergizedRankingPoint', shieldEnergizedRankingPoint)
-          ..add('tbaShieldEnergizedRankingPointFromFoul', tbaShieldEnergizedRankingPointFromFoul)
+          ..add('tbaShieldEnergizedRankingPointFromFoul',
+              tbaShieldEnergizedRankingPointFromFoul)
           ..add('tbaNumRobotsHanging', tbaNumRobotsHanging)
           ..add('foulCount', foulCount)
           ..add('techFoulCount', techFoulCount)
@@ -267,84 +253,105 @@ class _$MatchScoreBreakdown2020Alliance extends MatchScoreBreakdown2020Alliance 
 }
 
 class MatchScoreBreakdown2020AllianceBuilder
-    implements Builder<MatchScoreBreakdown2020Alliance, MatchScoreBreakdown2020AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2020Alliance,
+            MatchScoreBreakdown2020AllianceBuilder> {
   _$MatchScoreBreakdown2020Alliance? _$v;
 
   String? _initLineRobot1;
   String? get initLineRobot1 => _$this._initLineRobot1;
-  set initLineRobot1(String? initLineRobot1) => _$this._initLineRobot1 = initLineRobot1;
+  set initLineRobot1(String? initLineRobot1) =>
+      _$this._initLineRobot1 = initLineRobot1;
 
   String? _endgameRobot1;
   String? get endgameRobot1 => _$this._endgameRobot1;
-  set endgameRobot1(String? endgameRobot1) => _$this._endgameRobot1 = endgameRobot1;
+  set endgameRobot1(String? endgameRobot1) =>
+      _$this._endgameRobot1 = endgameRobot1;
 
   String? _initLineRobot2;
   String? get initLineRobot2 => _$this._initLineRobot2;
-  set initLineRobot2(String? initLineRobot2) => _$this._initLineRobot2 = initLineRobot2;
+  set initLineRobot2(String? initLineRobot2) =>
+      _$this._initLineRobot2 = initLineRobot2;
 
   String? _endgameRobot2;
   String? get endgameRobot2 => _$this._endgameRobot2;
-  set endgameRobot2(String? endgameRobot2) => _$this._endgameRobot2 = endgameRobot2;
+  set endgameRobot2(String? endgameRobot2) =>
+      _$this._endgameRobot2 = endgameRobot2;
 
   String? _initLineRobot3;
   String? get initLineRobot3 => _$this._initLineRobot3;
-  set initLineRobot3(String? initLineRobot3) => _$this._initLineRobot3 = initLineRobot3;
+  set initLineRobot3(String? initLineRobot3) =>
+      _$this._initLineRobot3 = initLineRobot3;
 
   String? _endgameRobot3;
   String? get endgameRobot3 => _$this._endgameRobot3;
-  set endgameRobot3(String? endgameRobot3) => _$this._endgameRobot3 = endgameRobot3;
+  set endgameRobot3(String? endgameRobot3) =>
+      _$this._endgameRobot3 = endgameRobot3;
 
   int? _autoCellsBottom;
   int? get autoCellsBottom => _$this._autoCellsBottom;
-  set autoCellsBottom(int? autoCellsBottom) => _$this._autoCellsBottom = autoCellsBottom;
+  set autoCellsBottom(int? autoCellsBottom) =>
+      _$this._autoCellsBottom = autoCellsBottom;
 
   int? _autoCellsOuter;
   int? get autoCellsOuter => _$this._autoCellsOuter;
-  set autoCellsOuter(int? autoCellsOuter) => _$this._autoCellsOuter = autoCellsOuter;
+  set autoCellsOuter(int? autoCellsOuter) =>
+      _$this._autoCellsOuter = autoCellsOuter;
 
   int? _autoCellsInner;
   int? get autoCellsInner => _$this._autoCellsInner;
-  set autoCellsInner(int? autoCellsInner) => _$this._autoCellsInner = autoCellsInner;
+  set autoCellsInner(int? autoCellsInner) =>
+      _$this._autoCellsInner = autoCellsInner;
 
   int? _teleopCellsBottom;
   int? get teleopCellsBottom => _$this._teleopCellsBottom;
-  set teleopCellsBottom(int? teleopCellsBottom) => _$this._teleopCellsBottom = teleopCellsBottom;
+  set teleopCellsBottom(int? teleopCellsBottom) =>
+      _$this._teleopCellsBottom = teleopCellsBottom;
 
   int? _teleopCellsOuter;
   int? get teleopCellsOuter => _$this._teleopCellsOuter;
-  set teleopCellsOuter(int? teleopCellsOuter) => _$this._teleopCellsOuter = teleopCellsOuter;
+  set teleopCellsOuter(int? teleopCellsOuter) =>
+      _$this._teleopCellsOuter = teleopCellsOuter;
 
   int? _teleopCellsInner;
   int? get teleopCellsInner => _$this._teleopCellsInner;
-  set teleopCellsInner(int? teleopCellsInner) => _$this._teleopCellsInner = teleopCellsInner;
+  set teleopCellsInner(int? teleopCellsInner) =>
+      _$this._teleopCellsInner = teleopCellsInner;
 
   bool? _stage1Activated;
   bool? get stage1Activated => _$this._stage1Activated;
-  set stage1Activated(bool? stage1Activated) => _$this._stage1Activated = stage1Activated;
+  set stage1Activated(bool? stage1Activated) =>
+      _$this._stage1Activated = stage1Activated;
 
   bool? _stage2Activated;
   bool? get stage2Activated => _$this._stage2Activated;
-  set stage2Activated(bool? stage2Activated) => _$this._stage2Activated = stage2Activated;
+  set stage2Activated(bool? stage2Activated) =>
+      _$this._stage2Activated = stage2Activated;
 
   bool? _stage3Activated;
   bool? get stage3Activated => _$this._stage3Activated;
-  set stage3Activated(bool? stage3Activated) => _$this._stage3Activated = stage3Activated;
+  set stage3Activated(bool? stage3Activated) =>
+      _$this._stage3Activated = stage3Activated;
 
   String? _stage3TargetColor;
   String? get stage3TargetColor => _$this._stage3TargetColor;
-  set stage3TargetColor(String? stage3TargetColor) => _$this._stage3TargetColor = stage3TargetColor;
+  set stage3TargetColor(String? stage3TargetColor) =>
+      _$this._stage3TargetColor = stage3TargetColor;
 
   String? _endgameRungIsLevel;
   String? get endgameRungIsLevel => _$this._endgameRungIsLevel;
-  set endgameRungIsLevel(String? endgameRungIsLevel) => _$this._endgameRungIsLevel = endgameRungIsLevel;
+  set endgameRungIsLevel(String? endgameRungIsLevel) =>
+      _$this._endgameRungIsLevel = endgameRungIsLevel;
 
   int? _autoInitLinePoints;
   int? get autoInitLinePoints => _$this._autoInitLinePoints;
-  set autoInitLinePoints(int? autoInitLinePoints) => _$this._autoInitLinePoints = autoInitLinePoints;
+  set autoInitLinePoints(int? autoInitLinePoints) =>
+      _$this._autoInitLinePoints = autoInitLinePoints;
 
   int? _autoCellPoints;
   int? get autoCellPoints => _$this._autoCellPoints;
-  set autoCellPoints(int? autoCellPoints) => _$this._autoCellPoints = autoCellPoints;
+  set autoCellPoints(int? autoCellPoints) =>
+      _$this._autoCellPoints = autoCellPoints;
 
   int? _autoPoints;
   int? get autoPoints => _$this._autoPoints;
@@ -352,22 +359,26 @@ class MatchScoreBreakdown2020AllianceBuilder
 
   int? _teleopCellPoints;
   int? get teleopCellPoints => _$this._teleopCellPoints;
-  set teleopCellPoints(int? teleopCellPoints) => _$this._teleopCellPoints = teleopCellPoints;
+  set teleopCellPoints(int? teleopCellPoints) =>
+      _$this._teleopCellPoints = teleopCellPoints;
 
   int? _controlPanelPoints;
   int? get controlPanelPoints => _$this._controlPanelPoints;
-  set controlPanelPoints(int? controlPanelPoints) => _$this._controlPanelPoints = controlPanelPoints;
+  set controlPanelPoints(int? controlPanelPoints) =>
+      _$this._controlPanelPoints = controlPanelPoints;
 
   int? _endgamePoints;
   int? get endgamePoints => _$this._endgamePoints;
-  set endgamePoints(int? endgamePoints) => _$this._endgamePoints = endgamePoints;
+  set endgamePoints(int? endgamePoints) =>
+      _$this._endgamePoints = endgamePoints;
 
   int? _teleopPoints;
   int? get teleopPoints => _$this._teleopPoints;
   set teleopPoints(int? teleopPoints) => _$this._teleopPoints = teleopPoints;
 
   bool? _shieldOperationalRankingPoint;
-  bool? get shieldOperationalRankingPoint => _$this._shieldOperationalRankingPoint;
+  bool? get shieldOperationalRankingPoint =>
+      _$this._shieldOperationalRankingPoint;
   set shieldOperationalRankingPoint(bool? shieldOperationalRankingPoint) =>
       _$this._shieldOperationalRankingPoint = shieldOperationalRankingPoint;
 
@@ -377,13 +388,17 @@ class MatchScoreBreakdown2020AllianceBuilder
       _$this._shieldEnergizedRankingPoint = shieldEnergizedRankingPoint;
 
   bool? _tbaShieldEnergizedRankingPointFromFoul;
-  bool? get tbaShieldEnergizedRankingPointFromFoul => _$this._tbaShieldEnergizedRankingPointFromFoul;
-  set tbaShieldEnergizedRankingPointFromFoul(bool? tbaShieldEnergizedRankingPointFromFoul) =>
-      _$this._tbaShieldEnergizedRankingPointFromFoul = tbaShieldEnergizedRankingPointFromFoul;
+  bool? get tbaShieldEnergizedRankingPointFromFoul =>
+      _$this._tbaShieldEnergizedRankingPointFromFoul;
+  set tbaShieldEnergizedRankingPointFromFoul(
+          bool? tbaShieldEnergizedRankingPointFromFoul) =>
+      _$this._tbaShieldEnergizedRankingPointFromFoul =
+          tbaShieldEnergizedRankingPointFromFoul;
 
   int? _tbaNumRobotsHanging;
   int? get tbaNumRobotsHanging => _$this._tbaNumRobotsHanging;
-  set tbaNumRobotsHanging(int? tbaNumRobotsHanging) => _$this._tbaNumRobotsHanging = tbaNumRobotsHanging;
+  set tbaNumRobotsHanging(int? tbaNumRobotsHanging) =>
+      _$this._tbaNumRobotsHanging = tbaNumRobotsHanging;
 
   int? _foulCount;
   int? get foulCount => _$this._foulCount;
@@ -391,7 +406,8 @@ class MatchScoreBreakdown2020AllianceBuilder
 
   int? _techFoulCount;
   int? get techFoulCount => _$this._techFoulCount;
-  set techFoulCount(int? techFoulCount) => _$this._techFoulCount = techFoulCount;
+  set techFoulCount(int? techFoulCount) =>
+      _$this._techFoulCount = techFoulCount;
 
   int? _adjustPoints;
   int? get adjustPoints => _$this._adjustPoints;
@@ -442,7 +458,8 @@ class MatchScoreBreakdown2020AllianceBuilder
       _teleopPoints = $v.teleopPoints;
       _shieldOperationalRankingPoint = $v.shieldOperationalRankingPoint;
       _shieldEnergizedRankingPoint = $v.shieldEnergizedRankingPoint;
-      _tbaShieldEnergizedRankingPointFromFoul = $v.tbaShieldEnergizedRankingPointFromFoul;
+      _tbaShieldEnergizedRankingPointFromFoul =
+          $v.tbaShieldEnergizedRankingPointFromFoul;
       _tbaNumRobotsHanging = $v.tbaNumRobotsHanging;
       _foulCount = $v.foulCount;
       _techFoulCount = $v.techFoulCount;
@@ -496,7 +513,8 @@ class MatchScoreBreakdown2020AllianceBuilder
             teleopPoints: teleopPoints,
             shieldOperationalRankingPoint: shieldOperationalRankingPoint,
             shieldEnergizedRankingPoint: shieldEnergizedRankingPoint,
-            tbaShieldEnergizedRankingPointFromFoul: tbaShieldEnergizedRankingPointFromFoul,
+            tbaShieldEnergizedRankingPointFromFoul:
+                tbaShieldEnergizedRankingPointFromFoul,
             tbaNumRobotsHanging: tbaNumRobotsHanging,
             foulCount: foulCount,
             techFoulCount: techFoulCount,

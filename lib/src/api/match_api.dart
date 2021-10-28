@@ -33,7 +33,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/timeseries'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/timeseries'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -110,7 +111,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -187,7 +189,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/keys'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/keys'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -264,7 +267,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/simple'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/simple'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -341,7 +345,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}'.replaceAll('{' r'match_key' '}', matchKey.toString());
+    final _path = r'/match/{match_key}'
+        .replaceAll('{' r'match_key' '}', matchKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -418,7 +423,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/simple'.replaceAll('{' r'match_key' '}', matchKey.toString());
+    final _path = r'/match/{match_key}/simple'
+        .replaceAll('{' r'match_key' '}', matchKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -495,7 +501,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/timeseries'.replaceAll('{' r'match_key' '}', matchKey.toString());
+    final _path = r'/match/{match_key}/timeseries'
+        .replaceAll('{' r'match_key' '}', matchKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -572,7 +579,8 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/zebra_motionworks'.replaceAll('{' r'match_key' '}', matchKey.toString());
+    final _path = r'/match/{match_key}/zebra_motionworks'
+        .replaceAll('{' r'match_key' '}', matchKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

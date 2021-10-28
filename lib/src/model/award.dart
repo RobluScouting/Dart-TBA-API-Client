@@ -48,16 +48,30 @@ class _$AwardSerializer implements StructuredSerializer<Award> {
   final String wireName = r'Award';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Award object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Award object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
-    result..add(r'award_type')..add(serializers.serialize(object.awardType, specifiedType: const FullType(int)));
-    result..add(r'event_key')..add(serializers.serialize(object.eventKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'name')
+      ..add(serializers.serialize(object.name,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'award_type')
+      ..add(serializers.serialize(object.awardType,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'event_key')
+      ..add(serializers.serialize(object.eventKey,
+          specifiedType: const FullType(String)));
     result
       ..add(r'recipient_list')
       ..add(serializers.serialize(object.recipientList,
-          specifiedType: const FullType(BuiltList, [FullType(AwardRecipient)])));
-    result..add(r'year')..add(serializers.serialize(object.year, specifiedType: const FullType(int)));
+          specifiedType:
+              const FullType(BuiltList, [FullType(AwardRecipient)])));
+    result
+      ..add(r'year')
+      ..add(serializers.serialize(object.year,
+          specifiedType: const FullType(int)));
     return result;
   }
 
@@ -73,20 +87,26 @@ class _$AwardSerializer implements StructuredSerializer<Award> {
       final Object? value = iterator.current;
       switch (key) {
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'award_type':
-          result.awardType = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.awardType = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'event_key':
-          result.eventKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'recipient_list':
           result.recipientList.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(AwardRecipient)])) as BuiltList<AwardRecipient>);
+                  specifiedType:
+                      const FullType(BuiltList, [FullType(AwardRecipient)]))
+              as BuiltList<AwardRecipient>);
           break;
         case r'year':
-          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }

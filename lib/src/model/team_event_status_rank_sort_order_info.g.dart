@@ -6,28 +6,34 @@ part of 'team_event_status_rank_sort_order_info.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-class _$TeamEventStatusRankSortOrderInfo extends TeamEventStatusRankSortOrderInfo {
+class _$TeamEventStatusRankSortOrderInfo
+    extends TeamEventStatusRankSortOrderInfo {
   @override
   final int? precision;
   @override
   final String? name;
 
-  factory _$TeamEventStatusRankSortOrderInfo([void Function(TeamEventStatusRankSortOrderInfoBuilder)? updates]) =>
+  factory _$TeamEventStatusRankSortOrderInfo(
+          [void Function(TeamEventStatusRankSortOrderInfoBuilder)? updates]) =>
       (new TeamEventStatusRankSortOrderInfoBuilder()..update(updates)).build();
 
   _$TeamEventStatusRankSortOrderInfo._({this.precision, this.name}) : super._();
 
   @override
-  TeamEventStatusRankSortOrderInfo rebuild(void Function(TeamEventStatusRankSortOrderInfoBuilder) updates) =>
+  TeamEventStatusRankSortOrderInfo rebuild(
+          void Function(TeamEventStatusRankSortOrderInfoBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TeamEventStatusRankSortOrderInfoBuilder toBuilder() => new TeamEventStatusRankSortOrderInfoBuilder()..replace(this);
+  TeamEventStatusRankSortOrderInfoBuilder toBuilder() =>
+      new TeamEventStatusRankSortOrderInfoBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is TeamEventStatusRankSortOrderInfo && precision == other.precision && name == other.name;
+    return other is TeamEventStatusRankSortOrderInfo &&
+        precision == other.precision &&
+        name == other.name;
   }
 
   @override
@@ -45,7 +51,9 @@ class _$TeamEventStatusRankSortOrderInfo extends TeamEventStatusRankSortOrderInf
 }
 
 class TeamEventStatusRankSortOrderInfoBuilder
-    implements Builder<TeamEventStatusRankSortOrderInfo, TeamEventStatusRankSortOrderInfoBuilder> {
+    implements
+        Builder<TeamEventStatusRankSortOrderInfo,
+            TeamEventStatusRankSortOrderInfoBuilder> {
   _$TeamEventStatusRankSortOrderInfo? _$v;
 
   int? _precision;
@@ -83,7 +91,9 @@ class TeamEventStatusRankSortOrderInfoBuilder
 
   @override
   _$TeamEventStatusRankSortOrderInfo build() {
-    final _$result = _$v ?? new _$TeamEventStatusRankSortOrderInfo._(precision: precision, name: name);
+    final _$result = _$v ??
+        new _$TeamEventStatusRankSortOrderInfo._(
+            precision: precision, name: name);
     replace(_$result);
     return _$result;
   }

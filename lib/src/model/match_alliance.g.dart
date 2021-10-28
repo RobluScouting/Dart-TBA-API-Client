@@ -19,14 +19,20 @@ class _$MatchAlliance extends MatchAlliance {
   factory _$MatchAlliance([void Function(MatchAllianceBuilder)? updates]) =>
       (new MatchAllianceBuilder()..update(updates)).build();
 
-  _$MatchAlliance._({required this.score, required this.teamKeys, this.surrogateTeamKeys, this.dqTeamKeys})
+  _$MatchAlliance._(
+      {required this.score,
+      required this.teamKeys,
+      this.surrogateTeamKeys,
+      this.dqTeamKeys})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(score, 'MatchAlliance', 'score');
-    BuiltValueNullFieldError.checkNotNull(teamKeys, 'MatchAlliance', 'teamKeys');
+    BuiltValueNullFieldError.checkNotNull(
+        teamKeys, 'MatchAlliance', 'teamKeys');
   }
 
   @override
-  MatchAlliance rebuild(void Function(MatchAllianceBuilder) updates) => (toBuilder()..update(updates)).build();
+  MatchAlliance rebuild(void Function(MatchAllianceBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   MatchAllianceBuilder toBuilder() => new MatchAllianceBuilder()..replace(this);
@@ -43,8 +49,10 @@ class _$MatchAlliance extends MatchAlliance {
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc($jc(0, score.hashCode), teamKeys.hashCode), surrogateTeamKeys.hashCode), dqTeamKeys.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, score.hashCode), teamKeys.hashCode),
+            surrogateTeamKeys.hashCode),
+        dqTeamKeys.hashCode));
   }
 
   @override
@@ -58,7 +66,8 @@ class _$MatchAlliance extends MatchAlliance {
   }
 }
 
-class MatchAllianceBuilder implements Builder<MatchAlliance, MatchAllianceBuilder> {
+class MatchAllianceBuilder
+    implements Builder<MatchAlliance, MatchAllianceBuilder> {
   _$MatchAlliance? _$v;
 
   int? _score;
@@ -66,16 +75,21 @@ class MatchAllianceBuilder implements Builder<MatchAlliance, MatchAllianceBuilde
   set score(int? score) => _$this._score = score;
 
   ListBuilder<String>? _teamKeys;
-  ListBuilder<String> get teamKeys => _$this._teamKeys ??= new ListBuilder<String>();
+  ListBuilder<String> get teamKeys =>
+      _$this._teamKeys ??= new ListBuilder<String>();
   set teamKeys(ListBuilder<String>? teamKeys) => _$this._teamKeys = teamKeys;
 
   ListBuilder<String>? _surrogateTeamKeys;
-  ListBuilder<String> get surrogateTeamKeys => _$this._surrogateTeamKeys ??= new ListBuilder<String>();
-  set surrogateTeamKeys(ListBuilder<String>? surrogateTeamKeys) => _$this._surrogateTeamKeys = surrogateTeamKeys;
+  ListBuilder<String> get surrogateTeamKeys =>
+      _$this._surrogateTeamKeys ??= new ListBuilder<String>();
+  set surrogateTeamKeys(ListBuilder<String>? surrogateTeamKeys) =>
+      _$this._surrogateTeamKeys = surrogateTeamKeys;
 
   ListBuilder<String>? _dqTeamKeys;
-  ListBuilder<String> get dqTeamKeys => _$this._dqTeamKeys ??= new ListBuilder<String>();
-  set dqTeamKeys(ListBuilder<String>? dqTeamKeys) => _$this._dqTeamKeys = dqTeamKeys;
+  ListBuilder<String> get dqTeamKeys =>
+      _$this._dqTeamKeys ??= new ListBuilder<String>();
+  set dqTeamKeys(ListBuilder<String>? dqTeamKeys) =>
+      _$this._dqTeamKeys = dqTeamKeys;
 
   MatchAllianceBuilder() {
     MatchAlliance._initializeBuilder(this);
@@ -110,7 +124,8 @@ class MatchAllianceBuilder implements Builder<MatchAlliance, MatchAllianceBuilde
     try {
       _$result = _$v ??
           new _$MatchAlliance._(
-              score: BuiltValueNullFieldError.checkNotNull(score, 'MatchAlliance', 'score'),
+              score: BuiltValueNullFieldError.checkNotNull(
+                  score, 'MatchAlliance', 'score'),
               teamKeys: teamKeys.build(),
               surrogateTeamKeys: _surrogateTeamKeys?.build(),
               dqTeamKeys: _dqTeamKeys?.build());
@@ -124,7 +139,8 @@ class MatchAllianceBuilder implements Builder<MatchAlliance, MatchAllianceBuilde
         _$failedField = 'dqTeamKeys';
         _dqTeamKeys?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('MatchAlliance', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'MatchAlliance', _$failedField, e.toString());
       }
       rethrow;
     }

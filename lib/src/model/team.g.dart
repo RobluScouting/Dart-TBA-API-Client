@@ -46,7 +46,8 @@ class _$Team extends Team {
   @override
   final JsonObject? homeChampionship;
 
-  factory _$Team([void Function(TeamBuilder)? updates]) => (new TeamBuilder()..update(updates)).build();
+  factory _$Team([void Function(TeamBuilder)? updates]) =>
+      (new TeamBuilder()..update(updates)).build();
 
   _$Team._(
       {required this.key,
@@ -75,7 +76,8 @@ class _$Team extends Team {
   }
 
   @override
-  Team rebuild(void Function(TeamBuilder) updates) => (toBuilder()..update(updates)).build();
+  Team rebuild(void Function(TeamBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   TeamBuilder toBuilder() => new TeamBuilder()..replace(this);
@@ -123,10 +125,20 @@ class _$Team extends Team {
                                                         $jc(
                                                             $jc(
                                                                 $jc(
-                                                                    $jc($jc($jc(0, key.hashCode), teamNumber.hashCode),
-                                                                        nickname.hashCode),
-                                                                    name.hashCode),
-                                                                schoolName.hashCode),
+                                                                    $jc(
+                                                                        $jc(
+                                                                            $jc(
+                                                                                0,
+                                                                                key
+                                                                                    .hashCode),
+                                                                            teamNumber
+                                                                                .hashCode),
+                                                                        nickname
+                                                                            .hashCode),
+                                                                    name
+                                                                        .hashCode),
+                                                                schoolName
+                                                                    .hashCode),
                                                             city.hashCode),
                                                         stateProv.hashCode),
                                                     country.hashCode),
@@ -246,7 +258,8 @@ class TeamBuilder implements Builder<Team, TeamBuilder> {
 
   JsonObject? _homeChampionship;
   JsonObject? get homeChampionship => _$this._homeChampionship;
-  set homeChampionship(JsonObject? homeChampionship) => _$this._homeChampionship = homeChampionship;
+  set homeChampionship(JsonObject? homeChampionship) =>
+      _$this._homeChampionship = homeChampionship;
 
   TeamBuilder() {
     Team._initializeBuilder(this);
@@ -295,7 +308,8 @@ class TeamBuilder implements Builder<Team, TeamBuilder> {
     final _$result = _$v ??
         new _$Team._(
             key: BuiltValueNullFieldError.checkNotNull(key, 'Team', 'key'),
-            teamNumber: BuiltValueNullFieldError.checkNotNull(teamNumber, 'Team', 'teamNumber'),
+            teamNumber: BuiltValueNullFieldError.checkNotNull(
+                teamNumber, 'Team', 'teamNumber'),
             nickname: nickname,
             name: BuiltValueNullFieldError.checkNotNull(name, 'Team', 'name'),
             schoolName: schoolName,

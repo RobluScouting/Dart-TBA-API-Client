@@ -46,19 +46,22 @@ class _$EventOPRsSerializer implements StructuredSerializer<EventOPRs> {
       result
         ..add(r'oprs')
         ..add(serializers.serialize(object.oprs,
-            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)])));
+            specifiedType: const FullType(
+                BuiltMap, [FullType(String), FullType(double)])));
     }
     if (object.dprs != null) {
       result
         ..add(r'dprs')
         ..add(serializers.serialize(object.dprs,
-            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)])));
+            specifiedType: const FullType(
+                BuiltMap, [FullType(String), FullType(double)])));
     }
     if (object.ccwms != null) {
       result
         ..add(r'ccwms')
         ..add(serializers.serialize(object.ccwms,
-            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)])));
+            specifiedType: const FullType(
+                BuiltMap, [FullType(String), FullType(double)])));
     }
     return result;
   }
@@ -76,17 +79,20 @@ class _$EventOPRsSerializer implements StructuredSerializer<EventOPRs> {
       switch (key) {
         case r'oprs':
           result.oprs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]))
+                  specifiedType: const FullType(
+                      BuiltMap, [FullType(String), FullType(double)]))
               as BuiltMap<String, double>);
           break;
         case r'dprs':
           result.dprs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]))
+                  specifiedType: const FullType(
+                      BuiltMap, [FullType(String), FullType(double)]))
               as BuiltMap<String, double>);
           break;
         case r'ccwms':
           result.ccwms.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]))
+                  specifiedType: const FullType(
+                      BuiltMap, [FullType(String), FullType(double)]))
               as BuiltMap<String, double>);
           break;
       }

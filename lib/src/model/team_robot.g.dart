@@ -16,9 +16,15 @@ class _$TeamRobot extends TeamRobot {
   @override
   final String teamKey;
 
-  factory _$TeamRobot([void Function(TeamRobotBuilder)? updates]) => (new TeamRobotBuilder()..update(updates)).build();
+  factory _$TeamRobot([void Function(TeamRobotBuilder)? updates]) =>
+      (new TeamRobotBuilder()..update(updates)).build();
 
-  _$TeamRobot._({required this.year, required this.robotName, required this.key, required this.teamKey}) : super._() {
+  _$TeamRobot._(
+      {required this.year,
+      required this.robotName,
+      required this.key,
+      required this.teamKey})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(year, 'TeamRobot', 'year');
     BuiltValueNullFieldError.checkNotNull(robotName, 'TeamRobot', 'robotName');
     BuiltValueNullFieldError.checkNotNull(key, 'TeamRobot', 'key');
@@ -26,7 +32,8 @@ class _$TeamRobot extends TeamRobot {
   }
 
   @override
-  TeamRobot rebuild(void Function(TeamRobotBuilder) updates) => (toBuilder()..update(updates)).build();
+  TeamRobot rebuild(void Function(TeamRobotBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   TeamRobotBuilder toBuilder() => new TeamRobotBuilder()..replace(this);
@@ -43,7 +50,9 @@ class _$TeamRobot extends TeamRobot {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, year.hashCode), robotName.hashCode), key.hashCode), teamKey.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, year.hashCode), robotName.hashCode), key.hashCode),
+        teamKey.hashCode));
   }
 
   @override
@@ -107,10 +116,13 @@ class TeamRobotBuilder implements Builder<TeamRobot, TeamRobotBuilder> {
   _$TeamRobot build() {
     final _$result = _$v ??
         new _$TeamRobot._(
-            year: BuiltValueNullFieldError.checkNotNull(year, 'TeamRobot', 'year'),
-            robotName: BuiltValueNullFieldError.checkNotNull(robotName, 'TeamRobot', 'robotName'),
+            year: BuiltValueNullFieldError.checkNotNull(
+                year, 'TeamRobot', 'year'),
+            robotName: BuiltValueNullFieldError.checkNotNull(
+                robotName, 'TeamRobot', 'robotName'),
             key: BuiltValueNullFieldError.checkNotNull(key, 'TeamRobot', 'key'),
-            teamKey: BuiltValueNullFieldError.checkNotNull(teamKey, 'TeamRobot', 'teamKey'));
+            teamKey: BuiltValueNullFieldError.checkNotNull(
+                teamKey, 'TeamRobot', 'teamKey'));
     replace(_$result);
     return _$result;
   }

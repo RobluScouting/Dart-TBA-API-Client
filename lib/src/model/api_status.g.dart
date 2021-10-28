@@ -20,7 +20,8 @@ class _$APIStatus extends APIStatus {
   @override
   final APIStatusAppVersion android;
 
-  factory _$APIStatus([void Function(APIStatusBuilder)? updates]) => (new APIStatusBuilder()..update(updates)).build();
+  factory _$APIStatus([void Function(APIStatusBuilder)? updates]) =>
+      (new APIStatusBuilder()..update(updates)).build();
 
   _$APIStatus._(
       {required this.currentSeason,
@@ -30,16 +31,20 @@ class _$APIStatus extends APIStatus {
       required this.ios,
       required this.android})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(currentSeason, 'APIStatus', 'currentSeason');
+    BuiltValueNullFieldError.checkNotNull(
+        currentSeason, 'APIStatus', 'currentSeason');
     BuiltValueNullFieldError.checkNotNull(maxSeason, 'APIStatus', 'maxSeason');
-    BuiltValueNullFieldError.checkNotNull(isDatafeedDown, 'APIStatus', 'isDatafeedDown');
-    BuiltValueNullFieldError.checkNotNull(downEvents, 'APIStatus', 'downEvents');
+    BuiltValueNullFieldError.checkNotNull(
+        isDatafeedDown, 'APIStatus', 'isDatafeedDown');
+    BuiltValueNullFieldError.checkNotNull(
+        downEvents, 'APIStatus', 'downEvents');
     BuiltValueNullFieldError.checkNotNull(ios, 'APIStatus', 'ios');
     BuiltValueNullFieldError.checkNotNull(android, 'APIStatus', 'android');
   }
 
   @override
-  APIStatus rebuild(void Function(APIStatusBuilder) updates) => (toBuilder()..update(updates)).build();
+  APIStatus rebuild(void Function(APIStatusBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   APIStatusBuilder toBuilder() => new APIStatusBuilder()..replace(this);
@@ -60,7 +65,9 @@ class _$APIStatus extends APIStatus {
   int get hashCode {
     return $jf($jc(
         $jc(
-            $jc($jc($jc($jc(0, currentSeason.hashCode), maxSeason.hashCode), isDatafeedDown.hashCode),
+            $jc(
+                $jc($jc($jc(0, currentSeason.hashCode), maxSeason.hashCode),
+                    isDatafeedDown.hashCode),
                 downEvents.hashCode),
             ios.hashCode),
         android.hashCode));
@@ -84,7 +91,8 @@ class APIStatusBuilder implements Builder<APIStatus, APIStatusBuilder> {
 
   int? _currentSeason;
   int? get currentSeason => _$this._currentSeason;
-  set currentSeason(int? currentSeason) => _$this._currentSeason = currentSeason;
+  set currentSeason(int? currentSeason) =>
+      _$this._currentSeason = currentSeason;
 
   int? _maxSeason;
   int? get maxSeason => _$this._maxSeason;
@@ -92,18 +100,23 @@ class APIStatusBuilder implements Builder<APIStatus, APIStatusBuilder> {
 
   bool? _isDatafeedDown;
   bool? get isDatafeedDown => _$this._isDatafeedDown;
-  set isDatafeedDown(bool? isDatafeedDown) => _$this._isDatafeedDown = isDatafeedDown;
+  set isDatafeedDown(bool? isDatafeedDown) =>
+      _$this._isDatafeedDown = isDatafeedDown;
 
   ListBuilder<String>? _downEvents;
-  ListBuilder<String> get downEvents => _$this._downEvents ??= new ListBuilder<String>();
-  set downEvents(ListBuilder<String>? downEvents) => _$this._downEvents = downEvents;
+  ListBuilder<String> get downEvents =>
+      _$this._downEvents ??= new ListBuilder<String>();
+  set downEvents(ListBuilder<String>? downEvents) =>
+      _$this._downEvents = downEvents;
 
   APIStatusAppVersionBuilder? _ios;
-  APIStatusAppVersionBuilder get ios => _$this._ios ??= new APIStatusAppVersionBuilder();
+  APIStatusAppVersionBuilder get ios =>
+      _$this._ios ??= new APIStatusAppVersionBuilder();
   set ios(APIStatusAppVersionBuilder? ios) => _$this._ios = ios;
 
   APIStatusAppVersionBuilder? _android;
-  APIStatusAppVersionBuilder get android => _$this._android ??= new APIStatusAppVersionBuilder();
+  APIStatusAppVersionBuilder get android =>
+      _$this._android ??= new APIStatusAppVersionBuilder();
   set android(APIStatusAppVersionBuilder? android) => _$this._android = android;
 
   APIStatusBuilder() {
@@ -141,9 +154,12 @@ class APIStatusBuilder implements Builder<APIStatus, APIStatusBuilder> {
     try {
       _$result = _$v ??
           new _$APIStatus._(
-              currentSeason: BuiltValueNullFieldError.checkNotNull(currentSeason, 'APIStatus', 'currentSeason'),
-              maxSeason: BuiltValueNullFieldError.checkNotNull(maxSeason, 'APIStatus', 'maxSeason'),
-              isDatafeedDown: BuiltValueNullFieldError.checkNotNull(isDatafeedDown, 'APIStatus', 'isDatafeedDown'),
+              currentSeason: BuiltValueNullFieldError.checkNotNull(
+                  currentSeason, 'APIStatus', 'currentSeason'),
+              maxSeason: BuiltValueNullFieldError.checkNotNull(
+                  maxSeason, 'APIStatus', 'maxSeason'),
+              isDatafeedDown: BuiltValueNullFieldError.checkNotNull(
+                  isDatafeedDown, 'APIStatus', 'isDatafeedDown'),
               downEvents: downEvents.build(),
               ios: ios.build(),
               android: android.build());
@@ -157,7 +173,8 @@ class APIStatusBuilder implements Builder<APIStatus, APIStatusBuilder> {
         _$failedField = 'android';
         android.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('APIStatus', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'APIStatus', _$failedField, e.toString());
       }
       rethrow;
     }

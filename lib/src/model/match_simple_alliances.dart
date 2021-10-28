@@ -8,7 +8,8 @@ import 'package:built_value/serializer.dart';
 
 part 'match_simple_alliances.g.dart';
 
-abstract class MatchSimpleAlliances implements Built<MatchSimpleAlliances, MatchSimpleAlliancesBuilder> {
+abstract class MatchSimpleAlliances
+    implements Built<MatchSimpleAlliances, MatchSimpleAlliancesBuilder> {
   @BuiltValueField(wireName: r'red')
   MatchAlliance? get red;
 
@@ -19,34 +20,48 @@ abstract class MatchSimpleAlliances implements Built<MatchSimpleAlliances, Match
 
   static void _initializeBuilder(MatchSimpleAlliancesBuilder b) => b;
 
-  factory MatchSimpleAlliances([void updates(MatchSimpleAlliancesBuilder b)]) = _$MatchSimpleAlliances;
+  factory MatchSimpleAlliances([void updates(MatchSimpleAlliancesBuilder b)]) =
+      _$MatchSimpleAlliances;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchSimpleAlliances> get serializer => _$MatchSimpleAlliancesSerializer();
+  static Serializer<MatchSimpleAlliances> get serializer =>
+      _$MatchSimpleAlliancesSerializer();
 }
 
-class _$MatchSimpleAlliancesSerializer implements StructuredSerializer<MatchSimpleAlliances> {
+class _$MatchSimpleAlliancesSerializer
+    implements StructuredSerializer<MatchSimpleAlliances> {
   @override
-  final Iterable<Type> types = const [MatchSimpleAlliances, _$MatchSimpleAlliances];
+  final Iterable<Type> types = const [
+    MatchSimpleAlliances,
+    _$MatchSimpleAlliances
+  ];
 
   @override
   final String wireName = r'MatchSimpleAlliances';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, MatchSimpleAlliances object,
+  Iterable<Object?> serialize(
+      Serializers serializers, MatchSimpleAlliances object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.red != null) {
-      result..add(r'red')..add(serializers.serialize(object.red, specifiedType: const FullType(MatchAlliance)));
+      result
+        ..add(r'red')
+        ..add(serializers.serialize(object.red,
+            specifiedType: const FullType(MatchAlliance)));
     }
     if (object.blue != null) {
-      result..add(r'blue')..add(serializers.serialize(object.blue, specifiedType: const FullType(MatchAlliance)));
+      result
+        ..add(r'blue')
+        ..add(serializers.serialize(object.blue,
+            specifiedType: const FullType(MatchAlliance)));
     }
     return result;
   }
 
   @override
-  MatchSimpleAlliances deserialize(Serializers serializers, Iterable<Object?> serialized,
+  MatchSimpleAlliances deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = MatchSimpleAlliancesBuilder();
 
@@ -57,12 +72,12 @@ class _$MatchSimpleAlliancesSerializer implements StructuredSerializer<MatchSimp
       final Object? value = iterator.current;
       switch (key) {
         case r'red':
-          result.red
-              .replace(serializers.deserialize(value, specifiedType: const FullType(MatchAlliance)) as MatchAlliance);
+          result.red.replace(serializers.deserialize(value,
+              specifiedType: const FullType(MatchAlliance)) as MatchAlliance);
           break;
         case r'blue':
-          result.blue
-              .replace(serializers.deserialize(value, specifiedType: const FullType(MatchAlliance)) as MatchAlliance);
+          result.blue.replace(serializers.deserialize(value,
+              specifiedType: const FullType(MatchAlliance)) as MatchAlliance);
           break;
       }
     }

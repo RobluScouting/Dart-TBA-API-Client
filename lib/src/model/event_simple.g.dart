@@ -48,15 +48,19 @@ class _$EventSimple extends EventSimple {
       : super._() {
     BuiltValueNullFieldError.checkNotNull(key, 'EventSimple', 'key');
     BuiltValueNullFieldError.checkNotNull(name, 'EventSimple', 'name');
-    BuiltValueNullFieldError.checkNotNull(eventCode, 'EventSimple', 'eventCode');
-    BuiltValueNullFieldError.checkNotNull(eventType, 'EventSimple', 'eventType');
-    BuiltValueNullFieldError.checkNotNull(startDate, 'EventSimple', 'startDate');
+    BuiltValueNullFieldError.checkNotNull(
+        eventCode, 'EventSimple', 'eventCode');
+    BuiltValueNullFieldError.checkNotNull(
+        eventType, 'EventSimple', 'eventType');
+    BuiltValueNullFieldError.checkNotNull(
+        startDate, 'EventSimple', 'startDate');
     BuiltValueNullFieldError.checkNotNull(endDate, 'EventSimple', 'endDate');
     BuiltValueNullFieldError.checkNotNull(year, 'EventSimple', 'year');
   }
 
   @override
-  EventSimple rebuild(void Function(EventSimpleBuilder) updates) => (toBuilder()..update(updates)).build();
+  EventSimple rebuild(void Function(EventSimpleBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   EventSimpleBuilder toBuilder() => new EventSimpleBuilder()..replace(this);
@@ -87,7 +91,11 @@ class _$EventSimple extends EventSimple {
                     $jc(
                         $jc(
                             $jc(
-                                $jc($jc($jc($jc(0, key.hashCode), name.hashCode), eventCode.hashCode),
+                                $jc(
+                                    $jc(
+                                        $jc($jc(0, key.hashCode),
+                                            name.hashCode),
+                                        eventCode.hashCode),
                                     eventType.hashCode),
                                 district.hashCode),
                             city.hashCode),
@@ -136,7 +144,8 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
   set eventType(int? eventType) => _$this._eventType = eventType;
 
   DistrictListBuilder? _district;
-  DistrictListBuilder get district => _$this._district ??= new DistrictListBuilder();
+  DistrictListBuilder get district =>
+      _$this._district ??= new DistrictListBuilder();
   set district(DistrictListBuilder? district) => _$this._district = district;
 
   String? _city;
@@ -203,24 +212,32 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
     try {
       _$result = _$v ??
           new _$EventSimple._(
-              key: BuiltValueNullFieldError.checkNotNull(key, 'EventSimple', 'key'),
-              name: BuiltValueNullFieldError.checkNotNull(name, 'EventSimple', 'name'),
-              eventCode: BuiltValueNullFieldError.checkNotNull(eventCode, 'EventSimple', 'eventCode'),
-              eventType: BuiltValueNullFieldError.checkNotNull(eventType, 'EventSimple', 'eventType'),
+              key: BuiltValueNullFieldError.checkNotNull(
+                  key, 'EventSimple', 'key'),
+              name: BuiltValueNullFieldError.checkNotNull(
+                  name, 'EventSimple', 'name'),
+              eventCode: BuiltValueNullFieldError.checkNotNull(
+                  eventCode, 'EventSimple', 'eventCode'),
+              eventType: BuiltValueNullFieldError.checkNotNull(
+                  eventType, 'EventSimple', 'eventType'),
               district: _district?.build(),
               city: city,
               stateProv: stateProv,
               country: country,
-              startDate: BuiltValueNullFieldError.checkNotNull(startDate, 'EventSimple', 'startDate'),
-              endDate: BuiltValueNullFieldError.checkNotNull(endDate, 'EventSimple', 'endDate'),
-              year: BuiltValueNullFieldError.checkNotNull(year, 'EventSimple', 'year'));
+              startDate: BuiltValueNullFieldError.checkNotNull(
+                  startDate, 'EventSimple', 'startDate'),
+              endDate: BuiltValueNullFieldError.checkNotNull(
+                  endDate, 'EventSimple', 'endDate'),
+              year: BuiltValueNullFieldError.checkNotNull(
+                  year, 'EventSimple', 'year'));
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'district';
         _district?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventSimple', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventSimple', _$failedField, e.toString());
       }
       rethrow;
     }

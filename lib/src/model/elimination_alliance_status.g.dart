@@ -18,18 +18,26 @@ class _$EliminationAllianceStatus extends EliminationAllianceStatus {
   @override
   final String? status;
 
-  factory _$EliminationAllianceStatus([void Function(EliminationAllianceStatusBuilder)? updates]) =>
+  factory _$EliminationAllianceStatus(
+          [void Function(EliminationAllianceStatusBuilder)? updates]) =>
       (new EliminationAllianceStatusBuilder()..update(updates)).build();
 
-  _$EliminationAllianceStatus._({this.playoffAverage, this.level, this.record, this.currentLevelRecord, this.status})
+  _$EliminationAllianceStatus._(
+      {this.playoffAverage,
+      this.level,
+      this.record,
+      this.currentLevelRecord,
+      this.status})
       : super._();
 
   @override
-  EliminationAllianceStatus rebuild(void Function(EliminationAllianceStatusBuilder) updates) =>
+  EliminationAllianceStatus rebuild(
+          void Function(EliminationAllianceStatusBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EliminationAllianceStatusBuilder toBuilder() => new EliminationAllianceStatusBuilder()..replace(this);
+  EliminationAllianceStatusBuilder toBuilder() =>
+      new EliminationAllianceStatusBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -45,7 +53,10 @@ class _$EliminationAllianceStatus extends EliminationAllianceStatus {
   @override
   int get hashCode {
     return $jf($jc(
-        $jc($jc($jc($jc(0, playoffAverage.hashCode), level.hashCode), record.hashCode), currentLevelRecord.hashCode),
+        $jc(
+            $jc($jc($jc(0, playoffAverage.hashCode), level.hashCode),
+                record.hashCode),
+            currentLevelRecord.hashCode),
         status.hashCode));
   }
 
@@ -61,12 +72,15 @@ class _$EliminationAllianceStatus extends EliminationAllianceStatus {
   }
 }
 
-class EliminationAllianceStatusBuilder implements Builder<EliminationAllianceStatus, EliminationAllianceStatusBuilder> {
+class EliminationAllianceStatusBuilder
+    implements
+        Builder<EliminationAllianceStatus, EliminationAllianceStatusBuilder> {
   _$EliminationAllianceStatus? _$v;
 
   double? _playoffAverage;
   double? get playoffAverage => _$this._playoffAverage;
-  set playoffAverage(double? playoffAverage) => _$this._playoffAverage = playoffAverage;
+  set playoffAverage(double? playoffAverage) =>
+      _$this._playoffAverage = playoffAverage;
 
   String? _level;
   String? get level => _$this._level;
@@ -77,8 +91,10 @@ class EliminationAllianceStatusBuilder implements Builder<EliminationAllianceSta
   set record(WLTRecordBuilder? record) => _$this._record = record;
 
   WLTRecordBuilder? _currentLevelRecord;
-  WLTRecordBuilder get currentLevelRecord => _$this._currentLevelRecord ??= new WLTRecordBuilder();
-  set currentLevelRecord(WLTRecordBuilder? currentLevelRecord) => _$this._currentLevelRecord = currentLevelRecord;
+  WLTRecordBuilder get currentLevelRecord =>
+      _$this._currentLevelRecord ??= new WLTRecordBuilder();
+  set currentLevelRecord(WLTRecordBuilder? currentLevelRecord) =>
+      _$this._currentLevelRecord = currentLevelRecord;
 
   String? _status;
   String? get status => _$this._status;
@@ -131,7 +147,8 @@ class EliminationAllianceStatusBuilder implements Builder<EliminationAllianceSta
         _$failedField = 'currentLevelRecord';
         _currentLevelRecord?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EliminationAllianceStatus', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EliminationAllianceStatus', _$failedField, e.toString());
       }
       rethrow;
     }

@@ -18,19 +18,25 @@ class _$EliminationAlliance extends EliminationAlliance {
   @override
   final EliminationAllianceStatus? status;
 
-  factory _$EliminationAlliance([void Function(EliminationAllianceBuilder)? updates]) =>
+  factory _$EliminationAlliance(
+          [void Function(EliminationAllianceBuilder)? updates]) =>
       (new EliminationAllianceBuilder()..update(updates)).build();
 
-  _$EliminationAlliance._({this.name, this.backup, this.declines, required this.picks, this.status}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(picks, 'EliminationAlliance', 'picks');
+  _$EliminationAlliance._(
+      {this.name, this.backup, this.declines, required this.picks, this.status})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        picks, 'EliminationAlliance', 'picks');
   }
 
   @override
-  EliminationAlliance rebuild(void Function(EliminationAllianceBuilder) updates) =>
+  EliminationAlliance rebuild(
+          void Function(EliminationAllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EliminationAllianceBuilder toBuilder() => new EliminationAllianceBuilder()..replace(this);
+  EliminationAllianceBuilder toBuilder() =>
+      new EliminationAllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -45,8 +51,10 @@ class _$EliminationAlliance extends EliminationAlliance {
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc($jc($jc(0, name.hashCode), backup.hashCode), declines.hashCode), picks.hashCode), status.hashCode));
+    return $jf($jc(
+        $jc($jc($jc($jc(0, name.hashCode), backup.hashCode), declines.hashCode),
+            picks.hashCode),
+        status.hashCode));
   }
 
   @override
@@ -61,7 +69,8 @@ class _$EliminationAlliance extends EliminationAlliance {
   }
 }
 
-class EliminationAllianceBuilder implements Builder<EliminationAlliance, EliminationAllianceBuilder> {
+class EliminationAllianceBuilder
+    implements Builder<EliminationAlliance, EliminationAllianceBuilder> {
   _$EliminationAlliance? _$v;
 
   String? _name;
@@ -69,11 +78,14 @@ class EliminationAllianceBuilder implements Builder<EliminationAlliance, Elimina
   set name(String? name) => _$this._name = name;
 
   EliminationAllianceBackupBuilder? _backup;
-  EliminationAllianceBackupBuilder get backup => _$this._backup ??= new EliminationAllianceBackupBuilder();
-  set backup(EliminationAllianceBackupBuilder? backup) => _$this._backup = backup;
+  EliminationAllianceBackupBuilder get backup =>
+      _$this._backup ??= new EliminationAllianceBackupBuilder();
+  set backup(EliminationAllianceBackupBuilder? backup) =>
+      _$this._backup = backup;
 
   ListBuilder<String>? _declines;
-  ListBuilder<String> get declines => _$this._declines ??= new ListBuilder<String>();
+  ListBuilder<String> get declines =>
+      _$this._declines ??= new ListBuilder<String>();
   set declines(ListBuilder<String>? declines) => _$this._declines = declines;
 
   ListBuilder<String>? _picks;
@@ -81,8 +93,10 @@ class EliminationAllianceBuilder implements Builder<EliminationAlliance, Elimina
   set picks(ListBuilder<String>? picks) => _$this._picks = picks;
 
   EliminationAllianceStatusBuilder? _status;
-  EliminationAllianceStatusBuilder get status => _$this._status ??= new EliminationAllianceStatusBuilder();
-  set status(EliminationAllianceStatusBuilder? status) => _$this._status = status;
+  EliminationAllianceStatusBuilder get status =>
+      _$this._status ??= new EliminationAllianceStatusBuilder();
+  set status(EliminationAllianceStatusBuilder? status) =>
+      _$this._status = status;
 
   EliminationAllianceBuilder() {
     EliminationAlliance._initializeBuilder(this);
@@ -135,7 +149,8 @@ class EliminationAllianceBuilder implements Builder<EliminationAlliance, Elimina
         _$failedField = 'status';
         _status?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EliminationAlliance', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EliminationAlliance', _$failedField, e.toString());
       }
       rethrow;
     }

@@ -6,11 +6,16 @@ part of 'match.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const MatchCompLevelEnum _$matchCompLevelEnum_qm = const MatchCompLevelEnum._('qm');
-const MatchCompLevelEnum _$matchCompLevelEnum_ef = const MatchCompLevelEnum._('ef');
-const MatchCompLevelEnum _$matchCompLevelEnum_qf = const MatchCompLevelEnum._('qf');
-const MatchCompLevelEnum _$matchCompLevelEnum_sf = const MatchCompLevelEnum._('sf');
-const MatchCompLevelEnum _$matchCompLevelEnum_f = const MatchCompLevelEnum._('f');
+const MatchCompLevelEnum _$matchCompLevelEnum_qm =
+    const MatchCompLevelEnum._('qm');
+const MatchCompLevelEnum _$matchCompLevelEnum_ef =
+    const MatchCompLevelEnum._('ef');
+const MatchCompLevelEnum _$matchCompLevelEnum_qf =
+    const MatchCompLevelEnum._('qf');
+const MatchCompLevelEnum _$matchCompLevelEnum_sf =
+    const MatchCompLevelEnum._('sf');
+const MatchCompLevelEnum _$matchCompLevelEnum_f =
+    const MatchCompLevelEnum._('f');
 
 MatchCompLevelEnum _$matchCompLevelEnumValueOf(String name) {
   switch (name) {
@@ -38,9 +43,12 @@ final BuiltSet<MatchCompLevelEnum> _$matchCompLevelEnumValues =
   _$matchCompLevelEnum_f,
 ]);
 
-const MatchWinningAllianceEnum _$matchWinningAllianceEnum_red = const MatchWinningAllianceEnum._('red');
-const MatchWinningAllianceEnum _$matchWinningAllianceEnum_blue = const MatchWinningAllianceEnum._('blue');
-const MatchWinningAllianceEnum _$matchWinningAllianceEnum_empty = const MatchWinningAllianceEnum._('empty');
+const MatchWinningAllianceEnum _$matchWinningAllianceEnum_red =
+    const MatchWinningAllianceEnum._('red');
+const MatchWinningAllianceEnum _$matchWinningAllianceEnum_blue =
+    const MatchWinningAllianceEnum._('blue');
+const MatchWinningAllianceEnum _$matchWinningAllianceEnum_empty =
+    const MatchWinningAllianceEnum._('empty');
 
 MatchWinningAllianceEnum _$matchWinningAllianceEnumValueOf(String name) {
   switch (name) {
@@ -62,10 +70,13 @@ final BuiltSet<MatchWinningAllianceEnum> _$matchWinningAllianceEnumValues =
   _$matchWinningAllianceEnum_empty,
 ]);
 
-Serializer<MatchCompLevelEnum> _$matchCompLevelEnumSerializer = new _$MatchCompLevelEnumSerializer();
-Serializer<MatchWinningAllianceEnum> _$matchWinningAllianceEnumSerializer = new _$MatchWinningAllianceEnumSerializer();
+Serializer<MatchCompLevelEnum> _$matchCompLevelEnumSerializer =
+    new _$MatchCompLevelEnumSerializer();
+Serializer<MatchWinningAllianceEnum> _$matchWinningAllianceEnumSerializer =
+    new _$MatchWinningAllianceEnumSerializer();
 
-class _$MatchCompLevelEnumSerializer implements PrimitiveSerializer<MatchCompLevelEnum> {
+class _$MatchCompLevelEnumSerializer
+    implements PrimitiveSerializer<MatchCompLevelEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'qm': 'qm',
     'ef': 'ef',
@@ -94,10 +105,12 @@ class _$MatchCompLevelEnumSerializer implements PrimitiveSerializer<MatchCompLev
   @override
   MatchCompLevelEnum deserialize(Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      MatchCompLevelEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      MatchCompLevelEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
-class _$MatchWinningAllianceEnumSerializer implements PrimitiveSerializer<MatchWinningAllianceEnum> {
+class _$MatchWinningAllianceEnumSerializer
+    implements PrimitiveSerializer<MatchWinningAllianceEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'red': 'red',
     'blue': 'blue',
@@ -120,9 +133,11 @@ class _$MatchWinningAllianceEnumSerializer implements PrimitiveSerializer<MatchW
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchWinningAllianceEnum deserialize(Serializers serializers, Object serialized,
+  MatchWinningAllianceEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      MatchWinningAllianceEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      MatchWinningAllianceEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$Match extends Match {
@@ -153,7 +168,8 @@ class _$Match extends Match {
   @override
   final BuiltList<MatchVideos>? videos;
 
-  factory _$Match([void Function(MatchBuilder)? updates]) => (new MatchBuilder()..update(updates)).build();
+  factory _$Match([void Function(MatchBuilder)? updates]) =>
+      (new MatchBuilder()..update(updates)).build();
 
   _$Match._(
       {required this.key,
@@ -178,7 +194,8 @@ class _$Match extends Match {
   }
 
   @override
-  Match rebuild(void Function(MatchBuilder) updates) => (toBuilder()..update(updates)).build();
+  Match rebuild(void Function(MatchBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   MatchBuilder toBuilder() => new MatchBuilder()..replace(this);
@@ -213,7 +230,11 @@ class _$Match extends Match {
                             $jc(
                                 $jc(
                                     $jc(
-                                        $jc($jc($jc($jc(0, key.hashCode), compLevel.hashCode), setNumber.hashCode),
+                                        $jc(
+                                            $jc(
+                                                $jc($jc(0, key.hashCode),
+                                                    compLevel.hashCode),
+                                                setNumber.hashCode),
                                             matchNumber.hashCode),
                                         alliances.hashCode),
                                     winningAlliance.hashCode),
@@ -266,12 +287,15 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
   set matchNumber(int? matchNumber) => _$this._matchNumber = matchNumber;
 
   MatchSimpleAlliancesBuilder? _alliances;
-  MatchSimpleAlliancesBuilder get alliances => _$this._alliances ??= new MatchSimpleAlliancesBuilder();
-  set alliances(MatchSimpleAlliancesBuilder? alliances) => _$this._alliances = alliances;
+  MatchSimpleAlliancesBuilder get alliances =>
+      _$this._alliances ??= new MatchSimpleAlliancesBuilder();
+  set alliances(MatchSimpleAlliancesBuilder? alliances) =>
+      _$this._alliances = alliances;
 
   MatchWinningAllianceEnum? _winningAlliance;
   MatchWinningAllianceEnum? get winningAlliance => _$this._winningAlliance;
-  set winningAlliance(MatchWinningAllianceEnum? winningAlliance) => _$this._winningAlliance = winningAlliance;
+  set winningAlliance(MatchWinningAllianceEnum? winningAlliance) =>
+      _$this._winningAlliance = winningAlliance;
 
   String? _eventKey;
   String? get eventKey => _$this._eventKey;
@@ -287,18 +311,22 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
 
   int? _predictedTime;
   int? get predictedTime => _$this._predictedTime;
-  set predictedTime(int? predictedTime) => _$this._predictedTime = predictedTime;
+  set predictedTime(int? predictedTime) =>
+      _$this._predictedTime = predictedTime;
 
   int? _postResultTime;
   int? get postResultTime => _$this._postResultTime;
-  set postResultTime(int? postResultTime) => _$this._postResultTime = postResultTime;
+  set postResultTime(int? postResultTime) =>
+      _$this._postResultTime = postResultTime;
 
   JsonObject? _scoreBreakdown;
   JsonObject? get scoreBreakdown => _$this._scoreBreakdown;
-  set scoreBreakdown(JsonObject? scoreBreakdown) => _$this._scoreBreakdown = scoreBreakdown;
+  set scoreBreakdown(JsonObject? scoreBreakdown) =>
+      _$this._scoreBreakdown = scoreBreakdown;
 
   ListBuilder<MatchVideos>? _videos;
-  ListBuilder<MatchVideos> get videos => _$this._videos ??= new ListBuilder<MatchVideos>();
+  ListBuilder<MatchVideos> get videos =>
+      _$this._videos ??= new ListBuilder<MatchVideos>();
   set videos(ListBuilder<MatchVideos>? videos) => _$this._videos = videos;
 
   MatchBuilder() {
@@ -344,12 +372,16 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
       _$result = _$v ??
           new _$Match._(
               key: BuiltValueNullFieldError.checkNotNull(key, 'Match', 'key'),
-              compLevel: BuiltValueNullFieldError.checkNotNull(compLevel, 'Match', 'compLevel'),
-              setNumber: BuiltValueNullFieldError.checkNotNull(setNumber, 'Match', 'setNumber'),
-              matchNumber: BuiltValueNullFieldError.checkNotNull(matchNumber, 'Match', 'matchNumber'),
+              compLevel: BuiltValueNullFieldError.checkNotNull(
+                  compLevel, 'Match', 'compLevel'),
+              setNumber: BuiltValueNullFieldError.checkNotNull(
+                  setNumber, 'Match', 'setNumber'),
+              matchNumber: BuiltValueNullFieldError.checkNotNull(
+                  matchNumber, 'Match', 'matchNumber'),
               alliances: _alliances?.build(),
               winningAlliance: winningAlliance,
-              eventKey: BuiltValueNullFieldError.checkNotNull(eventKey, 'Match', 'eventKey'),
+              eventKey: BuiltValueNullFieldError.checkNotNull(
+                  eventKey, 'Match', 'eventKey'),
               time: time,
               actualTime: actualTime,
               predictedTime: predictedTime,
@@ -365,7 +397,8 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
         _$failedField = 'videos';
         _videos?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('Match', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'Match', _$failedField, e.toString());
       }
       rethrow;
     }

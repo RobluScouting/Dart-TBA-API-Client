@@ -12,22 +12,27 @@ class _$TeamEventStatusAllianceBackup extends TeamEventStatusAllianceBackup {
   @override
   final String? in_;
 
-  factory _$TeamEventStatusAllianceBackup([void Function(TeamEventStatusAllianceBackupBuilder)? updates]) =>
+  factory _$TeamEventStatusAllianceBackup(
+          [void Function(TeamEventStatusAllianceBackupBuilder)? updates]) =>
       (new TeamEventStatusAllianceBackupBuilder()..update(updates)).build();
 
   _$TeamEventStatusAllianceBackup._({this.out_, this.in_}) : super._();
 
   @override
-  TeamEventStatusAllianceBackup rebuild(void Function(TeamEventStatusAllianceBackupBuilder) updates) =>
+  TeamEventStatusAllianceBackup rebuild(
+          void Function(TeamEventStatusAllianceBackupBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TeamEventStatusAllianceBackupBuilder toBuilder() => new TeamEventStatusAllianceBackupBuilder()..replace(this);
+  TeamEventStatusAllianceBackupBuilder toBuilder() =>
+      new TeamEventStatusAllianceBackupBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is TeamEventStatusAllianceBackup && out_ == other.out_ && in_ == other.in_;
+    return other is TeamEventStatusAllianceBackup &&
+        out_ == other.out_ &&
+        in_ == other.in_;
   }
 
   @override
@@ -37,13 +42,17 @@ class _$TeamEventStatusAllianceBackup extends TeamEventStatusAllianceBackup {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('TeamEventStatusAllianceBackup')..add('out_', out_)..add('in_', in_))
+    return (newBuiltValueToStringHelper('TeamEventStatusAllianceBackup')
+          ..add('out_', out_)
+          ..add('in_', in_))
         .toString();
   }
 }
 
 class TeamEventStatusAllianceBackupBuilder
-    implements Builder<TeamEventStatusAllianceBackup, TeamEventStatusAllianceBackupBuilder> {
+    implements
+        Builder<TeamEventStatusAllianceBackup,
+            TeamEventStatusAllianceBackupBuilder> {
   _$TeamEventStatusAllianceBackup? _$v;
 
   String? _out_;
@@ -81,7 +90,8 @@ class TeamEventStatusAllianceBackupBuilder
 
   @override
   _$TeamEventStatusAllianceBackup build() {
-    final _$result = _$v ?? new _$TeamEventStatusAllianceBackup._(out_: out_, in_: in_);
+    final _$result =
+        _$v ?? new _$TeamEventStatusAllianceBackup._(out_: out_, in_: in_);
     replace(_$result);
     return _$result;
   }

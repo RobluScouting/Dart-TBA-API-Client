@@ -68,7 +68,8 @@ class _$Event extends Event {
   @override
   final String? playoffTypeString;
 
-  factory _$Event([void Function(EventBuilder)? updates]) => (new EventBuilder()..update(updates)).build();
+  factory _$Event([void Function(EventBuilder)? updates]) =>
+      (new EventBuilder()..update(updates)).build();
 
   _$Event._(
       {required this.key,
@@ -109,11 +110,13 @@ class _$Event extends Event {
     BuiltValueNullFieldError.checkNotNull(startDate, 'Event', 'startDate');
     BuiltValueNullFieldError.checkNotNull(endDate, 'Event', 'endDate');
     BuiltValueNullFieldError.checkNotNull(year, 'Event', 'year');
-    BuiltValueNullFieldError.checkNotNull(eventTypeString, 'Event', 'eventTypeString');
+    BuiltValueNullFieldError.checkNotNull(
+        eventTypeString, 'Event', 'eventTypeString');
   }
 
   @override
-  Event rebuild(void Function(EventBuilder) updates) => (toBuilder()..update(updates)).build();
+  Event rebuild(void Function(EventBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   EventBuilder toBuilder() => new EventBuilder()..replace(this);
@@ -174,27 +177,7 @@ class _$Event extends Event {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc(0, key.hashCode),
-                                                                                                                        name.hashCode),
-                                                                                                                    eventCode.hashCode),
-                                                                                                                eventType.hashCode),
-                                                                                                            district.hashCode),
-                                                                                                        city.hashCode),
-                                                                                                    stateProv.hashCode),
-                                                                                                country.hashCode),
-                                                                                            startDate.hashCode),
-                                                                                        endDate.hashCode),
-                                                                                    year.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, key.hashCode), name.hashCode), eventCode.hashCode), eventType.hashCode), district.hashCode), city.hashCode), stateProv.hashCode), country.hashCode), startDate.hashCode), endDate.hashCode), year.hashCode),
                                                                                 shortName.hashCode),
                                                                             eventTypeString.hashCode),
                                                                         week.hashCode),
@@ -273,7 +256,8 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   set eventType(int? eventType) => _$this._eventType = eventType;
 
   DistrictListBuilder? _district;
-  DistrictListBuilder get district => _$this._district ??= new DistrictListBuilder();
+  DistrictListBuilder get district =>
+      _$this._district ??= new DistrictListBuilder();
   set district(DistrictListBuilder? district) => _$this._district = district;
 
   String? _city;
@@ -306,7 +290,8 @@ class EventBuilder implements Builder<Event, EventBuilder> {
 
   String? _eventTypeString;
   String? get eventTypeString => _$this._eventTypeString;
-  set eventTypeString(String? eventTypeString) => _$this._eventTypeString = eventTypeString;
+  set eventTypeString(String? eventTypeString) =>
+      _$this._eventTypeString = eventTypeString;
 
   int? _week;
   int? get week => _$this._week;
@@ -354,19 +339,24 @@ class EventBuilder implements Builder<Event, EventBuilder> {
 
   String? _firstEventCode;
   String? get firstEventCode => _$this._firstEventCode;
-  set firstEventCode(String? firstEventCode) => _$this._firstEventCode = firstEventCode;
+  set firstEventCode(String? firstEventCode) =>
+      _$this._firstEventCode = firstEventCode;
 
   ListBuilder<Webcast>? _webcasts;
-  ListBuilder<Webcast> get webcasts => _$this._webcasts ??= new ListBuilder<Webcast>();
+  ListBuilder<Webcast> get webcasts =>
+      _$this._webcasts ??= new ListBuilder<Webcast>();
   set webcasts(ListBuilder<Webcast>? webcasts) => _$this._webcasts = webcasts;
 
   ListBuilder<String>? _divisionKeys;
-  ListBuilder<String> get divisionKeys => _$this._divisionKeys ??= new ListBuilder<String>();
-  set divisionKeys(ListBuilder<String>? divisionKeys) => _$this._divisionKeys = divisionKeys;
+  ListBuilder<String> get divisionKeys =>
+      _$this._divisionKeys ??= new ListBuilder<String>();
+  set divisionKeys(ListBuilder<String>? divisionKeys) =>
+      _$this._divisionKeys = divisionKeys;
 
   String? _parentEventKey;
   String? get parentEventKey => _$this._parentEventKey;
-  set parentEventKey(String? parentEventKey) => _$this._parentEventKey = parentEventKey;
+  set parentEventKey(String? parentEventKey) =>
+      _$this._parentEventKey = parentEventKey;
 
   int? _playoffType;
   int? get playoffType => _$this._playoffType;
@@ -374,7 +364,8 @@ class EventBuilder implements Builder<Event, EventBuilder> {
 
   String? _playoffTypeString;
   String? get playoffTypeString => _$this._playoffTypeString;
-  set playoffTypeString(String? playoffTypeString) => _$this._playoffTypeString = playoffTypeString;
+  set playoffTypeString(String? playoffTypeString) =>
+      _$this._playoffTypeString = playoffTypeString;
 
   EventBuilder() {
     Event._initializeBuilder(this);
@@ -436,18 +427,25 @@ class EventBuilder implements Builder<Event, EventBuilder> {
       _$result = _$v ??
           new _$Event._(
               key: BuiltValueNullFieldError.checkNotNull(key, 'Event', 'key'),
-              name: BuiltValueNullFieldError.checkNotNull(name, 'Event', 'name'),
-              eventCode: BuiltValueNullFieldError.checkNotNull(eventCode, 'Event', 'eventCode'),
-              eventType: BuiltValueNullFieldError.checkNotNull(eventType, 'Event', 'eventType'),
+              name:
+                  BuiltValueNullFieldError.checkNotNull(name, 'Event', 'name'),
+              eventCode: BuiltValueNullFieldError.checkNotNull(
+                  eventCode, 'Event', 'eventCode'),
+              eventType: BuiltValueNullFieldError.checkNotNull(
+                  eventType, 'Event', 'eventType'),
               district: _district?.build(),
               city: city,
               stateProv: stateProv,
               country: country,
-              startDate: BuiltValueNullFieldError.checkNotNull(startDate, 'Event', 'startDate'),
-              endDate: BuiltValueNullFieldError.checkNotNull(endDate, 'Event', 'endDate'),
-              year: BuiltValueNullFieldError.checkNotNull(year, 'Event', 'year'),
+              startDate: BuiltValueNullFieldError.checkNotNull(
+                  startDate, 'Event', 'startDate'),
+              endDate: BuiltValueNullFieldError.checkNotNull(
+                  endDate, 'Event', 'endDate'),
+              year:
+                  BuiltValueNullFieldError.checkNotNull(year, 'Event', 'year'),
               shortName: shortName,
-              eventTypeString: BuiltValueNullFieldError.checkNotNull(eventTypeString, 'Event', 'eventTypeString'),
+              eventTypeString: BuiltValueNullFieldError.checkNotNull(
+                  eventTypeString, 'Event', 'eventTypeString'),
               week: week,
               address: address,
               postalCode: postalCode,
@@ -476,7 +474,8 @@ class EventBuilder implements Builder<Event, EventBuilder> {
         _$failedField = 'divisionKeys';
         _divisionKeys?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('Event', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'Event', _$failedField, e.toString());
       }
       rethrow;
     }

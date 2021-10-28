@@ -74,4 +74,3 @@ export 'package:tba_api_v3/src/model/webcast.dart';
 export 'package:tba_api_v3/src/model/zebra.dart';
 export 'package:tba_api_v3/src/model/zebra_alliances.dart';
 export 'package:tba_api_v3/src/model/zebra_team.dart';
- 

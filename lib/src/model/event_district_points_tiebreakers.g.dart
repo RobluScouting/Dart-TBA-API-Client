@@ -12,17 +12,21 @@ class _$EventDistrictPointsTiebreakers extends EventDistrictPointsTiebreakers {
   @override
   final int? qualWins;
 
-  factory _$EventDistrictPointsTiebreakers([void Function(EventDistrictPointsTiebreakersBuilder)? updates]) =>
+  factory _$EventDistrictPointsTiebreakers(
+          [void Function(EventDistrictPointsTiebreakersBuilder)? updates]) =>
       (new EventDistrictPointsTiebreakersBuilder()..update(updates)).build();
 
-  _$EventDistrictPointsTiebreakers._({this.highestQualScores, this.qualWins}) : super._();
+  _$EventDistrictPointsTiebreakers._({this.highestQualScores, this.qualWins})
+      : super._();
 
   @override
-  EventDistrictPointsTiebreakers rebuild(void Function(EventDistrictPointsTiebreakersBuilder) updates) =>
+  EventDistrictPointsTiebreakers rebuild(
+          void Function(EventDistrictPointsTiebreakersBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventDistrictPointsTiebreakersBuilder toBuilder() => new EventDistrictPointsTiebreakersBuilder()..replace(this);
+  EventDistrictPointsTiebreakersBuilder toBuilder() =>
+      new EventDistrictPointsTiebreakersBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -47,12 +51,16 @@ class _$EventDistrictPointsTiebreakers extends EventDistrictPointsTiebreakers {
 }
 
 class EventDistrictPointsTiebreakersBuilder
-    implements Builder<EventDistrictPointsTiebreakers, EventDistrictPointsTiebreakersBuilder> {
+    implements
+        Builder<EventDistrictPointsTiebreakers,
+            EventDistrictPointsTiebreakersBuilder> {
   _$EventDistrictPointsTiebreakers? _$v;
 
   ListBuilder<int>? _highestQualScores;
-  ListBuilder<int> get highestQualScores => _$this._highestQualScores ??= new ListBuilder<int>();
-  set highestQualScores(ListBuilder<int>? highestQualScores) => _$this._highestQualScores = highestQualScores;
+  ListBuilder<int> get highestQualScores =>
+      _$this._highestQualScores ??= new ListBuilder<int>();
+  set highestQualScores(ListBuilder<int>? highestQualScores) =>
+      _$this._highestQualScores = highestQualScores;
 
   int? _qualWins;
   int? get qualWins => _$this._qualWins;
@@ -88,14 +96,17 @@ class EventDistrictPointsTiebreakersBuilder
     _$EventDistrictPointsTiebreakers _$result;
     try {
       _$result = _$v ??
-          new _$EventDistrictPointsTiebreakers._(highestQualScores: _highestQualScores?.build(), qualWins: qualWins);
+          new _$EventDistrictPointsTiebreakers._(
+              highestQualScores: _highestQualScores?.build(),
+              qualWins: qualWins);
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'highestQualScores';
         _highestQualScores?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventDistrictPointsTiebreakers', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventDistrictPointsTiebreakers', _$failedField, e.toString());
       }
       rethrow;
     }

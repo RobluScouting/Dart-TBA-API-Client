@@ -9,7 +9,8 @@ import 'package:built_value/serializer.dart';
 
 part 'event_ranking_rankings.g.dart';
 
-abstract class EventRankingRankings implements Built<EventRankingRankings, EventRankingRankingsBuilder> {
+abstract class EventRankingRankings
+    implements Built<EventRankingRankings, EventRankingRankingsBuilder> {
   /// Number of matches played by this team.
   @BuiltValueField(wireName: r'matches_played')
   int get matchesPlayed;
@@ -45,48 +46,74 @@ abstract class EventRankingRankings implements Built<EventRankingRankings, Event
 
   static void _initializeBuilder(EventRankingRankingsBuilder b) => b;
 
-  factory EventRankingRankings([void updates(EventRankingRankingsBuilder b)]) = _$EventRankingRankings;
+  factory EventRankingRankings([void updates(EventRankingRankingsBuilder b)]) =
+      _$EventRankingRankings;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<EventRankingRankings> get serializer => _$EventRankingRankingsSerializer();
+  static Serializer<EventRankingRankings> get serializer =>
+      _$EventRankingRankingsSerializer();
 }
 
-class _$EventRankingRankingsSerializer implements StructuredSerializer<EventRankingRankings> {
+class _$EventRankingRankingsSerializer
+    implements StructuredSerializer<EventRankingRankings> {
   @override
-  final Iterable<Type> types = const [EventRankingRankings, _$EventRankingRankings];
+  final Iterable<Type> types = const [
+    EventRankingRankings,
+    _$EventRankingRankings
+  ];
 
   @override
   final String wireName = r'EventRankingRankings';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, EventRankingRankings object,
+  Iterable<Object?> serialize(
+      Serializers serializers, EventRankingRankings object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     result
       ..add(r'matches_played')
-      ..add(serializers.serialize(object.matchesPlayed, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.matchesPlayed,
+          specifiedType: const FullType(int)));
     if (object.qualAverage != null) {
-      result..add(r'qual_average')..add(serializers.serialize(object.qualAverage, specifiedType: const FullType(int)));
+      result
+        ..add(r'qual_average')
+        ..add(serializers.serialize(object.qualAverage,
+            specifiedType: const FullType(int)));
     }
     if (object.extraStats != null) {
       result
         ..add(r'extra_stats')
-        ..add(serializers.serialize(object.extraStats, specifiedType: const FullType(BuiltList, [FullType(num)])));
+        ..add(serializers.serialize(object.extraStats,
+            specifiedType: const FullType(BuiltList, [FullType(num)])));
     }
     if (object.sortOrders != null) {
       result
         ..add(r'sort_orders')
-        ..add(serializers.serialize(object.sortOrders, specifiedType: const FullType(BuiltList, [FullType(num)])));
+        ..add(serializers.serialize(object.sortOrders,
+            specifiedType: const FullType(BuiltList, [FullType(num)])));
     }
-    result..add(r'record')..add(serializers.serialize(object.record, specifiedType: const FullType(WLTRecord)));
-    result..add(r'rank')..add(serializers.serialize(object.rank, specifiedType: const FullType(int)));
-    result..add(r'dq')..add(serializers.serialize(object.dq, specifiedType: const FullType(int)));
-    result..add(r'team_key')..add(serializers.serialize(object.teamKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'record')
+      ..add(serializers.serialize(object.record,
+          specifiedType: const FullType(WLTRecord)));
+    result
+      ..add(r'rank')
+      ..add(serializers.serialize(object.rank,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'dq')
+      ..add(
+          serializers.serialize(object.dq, specifiedType: const FullType(int)));
+    result
+      ..add(r'team_key')
+      ..add(serializers.serialize(object.teamKey,
+          specifiedType: const FullType(String)));
     return result;
   }
 
   @override
-  EventRankingRankings deserialize(Serializers serializers, Iterable<Object?> serialized,
+  EventRankingRankings deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = EventRankingRankingsBuilder();
 
@@ -97,30 +124,38 @@ class _$EventRankingRankingsSerializer implements StructuredSerializer<EventRank
       final Object? value = iterator.current;
       switch (key) {
         case r'matches_played':
-          result.matchesPlayed = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.matchesPlayed = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'qual_average':
-          result.qualAverage = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.qualAverage = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'extra_stats':
           result.extraStats.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(num)])) as BuiltList<num>);
+                  specifiedType: const FullType(BuiltList, [FullType(num)]))
+              as BuiltList<num>);
           break;
         case r'sort_orders':
           result.sortOrders.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(num)])) as BuiltList<num>);
+                  specifiedType: const FullType(BuiltList, [FullType(num)]))
+              as BuiltList<num>);
           break;
         case r'record':
-          result.record.replace(serializers.deserialize(value, specifiedType: const FullType(WLTRecord)) as WLTRecord);
+          result.record.replace(serializers.deserialize(value,
+              specifiedType: const FullType(WLTRecord)) as WLTRecord);
           break;
         case r'rank':
-          result.rank = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.rank = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'dq':
-          result.dq = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.dq = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'team_key':
-          result.teamKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.teamKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

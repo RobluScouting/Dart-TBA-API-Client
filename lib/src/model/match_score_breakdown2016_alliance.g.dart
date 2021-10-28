@@ -6,14 +6,18 @@ part of 'match_score_breakdown2016_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const MatchScoreBreakdown2016AllianceRobot1AutoEnum _$matchScoreBreakdown2016AllianceRobot1AutoEnum_crossed =
+const MatchScoreBreakdown2016AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnum_crossed =
     const MatchScoreBreakdown2016AllianceRobot1AutoEnum._('crossed');
-const MatchScoreBreakdown2016AllianceRobot1AutoEnum _$matchScoreBreakdown2016AllianceRobot1AutoEnum_reached =
+const MatchScoreBreakdown2016AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnum_reached =
     const MatchScoreBreakdown2016AllianceRobot1AutoEnum._('reached');
-const MatchScoreBreakdown2016AllianceRobot1AutoEnum _$matchScoreBreakdown2016AllianceRobot1AutoEnum_none =
+const MatchScoreBreakdown2016AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnum_none =
     const MatchScoreBreakdown2016AllianceRobot1AutoEnum._('none');
 
-MatchScoreBreakdown2016AllianceRobot1AutoEnum _$matchScoreBreakdown2016AllianceRobot1AutoEnumValueOf(String name) {
+MatchScoreBreakdown2016AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnumValueOf(String name) {
   switch (name) {
     case 'crossed':
       return _$matchScoreBreakdown2016AllianceRobot1AutoEnum_crossed;
@@ -26,21 +30,27 @@ MatchScoreBreakdown2016AllianceRobot1AutoEnum _$matchScoreBreakdown2016AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2016AllianceRobot1AutoEnum> _$matchScoreBreakdown2016AllianceRobot1AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2016AllianceRobot1AutoEnum>(const <MatchScoreBreakdown2016AllianceRobot1AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2016AllianceRobot1AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2016AllianceRobot1AutoEnum>(const <
+        MatchScoreBreakdown2016AllianceRobot1AutoEnum>[
   _$matchScoreBreakdown2016AllianceRobot1AutoEnum_crossed,
   _$matchScoreBreakdown2016AllianceRobot1AutoEnum_reached,
   _$matchScoreBreakdown2016AllianceRobot1AutoEnum_none,
 ]);
 
-const MatchScoreBreakdown2016AllianceRobot2AutoEnum _$matchScoreBreakdown2016AllianceRobot2AutoEnum_crossed =
+const MatchScoreBreakdown2016AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnum_crossed =
     const MatchScoreBreakdown2016AllianceRobot2AutoEnum._('crossed');
-const MatchScoreBreakdown2016AllianceRobot2AutoEnum _$matchScoreBreakdown2016AllianceRobot2AutoEnum_reached =
+const MatchScoreBreakdown2016AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnum_reached =
     const MatchScoreBreakdown2016AllianceRobot2AutoEnum._('reached');
-const MatchScoreBreakdown2016AllianceRobot2AutoEnum _$matchScoreBreakdown2016AllianceRobot2AutoEnum_none =
+const MatchScoreBreakdown2016AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnum_none =
     const MatchScoreBreakdown2016AllianceRobot2AutoEnum._('none');
 
-MatchScoreBreakdown2016AllianceRobot2AutoEnum _$matchScoreBreakdown2016AllianceRobot2AutoEnumValueOf(String name) {
+MatchScoreBreakdown2016AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnumValueOf(String name) {
   switch (name) {
     case 'crossed':
       return _$matchScoreBreakdown2016AllianceRobot2AutoEnum_crossed;
@@ -53,21 +63,27 @@ MatchScoreBreakdown2016AllianceRobot2AutoEnum _$matchScoreBreakdown2016AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2016AllianceRobot2AutoEnum> _$matchScoreBreakdown2016AllianceRobot2AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2016AllianceRobot2AutoEnum>(const <MatchScoreBreakdown2016AllianceRobot2AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2016AllianceRobot2AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2016AllianceRobot2AutoEnum>(const <
+        MatchScoreBreakdown2016AllianceRobot2AutoEnum>[
   _$matchScoreBreakdown2016AllianceRobot2AutoEnum_crossed,
   _$matchScoreBreakdown2016AllianceRobot2AutoEnum_reached,
   _$matchScoreBreakdown2016AllianceRobot2AutoEnum_none,
 ]);
 
-const MatchScoreBreakdown2016AllianceRobot3AutoEnum _$matchScoreBreakdown2016AllianceRobot3AutoEnum_crossed =
+const MatchScoreBreakdown2016AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnum_crossed =
     const MatchScoreBreakdown2016AllianceRobot3AutoEnum._('crossed');
-const MatchScoreBreakdown2016AllianceRobot3AutoEnum _$matchScoreBreakdown2016AllianceRobot3AutoEnum_reached =
+const MatchScoreBreakdown2016AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnum_reached =
     const MatchScoreBreakdown2016AllianceRobot3AutoEnum._('reached');
-const MatchScoreBreakdown2016AllianceRobot3AutoEnum _$matchScoreBreakdown2016AllianceRobot3AutoEnum_none =
+const MatchScoreBreakdown2016AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnum_none =
     const MatchScoreBreakdown2016AllianceRobot3AutoEnum._('none');
 
-MatchScoreBreakdown2016AllianceRobot3AutoEnum _$matchScoreBreakdown2016AllianceRobot3AutoEnumValueOf(String name) {
+MatchScoreBreakdown2016AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnumValueOf(String name) {
   switch (name) {
     case 'crossed':
       return _$matchScoreBreakdown2016AllianceRobot3AutoEnum_crossed;
@@ -80,22 +96,28 @@ MatchScoreBreakdown2016AllianceRobot3AutoEnum _$matchScoreBreakdown2016AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2016AllianceRobot3AutoEnum> _$matchScoreBreakdown2016AllianceRobot3AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2016AllianceRobot3AutoEnum>(const <MatchScoreBreakdown2016AllianceRobot3AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2016AllianceRobot3AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2016AllianceRobot3AutoEnum>(const <
+        MatchScoreBreakdown2016AllianceRobot3AutoEnum>[
   _$matchScoreBreakdown2016AllianceRobot3AutoEnum_crossed,
   _$matchScoreBreakdown2016AllianceRobot3AutoEnum_reached,
   _$matchScoreBreakdown2016AllianceRobot3AutoEnum_none,
 ]);
 
-Serializer<MatchScoreBreakdown2016AllianceRobot1AutoEnum> _$matchScoreBreakdown2016AllianceRobot1AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2016AllianceRobot1AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot1AutoEnumSerializer =
     new _$MatchScoreBreakdown2016AllianceRobot1AutoEnumSerializer();
-Serializer<MatchScoreBreakdown2016AllianceRobot2AutoEnum> _$matchScoreBreakdown2016AllianceRobot2AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2016AllianceRobot2AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot2AutoEnumSerializer =
     new _$MatchScoreBreakdown2016AllianceRobot2AutoEnumSerializer();
-Serializer<MatchScoreBreakdown2016AllianceRobot3AutoEnum> _$matchScoreBreakdown2016AllianceRobot3AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2016AllianceRobot3AutoEnum>
+    _$matchScoreBreakdown2016AllianceRobot3AutoEnumSerializer =
     new _$MatchScoreBreakdown2016AllianceRobot3AutoEnumSerializer();
 
 class _$MatchScoreBreakdown2016AllianceRobot1AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot1AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot1AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'crossed': 'Crossed',
     'reached': 'Reached',
@@ -108,24 +130,29 @@ class _$MatchScoreBreakdown2016AllianceRobot1AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2016AllianceRobot1AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2016AllianceRobot1AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2016AllianceRobot1AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2016AllianceRobot1AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2016AllianceRobot1AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2016AllianceRobot1AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2016AllianceRobot1AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2016AllianceRobot1AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$MatchScoreBreakdown2016AllianceRobot2AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot2AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot2AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'crossed': 'Crossed',
     'reached': 'Reached',
@@ -138,24 +165,29 @@ class _$MatchScoreBreakdown2016AllianceRobot2AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2016AllianceRobot2AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2016AllianceRobot2AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2016AllianceRobot2AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2016AllianceRobot2AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2016AllianceRobot2AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2016AllianceRobot2AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2016AllianceRobot2AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2016AllianceRobot2AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$MatchScoreBreakdown2016AllianceRobot3AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot3AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2016AllianceRobot3AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'crossed': 'Crossed',
     'reached': 'Reached',
@@ -168,23 +200,28 @@ class _$MatchScoreBreakdown2016AllianceRobot3AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2016AllianceRobot3AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2016AllianceRobot3AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2016AllianceRobot3AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2016AllianceRobot3AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2016AllianceRobot3AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2016AllianceRobot3AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2016AllianceRobot3AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2016AllianceRobot3AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
-class _$MatchScoreBreakdown2016Alliance extends MatchScoreBreakdown2016Alliance {
+class _$MatchScoreBreakdown2016Alliance
+    extends MatchScoreBreakdown2016Alliance {
   @override
   final int? autoPoints;
   @override
@@ -262,7 +299,8 @@ class _$MatchScoreBreakdown2016Alliance extends MatchScoreBreakdown2016Alliance 
   @override
   final int? position5crossings;
 
-  factory _$MatchScoreBreakdown2016Alliance([void Function(MatchScoreBreakdown2016AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2016Alliance(
+          [void Function(MatchScoreBreakdown2016AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2016AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2016Alliance._(
@@ -307,11 +345,13 @@ class _$MatchScoreBreakdown2016Alliance extends MatchScoreBreakdown2016Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2016Alliance rebuild(void Function(MatchScoreBreakdown2016AllianceBuilder) updates) =>
+  MatchScoreBreakdown2016Alliance rebuild(
+          void Function(MatchScoreBreakdown2016AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2016AllianceBuilder toBuilder() => new MatchScoreBreakdown2016AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2016AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2016AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -377,27 +417,7 @@ class _$MatchScoreBreakdown2016Alliance extends MatchScoreBreakdown2016Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoPoints.hashCode), teleopPoints.hashCode), breachPoints.hashCode), foulPoints.hashCode), capturePoints.hashCode), adjustPoints.hashCode), totalPoints.hashCode), robot1Auto.hashCode), robot2Auto.hashCode),
-                                                                                                                        robot3Auto.hashCode),
-                                                                                                                    autoReachPoints.hashCode),
-                                                                                                                autoCrossingPoints.hashCode),
-                                                                                                            autoBouldersLow.hashCode),
-                                                                                                        autoBouldersHigh.hashCode),
-                                                                                                    autoBoulderPoints.hashCode),
-                                                                                                teleopCrossingPoints.hashCode),
-                                                                                            teleopBouldersLow.hashCode),
-                                                                                        teleopBouldersHigh.hashCode),
-                                                                                    teleopBoulderPoints.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoPoints.hashCode), teleopPoints.hashCode), breachPoints.hashCode), foulPoints.hashCode), capturePoints.hashCode), adjustPoints.hashCode), totalPoints.hashCode), robot1Auto.hashCode), robot2Auto.hashCode), robot3Auto.hashCode), autoReachPoints.hashCode), autoCrossingPoints.hashCode), autoBouldersLow.hashCode), autoBouldersHigh.hashCode), autoBoulderPoints.hashCode), teleopCrossingPoints.hashCode), teleopBouldersLow.hashCode), teleopBouldersHigh.hashCode), teleopBoulderPoints.hashCode),
                                                                                 teleopDefensesBreached.hashCode),
                                                                             teleopChallengePoints.hashCode),
                                                                         teleopScalePoints.hashCode),
@@ -465,7 +485,9 @@ class _$MatchScoreBreakdown2016Alliance extends MatchScoreBreakdown2016Alliance 
 }
 
 class MatchScoreBreakdown2016AllianceBuilder
-    implements Builder<MatchScoreBreakdown2016Alliance, MatchScoreBreakdown2016AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2016Alliance,
+            MatchScoreBreakdown2016AllianceBuilder> {
   _$MatchScoreBreakdown2016Alliance? _$v;
 
   int? _autoPoints;
@@ -486,7 +508,8 @@ class MatchScoreBreakdown2016AllianceBuilder
 
   int? _capturePoints;
   int? get capturePoints => _$this._capturePoints;
-  set capturePoints(int? capturePoints) => _$this._capturePoints = capturePoints;
+  set capturePoints(int? capturePoints) =>
+      _$this._capturePoints = capturePoints;
 
   int? _adjustPoints;
   int? get adjustPoints => _$this._adjustPoints;
@@ -497,68 +520,87 @@ class MatchScoreBreakdown2016AllianceBuilder
   set totalPoints(int? totalPoints) => _$this._totalPoints = totalPoints;
 
   MatchScoreBreakdown2016AllianceRobot1AutoEnum? _robot1Auto;
-  MatchScoreBreakdown2016AllianceRobot1AutoEnum? get robot1Auto => _$this._robot1Auto;
-  set robot1Auto(MatchScoreBreakdown2016AllianceRobot1AutoEnum? robot1Auto) => _$this._robot1Auto = robot1Auto;
+  MatchScoreBreakdown2016AllianceRobot1AutoEnum? get robot1Auto =>
+      _$this._robot1Auto;
+  set robot1Auto(MatchScoreBreakdown2016AllianceRobot1AutoEnum? robot1Auto) =>
+      _$this._robot1Auto = robot1Auto;
 
   MatchScoreBreakdown2016AllianceRobot2AutoEnum? _robot2Auto;
-  MatchScoreBreakdown2016AllianceRobot2AutoEnum? get robot2Auto => _$this._robot2Auto;
-  set robot2Auto(MatchScoreBreakdown2016AllianceRobot2AutoEnum? robot2Auto) => _$this._robot2Auto = robot2Auto;
+  MatchScoreBreakdown2016AllianceRobot2AutoEnum? get robot2Auto =>
+      _$this._robot2Auto;
+  set robot2Auto(MatchScoreBreakdown2016AllianceRobot2AutoEnum? robot2Auto) =>
+      _$this._robot2Auto = robot2Auto;
 
   MatchScoreBreakdown2016AllianceRobot3AutoEnum? _robot3Auto;
-  MatchScoreBreakdown2016AllianceRobot3AutoEnum? get robot3Auto => _$this._robot3Auto;
-  set robot3Auto(MatchScoreBreakdown2016AllianceRobot3AutoEnum? robot3Auto) => _$this._robot3Auto = robot3Auto;
+  MatchScoreBreakdown2016AllianceRobot3AutoEnum? get robot3Auto =>
+      _$this._robot3Auto;
+  set robot3Auto(MatchScoreBreakdown2016AllianceRobot3AutoEnum? robot3Auto) =>
+      _$this._robot3Auto = robot3Auto;
 
   int? _autoReachPoints;
   int? get autoReachPoints => _$this._autoReachPoints;
-  set autoReachPoints(int? autoReachPoints) => _$this._autoReachPoints = autoReachPoints;
+  set autoReachPoints(int? autoReachPoints) =>
+      _$this._autoReachPoints = autoReachPoints;
 
   int? _autoCrossingPoints;
   int? get autoCrossingPoints => _$this._autoCrossingPoints;
-  set autoCrossingPoints(int? autoCrossingPoints) => _$this._autoCrossingPoints = autoCrossingPoints;
+  set autoCrossingPoints(int? autoCrossingPoints) =>
+      _$this._autoCrossingPoints = autoCrossingPoints;
 
   int? _autoBouldersLow;
   int? get autoBouldersLow => _$this._autoBouldersLow;
-  set autoBouldersLow(int? autoBouldersLow) => _$this._autoBouldersLow = autoBouldersLow;
+  set autoBouldersLow(int? autoBouldersLow) =>
+      _$this._autoBouldersLow = autoBouldersLow;
 
   int? _autoBouldersHigh;
   int? get autoBouldersHigh => _$this._autoBouldersHigh;
-  set autoBouldersHigh(int? autoBouldersHigh) => _$this._autoBouldersHigh = autoBouldersHigh;
+  set autoBouldersHigh(int? autoBouldersHigh) =>
+      _$this._autoBouldersHigh = autoBouldersHigh;
 
   int? _autoBoulderPoints;
   int? get autoBoulderPoints => _$this._autoBoulderPoints;
-  set autoBoulderPoints(int? autoBoulderPoints) => _$this._autoBoulderPoints = autoBoulderPoints;
+  set autoBoulderPoints(int? autoBoulderPoints) =>
+      _$this._autoBoulderPoints = autoBoulderPoints;
 
   int? _teleopCrossingPoints;
   int? get teleopCrossingPoints => _$this._teleopCrossingPoints;
-  set teleopCrossingPoints(int? teleopCrossingPoints) => _$this._teleopCrossingPoints = teleopCrossingPoints;
+  set teleopCrossingPoints(int? teleopCrossingPoints) =>
+      _$this._teleopCrossingPoints = teleopCrossingPoints;
 
   int? _teleopBouldersLow;
   int? get teleopBouldersLow => _$this._teleopBouldersLow;
-  set teleopBouldersLow(int? teleopBouldersLow) => _$this._teleopBouldersLow = teleopBouldersLow;
+  set teleopBouldersLow(int? teleopBouldersLow) =>
+      _$this._teleopBouldersLow = teleopBouldersLow;
 
   int? _teleopBouldersHigh;
   int? get teleopBouldersHigh => _$this._teleopBouldersHigh;
-  set teleopBouldersHigh(int? teleopBouldersHigh) => _$this._teleopBouldersHigh = teleopBouldersHigh;
+  set teleopBouldersHigh(int? teleopBouldersHigh) =>
+      _$this._teleopBouldersHigh = teleopBouldersHigh;
 
   int? _teleopBoulderPoints;
   int? get teleopBoulderPoints => _$this._teleopBoulderPoints;
-  set teleopBoulderPoints(int? teleopBoulderPoints) => _$this._teleopBoulderPoints = teleopBoulderPoints;
+  set teleopBoulderPoints(int? teleopBoulderPoints) =>
+      _$this._teleopBoulderPoints = teleopBoulderPoints;
 
   bool? _teleopDefensesBreached;
   bool? get teleopDefensesBreached => _$this._teleopDefensesBreached;
-  set teleopDefensesBreached(bool? teleopDefensesBreached) => _$this._teleopDefensesBreached = teleopDefensesBreached;
+  set teleopDefensesBreached(bool? teleopDefensesBreached) =>
+      _$this._teleopDefensesBreached = teleopDefensesBreached;
 
   int? _teleopChallengePoints;
   int? get teleopChallengePoints => _$this._teleopChallengePoints;
-  set teleopChallengePoints(int? teleopChallengePoints) => _$this._teleopChallengePoints = teleopChallengePoints;
+  set teleopChallengePoints(int? teleopChallengePoints) =>
+      _$this._teleopChallengePoints = teleopChallengePoints;
 
   int? _teleopScalePoints;
   int? get teleopScalePoints => _$this._teleopScalePoints;
-  set teleopScalePoints(int? teleopScalePoints) => _$this._teleopScalePoints = teleopScalePoints;
+  set teleopScalePoints(int? teleopScalePoints) =>
+      _$this._teleopScalePoints = teleopScalePoints;
 
   int? _teleopTowerCaptured;
   int? get teleopTowerCaptured => _$this._teleopTowerCaptured;
-  set teleopTowerCaptured(int? teleopTowerCaptured) => _$this._teleopTowerCaptured = teleopTowerCaptured;
+  set teleopTowerCaptured(int? teleopTowerCaptured) =>
+      _$this._teleopTowerCaptured = teleopTowerCaptured;
 
   String? _towerFaceA;
   String? get towerFaceA => _$this._towerFaceA;
@@ -574,11 +616,13 @@ class MatchScoreBreakdown2016AllianceBuilder
 
   int? _towerEndStrength;
   int? get towerEndStrength => _$this._towerEndStrength;
-  set towerEndStrength(int? towerEndStrength) => _$this._towerEndStrength = towerEndStrength;
+  set towerEndStrength(int? towerEndStrength) =>
+      _$this._towerEndStrength = towerEndStrength;
 
   int? _techFoulCount;
   int? get techFoulCount => _$this._techFoulCount;
-  set techFoulCount(int? techFoulCount) => _$this._techFoulCount = techFoulCount;
+  set techFoulCount(int? techFoulCount) =>
+      _$this._techFoulCount = techFoulCount;
 
   int? _foulCount;
   int? get foulCount => _$this._foulCount;
@@ -602,23 +646,28 @@ class MatchScoreBreakdown2016AllianceBuilder
 
   int? _position1crossings;
   int? get position1crossings => _$this._position1crossings;
-  set position1crossings(int? position1crossings) => _$this._position1crossings = position1crossings;
+  set position1crossings(int? position1crossings) =>
+      _$this._position1crossings = position1crossings;
 
   int? _position2crossings;
   int? get position2crossings => _$this._position2crossings;
-  set position2crossings(int? position2crossings) => _$this._position2crossings = position2crossings;
+  set position2crossings(int? position2crossings) =>
+      _$this._position2crossings = position2crossings;
 
   int? _position3crossings;
   int? get position3crossings => _$this._position3crossings;
-  set position3crossings(int? position3crossings) => _$this._position3crossings = position3crossings;
+  set position3crossings(int? position3crossings) =>
+      _$this._position3crossings = position3crossings;
 
   int? _position4crossings;
   int? get position4crossings => _$this._position4crossings;
-  set position4crossings(int? position4crossings) => _$this._position4crossings = position4crossings;
+  set position4crossings(int? position4crossings) =>
+      _$this._position4crossings = position4crossings;
 
   int? _position5crossings;
   int? get position5crossings => _$this._position5crossings;
-  set position5crossings(int? position5crossings) => _$this._position5crossings = position5crossings;
+  set position5crossings(int? position5crossings) =>
+      _$this._position5crossings = position5crossings;
 
   MatchScoreBreakdown2016AllianceBuilder() {
     MatchScoreBreakdown2016Alliance._initializeBuilder(this);

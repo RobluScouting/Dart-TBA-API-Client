@@ -12,24 +12,31 @@ class _$EventDistrictPoints extends EventDistrictPoints {
   @override
   final BuiltMap<String, EventDistrictPointsTiebreakers>? tiebreakers;
 
-  factory _$EventDistrictPoints([void Function(EventDistrictPointsBuilder)? updates]) =>
+  factory _$EventDistrictPoints(
+          [void Function(EventDistrictPointsBuilder)? updates]) =>
       (new EventDistrictPointsBuilder()..update(updates)).build();
 
-  _$EventDistrictPoints._({required this.points, this.tiebreakers}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(points, 'EventDistrictPoints', 'points');
+  _$EventDistrictPoints._({required this.points, this.tiebreakers})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        points, 'EventDistrictPoints', 'points');
   }
 
   @override
-  EventDistrictPoints rebuild(void Function(EventDistrictPointsBuilder) updates) =>
+  EventDistrictPoints rebuild(
+          void Function(EventDistrictPointsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventDistrictPointsBuilder toBuilder() => new EventDistrictPointsBuilder()..replace(this);
+  EventDistrictPointsBuilder toBuilder() =>
+      new EventDistrictPointsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EventDistrictPoints && points == other.points && tiebreakers == other.tiebreakers;
+    return other is EventDistrictPoints &&
+        points == other.points &&
+        tiebreakers == other.tiebreakers;
   }
 
   @override
@@ -39,23 +46,30 @@ class _$EventDistrictPoints extends EventDistrictPoints {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventDistrictPoints')..add('points', points)..add('tiebreakers', tiebreakers))
+    return (newBuiltValueToStringHelper('EventDistrictPoints')
+          ..add('points', points)
+          ..add('tiebreakers', tiebreakers))
         .toString();
   }
 }
 
-class EventDistrictPointsBuilder implements Builder<EventDistrictPoints, EventDistrictPointsBuilder> {
+class EventDistrictPointsBuilder
+    implements Builder<EventDistrictPoints, EventDistrictPointsBuilder> {
   _$EventDistrictPoints? _$v;
 
   MapBuilder<String, EventDistrictPointsPoints>? _points;
   MapBuilder<String, EventDistrictPointsPoints> get points =>
       _$this._points ??= new MapBuilder<String, EventDistrictPointsPoints>();
-  set points(MapBuilder<String, EventDistrictPointsPoints>? points) => _$this._points = points;
+  set points(MapBuilder<String, EventDistrictPointsPoints>? points) =>
+      _$this._points = points;
 
   MapBuilder<String, EventDistrictPointsTiebreakers>? _tiebreakers;
   MapBuilder<String, EventDistrictPointsTiebreakers> get tiebreakers =>
-      _$this._tiebreakers ??= new MapBuilder<String, EventDistrictPointsTiebreakers>();
-  set tiebreakers(MapBuilder<String, EventDistrictPointsTiebreakers>? tiebreakers) => _$this._tiebreakers = tiebreakers;
+      _$this._tiebreakers ??=
+          new MapBuilder<String, EventDistrictPointsTiebreakers>();
+  set tiebreakers(
+          MapBuilder<String, EventDistrictPointsTiebreakers>? tiebreakers) =>
+      _$this._tiebreakers = tiebreakers;
 
   EventDistrictPointsBuilder() {
     EventDistrictPoints._initializeBuilder(this);
@@ -86,7 +100,9 @@ class EventDistrictPointsBuilder implements Builder<EventDistrictPoints, EventDi
   _$EventDistrictPoints build() {
     _$EventDistrictPoints _$result;
     try {
-      _$result = _$v ?? new _$EventDistrictPoints._(points: points.build(), tiebreakers: _tiebreakers?.build());
+      _$result = _$v ??
+          new _$EventDistrictPoints._(
+              points: points.build(), tiebreakers: _tiebreakers?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -95,7 +111,8 @@ class EventDistrictPointsBuilder implements Builder<EventDistrictPoints, EventDi
         _$failedField = 'tiebreakers';
         _tiebreakers?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventDistrictPoints', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventDistrictPoints', _$failedField, e.toString());
       }
       rethrow;
     }

@@ -36,7 +36,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -113,7 +114,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/keys'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events/keys'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -190,7 +192,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/simple'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events/simple'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -267,7 +270,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/rankings'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/rankings'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -344,7 +348,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -421,7 +426,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/keys'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams/keys'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -498,7 +504,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/simple'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams/simple'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -575,7 +582,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/districts/{year}'.replaceAll('{' r'year' '}', year.toString());
+    final _path =
+        r'/districts/{year}'.replaceAll('{' r'year' '}', year.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -652,7 +660,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/district_points'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/district_points'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -729,7 +738,8 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/districts'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/districts'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

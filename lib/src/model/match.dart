@@ -83,50 +83,76 @@ class _$MatchSerializer implements StructuredSerializer<Match> {
   final String wireName = r'Match';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Match object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Match object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
     result
       ..add(r'comp_level')
-      ..add(serializers.serialize(object.compLevel, specifiedType: const FullType(MatchCompLevelEnum)));
-    result..add(r'set_number')..add(serializers.serialize(object.setNumber, specifiedType: const FullType(int)));
-    result..add(r'match_number')..add(serializers.serialize(object.matchNumber, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.compLevel,
+          specifiedType: const FullType(MatchCompLevelEnum)));
+    result
+      ..add(r'set_number')
+      ..add(serializers.serialize(object.setNumber,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'match_number')
+      ..add(serializers.serialize(object.matchNumber,
+          specifiedType: const FullType(int)));
     if (object.alliances != null) {
       result
         ..add(r'alliances')
-        ..add(serializers.serialize(object.alliances, specifiedType: const FullType(MatchSimpleAlliances)));
+        ..add(serializers.serialize(object.alliances,
+            specifiedType: const FullType(MatchSimpleAlliances)));
     }
     if (object.winningAlliance != null) {
       result
         ..add(r'winning_alliance')
-        ..add(serializers.serialize(object.winningAlliance, specifiedType: const FullType(MatchWinningAllianceEnum)));
+        ..add(serializers.serialize(object.winningAlliance,
+            specifiedType: const FullType(MatchWinningAllianceEnum)));
     }
-    result..add(r'event_key')..add(serializers.serialize(object.eventKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'event_key')
+      ..add(serializers.serialize(object.eventKey,
+          specifiedType: const FullType(String)));
     if (object.time != null) {
-      result..add(r'time')..add(serializers.serialize(object.time, specifiedType: const FullType(int)));
+      result
+        ..add(r'time')
+        ..add(serializers.serialize(object.time,
+            specifiedType: const FullType(int)));
     }
     if (object.actualTime != null) {
-      result..add(r'actual_time')..add(serializers.serialize(object.actualTime, specifiedType: const FullType(int)));
+      result
+        ..add(r'actual_time')
+        ..add(serializers.serialize(object.actualTime,
+            specifiedType: const FullType(int)));
     }
     if (object.predictedTime != null) {
       result
         ..add(r'predicted_time')
-        ..add(serializers.serialize(object.predictedTime, specifiedType: const FullType(int)));
+        ..add(serializers.serialize(object.predictedTime,
+            specifiedType: const FullType(int)));
     }
     if (object.postResultTime != null) {
       result
         ..add(r'post_result_time')
-        ..add(serializers.serialize(object.postResultTime, specifiedType: const FullType(int)));
+        ..add(serializers.serialize(object.postResultTime,
+            specifiedType: const FullType(int)));
     }
     if (object.scoreBreakdown != null) {
       result
         ..add(r'score_breakdown')
-        ..add(serializers.serialize(object.scoreBreakdown, specifiedType: const FullType(JsonObject)));
+        ..add(serializers.serialize(object.scoreBreakdown,
+            specifiedType: const FullType(JsonObject)));
     }
     if (object.videos != null) {
       result
         ..add(r'videos')
-        ..add(serializers.serialize(object.videos, specifiedType: const FullType(BuiltList, [FullType(MatchVideos)])));
+        ..add(serializers.serialize(object.videos,
+            specifiedType: const FullType(BuiltList, [FullType(MatchVideos)])));
     }
     return result;
   }
@@ -143,48 +169,61 @@ class _$MatchSerializer implements StructuredSerializer<Match> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'comp_level':
-          result.compLevel =
-              serializers.deserialize(value, specifiedType: const FullType(MatchCompLevelEnum)) as MatchCompLevelEnum;
+          result.compLevel = serializers.deserialize(value,
+                  specifiedType: const FullType(MatchCompLevelEnum))
+              as MatchCompLevelEnum;
           break;
         case r'set_number':
-          result.setNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.setNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'match_number':
-          result.matchNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.matchNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'alliances':
-          result.alliances.replace(serializers.deserialize(value, specifiedType: const FullType(MatchSimpleAlliances))
+          result.alliances.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(MatchSimpleAlliances))
               as MatchSimpleAlliances);
           break;
         case r'winning_alliance':
           result.winningAlliance = serializers.deserialize(value,
-              specifiedType: const FullType(MatchWinningAllianceEnum)) as MatchWinningAllianceEnum;
+                  specifiedType: const FullType(MatchWinningAllianceEnum))
+              as MatchWinningAllianceEnum;
           break;
         case r'event_key':
-          result.eventKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'time':
-          result.time = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.time = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'actual_time':
-          result.actualTime = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.actualTime = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'predicted_time':
-          result.predictedTime = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.predictedTime = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'post_result_time':
-          result.postResultTime = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.postResultTime = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'score_breakdown':
-          result.scoreBreakdown =
-              serializers.deserialize(value, specifiedType: const FullType(JsonObject)) as JsonObject;
+          result.scoreBreakdown = serializers.deserialize(value,
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
         case r'videos':
           result.videos.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(MatchVideos)])) as BuiltList<MatchVideos>);
+                  specifiedType:
+                      const FullType(BuiltList, [FullType(MatchVideos)]))
+              as BuiltList<MatchVideos>);
           break;
       }
     }
@@ -213,12 +252,14 @@ class MatchCompLevelEnum extends EnumClass {
   @BuiltValueEnumConst(wireName: r'f')
   static const MatchCompLevelEnum f = _$matchCompLevelEnum_f;
 
-  static Serializer<MatchCompLevelEnum> get serializer => _$matchCompLevelEnumSerializer;
+  static Serializer<MatchCompLevelEnum> get serializer =>
+      _$matchCompLevelEnumSerializer;
 
   const MatchCompLevelEnum._(String name) : super(name);
 
   static BuiltSet<MatchCompLevelEnum> get values => _$matchCompLevelEnumValues;
-  static MatchCompLevelEnum valueOf(String name) => _$matchCompLevelEnumValueOf(name);
+  static MatchCompLevelEnum valueOf(String name) =>
+      _$matchCompLevelEnumValueOf(name);
 }
 
 class MatchWinningAllianceEnum extends EnumClass {
@@ -232,12 +273,16 @@ class MatchWinningAllianceEnum extends EnumClass {
 
   /// The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie.
   @BuiltValueEnumConst(wireName: r'')
-  static const MatchWinningAllianceEnum empty = _$matchWinningAllianceEnum_empty;
+  static const MatchWinningAllianceEnum empty =
+      _$matchWinningAllianceEnum_empty;
 
-  static Serializer<MatchWinningAllianceEnum> get serializer => _$matchWinningAllianceEnumSerializer;
+  static Serializer<MatchWinningAllianceEnum> get serializer =>
+      _$matchWinningAllianceEnumSerializer;
 
   const MatchWinningAllianceEnum._(String name) : super(name);
 
-  static BuiltSet<MatchWinningAllianceEnum> get values => _$matchWinningAllianceEnumValues;
-  static MatchWinningAllianceEnum valueOf(String name) => _$matchWinningAllianceEnumValueOf(name);
+  static BuiltSet<MatchWinningAllianceEnum> get values =>
+      _$matchWinningAllianceEnumValues;
+  static MatchWinningAllianceEnum valueOf(String name) =>
+      _$matchWinningAllianceEnumValueOf(name);
 }

@@ -12,22 +12,27 @@ class _$MatchSimpleAlliances extends MatchSimpleAlliances {
   @override
   final MatchAlliance? blue;
 
-  factory _$MatchSimpleAlliances([void Function(MatchSimpleAlliancesBuilder)? updates]) =>
+  factory _$MatchSimpleAlliances(
+          [void Function(MatchSimpleAlliancesBuilder)? updates]) =>
       (new MatchSimpleAlliancesBuilder()..update(updates)).build();
 
   _$MatchSimpleAlliances._({this.red, this.blue}) : super._();
 
   @override
-  MatchSimpleAlliances rebuild(void Function(MatchSimpleAlliancesBuilder) updates) =>
+  MatchSimpleAlliances rebuild(
+          void Function(MatchSimpleAlliancesBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchSimpleAlliancesBuilder toBuilder() => new MatchSimpleAlliancesBuilder()..replace(this);
+  MatchSimpleAlliancesBuilder toBuilder() =>
+      new MatchSimpleAlliancesBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is MatchSimpleAlliances && red == other.red && blue == other.blue;
+    return other is MatchSimpleAlliances &&
+        red == other.red &&
+        blue == other.blue;
   }
 
   @override
@@ -37,11 +42,15 @@ class _$MatchSimpleAlliances extends MatchSimpleAlliances {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('MatchSimpleAlliances')..add('red', red)..add('blue', blue)).toString();
+    return (newBuiltValueToStringHelper('MatchSimpleAlliances')
+          ..add('red', red)
+          ..add('blue', blue))
+        .toString();
   }
 }
 
-class MatchSimpleAlliancesBuilder implements Builder<MatchSimpleAlliances, MatchSimpleAlliancesBuilder> {
+class MatchSimpleAlliancesBuilder
+    implements Builder<MatchSimpleAlliances, MatchSimpleAlliancesBuilder> {
   _$MatchSimpleAlliances? _$v;
 
   MatchAllianceBuilder? _red;
@@ -81,7 +90,9 @@ class MatchSimpleAlliancesBuilder implements Builder<MatchSimpleAlliances, Match
   _$MatchSimpleAlliances build() {
     _$MatchSimpleAlliances _$result;
     try {
-      _$result = _$v ?? new _$MatchSimpleAlliances._(red: _red?.build(), blue: _blue?.build());
+      _$result = _$v ??
+          new _$MatchSimpleAlliances._(
+              red: _red?.build(), blue: _blue?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -90,7 +101,8 @@ class MatchSimpleAlliancesBuilder implements Builder<MatchSimpleAlliances, Match
         _$failedField = 'blue';
         _blue?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('MatchSimpleAlliances', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'MatchSimpleAlliances', _$failedField, e.toString());
       }
       rethrow;
     }

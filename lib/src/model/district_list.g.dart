@@ -19,16 +19,23 @@ class _$DistrictList extends DistrictList {
   factory _$DistrictList([void Function(DistrictListBuilder)? updates]) =>
       (new DistrictListBuilder()..update(updates)).build();
 
-  _$DistrictList._({required this.abbreviation, required this.displayName, required this.key, required this.year})
+  _$DistrictList._(
+      {required this.abbreviation,
+      required this.displayName,
+      required this.key,
+      required this.year})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(abbreviation, 'DistrictList', 'abbreviation');
-    BuiltValueNullFieldError.checkNotNull(displayName, 'DistrictList', 'displayName');
+    BuiltValueNullFieldError.checkNotNull(
+        abbreviation, 'DistrictList', 'abbreviation');
+    BuiltValueNullFieldError.checkNotNull(
+        displayName, 'DistrictList', 'displayName');
     BuiltValueNullFieldError.checkNotNull(key, 'DistrictList', 'key');
     BuiltValueNullFieldError.checkNotNull(year, 'DistrictList', 'year');
   }
 
   @override
-  DistrictList rebuild(void Function(DistrictListBuilder) updates) => (toBuilder()..update(updates)).build();
+  DistrictList rebuild(void Function(DistrictListBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   DistrictListBuilder toBuilder() => new DistrictListBuilder()..replace(this);
@@ -45,7 +52,10 @@ class _$DistrictList extends DistrictList {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, abbreviation.hashCode), displayName.hashCode), key.hashCode), year.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, abbreviation.hashCode), displayName.hashCode),
+            key.hashCode),
+        year.hashCode));
   }
 
   @override
@@ -59,7 +69,8 @@ class _$DistrictList extends DistrictList {
   }
 }
 
-class DistrictListBuilder implements Builder<DistrictList, DistrictListBuilder> {
+class DistrictListBuilder
+    implements Builder<DistrictList, DistrictListBuilder> {
   _$DistrictList? _$v;
 
   String? _abbreviation;
@@ -109,10 +120,14 @@ class DistrictListBuilder implements Builder<DistrictList, DistrictListBuilder> 
   _$DistrictList build() {
     final _$result = _$v ??
         new _$DistrictList._(
-            abbreviation: BuiltValueNullFieldError.checkNotNull(abbreviation, 'DistrictList', 'abbreviation'),
-            displayName: BuiltValueNullFieldError.checkNotNull(displayName, 'DistrictList', 'displayName'),
-            key: BuiltValueNullFieldError.checkNotNull(key, 'DistrictList', 'key'),
-            year: BuiltValueNullFieldError.checkNotNull(year, 'DistrictList', 'year'));
+            abbreviation: BuiltValueNullFieldError.checkNotNull(
+                abbreviation, 'DistrictList', 'abbreviation'),
+            displayName: BuiltValueNullFieldError.checkNotNull(
+                displayName, 'DistrictList', 'displayName'),
+            key: BuiltValueNullFieldError.checkNotNull(
+                key, 'DistrictList', 'key'),
+            year: BuiltValueNullFieldError.checkNotNull(
+                year, 'DistrictList', 'year'));
     replace(_$result);
     return _$result;
   }

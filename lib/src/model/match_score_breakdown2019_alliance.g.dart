@@ -6,7 +6,8 @@ part of 'match_score_breakdown2019_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-class _$MatchScoreBreakdown2019Alliance extends MatchScoreBreakdown2019Alliance {
+class _$MatchScoreBreakdown2019Alliance
+    extends MatchScoreBreakdown2019Alliance {
   @override
   final int? adjustPoints;
   @override
@@ -110,7 +111,8 @@ class _$MatchScoreBreakdown2019Alliance extends MatchScoreBreakdown2019Alliance 
   @override
   final int? totalPoints;
 
-  factory _$MatchScoreBreakdown2019Alliance([void Function(MatchScoreBreakdown2019AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2019Alliance(
+          [void Function(MatchScoreBreakdown2019AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2019AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2019Alliance._(
@@ -168,11 +170,13 @@ class _$MatchScoreBreakdown2019Alliance extends MatchScoreBreakdown2019Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2019Alliance rebuild(void Function(MatchScoreBreakdown2019AllianceBuilder) updates) =>
+  MatchScoreBreakdown2019Alliance rebuild(
+          void Function(MatchScoreBreakdown2019AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2019AllianceBuilder toBuilder() => new MatchScoreBreakdown2019AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2019AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2019AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -251,27 +255,7 @@ class _$MatchScoreBreakdown2019Alliance extends MatchScoreBreakdown2019Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, adjustPoints.hashCode), autoPoints.hashCode), bay1.hashCode), bay2.hashCode), bay3.hashCode), bay4.hashCode), bay5.hashCode), bay6.hashCode), bay7.hashCode), bay8.hashCode), cargoPoints.hashCode), completeRocketRankingPoint.hashCode), completedRocketFar.hashCode), completedRocketNear.hashCode), endgameRobot1.hashCode), endgameRobot2.hashCode), endgameRobot3.hashCode), foulCount.hashCode), foulPoints.hashCode), habClimbPoints.hashCode), habDockingRankingPoint.hashCode), habLineRobot1.hashCode),
-                                                                                                                        habLineRobot2.hashCode),
-                                                                                                                    habLineRobot3.hashCode),
-                                                                                                                hatchPanelPoints.hashCode),
-                                                                                                            lowLeftRocketFar.hashCode),
-                                                                                                        lowLeftRocketNear.hashCode),
-                                                                                                    lowRightRocketFar.hashCode),
-                                                                                                lowRightRocketNear.hashCode),
-                                                                                            midLeftRocketFar.hashCode),
-                                                                                        midLeftRocketNear.hashCode),
-                                                                                    midRightRocketFar.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, adjustPoints.hashCode), autoPoints.hashCode), bay1.hashCode), bay2.hashCode), bay3.hashCode), bay4.hashCode), bay5.hashCode), bay6.hashCode), bay7.hashCode), bay8.hashCode), cargoPoints.hashCode), completeRocketRankingPoint.hashCode), completedRocketFar.hashCode), completedRocketNear.hashCode), endgameRobot1.hashCode), endgameRobot2.hashCode), endgameRobot3.hashCode), foulCount.hashCode), foulPoints.hashCode), habClimbPoints.hashCode), habDockingRankingPoint.hashCode), habLineRobot1.hashCode), habLineRobot2.hashCode), habLineRobot3.hashCode), hatchPanelPoints.hashCode), lowLeftRocketFar.hashCode), lowLeftRocketNear.hashCode), lowRightRocketFar.hashCode), lowRightRocketNear.hashCode), midLeftRocketFar.hashCode), midLeftRocketNear.hashCode), midRightRocketFar.hashCode),
                                                                                 midRightRocketNear.hashCode),
                                                                             preMatchBay1.hashCode),
                                                                         preMatchBay2.hashCode),
@@ -352,7 +336,9 @@ class _$MatchScoreBreakdown2019Alliance extends MatchScoreBreakdown2019Alliance 
 }
 
 class MatchScoreBreakdown2019AllianceBuilder
-    implements Builder<MatchScoreBreakdown2019Alliance, MatchScoreBreakdown2019AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2019Alliance,
+            MatchScoreBreakdown2019AllianceBuilder> {
   _$MatchScoreBreakdown2019Alliance? _$v;
 
   int? _adjustPoints;
@@ -406,23 +392,28 @@ class MatchScoreBreakdown2019AllianceBuilder
 
   bool? _completedRocketFar;
   bool? get completedRocketFar => _$this._completedRocketFar;
-  set completedRocketFar(bool? completedRocketFar) => _$this._completedRocketFar = completedRocketFar;
+  set completedRocketFar(bool? completedRocketFar) =>
+      _$this._completedRocketFar = completedRocketFar;
 
   bool? _completedRocketNear;
   bool? get completedRocketNear => _$this._completedRocketNear;
-  set completedRocketNear(bool? completedRocketNear) => _$this._completedRocketNear = completedRocketNear;
+  set completedRocketNear(bool? completedRocketNear) =>
+      _$this._completedRocketNear = completedRocketNear;
 
   String? _endgameRobot1;
   String? get endgameRobot1 => _$this._endgameRobot1;
-  set endgameRobot1(String? endgameRobot1) => _$this._endgameRobot1 = endgameRobot1;
+  set endgameRobot1(String? endgameRobot1) =>
+      _$this._endgameRobot1 = endgameRobot1;
 
   String? _endgameRobot2;
   String? get endgameRobot2 => _$this._endgameRobot2;
-  set endgameRobot2(String? endgameRobot2) => _$this._endgameRobot2 = endgameRobot2;
+  set endgameRobot2(String? endgameRobot2) =>
+      _$this._endgameRobot2 = endgameRobot2;
 
   String? _endgameRobot3;
   String? get endgameRobot3 => _$this._endgameRobot3;
-  set endgameRobot3(String? endgameRobot3) => _$this._endgameRobot3 = endgameRobot3;
+  set endgameRobot3(String? endgameRobot3) =>
+      _$this._endgameRobot3 = endgameRobot3;
 
   int? _foulCount;
   int? get foulCount => _$this._foulCount;
@@ -434,59 +425,73 @@ class MatchScoreBreakdown2019AllianceBuilder
 
   int? _habClimbPoints;
   int? get habClimbPoints => _$this._habClimbPoints;
-  set habClimbPoints(int? habClimbPoints) => _$this._habClimbPoints = habClimbPoints;
+  set habClimbPoints(int? habClimbPoints) =>
+      _$this._habClimbPoints = habClimbPoints;
 
   bool? _habDockingRankingPoint;
   bool? get habDockingRankingPoint => _$this._habDockingRankingPoint;
-  set habDockingRankingPoint(bool? habDockingRankingPoint) => _$this._habDockingRankingPoint = habDockingRankingPoint;
+  set habDockingRankingPoint(bool? habDockingRankingPoint) =>
+      _$this._habDockingRankingPoint = habDockingRankingPoint;
 
   String? _habLineRobot1;
   String? get habLineRobot1 => _$this._habLineRobot1;
-  set habLineRobot1(String? habLineRobot1) => _$this._habLineRobot1 = habLineRobot1;
+  set habLineRobot1(String? habLineRobot1) =>
+      _$this._habLineRobot1 = habLineRobot1;
 
   String? _habLineRobot2;
   String? get habLineRobot2 => _$this._habLineRobot2;
-  set habLineRobot2(String? habLineRobot2) => _$this._habLineRobot2 = habLineRobot2;
+  set habLineRobot2(String? habLineRobot2) =>
+      _$this._habLineRobot2 = habLineRobot2;
 
   String? _habLineRobot3;
   String? get habLineRobot3 => _$this._habLineRobot3;
-  set habLineRobot3(String? habLineRobot3) => _$this._habLineRobot3 = habLineRobot3;
+  set habLineRobot3(String? habLineRobot3) =>
+      _$this._habLineRobot3 = habLineRobot3;
 
   int? _hatchPanelPoints;
   int? get hatchPanelPoints => _$this._hatchPanelPoints;
-  set hatchPanelPoints(int? hatchPanelPoints) => _$this._hatchPanelPoints = hatchPanelPoints;
+  set hatchPanelPoints(int? hatchPanelPoints) =>
+      _$this._hatchPanelPoints = hatchPanelPoints;
 
   String? _lowLeftRocketFar;
   String? get lowLeftRocketFar => _$this._lowLeftRocketFar;
-  set lowLeftRocketFar(String? lowLeftRocketFar) => _$this._lowLeftRocketFar = lowLeftRocketFar;
+  set lowLeftRocketFar(String? lowLeftRocketFar) =>
+      _$this._lowLeftRocketFar = lowLeftRocketFar;
 
   String? _lowLeftRocketNear;
   String? get lowLeftRocketNear => _$this._lowLeftRocketNear;
-  set lowLeftRocketNear(String? lowLeftRocketNear) => _$this._lowLeftRocketNear = lowLeftRocketNear;
+  set lowLeftRocketNear(String? lowLeftRocketNear) =>
+      _$this._lowLeftRocketNear = lowLeftRocketNear;
 
   String? _lowRightRocketFar;
   String? get lowRightRocketFar => _$this._lowRightRocketFar;
-  set lowRightRocketFar(String? lowRightRocketFar) => _$this._lowRightRocketFar = lowRightRocketFar;
+  set lowRightRocketFar(String? lowRightRocketFar) =>
+      _$this._lowRightRocketFar = lowRightRocketFar;
 
   String? _lowRightRocketNear;
   String? get lowRightRocketNear => _$this._lowRightRocketNear;
-  set lowRightRocketNear(String? lowRightRocketNear) => _$this._lowRightRocketNear = lowRightRocketNear;
+  set lowRightRocketNear(String? lowRightRocketNear) =>
+      _$this._lowRightRocketNear = lowRightRocketNear;
 
   String? _midLeftRocketFar;
   String? get midLeftRocketFar => _$this._midLeftRocketFar;
-  set midLeftRocketFar(String? midLeftRocketFar) => _$this._midLeftRocketFar = midLeftRocketFar;
+  set midLeftRocketFar(String? midLeftRocketFar) =>
+      _$this._midLeftRocketFar = midLeftRocketFar;
 
   String? _midLeftRocketNear;
   String? get midLeftRocketNear => _$this._midLeftRocketNear;
-  set midLeftRocketNear(String? midLeftRocketNear) => _$this._midLeftRocketNear = midLeftRocketNear;
+  set midLeftRocketNear(String? midLeftRocketNear) =>
+      _$this._midLeftRocketNear = midLeftRocketNear;
 
   String? _midRightRocketFar;
   String? get midRightRocketFar => _$this._midRightRocketFar;
-  set midRightRocketFar(String? midRightRocketFar) => _$this._midRightRocketFar = midRightRocketFar;
+  set midRightRocketFar(String? midRightRocketFar) =>
+      _$this._midRightRocketFar = midRightRocketFar;
 
   String? _midRightRocketNear;
   String? get midRightRocketNear => _$this._midRightRocketNear;
-  set midRightRocketNear(String? midRightRocketNear) => _$this._midRightRocketNear = midRightRocketNear;
+  set midRightRocketNear(String? midRightRocketNear) =>
+      _$this._midRightRocketNear = midRightRocketNear;
 
   String? _preMatchBay1;
   String? get preMatchBay1 => _$this._preMatchBay1;
@@ -514,15 +519,18 @@ class MatchScoreBreakdown2019AllianceBuilder
 
   String? _preMatchLevelRobot1;
   String? get preMatchLevelRobot1 => _$this._preMatchLevelRobot1;
-  set preMatchLevelRobot1(String? preMatchLevelRobot1) => _$this._preMatchLevelRobot1 = preMatchLevelRobot1;
+  set preMatchLevelRobot1(String? preMatchLevelRobot1) =>
+      _$this._preMatchLevelRobot1 = preMatchLevelRobot1;
 
   String? _preMatchLevelRobot2;
   String? get preMatchLevelRobot2 => _$this._preMatchLevelRobot2;
-  set preMatchLevelRobot2(String? preMatchLevelRobot2) => _$this._preMatchLevelRobot2 = preMatchLevelRobot2;
+  set preMatchLevelRobot2(String? preMatchLevelRobot2) =>
+      _$this._preMatchLevelRobot2 = preMatchLevelRobot2;
 
   String? _preMatchLevelRobot3;
   String? get preMatchLevelRobot3 => _$this._preMatchLevelRobot3;
-  set preMatchLevelRobot3(String? preMatchLevelRobot3) => _$this._preMatchLevelRobot3 = preMatchLevelRobot3;
+  set preMatchLevelRobot3(String? preMatchLevelRobot3) =>
+      _$this._preMatchLevelRobot3 = preMatchLevelRobot3;
 
   int? _rp;
   int? get rp => _$this._rp;
@@ -530,11 +538,13 @@ class MatchScoreBreakdown2019AllianceBuilder
 
   int? _sandStormBonusPoints;
   int? get sandStormBonusPoints => _$this._sandStormBonusPoints;
-  set sandStormBonusPoints(int? sandStormBonusPoints) => _$this._sandStormBonusPoints = sandStormBonusPoints;
+  set sandStormBonusPoints(int? sandStormBonusPoints) =>
+      _$this._sandStormBonusPoints = sandStormBonusPoints;
 
   int? _techFoulCount;
   int? get techFoulCount => _$this._techFoulCount;
-  set techFoulCount(int? techFoulCount) => _$this._techFoulCount = techFoulCount;
+  set techFoulCount(int? techFoulCount) =>
+      _$this._techFoulCount = techFoulCount;
 
   int? _teleopPoints;
   int? get teleopPoints => _$this._teleopPoints;
@@ -542,19 +552,23 @@ class MatchScoreBreakdown2019AllianceBuilder
 
   String? _topLeftRocketFar;
   String? get topLeftRocketFar => _$this._topLeftRocketFar;
-  set topLeftRocketFar(String? topLeftRocketFar) => _$this._topLeftRocketFar = topLeftRocketFar;
+  set topLeftRocketFar(String? topLeftRocketFar) =>
+      _$this._topLeftRocketFar = topLeftRocketFar;
 
   String? _topLeftRocketNear;
   String? get topLeftRocketNear => _$this._topLeftRocketNear;
-  set topLeftRocketNear(String? topLeftRocketNear) => _$this._topLeftRocketNear = topLeftRocketNear;
+  set topLeftRocketNear(String? topLeftRocketNear) =>
+      _$this._topLeftRocketNear = topLeftRocketNear;
 
   String? _topRightRocketFar;
   String? get topRightRocketFar => _$this._topRightRocketFar;
-  set topRightRocketFar(String? topRightRocketFar) => _$this._topRightRocketFar = topRightRocketFar;
+  set topRightRocketFar(String? topRightRocketFar) =>
+      _$this._topRightRocketFar = topRightRocketFar;
 
   String? _topRightRocketNear;
   String? get topRightRocketNear => _$this._topRightRocketNear;
-  set topRightRocketNear(String? topRightRocketNear) => _$this._topRightRocketNear = topRightRocketNear;
+  set topRightRocketNear(String? topRightRocketNear) =>
+      _$this._topRightRocketNear = topRightRocketNear;
 
   int? _totalPoints;
   int? get totalPoints => _$this._totalPoints;

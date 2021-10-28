@@ -43,7 +43,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -120,7 +121,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/keys'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events/keys'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -197,7 +199,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/simple'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/events/simple'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -274,7 +277,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -351,7 +355,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/alliances'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/alliances'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -389,7 +394,8 @@ class EventApi {
     BuiltList<EliminationAlliance> _responseData;
 
     try {
-      const _responseType = FullType(BuiltList, [FullType(EliminationAlliance)]);
+      const _responseType =
+          FullType(BuiltList, [FullType(EliminationAlliance)]);
       _responseData = _serializers.deserialize(
         _response.data!,
         specifiedType: _responseType,
@@ -428,7 +434,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/awards'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/awards'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -505,7 +512,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/district_points'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/district_points'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -582,7 +590,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/insights'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/insights'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -659,7 +668,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/timeseries'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/timeseries'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -736,7 +746,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -813,7 +824,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/keys'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/keys'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -890,7 +902,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/simple'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/matches/simple'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -967,7 +980,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/oprs'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/oprs'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1044,7 +1058,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/predictions'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/predictions'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1121,7 +1136,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/rankings'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/rankings'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1198,7 +1214,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/simple'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/simple'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1275,7 +1292,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1352,7 +1370,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/keys'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/keys'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1429,7 +1448,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/simple'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/simple'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1506,7 +1526,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/statuses'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/statuses'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1544,7 +1565,8 @@ class EventApi {
     BuiltMap<String, TeamEventStatus> _responseData;
 
     try {
-      const _responseType = FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
+      const _responseType =
+          FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
       _responseData = _serializers.deserialize(
         _response.data!,
         specifiedType: _responseType,
@@ -1583,7 +1605,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/events/{year}'.replaceAll('{' r'year' '}', year.toString());
+    final _path =
+        r'/events/{year}'.replaceAll('{' r'year' '}', year.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1660,7 +1683,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/events/{year}/keys'.replaceAll('{' r'year' '}', year.toString());
+    final _path =
+        r'/events/{year}/keys'.replaceAll('{' r'year' '}', year.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1737,7 +1761,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/events/{year}/simple'.replaceAll('{' r'year' '}', year.toString());
+    final _path =
+        r'/events/{year}/simple'.replaceAll('{' r'year' '}', year.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2214,7 +2239,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2531,7 +2557,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events/keys'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events/keys'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2608,7 +2635,8 @@ class EventApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events/simple'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events/simple'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2675,7 +2703,8 @@ class EventApi {
   ///
   ///
   /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
-  Future<Response<BuiltMap<String, TeamEventStatus>>> getTeamEventsStatusesByYear({
+  Future<Response<BuiltMap<String, TeamEventStatus>>>
+      getTeamEventsStatusesByYear({
     required String teamKey,
     required int year,
     String? ifModifiedSince,
@@ -2726,7 +2755,8 @@ class EventApi {
     BuiltMap<String, TeamEventStatus> _responseData;
 
     try {
-      const _responseType = FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
+      const _responseType =
+          FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
       _responseData = _serializers.deserialize(
         _response.data!,
         specifiedType: _responseType,

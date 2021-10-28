@@ -8,7 +8,8 @@ import 'package:built_value/serializer.dart';
 
 part 'event_insights.g.dart';
 
-abstract class EventInsights implements Built<EventInsights, EventInsightsBuilder> {
+abstract class EventInsights
+    implements Built<EventInsights, EventInsightsBuilder> {
   /// Inights for the qualification round of an event
   @BuiltValueField(wireName: r'qual')
   JsonObject? get qual;
@@ -21,10 +22,12 @@ abstract class EventInsights implements Built<EventInsights, EventInsightsBuilde
 
   static void _initializeBuilder(EventInsightsBuilder b) => b;
 
-  factory EventInsights([void updates(EventInsightsBuilder b)]) = _$EventInsights;
+  factory EventInsights([void updates(EventInsightsBuilder b)]) =
+      _$EventInsights;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<EventInsights> get serializer => _$EventInsightsSerializer();
+  static Serializer<EventInsights> get serializer =>
+      _$EventInsightsSerializer();
 }
 
 class _$EventInsightsSerializer implements StructuredSerializer<EventInsights> {
@@ -39,16 +42,23 @@ class _$EventInsightsSerializer implements StructuredSerializer<EventInsights> {
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.qual != null) {
-      result..add(r'qual')..add(serializers.serialize(object.qual, specifiedType: const FullType(JsonObject)));
+      result
+        ..add(r'qual')
+        ..add(serializers.serialize(object.qual,
+            specifiedType: const FullType(JsonObject)));
     }
     if (object.playoff != null) {
-      result..add(r'playoff')..add(serializers.serialize(object.playoff, specifiedType: const FullType(JsonObject)));
+      result
+        ..add(r'playoff')
+        ..add(serializers.serialize(object.playoff,
+            specifiedType: const FullType(JsonObject)));
     }
     return result;
   }
 
   @override
-  EventInsights deserialize(Serializers serializers, Iterable<Object?> serialized,
+  EventInsights deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = EventInsightsBuilder();
 
@@ -59,10 +69,12 @@ class _$EventInsightsSerializer implements StructuredSerializer<EventInsights> {
       final Object? value = iterator.current;
       switch (key) {
         case r'qual':
-          result.qual = serializers.deserialize(value, specifiedType: const FullType(JsonObject)) as JsonObject;
+          result.qual = serializers.deserialize(value,
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
         case r'playoff':
-          result.playoff = serializers.deserialize(value, specifiedType: const FullType(JsonObject)) as JsonObject;
+          result.playoff = serializers.deserialize(value,
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
       }
     }

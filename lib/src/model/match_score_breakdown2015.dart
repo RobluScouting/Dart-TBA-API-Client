@@ -9,7 +9,8 @@ import 'package:built_value/serializer.dart';
 
 part 'match_score_breakdown2015.g.dart';
 
-abstract class MatchScoreBreakdown2015 implements Built<MatchScoreBreakdown2015, MatchScoreBreakdown2015Builder> {
+abstract class MatchScoreBreakdown2015
+    implements Built<MatchScoreBreakdown2015, MatchScoreBreakdown2015Builder> {
   @BuiltValueField(wireName: r'blue')
   MatchScoreBreakdown2015Alliance? get blue;
 
@@ -27,49 +28,62 @@ abstract class MatchScoreBreakdown2015 implements Built<MatchScoreBreakdown2015,
 
   static void _initializeBuilder(MatchScoreBreakdown2015Builder b) => b;
 
-  factory MatchScoreBreakdown2015([void updates(MatchScoreBreakdown2015Builder b)]) = _$MatchScoreBreakdown2015;
+  factory MatchScoreBreakdown2015(
+          [void updates(MatchScoreBreakdown2015Builder b)]) =
+      _$MatchScoreBreakdown2015;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchScoreBreakdown2015> get serializer => _$MatchScoreBreakdown2015Serializer();
+  static Serializer<MatchScoreBreakdown2015> get serializer =>
+      _$MatchScoreBreakdown2015Serializer();
 }
 
-class _$MatchScoreBreakdown2015Serializer implements StructuredSerializer<MatchScoreBreakdown2015> {
+class _$MatchScoreBreakdown2015Serializer
+    implements StructuredSerializer<MatchScoreBreakdown2015> {
   @override
-  final Iterable<Type> types = const [MatchScoreBreakdown2015, _$MatchScoreBreakdown2015];
+  final Iterable<Type> types = const [
+    MatchScoreBreakdown2015,
+    _$MatchScoreBreakdown2015
+  ];
 
   @override
   final String wireName = r'MatchScoreBreakdown2015';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, MatchScoreBreakdown2015 object,
+  Iterable<Object?> serialize(
+      Serializers serializers, MatchScoreBreakdown2015 object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.blue != null) {
       result
         ..add(r'blue')
-        ..add(serializers.serialize(object.blue, specifiedType: const FullType(MatchScoreBreakdown2015Alliance)));
+        ..add(serializers.serialize(object.blue,
+            specifiedType: const FullType(MatchScoreBreakdown2015Alliance)));
     }
     if (object.red != null) {
       result
         ..add(r'red')
-        ..add(serializers.serialize(object.red, specifiedType: const FullType(MatchScoreBreakdown2015Alliance)));
+        ..add(serializers.serialize(object.red,
+            specifiedType: const FullType(MatchScoreBreakdown2015Alliance)));
     }
     if (object.coopertition != null) {
       result
         ..add(r'coopertition')
         ..add(serializers.serialize(object.coopertition,
-            specifiedType: const FullType(MatchScoreBreakdown2015CoopertitionEnum)));
+            specifiedType:
+                const FullType(MatchScoreBreakdown2015CoopertitionEnum)));
     }
     if (object.coopertitionPoints != null) {
       result
         ..add(r'coopertition_points')
-        ..add(serializers.serialize(object.coopertitionPoints, specifiedType: const FullType(int)));
+        ..add(serializers.serialize(object.coopertitionPoints,
+            specifiedType: const FullType(int)));
     }
     return result;
   }
 
   @override
-  MatchScoreBreakdown2015 deserialize(Serializers serializers, Iterable<Object?> serialized,
+  MatchScoreBreakdown2015 deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = MatchScoreBreakdown2015Builder();
 
@@ -81,19 +95,25 @@ class _$MatchScoreBreakdown2015Serializer implements StructuredSerializer<MatchS
       switch (key) {
         case r'blue':
           result.blue.replace(serializers.deserialize(value,
-              specifiedType: const FullType(MatchScoreBreakdown2015Alliance)) as MatchScoreBreakdown2015Alliance);
+                  specifiedType:
+                      const FullType(MatchScoreBreakdown2015Alliance))
+              as MatchScoreBreakdown2015Alliance);
           break;
         case r'red':
           result.red.replace(serializers.deserialize(value,
-              specifiedType: const FullType(MatchScoreBreakdown2015Alliance)) as MatchScoreBreakdown2015Alliance);
+                  specifiedType:
+                      const FullType(MatchScoreBreakdown2015Alliance))
+              as MatchScoreBreakdown2015Alliance);
           break;
         case r'coopertition':
-          result.coopertition =
-              serializers.deserialize(value, specifiedType: const FullType(MatchScoreBreakdown2015CoopertitionEnum))
-                  as MatchScoreBreakdown2015CoopertitionEnum;
+          result.coopertition = serializers.deserialize(value,
+                  specifiedType:
+                      const FullType(MatchScoreBreakdown2015CoopertitionEnum))
+              as MatchScoreBreakdown2015CoopertitionEnum;
           break;
         case r'coopertition_points':
-          result.coopertitionPoints = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.coopertitionPoints = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }
@@ -103,11 +123,14 @@ class _$MatchScoreBreakdown2015Serializer implements StructuredSerializer<MatchS
 
 class MatchScoreBreakdown2015CoopertitionEnum extends EnumClass {
   @BuiltValueEnumConst(wireName: r'None')
-  static const MatchScoreBreakdown2015CoopertitionEnum none = _$matchScoreBreakdown2015CoopertitionEnum_none;
+  static const MatchScoreBreakdown2015CoopertitionEnum none =
+      _$matchScoreBreakdown2015CoopertitionEnum_none;
   @BuiltValueEnumConst(wireName: r'Unknown')
-  static const MatchScoreBreakdown2015CoopertitionEnum unknown = _$matchScoreBreakdown2015CoopertitionEnum_unknown;
+  static const MatchScoreBreakdown2015CoopertitionEnum unknown =
+      _$matchScoreBreakdown2015CoopertitionEnum_unknown;
   @BuiltValueEnumConst(wireName: r'Stack')
-  static const MatchScoreBreakdown2015CoopertitionEnum stack = _$matchScoreBreakdown2015CoopertitionEnum_stack;
+  static const MatchScoreBreakdown2015CoopertitionEnum stack =
+      _$matchScoreBreakdown2015CoopertitionEnum_stack;
 
   static Serializer<MatchScoreBreakdown2015CoopertitionEnum> get serializer =>
       _$matchScoreBreakdown2015CoopertitionEnumSerializer;

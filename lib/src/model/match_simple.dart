@@ -72,16 +72,27 @@ class _$MatchSimpleSerializer implements StructuredSerializer<MatchSimple> {
   Iterable<Object?> serialize(Serializers serializers, MatchSimple object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
     result
       ..add(r'comp_level')
-      ..add(serializers.serialize(object.compLevel, specifiedType: const FullType(MatchSimpleCompLevelEnum)));
-    result..add(r'set_number')..add(serializers.serialize(object.setNumber, specifiedType: const FullType(int)));
-    result..add(r'match_number')..add(serializers.serialize(object.matchNumber, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.compLevel,
+          specifiedType: const FullType(MatchSimpleCompLevelEnum)));
+    result
+      ..add(r'set_number')
+      ..add(serializers.serialize(object.setNumber,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'match_number')
+      ..add(serializers.serialize(object.matchNumber,
+          specifiedType: const FullType(int)));
     if (object.alliances != null) {
       result
         ..add(r'alliances')
-        ..add(serializers.serialize(object.alliances, specifiedType: const FullType(MatchSimpleAlliances)));
+        ..add(serializers.serialize(object.alliances,
+            specifiedType: const FullType(MatchSimpleAlliances)));
     }
     if (object.winningAlliance != null) {
       result
@@ -89,17 +100,27 @@ class _$MatchSimpleSerializer implements StructuredSerializer<MatchSimple> {
         ..add(serializers.serialize(object.winningAlliance,
             specifiedType: const FullType(MatchSimpleWinningAllianceEnum)));
     }
-    result..add(r'event_key')..add(serializers.serialize(object.eventKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'event_key')
+      ..add(serializers.serialize(object.eventKey,
+          specifiedType: const FullType(String)));
     if (object.time != null) {
-      result..add(r'time')..add(serializers.serialize(object.time, specifiedType: const FullType(int)));
+      result
+        ..add(r'time')
+        ..add(serializers.serialize(object.time,
+            specifiedType: const FullType(int)));
     }
     if (object.predictedTime != null) {
       result
         ..add(r'predicted_time')
-        ..add(serializers.serialize(object.predictedTime, specifiedType: const FullType(int)));
+        ..add(serializers.serialize(object.predictedTime,
+            specifiedType: const FullType(int)));
     }
     if (object.actualTime != null) {
-      result..add(r'actual_time')..add(serializers.serialize(object.actualTime, specifiedType: const FullType(int)));
+      result
+        ..add(r'actual_time')
+        ..add(serializers.serialize(object.actualTime,
+            specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -116,37 +137,47 @@ class _$MatchSimpleSerializer implements StructuredSerializer<MatchSimple> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'comp_level':
-          result.compLevel = serializers.deserialize(value, specifiedType: const FullType(MatchSimpleCompLevelEnum))
+          result.compLevel = serializers.deserialize(value,
+                  specifiedType: const FullType(MatchSimpleCompLevelEnum))
               as MatchSimpleCompLevelEnum;
           break;
         case r'set_number':
-          result.setNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.setNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'match_number':
-          result.matchNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.matchNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'alliances':
-          result.alliances.replace(serializers.deserialize(value, specifiedType: const FullType(MatchSimpleAlliances))
+          result.alliances.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(MatchSimpleAlliances))
               as MatchSimpleAlliances);
           break;
         case r'winning_alliance':
           result.winningAlliance = serializers.deserialize(value,
-              specifiedType: const FullType(MatchSimpleWinningAllianceEnum)) as MatchSimpleWinningAllianceEnum;
+                  specifiedType: const FullType(MatchSimpleWinningAllianceEnum))
+              as MatchSimpleWinningAllianceEnum;
           break;
         case r'event_key':
-          result.eventKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'time':
-          result.time = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.time = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'predicted_time':
-          result.predictedTime = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.predictedTime = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'actual_time':
-          result.actualTime = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.actualTime = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }
@@ -175,31 +206,40 @@ class MatchSimpleCompLevelEnum extends EnumClass {
   @BuiltValueEnumConst(wireName: r'f')
   static const MatchSimpleCompLevelEnum f = _$matchSimpleCompLevelEnum_f;
 
-  static Serializer<MatchSimpleCompLevelEnum> get serializer => _$matchSimpleCompLevelEnumSerializer;
+  static Serializer<MatchSimpleCompLevelEnum> get serializer =>
+      _$matchSimpleCompLevelEnumSerializer;
 
   const MatchSimpleCompLevelEnum._(String name) : super(name);
 
-  static BuiltSet<MatchSimpleCompLevelEnum> get values => _$matchSimpleCompLevelEnumValues;
-  static MatchSimpleCompLevelEnum valueOf(String name) => _$matchSimpleCompLevelEnumValueOf(name);
+  static BuiltSet<MatchSimpleCompLevelEnum> get values =>
+      _$matchSimpleCompLevelEnumValues;
+  static MatchSimpleCompLevelEnum valueOf(String name) =>
+      _$matchSimpleCompLevelEnumValueOf(name);
 }
 
 class MatchSimpleWinningAllianceEnum extends EnumClass {
   /// The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie.
   @BuiltValueEnumConst(wireName: r'red')
-  static const MatchSimpleWinningAllianceEnum red = _$matchSimpleWinningAllianceEnum_red;
+  static const MatchSimpleWinningAllianceEnum red =
+      _$matchSimpleWinningAllianceEnum_red;
 
   /// The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie.
   @BuiltValueEnumConst(wireName: r'blue')
-  static const MatchSimpleWinningAllianceEnum blue = _$matchSimpleWinningAllianceEnum_blue;
+  static const MatchSimpleWinningAllianceEnum blue =
+      _$matchSimpleWinningAllianceEnum_blue;
 
   /// The color (red/blue) of the winning alliance. Will contain an empty string in the event of no winner, or a tie.
   @BuiltValueEnumConst(wireName: r'')
-  static const MatchSimpleWinningAllianceEnum empty = _$matchSimpleWinningAllianceEnum_empty;
+  static const MatchSimpleWinningAllianceEnum empty =
+      _$matchSimpleWinningAllianceEnum_empty;
 
-  static Serializer<MatchSimpleWinningAllianceEnum> get serializer => _$matchSimpleWinningAllianceEnumSerializer;
+  static Serializer<MatchSimpleWinningAllianceEnum> get serializer =>
+      _$matchSimpleWinningAllianceEnumSerializer;
 
   const MatchSimpleWinningAllianceEnum._(String name) : super(name);
 
-  static BuiltSet<MatchSimpleWinningAllianceEnum> get values => _$matchSimpleWinningAllianceEnumValues;
-  static MatchSimpleWinningAllianceEnum valueOf(String name) => _$matchSimpleWinningAllianceEnumValueOf(name);
+  static BuiltSet<MatchSimpleWinningAllianceEnum> get values =>
+      _$matchSimpleWinningAllianceEnumValues;
+  static MatchSimpleWinningAllianceEnum valueOf(String name) =>
+      _$matchSimpleWinningAllianceEnumValueOf(name);
 }

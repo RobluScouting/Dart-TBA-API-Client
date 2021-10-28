@@ -17,13 +17,19 @@ class _$EventRanking extends EventRanking {
   factory _$EventRanking([void Function(EventRankingBuilder)? updates]) =>
       (new EventRankingBuilder()..update(updates)).build();
 
-  _$EventRanking._({required this.rankings, this.extraStatsInfo, required this.sortOrderInfo}) : super._() {
+  _$EventRanking._(
+      {required this.rankings,
+      this.extraStatsInfo,
+      required this.sortOrderInfo})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(rankings, 'EventRanking', 'rankings');
-    BuiltValueNullFieldError.checkNotNull(sortOrderInfo, 'EventRanking', 'sortOrderInfo');
+    BuiltValueNullFieldError.checkNotNull(
+        sortOrderInfo, 'EventRanking', 'sortOrderInfo');
   }
 
   @override
-  EventRanking rebuild(void Function(EventRankingBuilder) updates) => (toBuilder()..update(updates)).build();
+  EventRanking rebuild(void Function(EventRankingBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   EventRankingBuilder toBuilder() => new EventRankingBuilder()..replace(this);
@@ -39,7 +45,8 @@ class _$EventRanking extends EventRanking {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, rankings.hashCode), extraStatsInfo.hashCode), sortOrderInfo.hashCode));
+    return $jf($jc($jc($jc(0, rankings.hashCode), extraStatsInfo.hashCode),
+        sortOrderInfo.hashCode));
   }
 
   @override
@@ -52,12 +59,15 @@ class _$EventRanking extends EventRanking {
   }
 }
 
-class EventRankingBuilder implements Builder<EventRanking, EventRankingBuilder> {
+class EventRankingBuilder
+    implements Builder<EventRanking, EventRankingBuilder> {
   _$EventRanking? _$v;
 
   ListBuilder<EventRankingRankings>? _rankings;
-  ListBuilder<EventRankingRankings> get rankings => _$this._rankings ??= new ListBuilder<EventRankingRankings>();
-  set rankings(ListBuilder<EventRankingRankings>? rankings) => _$this._rankings = rankings;
+  ListBuilder<EventRankingRankings> get rankings =>
+      _$this._rankings ??= new ListBuilder<EventRankingRankings>();
+  set rankings(ListBuilder<EventRankingRankings>? rankings) =>
+      _$this._rankings = rankings;
 
   ListBuilder<EventRankingExtraStatsInfo>? _extraStatsInfo;
   ListBuilder<EventRankingExtraStatsInfo> get extraStatsInfo =>
@@ -68,7 +78,8 @@ class EventRankingBuilder implements Builder<EventRanking, EventRankingBuilder> 
   ListBuilder<EventRankingSortOrderInfo>? _sortOrderInfo;
   ListBuilder<EventRankingSortOrderInfo> get sortOrderInfo =>
       _$this._sortOrderInfo ??= new ListBuilder<EventRankingSortOrderInfo>();
-  set sortOrderInfo(ListBuilder<EventRankingSortOrderInfo>? sortOrderInfo) => _$this._sortOrderInfo = sortOrderInfo;
+  set sortOrderInfo(ListBuilder<EventRankingSortOrderInfo>? sortOrderInfo) =>
+      _$this._sortOrderInfo = sortOrderInfo;
 
   EventRankingBuilder() {
     EventRanking._initializeBuilder(this);
@@ -115,7 +126,8 @@ class EventRankingBuilder implements Builder<EventRanking, EventRankingBuilder> 
         _$failedField = 'sortOrderInfo';
         sortOrderInfo.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventRanking', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventRanking', _$failedField, e.toString());
       }
       rethrow;
     }

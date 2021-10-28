@@ -14,16 +14,19 @@ class _$WLTRecord extends WLTRecord {
   @override
   final int ties;
 
-  factory _$WLTRecord([void Function(WLTRecordBuilder)? updates]) => (new WLTRecordBuilder()..update(updates)).build();
+  factory _$WLTRecord([void Function(WLTRecordBuilder)? updates]) =>
+      (new WLTRecordBuilder()..update(updates)).build();
 
-  _$WLTRecord._({required this.losses, required this.wins, required this.ties}) : super._() {
+  _$WLTRecord._({required this.losses, required this.wins, required this.ties})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(losses, 'WLTRecord', 'losses');
     BuiltValueNullFieldError.checkNotNull(wins, 'WLTRecord', 'wins');
     BuiltValueNullFieldError.checkNotNull(ties, 'WLTRecord', 'ties');
   }
 
   @override
-  WLTRecord rebuild(void Function(WLTRecordBuilder) updates) => (toBuilder()..update(updates)).build();
+  WLTRecord rebuild(void Function(WLTRecordBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   WLTRecordBuilder toBuilder() => new WLTRecordBuilder()..replace(this);
@@ -31,7 +34,10 @@ class _$WLTRecord extends WLTRecord {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is WLTRecord && losses == other.losses && wins == other.wins && ties == other.ties;
+    return other is WLTRecord &&
+        losses == other.losses &&
+        wins == other.wins &&
+        ties == other.ties;
   }
 
   @override
@@ -41,7 +47,10 @@ class _$WLTRecord extends WLTRecord {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('WLTRecord')..add('losses', losses)..add('wins', wins)..add('ties', ties))
+    return (newBuiltValueToStringHelper('WLTRecord')
+          ..add('losses', losses)
+          ..add('wins', wins)
+          ..add('ties', ties))
         .toString();
   }
 }
@@ -91,9 +100,12 @@ class WLTRecordBuilder implements Builder<WLTRecord, WLTRecordBuilder> {
   _$WLTRecord build() {
     final _$result = _$v ??
         new _$WLTRecord._(
-            losses: BuiltValueNullFieldError.checkNotNull(losses, 'WLTRecord', 'losses'),
-            wins: BuiltValueNullFieldError.checkNotNull(wins, 'WLTRecord', 'wins'),
-            ties: BuiltValueNullFieldError.checkNotNull(ties, 'WLTRecord', 'ties'));
+            losses: BuiltValueNullFieldError.checkNotNull(
+                losses, 'WLTRecord', 'losses'),
+            wins: BuiltValueNullFieldError.checkNotNull(
+                wins, 'WLTRecord', 'wins'),
+            ties: BuiltValueNullFieldError.checkNotNull(
+                ties, 'WLTRecord', 'ties'));
     replace(_$result);
     return _$result;
   }

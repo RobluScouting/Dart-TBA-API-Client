@@ -8,7 +8,8 @@ import 'package:built_value/serializer.dart';
 
 part 'event_insights2017.g.dart';
 
-abstract class EventInsights2017 implements Built<EventInsights2017, EventInsights2017Builder> {
+abstract class EventInsights2017
+    implements Built<EventInsights2017, EventInsights2017Builder> {
   /// Average foul score.
   @BuiltValueField(wireName: r'average_foul_score')
   double get averageFoulScore;
@@ -141,13 +142,16 @@ abstract class EventInsights2017 implements Built<EventInsights2017, EventInsigh
 
   static void _initializeBuilder(EventInsights2017Builder b) => b;
 
-  factory EventInsights2017([void updates(EventInsights2017Builder b)]) = _$EventInsights2017;
+  factory EventInsights2017([void updates(EventInsights2017Builder b)]) =
+      _$EventInsights2017;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<EventInsights2017> get serializer => _$EventInsights2017Serializer();
+  static Serializer<EventInsights2017> get serializer =>
+      _$EventInsights2017Serializer();
 }
 
-class _$EventInsights2017Serializer implements StructuredSerializer<EventInsights2017> {
+class _$EventInsights2017Serializer
+    implements StructuredSerializer<EventInsights2017> {
   @override
   final Iterable<Type> types = const [EventInsights2017, _$EventInsights2017];
 
@@ -160,107 +164,138 @@ class _$EventInsights2017Serializer implements StructuredSerializer<EventInsight
     final result = <Object?>[];
     result
       ..add(r'average_foul_score')
-      ..add(serializers.serialize(object.averageFoulScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageFoulScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_fuel_points')
-      ..add(serializers.serialize(object.averageFuelPoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageFuelPoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_fuel_points_auto')
-      ..add(serializers.serialize(object.averageFuelPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageFuelPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_fuel_points_teleop')
-      ..add(serializers.serialize(object.averageFuelPointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageFuelPointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_high_goals')
-      ..add(serializers.serialize(object.averageHighGoals, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageHighGoals,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_high_goals_auto')
-      ..add(serializers.serialize(object.averageHighGoalsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageHighGoalsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_high_goals_teleop')
-      ..add(serializers.serialize(object.averageHighGoalsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageHighGoalsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_low_goals')
-      ..add(serializers.serialize(object.averageLowGoals, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageLowGoals,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_low_goals_auto')
-      ..add(serializers.serialize(object.averageLowGoalsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageLowGoalsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_low_goals_teleop')
-      ..add(serializers.serialize(object.averageLowGoalsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageLowGoalsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_mobility_points_auto')
-      ..add(serializers.serialize(object.averageMobilityPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageMobilityPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_points_auto')
-      ..add(serializers.serialize(object.averagePointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averagePointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_points_teleop')
-      ..add(serializers.serialize(object.averagePointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averagePointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_rotor_points')
-      ..add(serializers.serialize(object.averageRotorPoints, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageRotorPoints,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_rotor_points_auto')
-      ..add(serializers.serialize(object.averageRotorPointsAuto, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageRotorPointsAuto,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_rotor_points_teleop')
-      ..add(serializers.serialize(object.averageRotorPointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageRotorPointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_score')
-      ..add(serializers.serialize(object.averageScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_takeoff_points_teleop')
-      ..add(serializers.serialize(object.averageTakeoffPointsTeleop, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageTakeoffPointsTeleop,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_win_margin')
-      ..add(serializers.serialize(object.averageWinMargin, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageWinMargin,
+          specifiedType: const FullType(double)));
     result
       ..add(r'average_win_score')
-      ..add(serializers.serialize(object.averageWinScore, specifiedType: const FullType(double)));
+      ..add(serializers.serialize(object.averageWinScore,
+          specifiedType: const FullType(double)));
     result
       ..add(r'high_kpa')
-      ..add(serializers.serialize(object.highKpa, specifiedType: const FullType(BuiltList, [FullType(String)])));
+      ..add(serializers.serialize(object.highKpa,
+          specifiedType: const FullType(BuiltList, [FullType(String)])));
     result
       ..add(r'high_score')
-      ..add(serializers.serialize(object.highScore, specifiedType: const FullType(BuiltList, [FullType(String)])));
+      ..add(serializers.serialize(object.highScore,
+          specifiedType: const FullType(BuiltList, [FullType(String)])));
     result
       ..add(r'kpa_achieved')
-      ..add(serializers.serialize(object.kpaAchieved, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.kpaAchieved,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'mobility_counts')
-      ..add(serializers.serialize(object.mobilityCounts, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.mobilityCounts,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_1_engaged')
-      ..add(serializers.serialize(object.rotor1Engaged, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.rotor1Engaged,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_1_engaged_auto')
       ..add(serializers.serialize(object.rotor1EngagedAuto,
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_2_engaged')
-      ..add(serializers.serialize(object.rotor2Engaged, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.rotor2Engaged,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_2_engaged_auto')
       ..add(serializers.serialize(object.rotor2EngagedAuto,
           specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_3_engaged')
-      ..add(serializers.serialize(object.rotor3Engaged, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.rotor3Engaged,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'rotor_4_engaged')
-      ..add(serializers.serialize(object.rotor4Engaged, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.rotor4Engaged,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'takeoff_counts')
-      ..add(serializers.serialize(object.takeoffCounts, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.takeoffCounts,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'unicorn_matches')
-      ..add(serializers.serialize(object.unicornMatches, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.unicornMatches,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     return result;
   }
 
   @override
-  EventInsights2017 deserialize(Serializers serializers, Iterable<Object?> serialized,
+  EventInsights2017 deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = EventInsights2017Builder();
 
@@ -271,120 +306,144 @@ class _$EventInsights2017Serializer implements StructuredSerializer<EventInsight
       final Object? value = iterator.current;
       switch (key) {
         case r'average_foul_score':
-          result.averageFoulScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageFoulScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_fuel_points':
-          result.averageFuelPoints = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageFuelPoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_fuel_points_auto':
-          result.averageFuelPointsAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageFuelPointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_fuel_points_teleop':
-          result.averageFuelPointsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageFuelPointsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_high_goals':
-          result.averageHighGoals = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageHighGoals = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_high_goals_auto':
-          result.averageHighGoalsAuto = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageHighGoalsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_high_goals_teleop':
-          result.averageHighGoalsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageHighGoalsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_low_goals':
-          result.averageLowGoals = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageLowGoals = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_low_goals_auto':
-          result.averageLowGoalsAuto = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageLowGoalsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_low_goals_teleop':
-          result.averageLowGoalsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageLowGoalsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_mobility_points_auto':
-          result.averageMobilityPointsAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageMobilityPointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_points_auto':
-          result.averagePointsAuto = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averagePointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_points_teleop':
-          result.averagePointsTeleop = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averagePointsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_rotor_points':
-          result.averageRotorPoints = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageRotorPoints = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_rotor_points_auto':
-          result.averageRotorPointsAuto =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageRotorPointsAuto = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_rotor_points_teleop':
-          result.averageRotorPointsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageRotorPointsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_score':
-          result.averageScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_takeoff_points_teleop':
-          result.averageTakeoffPointsTeleop =
-              serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageTakeoffPointsTeleop = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_win_margin':
-          result.averageWinMargin = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageWinMargin = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'average_win_score':
-          result.averageWinScore = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.averageWinScore = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'high_kpa':
           result.highKpa.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(String)])) as BuiltList<String>);
+                  specifiedType: const FullType(BuiltList, [FullType(String)]))
+              as BuiltList<String>);
           break;
         case r'high_score':
           result.highScore.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(String)])) as BuiltList<String>);
+                  specifiedType: const FullType(BuiltList, [FullType(String)]))
+              as BuiltList<String>);
           break;
         case r'kpa_achieved':
           result.kpaAchieved.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'mobility_counts':
           result.mobilityCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_1_engaged':
           result.rotor1Engaged.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_1_engaged_auto':
           result.rotor1EngagedAuto.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_2_engaged':
           result.rotor2Engaged.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_2_engaged_auto':
           result.rotor2EngagedAuto.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_3_engaged':
           result.rotor3Engaged.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'rotor_4_engaged':
           result.rotor4Engaged.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'takeoff_counts':
           result.takeoffCounts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'unicorn_matches':
           result.unicornMatches.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
       }
     }

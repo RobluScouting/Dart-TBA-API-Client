@@ -14,16 +14,19 @@ class _$Zebra extends Zebra {
   @override
   final ZebraAlliances alliances;
 
-  factory _$Zebra([void Function(ZebraBuilder)? updates]) => (new ZebraBuilder()..update(updates)).build();
+  factory _$Zebra([void Function(ZebraBuilder)? updates]) =>
+      (new ZebraBuilder()..update(updates)).build();
 
-  _$Zebra._({required this.key, required this.times, required this.alliances}) : super._() {
+  _$Zebra._({required this.key, required this.times, required this.alliances})
+      : super._() {
     BuiltValueNullFieldError.checkNotNull(key, 'Zebra', 'key');
     BuiltValueNullFieldError.checkNotNull(times, 'Zebra', 'times');
     BuiltValueNullFieldError.checkNotNull(alliances, 'Zebra', 'alliances');
   }
 
   @override
-  Zebra rebuild(void Function(ZebraBuilder) updates) => (toBuilder()..update(updates)).build();
+  Zebra rebuild(void Function(ZebraBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   ZebraBuilder toBuilder() => new ZebraBuilder()..replace(this);
@@ -31,17 +34,24 @@ class _$Zebra extends Zebra {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Zebra && key == other.key && times == other.times && alliances == other.alliances;
+    return other is Zebra &&
+        key == other.key &&
+        times == other.times &&
+        alliances == other.alliances;
   }
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, key.hashCode), times.hashCode), alliances.hashCode));
+    return $jf(
+        $jc($jc($jc(0, key.hashCode), times.hashCode), alliances.hashCode));
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Zebra')..add('key', key)..add('times', times)..add('alliances', alliances))
+    return (newBuiltValueToStringHelper('Zebra')
+          ..add('key', key)
+          ..add('times', times)
+          ..add('alliances', alliances))
         .toString();
   }
 }
@@ -58,8 +68,10 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
   set times(ListBuilder<double>? times) => _$this._times = times;
 
   ZebraAlliancesBuilder? _alliances;
-  ZebraAlliancesBuilder get alliances => _$this._alliances ??= new ZebraAlliancesBuilder();
-  set alliances(ZebraAlliancesBuilder? alliances) => _$this._alliances = alliances;
+  ZebraAlliancesBuilder get alliances =>
+      _$this._alliances ??= new ZebraAlliancesBuilder();
+  set alliances(ZebraAlliancesBuilder? alliances) =>
+      _$this._alliances = alliances;
 
   ZebraBuilder() {
     Zebra._initializeBuilder(this);
@@ -104,7 +116,8 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
         _$failedField = 'alliances';
         alliances.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('Zebra', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'Zebra', _$failedField, e.toString());
       }
       rethrow;
     }

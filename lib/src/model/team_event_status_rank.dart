@@ -10,7 +10,8 @@ import 'package:built_value/serializer.dart';
 
 part 'team_event_status_rank.g.dart';
 
-abstract class TeamEventStatusRank implements Built<TeamEventStatusRank, TeamEventStatusRankBuilder> {
+abstract class TeamEventStatusRank
+    implements Built<TeamEventStatusRank, TeamEventStatusRankBuilder> {
   /// Number of teams ranked.
   @BuiltValueField(wireName: r'num_teams')
   int? get numTeams;
@@ -29,45 +30,61 @@ abstract class TeamEventStatusRank implements Built<TeamEventStatusRank, TeamEve
 
   static void _initializeBuilder(TeamEventStatusRankBuilder b) => b;
 
-  factory TeamEventStatusRank([void updates(TeamEventStatusRankBuilder b)]) = _$TeamEventStatusRank;
+  factory TeamEventStatusRank([void updates(TeamEventStatusRankBuilder b)]) =
+      _$TeamEventStatusRank;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<TeamEventStatusRank> get serializer => _$TeamEventStatusRankSerializer();
+  static Serializer<TeamEventStatusRank> get serializer =>
+      _$TeamEventStatusRankSerializer();
 }
 
-class _$TeamEventStatusRankSerializer implements StructuredSerializer<TeamEventStatusRank> {
+class _$TeamEventStatusRankSerializer
+    implements StructuredSerializer<TeamEventStatusRank> {
   @override
-  final Iterable<Type> types = const [TeamEventStatusRank, _$TeamEventStatusRank];
+  final Iterable<Type> types = const [
+    TeamEventStatusRank,
+    _$TeamEventStatusRank
+  ];
 
   @override
   final String wireName = r'TeamEventStatusRank';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, TeamEventStatusRank object,
+  Iterable<Object?> serialize(
+      Serializers serializers, TeamEventStatusRank object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.numTeams != null) {
-      result..add(r'num_teams')..add(serializers.serialize(object.numTeams, specifiedType: const FullType(int)));
+      result
+        ..add(r'num_teams')
+        ..add(serializers.serialize(object.numTeams,
+            specifiedType: const FullType(int)));
     }
     if (object.ranking != null) {
       result
         ..add(r'ranking')
-        ..add(serializers.serialize(object.ranking, specifiedType: const FullType(TeamEventStatusRankRanking)));
+        ..add(serializers.serialize(object.ranking,
+            specifiedType: const FullType(TeamEventStatusRankRanking)));
     }
     if (object.sortOrderInfo != null) {
       result
         ..add(r'sort_order_info')
         ..add(serializers.serialize(object.sortOrderInfo,
-            specifiedType: const FullType(BuiltList, [FullType(TeamEventStatusRankSortOrderInfo)])));
+            specifiedType: const FullType(
+                BuiltList, [FullType(TeamEventStatusRankSortOrderInfo)])));
     }
     if (object.status != null) {
-      result..add(r'status')..add(serializers.serialize(object.status, specifiedType: const FullType(String)));
+      result
+        ..add(r'status')
+        ..add(serializers.serialize(object.status,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
 
   @override
-  TeamEventStatusRank deserialize(Serializers serializers, Iterable<Object?> serialized,
+  TeamEventStatusRank deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = TeamEventStatusRankBuilder();
 
@@ -78,19 +95,23 @@ class _$TeamEventStatusRankSerializer implements StructuredSerializer<TeamEventS
       final Object? value = iterator.current;
       switch (key) {
         case r'num_teams':
-          result.numTeams = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.numTeams = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'ranking':
           result.ranking.replace(serializers.deserialize(value,
-              specifiedType: const FullType(TeamEventStatusRankRanking)) as TeamEventStatusRankRanking);
+                  specifiedType: const FullType(TeamEventStatusRankRanking))
+              as TeamEventStatusRankRanking);
           break;
         case r'sort_order_info':
           result.sortOrderInfo.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltList, [FullType(TeamEventStatusRankSortOrderInfo)]))
+                  specifiedType: const FullType(
+                      BuiltList, [FullType(TeamEventStatusRankSortOrderInfo)]))
               as BuiltList<TeamEventStatusRankSortOrderInfo>);
           break;
         case r'status':
-          result.status = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.status = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

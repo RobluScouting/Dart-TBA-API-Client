@@ -57,20 +57,41 @@ class _$TeamSimpleSerializer implements StructuredSerializer<TeamSimple> {
   Iterable<Object?> serialize(Serializers serializers, TeamSimple object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'team_number')..add(serializers.serialize(object.teamNumber, specifiedType: const FullType(int)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'team_number')
+      ..add(serializers.serialize(object.teamNumber,
+          specifiedType: const FullType(int)));
     if (object.nickname != null) {
-      result..add(r'nickname')..add(serializers.serialize(object.nickname, specifiedType: const FullType(String)));
+      result
+        ..add(r'nickname')
+        ..add(serializers.serialize(object.nickname,
+            specifiedType: const FullType(String)));
     }
-    result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
+    result
+      ..add(r'name')
+      ..add(serializers.serialize(object.name,
+          specifiedType: const FullType(String)));
     if (object.city != null) {
-      result..add(r'city')..add(serializers.serialize(object.city, specifiedType: const FullType(String)));
+      result
+        ..add(r'city')
+        ..add(serializers.serialize(object.city,
+            specifiedType: const FullType(String)));
     }
     if (object.stateProv != null) {
-      result..add(r'state_prov')..add(serializers.serialize(object.stateProv, specifiedType: const FullType(String)));
+      result
+        ..add(r'state_prov')
+        ..add(serializers.serialize(object.stateProv,
+            specifiedType: const FullType(String)));
     }
     if (object.country != null) {
-      result..add(r'country')..add(serializers.serialize(object.country, specifiedType: const FullType(String)));
+      result
+        ..add(r'country')
+        ..add(serializers.serialize(object.country,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
@@ -87,25 +108,32 @@ class _$TeamSimpleSerializer implements StructuredSerializer<TeamSimple> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'team_number':
-          result.teamNumber = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.teamNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'nickname':
-          result.nickname = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.nickname = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'city':
-          result.city = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.city = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'state_prov':
-          result.stateProv = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.stateProv = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'country':
-          result.country = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.country = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

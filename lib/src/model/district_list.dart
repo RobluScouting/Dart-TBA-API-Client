@@ -7,7 +7,8 @@ import 'package:built_value/serializer.dart';
 
 part 'district_list.g.dart';
 
-abstract class DistrictList implements Built<DistrictList, DistrictListBuilder> {
+abstract class DistrictList
+    implements Built<DistrictList, DistrictListBuilder> {
   /// The short identifier for the district.
   @BuiltValueField(wireName: r'abbreviation')
   String get abbreviation;
@@ -47,15 +48,26 @@ class _$DistrictListSerializer implements StructuredSerializer<DistrictList> {
     final result = <Object?>[];
     result
       ..add(r'abbreviation')
-      ..add(serializers.serialize(object.abbreviation, specifiedType: const FullType(String)));
-    result..add(r'display_name')..add(serializers.serialize(object.displayName, specifiedType: const FullType(String)));
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'year')..add(serializers.serialize(object.year, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.abbreviation,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'display_name')
+      ..add(serializers.serialize(object.displayName,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'year')
+      ..add(serializers.serialize(object.year,
+          specifiedType: const FullType(int)));
     return result;
   }
 
   @override
-  DistrictList deserialize(Serializers serializers, Iterable<Object?> serialized,
+  DistrictList deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = DistrictListBuilder();
 
@@ -66,16 +78,20 @@ class _$DistrictListSerializer implements StructuredSerializer<DistrictList> {
       final Object? value = iterator.current;
       switch (key) {
         case r'abbreviation':
-          result.abbreviation = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.abbreviation = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'display_name':
-          result.displayName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.displayName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'year':
-          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }

@@ -47,13 +47,25 @@ class _$WebcastSerializer implements StructuredSerializer<Webcast> {
   Iterable<Object?> serialize(Serializers serializers, Webcast object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'type')..add(serializers.serialize(object.type, specifiedType: const FullType(WebcastTypeEnum)));
-    result..add(r'channel')..add(serializers.serialize(object.channel, specifiedType: const FullType(String)));
+    result
+      ..add(r'type')
+      ..add(serializers.serialize(object.type,
+          specifiedType: const FullType(WebcastTypeEnum)));
+    result
+      ..add(r'channel')
+      ..add(serializers.serialize(object.channel,
+          specifiedType: const FullType(String)));
     if (object.date != null) {
-      result..add(r'date')..add(serializers.serialize(object.date, specifiedType: const FullType(String)));
+      result
+        ..add(r'date')
+        ..add(serializers.serialize(object.date,
+            specifiedType: const FullType(String)));
     }
     if (object.file != null) {
-      result..add(r'file')..add(serializers.serialize(object.file, specifiedType: const FullType(String)));
+      result
+        ..add(r'file')
+        ..add(serializers.serialize(object.file,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
@@ -70,17 +82,21 @@ class _$WebcastSerializer implements StructuredSerializer<Webcast> {
       final Object? value = iterator.current;
       switch (key) {
         case r'type':
-          result.type =
-              serializers.deserialize(value, specifiedType: const FullType(WebcastTypeEnum)) as WebcastTypeEnum;
+          result.type = serializers.deserialize(value,
+                  specifiedType: const FullType(WebcastTypeEnum))
+              as WebcastTypeEnum;
           break;
         case r'channel':
-          result.channel = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.channel = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'date':
-          result.date = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.date = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'file':
-          result.file = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.file = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }
@@ -137,7 +153,8 @@ class WebcastTypeEnum extends EnumClass {
   @BuiltValueEnumConst(wireName: r'dacast')
   static const WebcastTypeEnum dacast = _$webcastTypeEnum_dacast;
 
-  static Serializer<WebcastTypeEnum> get serializer => _$webcastTypeEnumSerializer;
+  static Serializer<WebcastTypeEnum> get serializer =>
+      _$webcastTypeEnumSerializer;
 
   const WebcastTypeEnum._(String name) : super(name);
 

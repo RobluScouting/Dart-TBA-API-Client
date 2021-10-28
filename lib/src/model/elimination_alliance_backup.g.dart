@@ -12,22 +12,27 @@ class _$EliminationAllianceBackup extends EliminationAllianceBackup {
   @override
   final String? out_;
 
-  factory _$EliminationAllianceBackup([void Function(EliminationAllianceBackupBuilder)? updates]) =>
+  factory _$EliminationAllianceBackup(
+          [void Function(EliminationAllianceBackupBuilder)? updates]) =>
       (new EliminationAllianceBackupBuilder()..update(updates)).build();
 
   _$EliminationAllianceBackup._({this.in_, this.out_}) : super._();
 
   @override
-  EliminationAllianceBackup rebuild(void Function(EliminationAllianceBackupBuilder) updates) =>
+  EliminationAllianceBackup rebuild(
+          void Function(EliminationAllianceBackupBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EliminationAllianceBackupBuilder toBuilder() => new EliminationAllianceBackupBuilder()..replace(this);
+  EliminationAllianceBackupBuilder toBuilder() =>
+      new EliminationAllianceBackupBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EliminationAllianceBackup && in_ == other.in_ && out_ == other.out_;
+    return other is EliminationAllianceBackup &&
+        in_ == other.in_ &&
+        out_ == other.out_;
   }
 
   @override
@@ -37,11 +42,16 @@ class _$EliminationAllianceBackup extends EliminationAllianceBackup {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EliminationAllianceBackup')..add('in_', in_)..add('out_', out_)).toString();
+    return (newBuiltValueToStringHelper('EliminationAllianceBackup')
+          ..add('in_', in_)
+          ..add('out_', out_))
+        .toString();
   }
 }
 
-class EliminationAllianceBackupBuilder implements Builder<EliminationAllianceBackup, EliminationAllianceBackupBuilder> {
+class EliminationAllianceBackupBuilder
+    implements
+        Builder<EliminationAllianceBackup, EliminationAllianceBackupBuilder> {
   _$EliminationAllianceBackup? _$v;
 
   String? _in_;
@@ -79,7 +89,8 @@ class EliminationAllianceBackupBuilder implements Builder<EliminationAllianceBac
 
   @override
   _$EliminationAllianceBackup build() {
-    final _$result = _$v ?? new _$EliminationAllianceBackup._(in_: in_, out_: out_);
+    final _$result =
+        _$v ?? new _$EliminationAllianceBackup._(in_: in_, out_: out_);
     replace(_$result);
     return _$result;
   }

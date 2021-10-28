@@ -38,10 +38,16 @@ class _$MatchVideosSerializer implements StructuredSerializer<MatchVideos> {
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.type != null) {
-      result..add(r'type')..add(serializers.serialize(object.type, specifiedType: const FullType(String)));
+      result
+        ..add(r'type')
+        ..add(serializers.serialize(object.type,
+            specifiedType: const FullType(String)));
     }
     if (object.key != null) {
-      result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
+      result
+        ..add(r'key')
+        ..add(serializers.serialize(object.key,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
@@ -58,10 +64,12 @@ class _$MatchVideosSerializer implements StructuredSerializer<MatchVideos> {
       final Object? value = iterator.current;
       switch (key) {
         case r'type':
-          result.type = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.type = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

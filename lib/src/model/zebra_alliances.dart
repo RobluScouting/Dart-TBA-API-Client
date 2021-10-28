@@ -9,7 +9,8 @@ import 'package:built_value/serializer.dart';
 
 part 'zebra_alliances.g.dart';
 
-abstract class ZebraAlliances implements Built<ZebraAlliances, ZebraAlliancesBuilder> {
+abstract class ZebraAlliances
+    implements Built<ZebraAlliances, ZebraAlliancesBuilder> {
   /// Zebra MotionWorks data for teams on the red alliance
   @BuiltValueField(wireName: r'red')
   BuiltList<ZebraTeam>? get red;
@@ -22,13 +23,16 @@ abstract class ZebraAlliances implements Built<ZebraAlliances, ZebraAlliancesBui
 
   static void _initializeBuilder(ZebraAlliancesBuilder b) => b;
 
-  factory ZebraAlliances([void updates(ZebraAlliancesBuilder b)]) = _$ZebraAlliances;
+  factory ZebraAlliances([void updates(ZebraAlliancesBuilder b)]) =
+      _$ZebraAlliances;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<ZebraAlliances> get serializer => _$ZebraAlliancesSerializer();
+  static Serializer<ZebraAlliances> get serializer =>
+      _$ZebraAlliancesSerializer();
 }
 
-class _$ZebraAlliancesSerializer implements StructuredSerializer<ZebraAlliances> {
+class _$ZebraAlliancesSerializer
+    implements StructuredSerializer<ZebraAlliances> {
   @override
   final Iterable<Type> types = const [ZebraAlliances, _$ZebraAlliances];
 
@@ -42,18 +46,21 @@ class _$ZebraAlliancesSerializer implements StructuredSerializer<ZebraAlliances>
     if (object.red != null) {
       result
         ..add(r'red')
-        ..add(serializers.serialize(object.red, specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])));
+        ..add(serializers.serialize(object.red,
+            specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])));
     }
     if (object.blue != null) {
       result
         ..add(r'blue')
-        ..add(serializers.serialize(object.blue, specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])));
+        ..add(serializers.serialize(object.blue,
+            specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])));
     }
     return result;
   }
 
   @override
-  ZebraAlliances deserialize(Serializers serializers, Iterable<Object?> serialized,
+  ZebraAlliances deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = ZebraAlliancesBuilder();
 
@@ -65,11 +72,15 @@ class _$ZebraAlliancesSerializer implements StructuredSerializer<ZebraAlliances>
       switch (key) {
         case r'red':
           result.red.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])) as BuiltList<ZebraTeam>);
+                  specifiedType:
+                      const FullType(BuiltList, [FullType(ZebraTeam)]))
+              as BuiltList<ZebraTeam>);
           break;
         case r'blue':
           result.blue.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(ZebraTeam)])) as BuiltList<ZebraTeam>);
+                  specifiedType:
+                      const FullType(BuiltList, [FullType(ZebraTeam)]))
+              as BuiltList<ZebraTeam>);
           break;
       }
     }

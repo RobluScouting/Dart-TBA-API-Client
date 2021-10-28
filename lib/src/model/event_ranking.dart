@@ -11,7 +11,8 @@ import 'package:built_value/serializer.dart';
 
 part 'event_ranking.g.dart';
 
-abstract class EventRanking implements Built<EventRanking, EventRankingBuilder> {
+abstract class EventRanking
+    implements Built<EventRanking, EventRankingBuilder> {
   /// List of rankings at the event.
   @BuiltValueField(wireName: r'rankings')
   BuiltList<EventRankingRankings> get rankings;
@@ -48,22 +49,26 @@ class _$EventRankingSerializer implements StructuredSerializer<EventRanking> {
     result
       ..add(r'rankings')
       ..add(serializers.serialize(object.rankings,
-          specifiedType: const FullType(BuiltList, [FullType(EventRankingRankings)])));
+          specifiedType:
+              const FullType(BuiltList, [FullType(EventRankingRankings)])));
     if (object.extraStatsInfo != null) {
       result
         ..add(r'extra_stats_info')
         ..add(serializers.serialize(object.extraStatsInfo,
-            specifiedType: const FullType(BuiltList, [FullType(EventRankingExtraStatsInfo)])));
+            specifiedType: const FullType(
+                BuiltList, [FullType(EventRankingExtraStatsInfo)])));
     }
     result
       ..add(r'sort_order_info')
       ..add(serializers.serialize(object.sortOrderInfo,
-          specifiedType: const FullType(BuiltList, [FullType(EventRankingSortOrderInfo)])));
+          specifiedType: const FullType(
+              BuiltList, [FullType(EventRankingSortOrderInfo)])));
     return result;
   }
 
   @override
-  EventRanking deserialize(Serializers serializers, Iterable<Object?> serialized,
+  EventRanking deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = EventRankingBuilder();
 
@@ -74,18 +79,21 @@ class _$EventRankingSerializer implements StructuredSerializer<EventRanking> {
       final Object? value = iterator.current;
       switch (key) {
         case r'rankings':
-          result.rankings.replace(
-              serializers.deserialize(value, specifiedType: const FullType(BuiltList, [FullType(EventRankingRankings)]))
-                  as BuiltList<EventRankingRankings>);
+          result.rankings.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(
+                      BuiltList, [FullType(EventRankingRankings)]))
+              as BuiltList<EventRankingRankings>);
           break;
         case r'extra_stats_info':
           result.extraStatsInfo.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltList, [FullType(EventRankingExtraStatsInfo)]))
+                  specifiedType: const FullType(
+                      BuiltList, [FullType(EventRankingExtraStatsInfo)]))
               as BuiltList<EventRankingExtraStatsInfo>);
           break;
         case r'sort_order_info':
           result.sortOrderInfo.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltList, [FullType(EventRankingSortOrderInfo)]))
+                  specifiedType: const FullType(
+                      BuiltList, [FullType(EventRankingSortOrderInfo)]))
               as BuiltList<EventRankingSortOrderInfo>);
           break;
       }

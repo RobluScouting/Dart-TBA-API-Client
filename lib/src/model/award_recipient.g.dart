@@ -18,15 +18,19 @@ class _$AwardRecipient extends AwardRecipient {
   _$AwardRecipient._({this.teamKey, this.awardee}) : super._();
 
   @override
-  AwardRecipient rebuild(void Function(AwardRecipientBuilder) updates) => (toBuilder()..update(updates)).build();
+  AwardRecipient rebuild(void Function(AwardRecipientBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  AwardRecipientBuilder toBuilder() => new AwardRecipientBuilder()..replace(this);
+  AwardRecipientBuilder toBuilder() =>
+      new AwardRecipientBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is AwardRecipient && teamKey == other.teamKey && awardee == other.awardee;
+    return other is AwardRecipient &&
+        teamKey == other.teamKey &&
+        awardee == other.awardee;
   }
 
   @override
@@ -36,11 +40,15 @@ class _$AwardRecipient extends AwardRecipient {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('AwardRecipient')..add('teamKey', teamKey)..add('awardee', awardee)).toString();
+    return (newBuiltValueToStringHelper('AwardRecipient')
+          ..add('teamKey', teamKey)
+          ..add('awardee', awardee))
+        .toString();
   }
 }
 
-class AwardRecipientBuilder implements Builder<AwardRecipient, AwardRecipientBuilder> {
+class AwardRecipientBuilder
+    implements Builder<AwardRecipient, AwardRecipientBuilder> {
   _$AwardRecipient? _$v;
 
   String? _teamKey;
@@ -78,7 +86,8 @@ class AwardRecipientBuilder implements Builder<AwardRecipient, AwardRecipientBui
 
   @override
   _$AwardRecipient build() {
-    final _$result = _$v ?? new _$AwardRecipient._(teamKey: teamKey, awardee: awardee);
+    final _$result =
+        _$v ?? new _$AwardRecipient._(teamKey: teamKey, awardee: awardee);
     replace(_$result);
     return _$result;
   }

@@ -18,7 +18,8 @@ class _$MatchVideos extends MatchVideos {
   _$MatchVideos._({this.type, this.key}) : super._();
 
   @override
-  MatchVideos rebuild(void Function(MatchVideosBuilder) updates) => (toBuilder()..update(updates)).build();
+  MatchVideos rebuild(void Function(MatchVideosBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   MatchVideosBuilder toBuilder() => new MatchVideosBuilder()..replace(this);
@@ -36,7 +37,10 @@ class _$MatchVideos extends MatchVideos {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('MatchVideos')..add('type', type)..add('key', key)).toString();
+    return (newBuiltValueToStringHelper('MatchVideos')
+          ..add('type', type)
+          ..add('key', key))
+        .toString();
   }
 }
 

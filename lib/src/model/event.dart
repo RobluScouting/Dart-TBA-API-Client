@@ -148,101 +148,172 @@ class _$EventSerializer implements StructuredSerializer<Event> {
   final String wireName = r'Event';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Event object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Event object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
-    result..add(r'event_code')..add(serializers.serialize(object.eventCode, specifiedType: const FullType(String)));
-    result..add(r'event_type')..add(serializers.serialize(object.eventType, specifiedType: const FullType(int)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'name')
+      ..add(serializers.serialize(object.name,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'event_code')
+      ..add(serializers.serialize(object.eventCode,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'event_type')
+      ..add(serializers.serialize(object.eventType,
+          specifiedType: const FullType(int)));
     if (object.district != null) {
       result
         ..add(r'district')
-        ..add(serializers.serialize(object.district, specifiedType: const FullType(DistrictList)));
+        ..add(serializers.serialize(object.district,
+            specifiedType: const FullType(DistrictList)));
     }
     if (object.city != null) {
-      result..add(r'city')..add(serializers.serialize(object.city, specifiedType: const FullType(String)));
+      result
+        ..add(r'city')
+        ..add(serializers.serialize(object.city,
+            specifiedType: const FullType(String)));
     }
     if (object.stateProv != null) {
-      result..add(r'state_prov')..add(serializers.serialize(object.stateProv, specifiedType: const FullType(String)));
+      result
+        ..add(r'state_prov')
+        ..add(serializers.serialize(object.stateProv,
+            specifiedType: const FullType(String)));
     }
     if (object.country != null) {
-      result..add(r'country')..add(serializers.serialize(object.country, specifiedType: const FullType(String)));
+      result
+        ..add(r'country')
+        ..add(serializers.serialize(object.country,
+            specifiedType: const FullType(String)));
     }
-    result..add(r'start_date')..add(serializers.serialize(object.startDate, specifiedType: const FullType(Date)));
-    result..add(r'end_date')..add(serializers.serialize(object.endDate, specifiedType: const FullType(Date)));
-    result..add(r'year')..add(serializers.serialize(object.year, specifiedType: const FullType(int)));
+    result
+      ..add(r'start_date')
+      ..add(serializers.serialize(object.startDate,
+          specifiedType: const FullType(Date)));
+    result
+      ..add(r'end_date')
+      ..add(serializers.serialize(object.endDate,
+          specifiedType: const FullType(Date)));
+    result
+      ..add(r'year')
+      ..add(serializers.serialize(object.year,
+          specifiedType: const FullType(int)));
     if (object.shortName != null) {
-      result..add(r'short_name')..add(serializers.serialize(object.shortName, specifiedType: const FullType(String)));
+      result
+        ..add(r'short_name')
+        ..add(serializers.serialize(object.shortName,
+            specifiedType: const FullType(String)));
     }
     result
       ..add(r'event_type_string')
-      ..add(serializers.serialize(object.eventTypeString, specifiedType: const FullType(String)));
+      ..add(serializers.serialize(object.eventTypeString,
+          specifiedType: const FullType(String)));
     if (object.week != null) {
-      result..add(r'week')..add(serializers.serialize(object.week, specifiedType: const FullType(int)));
+      result
+        ..add(r'week')
+        ..add(serializers.serialize(object.week,
+            specifiedType: const FullType(int)));
     }
     if (object.address != null) {
-      result..add(r'address')..add(serializers.serialize(object.address, specifiedType: const FullType(String)));
+      result
+        ..add(r'address')
+        ..add(serializers.serialize(object.address,
+            specifiedType: const FullType(String)));
     }
     if (object.postalCode != null) {
-      result..add(r'postal_code')..add(serializers.serialize(object.postalCode, specifiedType: const FullType(String)));
+      result
+        ..add(r'postal_code')
+        ..add(serializers.serialize(object.postalCode,
+            specifiedType: const FullType(String)));
     }
     if (object.gmapsPlaceId != null) {
       result
         ..add(r'gmaps_place_id')
-        ..add(serializers.serialize(object.gmapsPlaceId, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.gmapsPlaceId,
+            specifiedType: const FullType(String)));
     }
     if (object.gmapsUrl != null) {
-      result..add(r'gmaps_url')..add(serializers.serialize(object.gmapsUrl, specifiedType: const FullType(String)));
+      result
+        ..add(r'gmaps_url')
+        ..add(serializers.serialize(object.gmapsUrl,
+            specifiedType: const FullType(String)));
     }
     if (object.lat != null) {
-      result..add(r'lat')..add(serializers.serialize(object.lat, specifiedType: const FullType(double)));
+      result
+        ..add(r'lat')
+        ..add(serializers.serialize(object.lat,
+            specifiedType: const FullType(double)));
     }
     if (object.lng != null) {
-      result..add(r'lng')..add(serializers.serialize(object.lng, specifiedType: const FullType(double)));
+      result
+        ..add(r'lng')
+        ..add(serializers.serialize(object.lng,
+            specifiedType: const FullType(double)));
     }
     if (object.locationName != null) {
       result
         ..add(r'location_name')
-        ..add(serializers.serialize(object.locationName, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.locationName,
+            specifiedType: const FullType(String)));
     }
     if (object.timezone != null) {
-      result..add(r'timezone')..add(serializers.serialize(object.timezone, specifiedType: const FullType(String)));
+      result
+        ..add(r'timezone')
+        ..add(serializers.serialize(object.timezone,
+            specifiedType: const FullType(String)));
     }
     if (object.website != null) {
-      result..add(r'website')..add(serializers.serialize(object.website, specifiedType: const FullType(String)));
+      result
+        ..add(r'website')
+        ..add(serializers.serialize(object.website,
+            specifiedType: const FullType(String)));
     }
     if (object.firstEventId != null) {
       result
         ..add(r'first_event_id')
-        ..add(serializers.serialize(object.firstEventId, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.firstEventId,
+            specifiedType: const FullType(String)));
     }
     if (object.firstEventCode != null) {
       result
         ..add(r'first_event_code')
-        ..add(serializers.serialize(object.firstEventCode, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.firstEventCode,
+            specifiedType: const FullType(String)));
     }
     if (object.webcasts != null) {
       result
         ..add(r'webcasts')
-        ..add(serializers.serialize(object.webcasts, specifiedType: const FullType(BuiltList, [FullType(Webcast)])));
+        ..add(serializers.serialize(object.webcasts,
+            specifiedType: const FullType(BuiltList, [FullType(Webcast)])));
     }
     if (object.divisionKeys != null) {
       result
         ..add(r'division_keys')
-        ..add(serializers.serialize(object.divisionKeys, specifiedType: const FullType(BuiltList, [FullType(String)])));
+        ..add(serializers.serialize(object.divisionKeys,
+            specifiedType: const FullType(BuiltList, [FullType(String)])));
     }
     if (object.parentEventKey != null) {
       result
         ..add(r'parent_event_key')
-        ..add(serializers.serialize(object.parentEventKey, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.parentEventKey,
+            specifiedType: const FullType(String)));
     }
     if (object.playoffType != null) {
-      result..add(r'playoff_type')..add(serializers.serialize(object.playoffType, specifiedType: const FullType(int)));
+      result
+        ..add(r'playoff_type')
+        ..add(serializers.serialize(object.playoffType,
+            specifiedType: const FullType(int)));
     }
     if (object.playoffTypeString != null) {
       result
         ..add(r'playoff_type_string')
-        ..add(serializers.serialize(object.playoffTypeString, specifiedType: const FullType(String)));
+        ..add(serializers.serialize(object.playoffTypeString,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
@@ -259,97 +330,126 @@ class _$EventSerializer implements StructuredSerializer<Event> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'event_code':
-          result.eventCode = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventCode = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'event_type':
-          result.eventType = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.eventType = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'district':
-          result.district
-              .replace(serializers.deserialize(value, specifiedType: const FullType(DistrictList)) as DistrictList);
+          result.district.replace(serializers.deserialize(value,
+              specifiedType: const FullType(DistrictList)) as DistrictList);
           break;
         case r'city':
-          result.city = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.city = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'state_prov':
-          result.stateProv = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.stateProv = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'country':
-          result.country = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.country = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'start_date':
-          result.startDate = serializers.deserialize(value, specifiedType: const FullType(Date)) as Date;
+          result.startDate = serializers.deserialize(value,
+              specifiedType: const FullType(Date)) as Date;
           break;
         case r'end_date':
-          result.endDate = serializers.deserialize(value, specifiedType: const FullType(Date)) as Date;
+          result.endDate = serializers.deserialize(value,
+              specifiedType: const FullType(Date)) as Date;
           break;
         case r'year':
-          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'short_name':
-          result.shortName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.shortName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'event_type_string':
-          result.eventTypeString = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventTypeString = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'week':
-          result.week = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.week = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'address':
-          result.address = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.address = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'postal_code':
-          result.postalCode = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.postalCode = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'gmaps_place_id':
-          result.gmapsPlaceId = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.gmapsPlaceId = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'gmaps_url':
-          result.gmapsUrl = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.gmapsUrl = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'lat':
-          result.lat = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.lat = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'lng':
-          result.lng = serializers.deserialize(value, specifiedType: const FullType(double)) as double;
+          result.lng = serializers.deserialize(value,
+              specifiedType: const FullType(double)) as double;
           break;
         case r'location_name':
-          result.locationName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.locationName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'timezone':
-          result.timezone = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.timezone = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'website':
-          result.website = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.website = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'first_event_id':
-          result.firstEventId = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.firstEventId = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'first_event_code':
-          result.firstEventCode = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.firstEventCode = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'webcasts':
           result.webcasts.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(Webcast)])) as BuiltList<Webcast>);
+                  specifiedType: const FullType(BuiltList, [FullType(Webcast)]))
+              as BuiltList<Webcast>);
           break;
         case r'division_keys':
           result.divisionKeys.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(String)])) as BuiltList<String>);
+                  specifiedType: const FullType(BuiltList, [FullType(String)]))
+              as BuiltList<String>);
           break;
         case r'parent_event_key':
-          result.parentEventKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.parentEventKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'playoff_type':
-          result.playoffType = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.playoffType = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'playoff_type_string':
-          result.playoffTypeString = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.playoffTypeString = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

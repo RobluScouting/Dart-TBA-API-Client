@@ -39,15 +39,21 @@ class _$ZebraSerializer implements StructuredSerializer<Zebra> {
   final String wireName = r'Zebra';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, Zebra object, {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(Serializers serializers, Zebra object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
     result
       ..add(r'times')
-      ..add(serializers.serialize(object.times, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.times,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'alliances')
-      ..add(serializers.serialize(object.alliances, specifiedType: const FullType(ZebraAlliances)));
+      ..add(serializers.serialize(object.alliances,
+          specifiedType: const FullType(ZebraAlliances)));
     return result;
   }
 
@@ -63,15 +69,17 @@ class _$ZebraSerializer implements StructuredSerializer<Zebra> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'times':
           result.times.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(double)])) as BuiltList<double>);
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
+              as BuiltList<double>);
           break;
         case r'alliances':
-          result.alliances
-              .replace(serializers.deserialize(value, specifiedType: const FullType(ZebraAlliances)) as ZebraAlliances);
+          result.alliances.replace(serializers.deserialize(value,
+              specifiedType: const FullType(ZebraAlliances)) as ZebraAlliances);
           break;
       }
     }

@@ -42,13 +42,18 @@ class _$ZebraTeamSerializer implements StructuredSerializer<ZebraTeam> {
   Iterable<Object?> serialize(Serializers serializers, ZebraTeam object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'team_key')..add(serializers.serialize(object.teamKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'team_key')
+      ..add(serializers.serialize(object.teamKey,
+          specifiedType: const FullType(String)));
     result
       ..add(r'xs')
-      ..add(serializers.serialize(object.xs, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.xs,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     result
       ..add(r'ys')
-      ..add(serializers.serialize(object.ys, specifiedType: const FullType(BuiltList, [FullType(double)])));
+      ..add(serializers.serialize(object.ys,
+          specifiedType: const FullType(BuiltList, [FullType(double)])));
     return result;
   }
 
@@ -64,14 +69,17 @@ class _$ZebraTeamSerializer implements StructuredSerializer<ZebraTeam> {
       final Object? value = iterator.current;
       switch (key) {
         case r'team_key':
-          result.teamKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.teamKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'xs':
-          result.xs.replace(serializers.deserialize(value, specifiedType: const FullType(BuiltList, [FullType(double)]))
+          result.xs.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
               as BuiltList<double>);
           break;
         case r'ys':
-          result.ys.replace(serializers.deserialize(value, specifiedType: const FullType(BuiltList, [FullType(double)]))
+          result.ys.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(BuiltList, [FullType(double)]))
               as BuiltList<double>);
           break;
       }

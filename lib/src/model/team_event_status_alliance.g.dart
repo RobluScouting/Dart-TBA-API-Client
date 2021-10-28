@@ -16,20 +16,27 @@ class _$TeamEventStatusAlliance extends TeamEventStatusAlliance {
   @override
   final int pick;
 
-  factory _$TeamEventStatusAlliance([void Function(TeamEventStatusAllianceBuilder)? updates]) =>
+  factory _$TeamEventStatusAlliance(
+          [void Function(TeamEventStatusAllianceBuilder)? updates]) =>
       (new TeamEventStatusAllianceBuilder()..update(updates)).build();
 
-  _$TeamEventStatusAlliance._({this.name, required this.number, this.backup, required this.pick}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(number, 'TeamEventStatusAlliance', 'number');
-    BuiltValueNullFieldError.checkNotNull(pick, 'TeamEventStatusAlliance', 'pick');
+  _$TeamEventStatusAlliance._(
+      {this.name, required this.number, this.backup, required this.pick})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        number, 'TeamEventStatusAlliance', 'number');
+    BuiltValueNullFieldError.checkNotNull(
+        pick, 'TeamEventStatusAlliance', 'pick');
   }
 
   @override
-  TeamEventStatusAlliance rebuild(void Function(TeamEventStatusAllianceBuilder) updates) =>
+  TeamEventStatusAlliance rebuild(
+          void Function(TeamEventStatusAllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TeamEventStatusAllianceBuilder toBuilder() => new TeamEventStatusAllianceBuilder()..replace(this);
+  TeamEventStatusAllianceBuilder toBuilder() =>
+      new TeamEventStatusAllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -43,7 +50,9 @@ class _$TeamEventStatusAlliance extends TeamEventStatusAlliance {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, name.hashCode), number.hashCode), backup.hashCode), pick.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, name.hashCode), number.hashCode), backup.hashCode),
+        pick.hashCode));
   }
 
   @override
@@ -57,7 +66,9 @@ class _$TeamEventStatusAlliance extends TeamEventStatusAlliance {
   }
 }
 
-class TeamEventStatusAllianceBuilder implements Builder<TeamEventStatusAlliance, TeamEventStatusAllianceBuilder> {
+class TeamEventStatusAllianceBuilder
+    implements
+        Builder<TeamEventStatusAlliance, TeamEventStatusAllianceBuilder> {
   _$TeamEventStatusAlliance? _$v;
 
   String? _name;
@@ -69,8 +80,10 @@ class TeamEventStatusAllianceBuilder implements Builder<TeamEventStatusAlliance,
   set number(int? number) => _$this._number = number;
 
   TeamEventStatusAllianceBackupBuilder? _backup;
-  TeamEventStatusAllianceBackupBuilder get backup => _$this._backup ??= new TeamEventStatusAllianceBackupBuilder();
-  set backup(TeamEventStatusAllianceBackupBuilder? backup) => _$this._backup = backup;
+  TeamEventStatusAllianceBackupBuilder get backup =>
+      _$this._backup ??= new TeamEventStatusAllianceBackupBuilder();
+  set backup(TeamEventStatusAllianceBackupBuilder? backup) =>
+      _$this._backup = backup;
 
   int? _pick;
   int? get pick => _$this._pick;
@@ -110,16 +123,19 @@ class TeamEventStatusAllianceBuilder implements Builder<TeamEventStatusAlliance,
       _$result = _$v ??
           new _$TeamEventStatusAlliance._(
               name: name,
-              number: BuiltValueNullFieldError.checkNotNull(number, 'TeamEventStatusAlliance', 'number'),
+              number: BuiltValueNullFieldError.checkNotNull(
+                  number, 'TeamEventStatusAlliance', 'number'),
               backup: _backup?.build(),
-              pick: BuiltValueNullFieldError.checkNotNull(pick, 'TeamEventStatusAlliance', 'pick'));
+              pick: BuiltValueNullFieldError.checkNotNull(
+                  pick, 'TeamEventStatusAlliance', 'pick'));
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'backup';
         _backup?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('TeamEventStatusAlliance', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'TeamEventStatusAlliance', _$failedField, e.toString());
       }
       rethrow;
     }

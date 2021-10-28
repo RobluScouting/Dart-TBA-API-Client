@@ -6,7 +6,8 @@ part of 'match_score_breakdown2018_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-class _$MatchScoreBreakdown2018Alliance extends MatchScoreBreakdown2018Alliance {
+class _$MatchScoreBreakdown2018Alliance
+    extends MatchScoreBreakdown2018Alliance {
   @override
   final int? adjustPoints;
   @override
@@ -82,7 +83,8 @@ class _$MatchScoreBreakdown2018Alliance extends MatchScoreBreakdown2018Alliance 
   @override
   final String? tbaGameData;
 
-  factory _$MatchScoreBreakdown2018Alliance([void Function(MatchScoreBreakdown2018AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2018Alliance(
+          [void Function(MatchScoreBreakdown2018AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2018AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2018Alliance._(
@@ -126,11 +128,13 @@ class _$MatchScoreBreakdown2018Alliance extends MatchScoreBreakdown2018Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2018Alliance rebuild(void Function(MatchScoreBreakdown2018AllianceBuilder) updates) =>
+  MatchScoreBreakdown2018Alliance rebuild(
+          void Function(MatchScoreBreakdown2018AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2018AllianceBuilder toBuilder() => new MatchScoreBreakdown2018AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2018AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2018AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -195,27 +199,7 @@ class _$MatchScoreBreakdown2018Alliance extends MatchScoreBreakdown2018Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc($jc($jc($jc($jc(0, adjustPoints.hashCode), autoOwnershipPoints.hashCode), autoPoints.hashCode), autoQuestRankingPoint.hashCode), autoRobot1.hashCode), autoRobot2.hashCode), autoRobot3.hashCode), autoRunPoints.hashCode),
-                                                                                                                        autoScaleOwnershipSec.hashCode),
-                                                                                                                    autoSwitchAtZero.hashCode),
-                                                                                                                autoSwitchOwnershipSec.hashCode),
-                                                                                                            endgamePoints.hashCode),
-                                                                                                        endgameRobot1.hashCode),
-                                                                                                    endgameRobot2.hashCode),
-                                                                                                endgameRobot3.hashCode),
-                                                                                            faceTheBossRankingPoint.hashCode),
-                                                                                        foulCount.hashCode),
-                                                                                    foulPoints.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, adjustPoints.hashCode), autoOwnershipPoints.hashCode), autoPoints.hashCode), autoQuestRankingPoint.hashCode), autoRobot1.hashCode), autoRobot2.hashCode), autoRobot3.hashCode), autoRunPoints.hashCode), autoScaleOwnershipSec.hashCode), autoSwitchAtZero.hashCode), autoSwitchOwnershipSec.hashCode), endgamePoints.hashCode), endgameRobot1.hashCode), endgameRobot2.hashCode), endgameRobot3.hashCode), faceTheBossRankingPoint.hashCode), foulCount.hashCode), foulPoints.hashCode),
                                                                                 rp.hashCode),
                                                                             techFoulCount.hashCode),
                                                                         teleopOwnershipPoints.hashCode),
@@ -282,7 +266,9 @@ class _$MatchScoreBreakdown2018Alliance extends MatchScoreBreakdown2018Alliance 
 }
 
 class MatchScoreBreakdown2018AllianceBuilder
-    implements Builder<MatchScoreBreakdown2018Alliance, MatchScoreBreakdown2018AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2018Alliance,
+            MatchScoreBreakdown2018AllianceBuilder> {
   _$MatchScoreBreakdown2018Alliance? _$v;
 
   int? _adjustPoints;
@@ -291,7 +277,8 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _autoOwnershipPoints;
   int? get autoOwnershipPoints => _$this._autoOwnershipPoints;
-  set autoOwnershipPoints(int? autoOwnershipPoints) => _$this._autoOwnershipPoints = autoOwnershipPoints;
+  set autoOwnershipPoints(int? autoOwnershipPoints) =>
+      _$this._autoOwnershipPoints = autoOwnershipPoints;
 
   int? _autoPoints;
   int? get autoPoints => _$this._autoPoints;
@@ -299,7 +286,8 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   bool? _autoQuestRankingPoint;
   bool? get autoQuestRankingPoint => _$this._autoQuestRankingPoint;
-  set autoQuestRankingPoint(bool? autoQuestRankingPoint) => _$this._autoQuestRankingPoint = autoQuestRankingPoint;
+  set autoQuestRankingPoint(bool? autoQuestRankingPoint) =>
+      _$this._autoQuestRankingPoint = autoQuestRankingPoint;
 
   String? _autoRobot1;
   String? get autoRobot1 => _$this._autoRobot1;
@@ -315,35 +303,43 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _autoRunPoints;
   int? get autoRunPoints => _$this._autoRunPoints;
-  set autoRunPoints(int? autoRunPoints) => _$this._autoRunPoints = autoRunPoints;
+  set autoRunPoints(int? autoRunPoints) =>
+      _$this._autoRunPoints = autoRunPoints;
 
   int? _autoScaleOwnershipSec;
   int? get autoScaleOwnershipSec => _$this._autoScaleOwnershipSec;
-  set autoScaleOwnershipSec(int? autoScaleOwnershipSec) => _$this._autoScaleOwnershipSec = autoScaleOwnershipSec;
+  set autoScaleOwnershipSec(int? autoScaleOwnershipSec) =>
+      _$this._autoScaleOwnershipSec = autoScaleOwnershipSec;
 
   bool? _autoSwitchAtZero;
   bool? get autoSwitchAtZero => _$this._autoSwitchAtZero;
-  set autoSwitchAtZero(bool? autoSwitchAtZero) => _$this._autoSwitchAtZero = autoSwitchAtZero;
+  set autoSwitchAtZero(bool? autoSwitchAtZero) =>
+      _$this._autoSwitchAtZero = autoSwitchAtZero;
 
   int? _autoSwitchOwnershipSec;
   int? get autoSwitchOwnershipSec => _$this._autoSwitchOwnershipSec;
-  set autoSwitchOwnershipSec(int? autoSwitchOwnershipSec) => _$this._autoSwitchOwnershipSec = autoSwitchOwnershipSec;
+  set autoSwitchOwnershipSec(int? autoSwitchOwnershipSec) =>
+      _$this._autoSwitchOwnershipSec = autoSwitchOwnershipSec;
 
   int? _endgamePoints;
   int? get endgamePoints => _$this._endgamePoints;
-  set endgamePoints(int? endgamePoints) => _$this._endgamePoints = endgamePoints;
+  set endgamePoints(int? endgamePoints) =>
+      _$this._endgamePoints = endgamePoints;
 
   String? _endgameRobot1;
   String? get endgameRobot1 => _$this._endgameRobot1;
-  set endgameRobot1(String? endgameRobot1) => _$this._endgameRobot1 = endgameRobot1;
+  set endgameRobot1(String? endgameRobot1) =>
+      _$this._endgameRobot1 = endgameRobot1;
 
   String? _endgameRobot2;
   String? get endgameRobot2 => _$this._endgameRobot2;
-  set endgameRobot2(String? endgameRobot2) => _$this._endgameRobot2 = endgameRobot2;
+  set endgameRobot2(String? endgameRobot2) =>
+      _$this._endgameRobot2 = endgameRobot2;
 
   String? _endgameRobot3;
   String? get endgameRobot3 => _$this._endgameRobot3;
-  set endgameRobot3(String? endgameRobot3) => _$this._endgameRobot3 = endgameRobot3;
+  set endgameRobot3(String? endgameRobot3) =>
+      _$this._endgameRobot3 = endgameRobot3;
 
   bool? _faceTheBossRankingPoint;
   bool? get faceTheBossRankingPoint => _$this._faceTheBossRankingPoint;
@@ -364,11 +360,13 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _techFoulCount;
   int? get techFoulCount => _$this._techFoulCount;
-  set techFoulCount(int? techFoulCount) => _$this._techFoulCount = techFoulCount;
+  set techFoulCount(int? techFoulCount) =>
+      _$this._techFoulCount = techFoulCount;
 
   int? _teleopOwnershipPoints;
   int? get teleopOwnershipPoints => _$this._teleopOwnershipPoints;
-  set teleopOwnershipPoints(int? teleopOwnershipPoints) => _$this._teleopOwnershipPoints = teleopOwnershipPoints;
+  set teleopOwnershipPoints(int? teleopOwnershipPoints) =>
+      _$this._teleopOwnershipPoints = teleopOwnershipPoints;
 
   int? _teleopPoints;
   int? get teleopPoints => _$this._teleopPoints;
@@ -376,11 +374,13 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _teleopScaleBoostSec;
   int? get teleopScaleBoostSec => _$this._teleopScaleBoostSec;
-  set teleopScaleBoostSec(int? teleopScaleBoostSec) => _$this._teleopScaleBoostSec = teleopScaleBoostSec;
+  set teleopScaleBoostSec(int? teleopScaleBoostSec) =>
+      _$this._teleopScaleBoostSec = teleopScaleBoostSec;
 
   int? _teleopScaleForceSec;
   int? get teleopScaleForceSec => _$this._teleopScaleForceSec;
-  set teleopScaleForceSec(int? teleopScaleForceSec) => _$this._teleopScaleForceSec = teleopScaleForceSec;
+  set teleopScaleForceSec(int? teleopScaleForceSec) =>
+      _$this._teleopScaleForceSec = teleopScaleForceSec;
 
   int? _teleopScaleOwnershipSec;
   int? get teleopScaleOwnershipSec => _$this._teleopScaleOwnershipSec;
@@ -389,11 +389,13 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _teleopSwitchBoostSec;
   int? get teleopSwitchBoostSec => _$this._teleopSwitchBoostSec;
-  set teleopSwitchBoostSec(int? teleopSwitchBoostSec) => _$this._teleopSwitchBoostSec = teleopSwitchBoostSec;
+  set teleopSwitchBoostSec(int? teleopSwitchBoostSec) =>
+      _$this._teleopSwitchBoostSec = teleopSwitchBoostSec;
 
   int? _teleopSwitchForceSec;
   int? get teleopSwitchForceSec => _$this._teleopSwitchForceSec;
-  set teleopSwitchForceSec(int? teleopSwitchForceSec) => _$this._teleopSwitchForceSec = teleopSwitchForceSec;
+  set teleopSwitchForceSec(int? teleopSwitchForceSec) =>
+      _$this._teleopSwitchForceSec = teleopSwitchForceSec;
 
   int? _teleopSwitchOwnershipSec;
   int? get teleopSwitchOwnershipSec => _$this._teleopSwitchOwnershipSec;
@@ -406,27 +408,33 @@ class MatchScoreBreakdown2018AllianceBuilder
 
   int? _vaultBoostPlayed;
   int? get vaultBoostPlayed => _$this._vaultBoostPlayed;
-  set vaultBoostPlayed(int? vaultBoostPlayed) => _$this._vaultBoostPlayed = vaultBoostPlayed;
+  set vaultBoostPlayed(int? vaultBoostPlayed) =>
+      _$this._vaultBoostPlayed = vaultBoostPlayed;
 
   int? _vaultBoostTotal;
   int? get vaultBoostTotal => _$this._vaultBoostTotal;
-  set vaultBoostTotal(int? vaultBoostTotal) => _$this._vaultBoostTotal = vaultBoostTotal;
+  set vaultBoostTotal(int? vaultBoostTotal) =>
+      _$this._vaultBoostTotal = vaultBoostTotal;
 
   int? _vaultForcePlayed;
   int? get vaultForcePlayed => _$this._vaultForcePlayed;
-  set vaultForcePlayed(int? vaultForcePlayed) => _$this._vaultForcePlayed = vaultForcePlayed;
+  set vaultForcePlayed(int? vaultForcePlayed) =>
+      _$this._vaultForcePlayed = vaultForcePlayed;
 
   int? _vaultForceTotal;
   int? get vaultForceTotal => _$this._vaultForceTotal;
-  set vaultForceTotal(int? vaultForceTotal) => _$this._vaultForceTotal = vaultForceTotal;
+  set vaultForceTotal(int? vaultForceTotal) =>
+      _$this._vaultForceTotal = vaultForceTotal;
 
   int? _vaultLevitatePlayed;
   int? get vaultLevitatePlayed => _$this._vaultLevitatePlayed;
-  set vaultLevitatePlayed(int? vaultLevitatePlayed) => _$this._vaultLevitatePlayed = vaultLevitatePlayed;
+  set vaultLevitatePlayed(int? vaultLevitatePlayed) =>
+      _$this._vaultLevitatePlayed = vaultLevitatePlayed;
 
   int? _vaultLevitateTotal;
   int? get vaultLevitateTotal => _$this._vaultLevitateTotal;
-  set vaultLevitateTotal(int? vaultLevitateTotal) => _$this._vaultLevitateTotal = vaultLevitateTotal;
+  set vaultLevitateTotal(int? vaultLevitateTotal) =>
+      _$this._vaultLevitateTotal = vaultLevitateTotal;
 
   int? _vaultPoints;
   int? get vaultPoints => _$this._vaultPoints;

@@ -7,17 +7,26 @@ part of 'media.dart';
 // **************************************************************************
 
 const MediaTypeEnum _$mediaTypeEnum_youtube = const MediaTypeEnum._('youtube');
-const MediaTypeEnum _$mediaTypeEnum_cdphotothread = const MediaTypeEnum._('cdphotothread');
+const MediaTypeEnum _$mediaTypeEnum_cdphotothread =
+    const MediaTypeEnum._('cdphotothread');
 const MediaTypeEnum _$mediaTypeEnum_imgur = const MediaTypeEnum._('imgur');
-const MediaTypeEnum _$mediaTypeEnum_facebookProfile = const MediaTypeEnum._('facebookProfile');
-const MediaTypeEnum _$mediaTypeEnum_youtubeChannel = const MediaTypeEnum._('youtubeChannel');
-const MediaTypeEnum _$mediaTypeEnum_twitterProfile = const MediaTypeEnum._('twitterProfile');
-const MediaTypeEnum _$mediaTypeEnum_githubProfile = const MediaTypeEnum._('githubProfile');
-const MediaTypeEnum _$mediaTypeEnum_instagramProfile = const MediaTypeEnum._('instagramProfile');
-const MediaTypeEnum _$mediaTypeEnum_periscopeProfile = const MediaTypeEnum._('periscopeProfile');
+const MediaTypeEnum _$mediaTypeEnum_facebookProfile =
+    const MediaTypeEnum._('facebookProfile');
+const MediaTypeEnum _$mediaTypeEnum_youtubeChannel =
+    const MediaTypeEnum._('youtubeChannel');
+const MediaTypeEnum _$mediaTypeEnum_twitterProfile =
+    const MediaTypeEnum._('twitterProfile');
+const MediaTypeEnum _$mediaTypeEnum_githubProfile =
+    const MediaTypeEnum._('githubProfile');
+const MediaTypeEnum _$mediaTypeEnum_instagramProfile =
+    const MediaTypeEnum._('instagramProfile');
+const MediaTypeEnum _$mediaTypeEnum_periscopeProfile =
+    const MediaTypeEnum._('periscopeProfile');
 const MediaTypeEnum _$mediaTypeEnum_grabcad = const MediaTypeEnum._('grabcad');
-const MediaTypeEnum _$mediaTypeEnum_instagramImage = const MediaTypeEnum._('instagramImage');
-const MediaTypeEnum _$mediaTypeEnum_externalLink = const MediaTypeEnum._('externalLink');
+const MediaTypeEnum _$mediaTypeEnum_instagramImage =
+    const MediaTypeEnum._('instagramImage');
+const MediaTypeEnum _$mediaTypeEnum_externalLink =
+    const MediaTypeEnum._('externalLink');
 const MediaTypeEnum _$mediaTypeEnum_avatar = const MediaTypeEnum._('avatar');
 
 MediaTypeEnum _$mediaTypeEnumValueOf(String name) {
@@ -53,7 +62,8 @@ MediaTypeEnum _$mediaTypeEnumValueOf(String name) {
   }
 }
 
-final BuiltSet<MediaTypeEnum> _$mediaTypeEnumValues = new BuiltSet<MediaTypeEnum>(const <MediaTypeEnum>[
+final BuiltSet<MediaTypeEnum> _$mediaTypeEnumValues =
+    new BuiltSet<MediaTypeEnum>(const <MediaTypeEnum>[
   _$mediaTypeEnum_youtube,
   _$mediaTypeEnum_cdphotothread,
   _$mediaTypeEnum_imgur,
@@ -69,7 +79,8 @@ final BuiltSet<MediaTypeEnum> _$mediaTypeEnumValues = new BuiltSet<MediaTypeEnum
   _$mediaTypeEnum_avatar,
 ]);
 
-Serializer<MediaTypeEnum> _$mediaTypeEnumSerializer = new _$MediaTypeEnumSerializer();
+Serializer<MediaTypeEnum> _$mediaTypeEnumSerializer =
+    new _$MediaTypeEnumSerializer();
 
 class _$MediaTypeEnumSerializer implements PrimitiveSerializer<MediaTypeEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
@@ -109,13 +120,15 @@ class _$MediaTypeEnumSerializer implements PrimitiveSerializer<MediaTypeEnum> {
   final String wireName = 'MediaTypeEnum';
 
   @override
-  Object serialize(Serializers serializers, MediaTypeEnum object, {FullType specifiedType = FullType.unspecified}) =>
+  Object serialize(Serializers serializers, MediaTypeEnum object,
+          {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
   MediaTypeEnum deserialize(Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      MediaTypeEnum.valueOf(_fromWire[serialized] ?? (serialized is String ? serialized : ''));
+      MediaTypeEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$Media extends Media {
@@ -132,16 +145,24 @@ class _$Media extends Media {
   @override
   final String? viewUrl;
 
-  factory _$Media([void Function(MediaBuilder)? updates]) => (new MediaBuilder()..update(updates)).build();
+  factory _$Media([void Function(MediaBuilder)? updates]) =>
+      (new MediaBuilder()..update(updates)).build();
 
-  _$Media._({required this.type, required this.foreignKey, this.details, this.preferred, this.directUrl, this.viewUrl})
+  _$Media._(
+      {required this.type,
+      required this.foreignKey,
+      this.details,
+      this.preferred,
+      this.directUrl,
+      this.viewUrl})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(type, 'Media', 'type');
     BuiltValueNullFieldError.checkNotNull(foreignKey, 'Media', 'foreignKey');
   }
 
   @override
-  Media rebuild(void Function(MediaBuilder) updates) => (toBuilder()..update(updates)).build();
+  Media rebuild(void Function(MediaBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   MediaBuilder toBuilder() => new MediaBuilder()..replace(this);
@@ -161,7 +182,11 @@ class _$Media extends Media {
   @override
   int get hashCode {
     return $jf($jc(
-        $jc($jc($jc($jc($jc(0, type.hashCode), foreignKey.hashCode), details.hashCode), preferred.hashCode),
+        $jc(
+            $jc(
+                $jc($jc($jc(0, type.hashCode), foreignKey.hashCode),
+                    details.hashCode),
+                preferred.hashCode),
             directUrl.hashCode),
         viewUrl.hashCode));
   }
@@ -240,7 +265,8 @@ class MediaBuilder implements Builder<Media, MediaBuilder> {
     final _$result = _$v ??
         new _$Media._(
             type: BuiltValueNullFieldError.checkNotNull(type, 'Media', 'type'),
-            foreignKey: BuiltValueNullFieldError.checkNotNull(foreignKey, 'Media', 'foreignKey'),
+            foreignKey: BuiltValueNullFieldError.checkNotNull(
+                foreignKey, 'Media', 'foreignKey'),
             details: details,
             preferred: preferred,
             directUrl: directUrl,

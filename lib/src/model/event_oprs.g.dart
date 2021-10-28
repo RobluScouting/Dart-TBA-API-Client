@@ -14,12 +14,14 @@ class _$EventOPRs extends EventOPRs {
   @override
   final BuiltMap<String, double>? ccwms;
 
-  factory _$EventOPRs([void Function(EventOPRsBuilder)? updates]) => (new EventOPRsBuilder()..update(updates)).build();
+  factory _$EventOPRs([void Function(EventOPRsBuilder)? updates]) =>
+      (new EventOPRsBuilder()..update(updates)).build();
 
   _$EventOPRs._({this.oprs, this.dprs, this.ccwms}) : super._();
 
   @override
-  EventOPRs rebuild(void Function(EventOPRsBuilder) updates) => (toBuilder()..update(updates)).build();
+  EventOPRs rebuild(void Function(EventOPRsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   EventOPRsBuilder toBuilder() => new EventOPRsBuilder()..replace(this);
@@ -27,7 +29,10 @@ class _$EventOPRs extends EventOPRs {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EventOPRs && oprs == other.oprs && dprs == other.dprs && ccwms == other.ccwms;
+    return other is EventOPRs &&
+        oprs == other.oprs &&
+        dprs == other.dprs &&
+        ccwms == other.ccwms;
   }
 
   @override
@@ -37,7 +42,10 @@ class _$EventOPRs extends EventOPRs {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventOPRs')..add('oprs', oprs)..add('dprs', dprs)..add('ccwms', ccwms))
+    return (newBuiltValueToStringHelper('EventOPRs')
+          ..add('oprs', oprs)
+          ..add('dprs', dprs)
+          ..add('ccwms', ccwms))
         .toString();
   }
 }
@@ -46,15 +54,18 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
   _$EventOPRs? _$v;
 
   MapBuilder<String, double>? _oprs;
-  MapBuilder<String, double> get oprs => _$this._oprs ??= new MapBuilder<String, double>();
+  MapBuilder<String, double> get oprs =>
+      _$this._oprs ??= new MapBuilder<String, double>();
   set oprs(MapBuilder<String, double>? oprs) => _$this._oprs = oprs;
 
   MapBuilder<String, double>? _dprs;
-  MapBuilder<String, double> get dprs => _$this._dprs ??= new MapBuilder<String, double>();
+  MapBuilder<String, double> get dprs =>
+      _$this._dprs ??= new MapBuilder<String, double>();
   set dprs(MapBuilder<String, double>? dprs) => _$this._dprs = dprs;
 
   MapBuilder<String, double>? _ccwms;
-  MapBuilder<String, double> get ccwms => _$this._ccwms ??= new MapBuilder<String, double>();
+  MapBuilder<String, double> get ccwms =>
+      _$this._ccwms ??= new MapBuilder<String, double>();
   set ccwms(MapBuilder<String, double>? ccwms) => _$this._ccwms = ccwms;
 
   EventOPRsBuilder() {
@@ -87,7 +98,11 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
   _$EventOPRs build() {
     _$EventOPRs _$result;
     try {
-      _$result = _$v ?? new _$EventOPRs._(oprs: _oprs?.build(), dprs: _dprs?.build(), ccwms: _ccwms?.build());
+      _$result = _$v ??
+          new _$EventOPRs._(
+              oprs: _oprs?.build(),
+              dprs: _dprs?.build(),
+              ccwms: _ccwms?.build());
     } catch (_) {
       late String _$failedField;
       try {
@@ -98,7 +113,8 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
         _$failedField = 'ccwms';
         _ccwms?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventOPRs', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventOPRs', _$failedField, e.toString());
       }
       rethrow;
     }

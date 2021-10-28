@@ -41,7 +41,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/rankings'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/rankings'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -118,7 +119,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -195,7 +197,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/keys'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams/keys'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -272,7 +275,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/simple'.replaceAll('{' r'district_key' '}', districtKey.toString());
+    final _path = r'/district/{district_key}/teams/simple'
+        .replaceAll('{' r'district_key' '}', districtKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -349,7 +353,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -426,7 +431,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/keys'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/keys'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -503,7 +509,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/simple'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/simple'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -580,7 +587,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/teams/statuses'.replaceAll('{' r'event_key' '}', eventKey.toString());
+    final _path = r'/event/{event_key}/teams/statuses'
+        .replaceAll('{' r'event_key' '}', eventKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -618,7 +626,8 @@ class TeamApi {
     BuiltMap<String, TeamEventStatus> _responseData;
 
     try {
-      const _responseType = FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
+      const _responseType =
+          FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
       _responseData = _serializers.deserialize(
         _response.data!,
         specifiedType: _responseType,
@@ -657,7 +666,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path =
+        r'/team/{team_key}'.replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -734,7 +744,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/awards'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/awards'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -891,7 +902,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/districts'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/districts'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1368,7 +1380,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1685,7 +1698,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events/keys'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events/keys'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1762,7 +1776,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/events/simple'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/events/simple'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1829,7 +1844,8 @@ class TeamApi {
   ///
   ///
   /// Gets a key-value list of the event statuses for events this team has competed at in the given year.
-  Future<Response<BuiltMap<String, TeamEventStatus>>> getTeamEventsStatusesByYear({
+  Future<Response<BuiltMap<String, TeamEventStatus>>>
+      getTeamEventsStatusesByYear({
     required String teamKey,
     required int year,
     String? ifModifiedSince,
@@ -1880,7 +1896,8 @@ class TeamApi {
     BuiltMap<String, TeamEventStatus> _responseData;
 
     try {
-      const _responseType = FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
+      const _responseType =
+          FullType(BuiltMap, [FullType(String), FullType(TeamEventStatus)]);
       _responseData = _serializers.deserialize(
         _response.data!,
         specifiedType: _responseType,
@@ -2401,7 +2418,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/robots'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/robots'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2478,7 +2496,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/simple'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/simple'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2555,7 +2574,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/social_media'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/social_media'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2632,7 +2652,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/years_participated'.replaceAll('{' r'team_key' '}', teamKey.toString());
+    final _path = r'/team/{team_key}/years_participated'
+        .replaceAll('{' r'team_key' '}', teamKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -2709,7 +2730,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/teams/{page_num}'.replaceAll('{' r'page_num' '}', pageNum.toString());
+    final _path = r'/teams/{page_num}'
+        .replaceAll('{' r'page_num' '}', pageNum.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -3026,7 +3048,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/teams/{page_num}/keys'.replaceAll('{' r'page_num' '}', pageNum.toString());
+    final _path = r'/teams/{page_num}/keys'
+        .replaceAll('{' r'page_num' '}', pageNum.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -3103,7 +3126,8 @@ class TeamApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/teams/{page_num}/simple'.replaceAll('{' r'page_num' '}', pageNum.toString());
+    final _path = r'/teams/{page_num}/simple'
+        .replaceAll('{' r'page_num' '}', pageNum.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

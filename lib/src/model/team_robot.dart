@@ -45,10 +45,22 @@ class _$TeamRobotSerializer implements StructuredSerializer<TeamRobot> {
   Iterable<Object?> serialize(Serializers serializers, TeamRobot object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'year')..add(serializers.serialize(object.year, specifiedType: const FullType(int)));
-    result..add(r'robot_name')..add(serializers.serialize(object.robotName, specifiedType: const FullType(String)));
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'team_key')..add(serializers.serialize(object.teamKey, specifiedType: const FullType(String)));
+    result
+      ..add(r'year')
+      ..add(serializers.serialize(object.year,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'robot_name')
+      ..add(serializers.serialize(object.robotName,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'team_key')
+      ..add(serializers.serialize(object.teamKey,
+          specifiedType: const FullType(String)));
     return result;
   }
 
@@ -64,16 +76,20 @@ class _$TeamRobotSerializer implements StructuredSerializer<TeamRobot> {
       final Object? value = iterator.current;
       switch (key) {
         case r'year':
-          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'robot_name':
-          result.robotName = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.robotName = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'team_key':
-          result.teamKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.teamKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

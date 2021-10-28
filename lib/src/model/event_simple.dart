@@ -74,27 +74,58 @@ class _$EventSimpleSerializer implements StructuredSerializer<EventSimple> {
   Iterable<Object?> serialize(Serializers serializers, EventSimple object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'key')..add(serializers.serialize(object.key, specifiedType: const FullType(String)));
-    result..add(r'name')..add(serializers.serialize(object.name, specifiedType: const FullType(String)));
-    result..add(r'event_code')..add(serializers.serialize(object.eventCode, specifiedType: const FullType(String)));
-    result..add(r'event_type')..add(serializers.serialize(object.eventType, specifiedType: const FullType(int)));
+    result
+      ..add(r'key')
+      ..add(serializers.serialize(object.key,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'name')
+      ..add(serializers.serialize(object.name,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'event_code')
+      ..add(serializers.serialize(object.eventCode,
+          specifiedType: const FullType(String)));
+    result
+      ..add(r'event_type')
+      ..add(serializers.serialize(object.eventType,
+          specifiedType: const FullType(int)));
     if (object.district != null) {
       result
         ..add(r'district')
-        ..add(serializers.serialize(object.district, specifiedType: const FullType(DistrictList)));
+        ..add(serializers.serialize(object.district,
+            specifiedType: const FullType(DistrictList)));
     }
     if (object.city != null) {
-      result..add(r'city')..add(serializers.serialize(object.city, specifiedType: const FullType(String)));
+      result
+        ..add(r'city')
+        ..add(serializers.serialize(object.city,
+            specifiedType: const FullType(String)));
     }
     if (object.stateProv != null) {
-      result..add(r'state_prov')..add(serializers.serialize(object.stateProv, specifiedType: const FullType(String)));
+      result
+        ..add(r'state_prov')
+        ..add(serializers.serialize(object.stateProv,
+            specifiedType: const FullType(String)));
     }
     if (object.country != null) {
-      result..add(r'country')..add(serializers.serialize(object.country, specifiedType: const FullType(String)));
+      result
+        ..add(r'country')
+        ..add(serializers.serialize(object.country,
+            specifiedType: const FullType(String)));
     }
-    result..add(r'start_date')..add(serializers.serialize(object.startDate, specifiedType: const FullType(Date)));
-    result..add(r'end_date')..add(serializers.serialize(object.endDate, specifiedType: const FullType(Date)));
-    result..add(r'year')..add(serializers.serialize(object.year, specifiedType: const FullType(int)));
+    result
+      ..add(r'start_date')
+      ..add(serializers.serialize(object.startDate,
+          specifiedType: const FullType(Date)));
+    result
+      ..add(r'end_date')
+      ..add(serializers.serialize(object.endDate,
+          specifiedType: const FullType(Date)));
+    result
+      ..add(r'year')
+      ..add(serializers.serialize(object.year,
+          specifiedType: const FullType(int)));
     return result;
   }
 
@@ -110,38 +141,48 @@ class _$EventSimpleSerializer implements StructuredSerializer<EventSimple> {
       final Object? value = iterator.current;
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.key = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'name':
-          result.name = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.name = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'event_code':
-          result.eventCode = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.eventCode = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'event_type':
-          result.eventType = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.eventType = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'district':
-          result.district
-              .replace(serializers.deserialize(value, specifiedType: const FullType(DistrictList)) as DistrictList);
+          result.district.replace(serializers.deserialize(value,
+              specifiedType: const FullType(DistrictList)) as DistrictList);
           break;
         case r'city':
-          result.city = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.city = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'state_prov':
-          result.stateProv = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.stateProv = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'country':
-          result.country = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.country = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'start_date':
-          result.startDate = serializers.deserialize(value, specifiedType: const FullType(Date)) as Date;
+          result.startDate = serializers.deserialize(value,
+              specifiedType: const FullType(Date)) as Date;
           break;
         case r'end_date':
-          result.endDate = serializers.deserialize(value, specifiedType: const FullType(Date)) as Date;
+          result.endDate = serializers.deserialize(value,
+              specifiedType: const FullType(Date)) as Date;
           break;
         case r'year':
-          result.year = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.year = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }

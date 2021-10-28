@@ -12,20 +12,27 @@ class _$APIStatusAppVersion extends APIStatusAppVersion {
   @override
   final int latestAppVersion;
 
-  factory _$APIStatusAppVersion([void Function(APIStatusAppVersionBuilder)? updates]) =>
+  factory _$APIStatusAppVersion(
+          [void Function(APIStatusAppVersionBuilder)? updates]) =>
       (new APIStatusAppVersionBuilder()..update(updates)).build();
 
-  _$APIStatusAppVersion._({required this.minAppVersion, required this.latestAppVersion}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(minAppVersion, 'APIStatusAppVersion', 'minAppVersion');
-    BuiltValueNullFieldError.checkNotNull(latestAppVersion, 'APIStatusAppVersion', 'latestAppVersion');
+  _$APIStatusAppVersion._(
+      {required this.minAppVersion, required this.latestAppVersion})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        minAppVersion, 'APIStatusAppVersion', 'minAppVersion');
+    BuiltValueNullFieldError.checkNotNull(
+        latestAppVersion, 'APIStatusAppVersion', 'latestAppVersion');
   }
 
   @override
-  APIStatusAppVersion rebuild(void Function(APIStatusAppVersionBuilder) updates) =>
+  APIStatusAppVersion rebuild(
+          void Function(APIStatusAppVersionBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  APIStatusAppVersionBuilder toBuilder() => new APIStatusAppVersionBuilder()..replace(this);
+  APIStatusAppVersionBuilder toBuilder() =>
+      new APIStatusAppVersionBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -49,16 +56,19 @@ class _$APIStatusAppVersion extends APIStatusAppVersion {
   }
 }
 
-class APIStatusAppVersionBuilder implements Builder<APIStatusAppVersion, APIStatusAppVersionBuilder> {
+class APIStatusAppVersionBuilder
+    implements Builder<APIStatusAppVersion, APIStatusAppVersionBuilder> {
   _$APIStatusAppVersion? _$v;
 
   int? _minAppVersion;
   int? get minAppVersion => _$this._minAppVersion;
-  set minAppVersion(int? minAppVersion) => _$this._minAppVersion = minAppVersion;
+  set minAppVersion(int? minAppVersion) =>
+      _$this._minAppVersion = minAppVersion;
 
   int? _latestAppVersion;
   int? get latestAppVersion => _$this._latestAppVersion;
-  set latestAppVersion(int? latestAppVersion) => _$this._latestAppVersion = latestAppVersion;
+  set latestAppVersion(int? latestAppVersion) =>
+      _$this._latestAppVersion = latestAppVersion;
 
   APIStatusAppVersionBuilder() {
     APIStatusAppVersion._initializeBuilder(this);
@@ -89,9 +99,10 @@ class APIStatusAppVersionBuilder implements Builder<APIStatusAppVersion, APIStat
   _$APIStatusAppVersion build() {
     final _$result = _$v ??
         new _$APIStatusAppVersion._(
-            minAppVersion: BuiltValueNullFieldError.checkNotNull(minAppVersion, 'APIStatusAppVersion', 'minAppVersion'),
-            latestAppVersion:
-                BuiltValueNullFieldError.checkNotNull(latestAppVersion, 'APIStatusAppVersion', 'latestAppVersion'));
+            minAppVersion: BuiltValueNullFieldError.checkNotNull(
+                minAppVersion, 'APIStatusAppVersion', 'minAppVersion'),
+            latestAppVersion: BuiltValueNullFieldError.checkNotNull(
+                latestAppVersion, 'APIStatusAppVersion', 'latestAppVersion'));
     replace(_$result);
     return _$result;
   }

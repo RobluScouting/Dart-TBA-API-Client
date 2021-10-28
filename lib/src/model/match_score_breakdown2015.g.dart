@@ -6,14 +6,18 @@ part of 'match_score_breakdown2015.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const MatchScoreBreakdown2015CoopertitionEnum _$matchScoreBreakdown2015CoopertitionEnum_none =
+const MatchScoreBreakdown2015CoopertitionEnum
+    _$matchScoreBreakdown2015CoopertitionEnum_none =
     const MatchScoreBreakdown2015CoopertitionEnum._('none');
-const MatchScoreBreakdown2015CoopertitionEnum _$matchScoreBreakdown2015CoopertitionEnum_unknown =
+const MatchScoreBreakdown2015CoopertitionEnum
+    _$matchScoreBreakdown2015CoopertitionEnum_unknown =
     const MatchScoreBreakdown2015CoopertitionEnum._('unknown');
-const MatchScoreBreakdown2015CoopertitionEnum _$matchScoreBreakdown2015CoopertitionEnum_stack =
+const MatchScoreBreakdown2015CoopertitionEnum
+    _$matchScoreBreakdown2015CoopertitionEnum_stack =
     const MatchScoreBreakdown2015CoopertitionEnum._('stack');
 
-MatchScoreBreakdown2015CoopertitionEnum _$matchScoreBreakdown2015CoopertitionEnumValueOf(String name) {
+MatchScoreBreakdown2015CoopertitionEnum
+    _$matchScoreBreakdown2015CoopertitionEnumValueOf(String name) {
   switch (name) {
     case 'none':
       return _$matchScoreBreakdown2015CoopertitionEnum_none;
@@ -26,14 +30,17 @@ MatchScoreBreakdown2015CoopertitionEnum _$matchScoreBreakdown2015CoopertitionEnu
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2015CoopertitionEnum> _$matchScoreBreakdown2015CoopertitionEnumValues =
-    new BuiltSet<MatchScoreBreakdown2015CoopertitionEnum>(const <MatchScoreBreakdown2015CoopertitionEnum>[
+final BuiltSet<MatchScoreBreakdown2015CoopertitionEnum>
+    _$matchScoreBreakdown2015CoopertitionEnumValues =
+    new BuiltSet<MatchScoreBreakdown2015CoopertitionEnum>(const <
+        MatchScoreBreakdown2015CoopertitionEnum>[
   _$matchScoreBreakdown2015CoopertitionEnum_none,
   _$matchScoreBreakdown2015CoopertitionEnum_unknown,
   _$matchScoreBreakdown2015CoopertitionEnum_stack,
 ]);
 
-Serializer<MatchScoreBreakdown2015CoopertitionEnum> _$matchScoreBreakdown2015CoopertitionEnumSerializer =
+Serializer<MatchScoreBreakdown2015CoopertitionEnum>
+    _$matchScoreBreakdown2015CoopertitionEnumSerializer =
     new _$MatchScoreBreakdown2015CoopertitionEnumSerializer();
 
 class _$MatchScoreBreakdown2015CoopertitionEnumSerializer
@@ -50,17 +57,21 @@ class _$MatchScoreBreakdown2015CoopertitionEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2015CoopertitionEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2015CoopertitionEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2015CoopertitionEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2015CoopertitionEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2015CoopertitionEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2015CoopertitionEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2015CoopertitionEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2015CoopertitionEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
@@ -76,17 +87,22 @@ class _$MatchScoreBreakdown2015 extends MatchScoreBreakdown2015 {
   @override
   final int? coopertitionPoints;
 
-  factory _$MatchScoreBreakdown2015([void Function(MatchScoreBreakdown2015Builder)? updates]) =>
+  factory _$MatchScoreBreakdown2015(
+          [void Function(MatchScoreBreakdown2015Builder)? updates]) =>
       (new MatchScoreBreakdown2015Builder()..update(updates)).build();
 
-  _$MatchScoreBreakdown2015._({this.blue, this.red, this.coopertition, this.coopertitionPoints}) : super._();
+  _$MatchScoreBreakdown2015._(
+      {this.blue, this.red, this.coopertition, this.coopertitionPoints})
+      : super._();
 
   @override
-  MatchScoreBreakdown2015 rebuild(void Function(MatchScoreBreakdown2015Builder) updates) =>
+  MatchScoreBreakdown2015 rebuild(
+          void Function(MatchScoreBreakdown2015Builder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2015Builder toBuilder() => new MatchScoreBreakdown2015Builder()..replace(this);
+  MatchScoreBreakdown2015Builder toBuilder() =>
+      new MatchScoreBreakdown2015Builder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -100,7 +116,9 @@ class _$MatchScoreBreakdown2015 extends MatchScoreBreakdown2015 {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc(0, blue.hashCode), red.hashCode), coopertition.hashCode), coopertitionPoints.hashCode));
+    return $jf($jc(
+        $jc($jc($jc(0, blue.hashCode), red.hashCode), coopertition.hashCode),
+        coopertitionPoints.hashCode));
   }
 
   @override
@@ -114,24 +132,31 @@ class _$MatchScoreBreakdown2015 extends MatchScoreBreakdown2015 {
   }
 }
 
-class MatchScoreBreakdown2015Builder implements Builder<MatchScoreBreakdown2015, MatchScoreBreakdown2015Builder> {
+class MatchScoreBreakdown2015Builder
+    implements
+        Builder<MatchScoreBreakdown2015, MatchScoreBreakdown2015Builder> {
   _$MatchScoreBreakdown2015? _$v;
 
   MatchScoreBreakdown2015AllianceBuilder? _blue;
-  MatchScoreBreakdown2015AllianceBuilder get blue => _$this._blue ??= new MatchScoreBreakdown2015AllianceBuilder();
+  MatchScoreBreakdown2015AllianceBuilder get blue =>
+      _$this._blue ??= new MatchScoreBreakdown2015AllianceBuilder();
   set blue(MatchScoreBreakdown2015AllianceBuilder? blue) => _$this._blue = blue;
 
   MatchScoreBreakdown2015AllianceBuilder? _red;
-  MatchScoreBreakdown2015AllianceBuilder get red => _$this._red ??= new MatchScoreBreakdown2015AllianceBuilder();
+  MatchScoreBreakdown2015AllianceBuilder get red =>
+      _$this._red ??= new MatchScoreBreakdown2015AllianceBuilder();
   set red(MatchScoreBreakdown2015AllianceBuilder? red) => _$this._red = red;
 
   MatchScoreBreakdown2015CoopertitionEnum? _coopertition;
-  MatchScoreBreakdown2015CoopertitionEnum? get coopertition => _$this._coopertition;
-  set coopertition(MatchScoreBreakdown2015CoopertitionEnum? coopertition) => _$this._coopertition = coopertition;
+  MatchScoreBreakdown2015CoopertitionEnum? get coopertition =>
+      _$this._coopertition;
+  set coopertition(MatchScoreBreakdown2015CoopertitionEnum? coopertition) =>
+      _$this._coopertition = coopertition;
 
   int? _coopertitionPoints;
   int? get coopertitionPoints => _$this._coopertitionPoints;
-  set coopertitionPoints(int? coopertitionPoints) => _$this._coopertitionPoints = coopertitionPoints;
+  set coopertitionPoints(int? coopertitionPoints) =>
+      _$this._coopertitionPoints = coopertitionPoints;
 
   MatchScoreBreakdown2015Builder() {
     MatchScoreBreakdown2015._initializeBuilder(this);
@@ -178,7 +203,8 @@ class MatchScoreBreakdown2015Builder implements Builder<MatchScoreBreakdown2015,
         _$failedField = 'red';
         _red?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('MatchScoreBreakdown2015', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'MatchScoreBreakdown2015', _$failedField, e.toString());
       }
       rethrow;
     }

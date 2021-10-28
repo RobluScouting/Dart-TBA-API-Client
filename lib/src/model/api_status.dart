@@ -55,18 +55,28 @@ class _$APIStatusSerializer implements StructuredSerializer<APIStatus> {
     final result = <Object?>[];
     result
       ..add(r'current_season')
-      ..add(serializers.serialize(object.currentSeason, specifiedType: const FullType(int)));
-    result..add(r'max_season')..add(serializers.serialize(object.maxSeason, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.currentSeason,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'max_season')
+      ..add(serializers.serialize(object.maxSeason,
+          specifiedType: const FullType(int)));
     result
       ..add(r'is_datafeed_down')
-      ..add(serializers.serialize(object.isDatafeedDown, specifiedType: const FullType(bool)));
+      ..add(serializers.serialize(object.isDatafeedDown,
+          specifiedType: const FullType(bool)));
     result
       ..add(r'down_events')
-      ..add(serializers.serialize(object.downEvents, specifiedType: const FullType(BuiltList, [FullType(String)])));
-    result..add(r'ios')..add(serializers.serialize(object.ios, specifiedType: const FullType(APIStatusAppVersion)));
+      ..add(serializers.serialize(object.downEvents,
+          specifiedType: const FullType(BuiltList, [FullType(String)])));
+    result
+      ..add(r'ios')
+      ..add(serializers.serialize(object.ios,
+          specifiedType: const FullType(APIStatusAppVersion)));
     result
       ..add(r'android')
-      ..add(serializers.serialize(object.android, specifiedType: const FullType(APIStatusAppVersion)));
+      ..add(serializers.serialize(object.android,
+          specifiedType: const FullType(APIStatusAppVersion)));
     return result;
   }
 
@@ -82,24 +92,30 @@ class _$APIStatusSerializer implements StructuredSerializer<APIStatus> {
       final Object? value = iterator.current;
       switch (key) {
         case r'current_season':
-          result.currentSeason = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.currentSeason = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'max_season':
-          result.maxSeason = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.maxSeason = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'is_datafeed_down':
-          result.isDatafeedDown = serializers.deserialize(value, specifiedType: const FullType(bool)) as bool;
+          result.isDatafeedDown = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool;
           break;
         case r'down_events':
           result.downEvents.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, [FullType(String)])) as BuiltList<String>);
+                  specifiedType: const FullType(BuiltList, [FullType(String)]))
+              as BuiltList<String>);
           break;
         case r'ios':
-          result.ios.replace(serializers.deserialize(value, specifiedType: const FullType(APIStatusAppVersion))
+          result.ios.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(APIStatusAppVersion))
               as APIStatusAppVersion);
           break;
         case r'android':
-          result.android.replace(serializers.deserialize(value, specifiedType: const FullType(APIStatusAppVersion))
+          result.android.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(APIStatusAppVersion))
               as APIStatusAppVersion);
           break;
       }

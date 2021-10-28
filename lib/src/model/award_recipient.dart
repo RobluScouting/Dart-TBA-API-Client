@@ -7,7 +7,8 @@ import 'package:built_value/serializer.dart';
 
 part 'award_recipient.g.dart';
 
-abstract class AwardRecipient implements Built<AwardRecipient, AwardRecipientBuilder> {
+abstract class AwardRecipient
+    implements Built<AwardRecipient, AwardRecipientBuilder> {
   /// The TBA team key for the team that was given the award. May be null.
   @BuiltValueField(wireName: r'team_key')
   String? get teamKey;
@@ -20,13 +21,16 @@ abstract class AwardRecipient implements Built<AwardRecipient, AwardRecipientBui
 
   static void _initializeBuilder(AwardRecipientBuilder b) => b;
 
-  factory AwardRecipient([void updates(AwardRecipientBuilder b)]) = _$AwardRecipient;
+  factory AwardRecipient([void updates(AwardRecipientBuilder b)]) =
+      _$AwardRecipient;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<AwardRecipient> get serializer => _$AwardRecipientSerializer();
+  static Serializer<AwardRecipient> get serializer =>
+      _$AwardRecipientSerializer();
 }
 
-class _$AwardRecipientSerializer implements StructuredSerializer<AwardRecipient> {
+class _$AwardRecipientSerializer
+    implements StructuredSerializer<AwardRecipient> {
   @override
   final Iterable<Type> types = const [AwardRecipient, _$AwardRecipient];
 
@@ -38,16 +42,23 @@ class _$AwardRecipientSerializer implements StructuredSerializer<AwardRecipient>
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     if (object.teamKey != null) {
-      result..add(r'team_key')..add(serializers.serialize(object.teamKey, specifiedType: const FullType(String)));
+      result
+        ..add(r'team_key')
+        ..add(serializers.serialize(object.teamKey,
+            specifiedType: const FullType(String)));
     }
     if (object.awardee != null) {
-      result..add(r'awardee')..add(serializers.serialize(object.awardee, specifiedType: const FullType(String)));
+      result
+        ..add(r'awardee')
+        ..add(serializers.serialize(object.awardee,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
 
   @override
-  AwardRecipient deserialize(Serializers serializers, Iterable<Object?> serialized,
+  AwardRecipient deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = AwardRecipientBuilder();
 
@@ -58,10 +69,12 @@ class _$AwardRecipientSerializer implements StructuredSerializer<AwardRecipient>
       final Object? value = iterator.current;
       switch (key) {
         case r'team_key':
-          result.teamKey = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.teamKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
         case r'awardee':
-          result.awardee = serializers.deserialize(value, specifiedType: const FullType(String)) as String;
+          result.awardee = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }

@@ -7,7 +7,8 @@ import 'package:built_value/serializer.dart';
 
 part 'api_status_app_version.g.dart';
 
-abstract class APIStatusAppVersion implements Built<APIStatusAppVersion, APIStatusAppVersionBuilder> {
+abstract class APIStatusAppVersion
+    implements Built<APIStatusAppVersion, APIStatusAppVersionBuilder> {
   /// Internal use - Minimum application version required to correctly connect and process data.
   @BuiltValueField(wireName: r'min_app_version')
   int get minAppVersion;
@@ -20,34 +21,44 @@ abstract class APIStatusAppVersion implements Built<APIStatusAppVersion, APIStat
 
   static void _initializeBuilder(APIStatusAppVersionBuilder b) => b;
 
-  factory APIStatusAppVersion([void updates(APIStatusAppVersionBuilder b)]) = _$APIStatusAppVersion;
+  factory APIStatusAppVersion([void updates(APIStatusAppVersionBuilder b)]) =
+      _$APIStatusAppVersion;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<APIStatusAppVersion> get serializer => _$APIStatusAppVersionSerializer();
+  static Serializer<APIStatusAppVersion> get serializer =>
+      _$APIStatusAppVersionSerializer();
 }
 
-class _$APIStatusAppVersionSerializer implements StructuredSerializer<APIStatusAppVersion> {
+class _$APIStatusAppVersionSerializer
+    implements StructuredSerializer<APIStatusAppVersion> {
   @override
-  final Iterable<Type> types = const [APIStatusAppVersion, _$APIStatusAppVersion];
+  final Iterable<Type> types = const [
+    APIStatusAppVersion,
+    _$APIStatusAppVersion
+  ];
 
   @override
   final String wireName = r'APIStatusAppVersion';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, APIStatusAppVersion object,
+  Iterable<Object?> serialize(
+      Serializers serializers, APIStatusAppVersion object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     result
       ..add(r'min_app_version')
-      ..add(serializers.serialize(object.minAppVersion, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.minAppVersion,
+          specifiedType: const FullType(int)));
     result
       ..add(r'latest_app_version')
-      ..add(serializers.serialize(object.latestAppVersion, specifiedType: const FullType(int)));
+      ..add(serializers.serialize(object.latestAppVersion,
+          specifiedType: const FullType(int)));
     return result;
   }
 
   @override
-  APIStatusAppVersion deserialize(Serializers serializers, Iterable<Object?> serialized,
+  APIStatusAppVersion deserialize(
+      Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
     final result = APIStatusAppVersionBuilder();
 
@@ -58,10 +69,12 @@ class _$APIStatusAppVersionSerializer implements StructuredSerializer<APIStatusA
       final Object? value = iterator.current;
       switch (key) {
         case r'min_app_version':
-          result.minAppVersion = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.minAppVersion = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'latest_app_version':
-          result.latestAppVersion = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.latestAppVersion = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }

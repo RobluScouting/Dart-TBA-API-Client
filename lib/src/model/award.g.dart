@@ -18,7 +18,8 @@ class _$Award extends Award {
   @override
   final int year;
 
-  factory _$Award([void Function(AwardBuilder)? updates]) => (new AwardBuilder()..update(updates)).build();
+  factory _$Award([void Function(AwardBuilder)? updates]) =>
+      (new AwardBuilder()..update(updates)).build();
 
   _$Award._(
       {required this.name,
@@ -30,12 +31,14 @@ class _$Award extends Award {
     BuiltValueNullFieldError.checkNotNull(name, 'Award', 'name');
     BuiltValueNullFieldError.checkNotNull(awardType, 'Award', 'awardType');
     BuiltValueNullFieldError.checkNotNull(eventKey, 'Award', 'eventKey');
-    BuiltValueNullFieldError.checkNotNull(recipientList, 'Award', 'recipientList');
+    BuiltValueNullFieldError.checkNotNull(
+        recipientList, 'Award', 'recipientList');
     BuiltValueNullFieldError.checkNotNull(year, 'Award', 'year');
   }
 
   @override
-  Award rebuild(void Function(AwardBuilder) updates) => (toBuilder()..update(updates)).build();
+  Award rebuild(void Function(AwardBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   AwardBuilder toBuilder() => new AwardBuilder()..replace(this);
@@ -53,7 +56,11 @@ class _$Award extends Award {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc($jc(0, name.hashCode), awardType.hashCode), eventKey.hashCode), recipientList.hashCode),
+    return $jf($jc(
+        $jc(
+            $jc($jc($jc(0, name.hashCode), awardType.hashCode),
+                eventKey.hashCode),
+            recipientList.hashCode),
         year.hashCode));
   }
 
@@ -85,8 +92,10 @@ class AwardBuilder implements Builder<Award, AwardBuilder> {
   set eventKey(String? eventKey) => _$this._eventKey = eventKey;
 
   ListBuilder<AwardRecipient>? _recipientList;
-  ListBuilder<AwardRecipient> get recipientList => _$this._recipientList ??= new ListBuilder<AwardRecipient>();
-  set recipientList(ListBuilder<AwardRecipient>? recipientList) => _$this._recipientList = recipientList;
+  ListBuilder<AwardRecipient> get recipientList =>
+      _$this._recipientList ??= new ListBuilder<AwardRecipient>();
+  set recipientList(ListBuilder<AwardRecipient>? recipientList) =>
+      _$this._recipientList = recipientList;
 
   int? _year;
   int? get year => _$this._year;
@@ -126,18 +135,23 @@ class AwardBuilder implements Builder<Award, AwardBuilder> {
     try {
       _$result = _$v ??
           new _$Award._(
-              name: BuiltValueNullFieldError.checkNotNull(name, 'Award', 'name'),
-              awardType: BuiltValueNullFieldError.checkNotNull(awardType, 'Award', 'awardType'),
-              eventKey: BuiltValueNullFieldError.checkNotNull(eventKey, 'Award', 'eventKey'),
+              name:
+                  BuiltValueNullFieldError.checkNotNull(name, 'Award', 'name'),
+              awardType: BuiltValueNullFieldError.checkNotNull(
+                  awardType, 'Award', 'awardType'),
+              eventKey: BuiltValueNullFieldError.checkNotNull(
+                  eventKey, 'Award', 'eventKey'),
               recipientList: recipientList.build(),
-              year: BuiltValueNullFieldError.checkNotNull(year, 'Award', 'year'));
+              year:
+                  BuiltValueNullFieldError.checkNotNull(year, 'Award', 'year'));
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'recipientList';
         recipientList.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('Award', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'Award', _$failedField, e.toString());
       }
       rethrow;
     }

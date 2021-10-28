@@ -22,18 +22,26 @@ class _$DistrictRanking extends DistrictRanking {
       (new DistrictRankingBuilder()..update(updates)).build();
 
   _$DistrictRanking._(
-      {required this.teamKey, required this.rank, this.rookieBonus, required this.pointTotal, this.eventPoints})
+      {required this.teamKey,
+      required this.rank,
+      this.rookieBonus,
+      required this.pointTotal,
+      this.eventPoints})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(teamKey, 'DistrictRanking', 'teamKey');
+    BuiltValueNullFieldError.checkNotNull(
+        teamKey, 'DistrictRanking', 'teamKey');
     BuiltValueNullFieldError.checkNotNull(rank, 'DistrictRanking', 'rank');
-    BuiltValueNullFieldError.checkNotNull(pointTotal, 'DistrictRanking', 'pointTotal');
+    BuiltValueNullFieldError.checkNotNull(
+        pointTotal, 'DistrictRanking', 'pointTotal');
   }
 
   @override
-  DistrictRanking rebuild(void Function(DistrictRankingBuilder) updates) => (toBuilder()..update(updates)).build();
+  DistrictRanking rebuild(void Function(DistrictRankingBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  DistrictRankingBuilder toBuilder() => new DistrictRankingBuilder()..replace(this);
+  DistrictRankingBuilder toBuilder() =>
+      new DistrictRankingBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -48,7 +56,11 @@ class _$DistrictRanking extends DistrictRanking {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc($jc($jc(0, teamKey.hashCode), rank.hashCode), rookieBonus.hashCode), pointTotal.hashCode),
+    return $jf($jc(
+        $jc(
+            $jc($jc($jc(0, teamKey.hashCode), rank.hashCode),
+                rookieBonus.hashCode),
+            pointTotal.hashCode),
         eventPoints.hashCode));
   }
 
@@ -64,7 +76,8 @@ class _$DistrictRanking extends DistrictRanking {
   }
 }
 
-class DistrictRankingBuilder implements Builder<DistrictRanking, DistrictRankingBuilder> {
+class DistrictRankingBuilder
+    implements Builder<DistrictRanking, DistrictRankingBuilder> {
   _$DistrictRanking? _$v;
 
   String? _teamKey;
@@ -86,7 +99,8 @@ class DistrictRankingBuilder implements Builder<DistrictRanking, DistrictRanking
   ListBuilder<DistrictRankingEventPoints>? _eventPoints;
   ListBuilder<DistrictRankingEventPoints> get eventPoints =>
       _$this._eventPoints ??= new ListBuilder<DistrictRankingEventPoints>();
-  set eventPoints(ListBuilder<DistrictRankingEventPoints>? eventPoints) => _$this._eventPoints = eventPoints;
+  set eventPoints(ListBuilder<DistrictRankingEventPoints>? eventPoints) =>
+      _$this._eventPoints = eventPoints;
 
   DistrictRankingBuilder() {
     DistrictRanking._initializeBuilder(this);
@@ -122,10 +136,13 @@ class DistrictRankingBuilder implements Builder<DistrictRanking, DistrictRanking
     try {
       _$result = _$v ??
           new _$DistrictRanking._(
-              teamKey: BuiltValueNullFieldError.checkNotNull(teamKey, 'DistrictRanking', 'teamKey'),
-              rank: BuiltValueNullFieldError.checkNotNull(rank, 'DistrictRanking', 'rank'),
+              teamKey: BuiltValueNullFieldError.checkNotNull(
+                  teamKey, 'DistrictRanking', 'teamKey'),
+              rank: BuiltValueNullFieldError.checkNotNull(
+                  rank, 'DistrictRanking', 'rank'),
               rookieBonus: rookieBonus,
-              pointTotal: BuiltValueNullFieldError.checkNotNull(pointTotal, 'DistrictRanking', 'pointTotal'),
+              pointTotal: BuiltValueNullFieldError.checkNotNull(
+                  pointTotal, 'DistrictRanking', 'pointTotal'),
               eventPoints: _eventPoints?.build());
     } catch (_) {
       late String _$failedField;
@@ -133,7 +150,8 @@ class DistrictRankingBuilder implements Builder<DistrictRanking, DistrictRanking
         _$failedField = 'eventPoints';
         _eventPoints?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('DistrictRanking', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'DistrictRanking', _$failedField, e.toString());
       }
       rethrow;
     }

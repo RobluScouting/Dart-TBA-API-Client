@@ -6,14 +6,18 @@ part of 'match_score_breakdown2017_alliance.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const MatchScoreBreakdown2017AllianceRobot1AutoEnum _$matchScoreBreakdown2017AllianceRobot1AutoEnum_unknown =
+const MatchScoreBreakdown2017AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnum_unknown =
     const MatchScoreBreakdown2017AllianceRobot1AutoEnum._('unknown');
-const MatchScoreBreakdown2017AllianceRobot1AutoEnum _$matchScoreBreakdown2017AllianceRobot1AutoEnum_mobility =
+const MatchScoreBreakdown2017AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnum_mobility =
     const MatchScoreBreakdown2017AllianceRobot1AutoEnum._('mobility');
-const MatchScoreBreakdown2017AllianceRobot1AutoEnum _$matchScoreBreakdown2017AllianceRobot1AutoEnum_none =
+const MatchScoreBreakdown2017AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnum_none =
     const MatchScoreBreakdown2017AllianceRobot1AutoEnum._('none');
 
-MatchScoreBreakdown2017AllianceRobot1AutoEnum _$matchScoreBreakdown2017AllianceRobot1AutoEnumValueOf(String name) {
+MatchScoreBreakdown2017AllianceRobot1AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnumValueOf(String name) {
   switch (name) {
     case 'unknown':
       return _$matchScoreBreakdown2017AllianceRobot1AutoEnum_unknown;
@@ -26,21 +30,27 @@ MatchScoreBreakdown2017AllianceRobot1AutoEnum _$matchScoreBreakdown2017AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2017AllianceRobot1AutoEnum> _$matchScoreBreakdown2017AllianceRobot1AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2017AllianceRobot1AutoEnum>(const <MatchScoreBreakdown2017AllianceRobot1AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2017AllianceRobot1AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2017AllianceRobot1AutoEnum>(const <
+        MatchScoreBreakdown2017AllianceRobot1AutoEnum>[
   _$matchScoreBreakdown2017AllianceRobot1AutoEnum_unknown,
   _$matchScoreBreakdown2017AllianceRobot1AutoEnum_mobility,
   _$matchScoreBreakdown2017AllianceRobot1AutoEnum_none,
 ]);
 
-const MatchScoreBreakdown2017AllianceRobot2AutoEnum _$matchScoreBreakdown2017AllianceRobot2AutoEnum_unknown =
+const MatchScoreBreakdown2017AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnum_unknown =
     const MatchScoreBreakdown2017AllianceRobot2AutoEnum._('unknown');
-const MatchScoreBreakdown2017AllianceRobot2AutoEnum _$matchScoreBreakdown2017AllianceRobot2AutoEnum_mobility =
+const MatchScoreBreakdown2017AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnum_mobility =
     const MatchScoreBreakdown2017AllianceRobot2AutoEnum._('mobility');
-const MatchScoreBreakdown2017AllianceRobot2AutoEnum _$matchScoreBreakdown2017AllianceRobot2AutoEnum_none =
+const MatchScoreBreakdown2017AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnum_none =
     const MatchScoreBreakdown2017AllianceRobot2AutoEnum._('none');
 
-MatchScoreBreakdown2017AllianceRobot2AutoEnum _$matchScoreBreakdown2017AllianceRobot2AutoEnumValueOf(String name) {
+MatchScoreBreakdown2017AllianceRobot2AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnumValueOf(String name) {
   switch (name) {
     case 'unknown':
       return _$matchScoreBreakdown2017AllianceRobot2AutoEnum_unknown;
@@ -53,21 +63,27 @@ MatchScoreBreakdown2017AllianceRobot2AutoEnum _$matchScoreBreakdown2017AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2017AllianceRobot2AutoEnum> _$matchScoreBreakdown2017AllianceRobot2AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2017AllianceRobot2AutoEnum>(const <MatchScoreBreakdown2017AllianceRobot2AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2017AllianceRobot2AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2017AllianceRobot2AutoEnum>(const <
+        MatchScoreBreakdown2017AllianceRobot2AutoEnum>[
   _$matchScoreBreakdown2017AllianceRobot2AutoEnum_unknown,
   _$matchScoreBreakdown2017AllianceRobot2AutoEnum_mobility,
   _$matchScoreBreakdown2017AllianceRobot2AutoEnum_none,
 ]);
 
-const MatchScoreBreakdown2017AllianceRobot3AutoEnum _$matchScoreBreakdown2017AllianceRobot3AutoEnum_unknown =
+const MatchScoreBreakdown2017AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnum_unknown =
     const MatchScoreBreakdown2017AllianceRobot3AutoEnum._('unknown');
-const MatchScoreBreakdown2017AllianceRobot3AutoEnum _$matchScoreBreakdown2017AllianceRobot3AutoEnum_mobility =
+const MatchScoreBreakdown2017AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnum_mobility =
     const MatchScoreBreakdown2017AllianceRobot3AutoEnum._('mobility');
-const MatchScoreBreakdown2017AllianceRobot3AutoEnum _$matchScoreBreakdown2017AllianceRobot3AutoEnum_none =
+const MatchScoreBreakdown2017AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnum_none =
     const MatchScoreBreakdown2017AllianceRobot3AutoEnum._('none');
 
-MatchScoreBreakdown2017AllianceRobot3AutoEnum _$matchScoreBreakdown2017AllianceRobot3AutoEnumValueOf(String name) {
+MatchScoreBreakdown2017AllianceRobot3AutoEnum
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnumValueOf(String name) {
   switch (name) {
     case 'unknown':
       return _$matchScoreBreakdown2017AllianceRobot3AutoEnum_unknown;
@@ -80,22 +96,28 @@ MatchScoreBreakdown2017AllianceRobot3AutoEnum _$matchScoreBreakdown2017AllianceR
   }
 }
 
-final BuiltSet<MatchScoreBreakdown2017AllianceRobot3AutoEnum> _$matchScoreBreakdown2017AllianceRobot3AutoEnumValues =
-    new BuiltSet<MatchScoreBreakdown2017AllianceRobot3AutoEnum>(const <MatchScoreBreakdown2017AllianceRobot3AutoEnum>[
+final BuiltSet<MatchScoreBreakdown2017AllianceRobot3AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnumValues =
+    new BuiltSet<MatchScoreBreakdown2017AllianceRobot3AutoEnum>(const <
+        MatchScoreBreakdown2017AllianceRobot3AutoEnum>[
   _$matchScoreBreakdown2017AllianceRobot3AutoEnum_unknown,
   _$matchScoreBreakdown2017AllianceRobot3AutoEnum_mobility,
   _$matchScoreBreakdown2017AllianceRobot3AutoEnum_none,
 ]);
 
-Serializer<MatchScoreBreakdown2017AllianceRobot1AutoEnum> _$matchScoreBreakdown2017AllianceRobot1AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2017AllianceRobot1AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot1AutoEnumSerializer =
     new _$MatchScoreBreakdown2017AllianceRobot1AutoEnumSerializer();
-Serializer<MatchScoreBreakdown2017AllianceRobot2AutoEnum> _$matchScoreBreakdown2017AllianceRobot2AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2017AllianceRobot2AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot2AutoEnumSerializer =
     new _$MatchScoreBreakdown2017AllianceRobot2AutoEnumSerializer();
-Serializer<MatchScoreBreakdown2017AllianceRobot3AutoEnum> _$matchScoreBreakdown2017AllianceRobot3AutoEnumSerializer =
+Serializer<MatchScoreBreakdown2017AllianceRobot3AutoEnum>
+    _$matchScoreBreakdown2017AllianceRobot3AutoEnumSerializer =
     new _$MatchScoreBreakdown2017AllianceRobot3AutoEnumSerializer();
 
 class _$MatchScoreBreakdown2017AllianceRobot1AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot1AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot1AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'unknown': 'Unknown',
     'mobility': 'Mobility',
@@ -108,24 +130,29 @@ class _$MatchScoreBreakdown2017AllianceRobot1AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2017AllianceRobot1AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2017AllianceRobot1AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2017AllianceRobot1AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2017AllianceRobot1AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2017AllianceRobot1AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2017AllianceRobot1AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2017AllianceRobot1AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2017AllianceRobot1AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$MatchScoreBreakdown2017AllianceRobot2AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot2AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot2AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'unknown': 'Unknown',
     'mobility': 'Mobility',
@@ -138,24 +165,29 @@ class _$MatchScoreBreakdown2017AllianceRobot2AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2017AllianceRobot2AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2017AllianceRobot2AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2017AllianceRobot2AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2017AllianceRobot2AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2017AllianceRobot2AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2017AllianceRobot2AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2017AllianceRobot2AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2017AllianceRobot2AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
 class _$MatchScoreBreakdown2017AllianceRobot3AutoEnumSerializer
-    implements PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot3AutoEnum> {
+    implements
+        PrimitiveSerializer<MatchScoreBreakdown2017AllianceRobot3AutoEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'unknown': 'Unknown',
     'mobility': 'Mobility',
@@ -168,23 +200,28 @@ class _$MatchScoreBreakdown2017AllianceRobot3AutoEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[MatchScoreBreakdown2017AllianceRobot3AutoEnum];
+  final Iterable<Type> types = const <Type>[
+    MatchScoreBreakdown2017AllianceRobot3AutoEnum
+  ];
   @override
   final String wireName = 'MatchScoreBreakdown2017AllianceRobot3AutoEnum';
 
   @override
-  Object serialize(Serializers serializers, MatchScoreBreakdown2017AllianceRobot3AutoEnum object,
+  Object serialize(Serializers serializers,
+          MatchScoreBreakdown2017AllianceRobot3AutoEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  MatchScoreBreakdown2017AllianceRobot3AutoEnum deserialize(Serializers serializers, Object serialized,
+  MatchScoreBreakdown2017AllianceRobot3AutoEnum deserialize(
+          Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
       MatchScoreBreakdown2017AllianceRobot3AutoEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
-class _$MatchScoreBreakdown2017Alliance extends MatchScoreBreakdown2017Alliance {
+class _$MatchScoreBreakdown2017Alliance
+    extends MatchScoreBreakdown2017Alliance {
   @override
   final int? autoPoints;
   @override
@@ -252,7 +289,8 @@ class _$MatchScoreBreakdown2017Alliance extends MatchScoreBreakdown2017Alliance 
   @override
   final String? touchpadFar;
 
-  factory _$MatchScoreBreakdown2017Alliance([void Function(MatchScoreBreakdown2017AllianceBuilder)? updates]) =>
+  factory _$MatchScoreBreakdown2017Alliance(
+          [void Function(MatchScoreBreakdown2017AllianceBuilder)? updates]) =>
       (new MatchScoreBreakdown2017AllianceBuilder()..update(updates)).build();
 
   _$MatchScoreBreakdown2017Alliance._(
@@ -292,11 +330,13 @@ class _$MatchScoreBreakdown2017Alliance extends MatchScoreBreakdown2017Alliance 
       : super._();
 
   @override
-  MatchScoreBreakdown2017Alliance rebuild(void Function(MatchScoreBreakdown2017AllianceBuilder) updates) =>
+  MatchScoreBreakdown2017Alliance rebuild(
+          void Function(MatchScoreBreakdown2017AllianceBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  MatchScoreBreakdown2017AllianceBuilder toBuilder() => new MatchScoreBreakdown2017AllianceBuilder()..replace(this);
+  MatchScoreBreakdown2017AllianceBuilder toBuilder() =>
+      new MatchScoreBreakdown2017AllianceBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -357,27 +397,7 @@ class _$MatchScoreBreakdown2017Alliance extends MatchScoreBreakdown2017Alliance 
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc($jc(0, autoPoints.hashCode), teleopPoints.hashCode), foulPoints.hashCode), adjustPoints.hashCode),
-                                                                                                                        totalPoints.hashCode),
-                                                                                                                    robot1Auto.hashCode),
-                                                                                                                robot2Auto.hashCode),
-                                                                                                            robot3Auto.hashCode),
-                                                                                                        rotor1Auto.hashCode),
-                                                                                                    rotor2Auto.hashCode),
-                                                                                                autoFuelLow.hashCode),
-                                                                                            autoFuelHigh.hashCode),
-                                                                                        autoMobilityPoints.hashCode),
-                                                                                    autoRotorPoints.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoPoints.hashCode), teleopPoints.hashCode), foulPoints.hashCode), adjustPoints.hashCode), totalPoints.hashCode), robot1Auto.hashCode), robot2Auto.hashCode), robot3Auto.hashCode), rotor1Auto.hashCode), rotor2Auto.hashCode), autoFuelLow.hashCode), autoFuelHigh.hashCode), autoMobilityPoints.hashCode), autoRotorPoints.hashCode),
                                                                                 autoFuelPoints.hashCode),
                                                                             teleopFuelPoints.hashCode),
                                                                         teleopFuelLow.hashCode),
@@ -440,7 +460,9 @@ class _$MatchScoreBreakdown2017Alliance extends MatchScoreBreakdown2017Alliance 
 }
 
 class MatchScoreBreakdown2017AllianceBuilder
-    implements Builder<MatchScoreBreakdown2017Alliance, MatchScoreBreakdown2017AllianceBuilder> {
+    implements
+        Builder<MatchScoreBreakdown2017Alliance,
+            MatchScoreBreakdown2017AllianceBuilder> {
   _$MatchScoreBreakdown2017Alliance? _$v;
 
   int? _autoPoints;
@@ -464,16 +486,22 @@ class MatchScoreBreakdown2017AllianceBuilder
   set totalPoints(int? totalPoints) => _$this._totalPoints = totalPoints;
 
   MatchScoreBreakdown2017AllianceRobot1AutoEnum? _robot1Auto;
-  MatchScoreBreakdown2017AllianceRobot1AutoEnum? get robot1Auto => _$this._robot1Auto;
-  set robot1Auto(MatchScoreBreakdown2017AllianceRobot1AutoEnum? robot1Auto) => _$this._robot1Auto = robot1Auto;
+  MatchScoreBreakdown2017AllianceRobot1AutoEnum? get robot1Auto =>
+      _$this._robot1Auto;
+  set robot1Auto(MatchScoreBreakdown2017AllianceRobot1AutoEnum? robot1Auto) =>
+      _$this._robot1Auto = robot1Auto;
 
   MatchScoreBreakdown2017AllianceRobot2AutoEnum? _robot2Auto;
-  MatchScoreBreakdown2017AllianceRobot2AutoEnum? get robot2Auto => _$this._robot2Auto;
-  set robot2Auto(MatchScoreBreakdown2017AllianceRobot2AutoEnum? robot2Auto) => _$this._robot2Auto = robot2Auto;
+  MatchScoreBreakdown2017AllianceRobot2AutoEnum? get robot2Auto =>
+      _$this._robot2Auto;
+  set robot2Auto(MatchScoreBreakdown2017AllianceRobot2AutoEnum? robot2Auto) =>
+      _$this._robot2Auto = robot2Auto;
 
   MatchScoreBreakdown2017AllianceRobot3AutoEnum? _robot3Auto;
-  MatchScoreBreakdown2017AllianceRobot3AutoEnum? get robot3Auto => _$this._robot3Auto;
-  set robot3Auto(MatchScoreBreakdown2017AllianceRobot3AutoEnum? robot3Auto) => _$this._robot3Auto = robot3Auto;
+  MatchScoreBreakdown2017AllianceRobot3AutoEnum? get robot3Auto =>
+      _$this._robot3Auto;
+  set robot3Auto(MatchScoreBreakdown2017AllianceRobot3AutoEnum? robot3Auto) =>
+      _$this._robot3Auto = robot3Auto;
 
   bool? _rotor1Auto;
   bool? get rotor1Auto => _$this._rotor1Auto;
@@ -493,31 +521,38 @@ class MatchScoreBreakdown2017AllianceBuilder
 
   int? _autoMobilityPoints;
   int? get autoMobilityPoints => _$this._autoMobilityPoints;
-  set autoMobilityPoints(int? autoMobilityPoints) => _$this._autoMobilityPoints = autoMobilityPoints;
+  set autoMobilityPoints(int? autoMobilityPoints) =>
+      _$this._autoMobilityPoints = autoMobilityPoints;
 
   int? _autoRotorPoints;
   int? get autoRotorPoints => _$this._autoRotorPoints;
-  set autoRotorPoints(int? autoRotorPoints) => _$this._autoRotorPoints = autoRotorPoints;
+  set autoRotorPoints(int? autoRotorPoints) =>
+      _$this._autoRotorPoints = autoRotorPoints;
 
   int? _autoFuelPoints;
   int? get autoFuelPoints => _$this._autoFuelPoints;
-  set autoFuelPoints(int? autoFuelPoints) => _$this._autoFuelPoints = autoFuelPoints;
+  set autoFuelPoints(int? autoFuelPoints) =>
+      _$this._autoFuelPoints = autoFuelPoints;
 
   int? _teleopFuelPoints;
   int? get teleopFuelPoints => _$this._teleopFuelPoints;
-  set teleopFuelPoints(int? teleopFuelPoints) => _$this._teleopFuelPoints = teleopFuelPoints;
+  set teleopFuelPoints(int? teleopFuelPoints) =>
+      _$this._teleopFuelPoints = teleopFuelPoints;
 
   int? _teleopFuelLow;
   int? get teleopFuelLow => _$this._teleopFuelLow;
-  set teleopFuelLow(int? teleopFuelLow) => _$this._teleopFuelLow = teleopFuelLow;
+  set teleopFuelLow(int? teleopFuelLow) =>
+      _$this._teleopFuelLow = teleopFuelLow;
 
   int? _teleopFuelHigh;
   int? get teleopFuelHigh => _$this._teleopFuelHigh;
-  set teleopFuelHigh(int? teleopFuelHigh) => _$this._teleopFuelHigh = teleopFuelHigh;
+  set teleopFuelHigh(int? teleopFuelHigh) =>
+      _$this._teleopFuelHigh = teleopFuelHigh;
 
   int? _teleopRotorPoints;
   int? get teleopRotorPoints => _$this._teleopRotorPoints;
-  set teleopRotorPoints(int? teleopRotorPoints) => _$this._teleopRotorPoints = teleopRotorPoints;
+  set teleopRotorPoints(int? teleopRotorPoints) =>
+      _$this._teleopRotorPoints = teleopRotorPoints;
 
   bool? _kPaRankingPointAchieved;
   bool? get kPaRankingPointAchieved => _$this._kPaRankingPointAchieved;
@@ -526,31 +561,38 @@ class MatchScoreBreakdown2017AllianceBuilder
 
   int? _teleopTakeoffPoints;
   int? get teleopTakeoffPoints => _$this._teleopTakeoffPoints;
-  set teleopTakeoffPoints(int? teleopTakeoffPoints) => _$this._teleopTakeoffPoints = teleopTakeoffPoints;
+  set teleopTakeoffPoints(int? teleopTakeoffPoints) =>
+      _$this._teleopTakeoffPoints = teleopTakeoffPoints;
 
   int? _kPaBonusPoints;
   int? get kPaBonusPoints => _$this._kPaBonusPoints;
-  set kPaBonusPoints(int? kPaBonusPoints) => _$this._kPaBonusPoints = kPaBonusPoints;
+  set kPaBonusPoints(int? kPaBonusPoints) =>
+      _$this._kPaBonusPoints = kPaBonusPoints;
 
   int? _rotorBonusPoints;
   int? get rotorBonusPoints => _$this._rotorBonusPoints;
-  set rotorBonusPoints(int? rotorBonusPoints) => _$this._rotorBonusPoints = rotorBonusPoints;
+  set rotorBonusPoints(int? rotorBonusPoints) =>
+      _$this._rotorBonusPoints = rotorBonusPoints;
 
   bool? _rotor1Engaged;
   bool? get rotor1Engaged => _$this._rotor1Engaged;
-  set rotor1Engaged(bool? rotor1Engaged) => _$this._rotor1Engaged = rotor1Engaged;
+  set rotor1Engaged(bool? rotor1Engaged) =>
+      _$this._rotor1Engaged = rotor1Engaged;
 
   bool? _rotor2Engaged;
   bool? get rotor2Engaged => _$this._rotor2Engaged;
-  set rotor2Engaged(bool? rotor2Engaged) => _$this._rotor2Engaged = rotor2Engaged;
+  set rotor2Engaged(bool? rotor2Engaged) =>
+      _$this._rotor2Engaged = rotor2Engaged;
 
   bool? _rotor3Engaged;
   bool? get rotor3Engaged => _$this._rotor3Engaged;
-  set rotor3Engaged(bool? rotor3Engaged) => _$this._rotor3Engaged = rotor3Engaged;
+  set rotor3Engaged(bool? rotor3Engaged) =>
+      _$this._rotor3Engaged = rotor3Engaged;
 
   bool? _rotor4Engaged;
   bool? get rotor4Engaged => _$this._rotor4Engaged;
-  set rotor4Engaged(bool? rotor4Engaged) => _$this._rotor4Engaged = rotor4Engaged;
+  set rotor4Engaged(bool? rotor4Engaged) =>
+      _$this._rotor4Engaged = rotor4Engaged;
 
   bool? _rotorRankingPointAchieved;
   bool? get rotorRankingPointAchieved => _$this._rotorRankingPointAchieved;
@@ -559,7 +601,8 @@ class MatchScoreBreakdown2017AllianceBuilder
 
   int? _techFoulCount;
   int? get techFoulCount => _$this._techFoulCount;
-  set techFoulCount(int? techFoulCount) => _$this._techFoulCount = techFoulCount;
+  set techFoulCount(int? techFoulCount) =>
+      _$this._techFoulCount = techFoulCount;
 
   int? _foulCount;
   int? get foulCount => _$this._foulCount;
@@ -571,7 +614,8 @@ class MatchScoreBreakdown2017AllianceBuilder
 
   String? _touchpadMiddle;
   String? get touchpadMiddle => _$this._touchpadMiddle;
-  set touchpadMiddle(String? touchpadMiddle) => _$this._touchpadMiddle = touchpadMiddle;
+  set touchpadMiddle(String? touchpadMiddle) =>
+      _$this._touchpadMiddle = touchpadMiddle;
 
   String? _touchpadFar;
   String? get touchpadFar => _$this._touchpadFar;

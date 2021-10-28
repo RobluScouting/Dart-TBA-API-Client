@@ -12,25 +12,33 @@ class _$EventRankingSortOrderInfo extends EventRankingSortOrderInfo {
   @override
   final String name;
 
-  factory _$EventRankingSortOrderInfo([void Function(EventRankingSortOrderInfoBuilder)? updates]) =>
+  factory _$EventRankingSortOrderInfo(
+          [void Function(EventRankingSortOrderInfoBuilder)? updates]) =>
       (new EventRankingSortOrderInfoBuilder()..update(updates)).build();
 
-  _$EventRankingSortOrderInfo._({required this.precision, required this.name}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(precision, 'EventRankingSortOrderInfo', 'precision');
-    BuiltValueNullFieldError.checkNotNull(name, 'EventRankingSortOrderInfo', 'name');
+  _$EventRankingSortOrderInfo._({required this.precision, required this.name})
+      : super._() {
+    BuiltValueNullFieldError.checkNotNull(
+        precision, 'EventRankingSortOrderInfo', 'precision');
+    BuiltValueNullFieldError.checkNotNull(
+        name, 'EventRankingSortOrderInfo', 'name');
   }
 
   @override
-  EventRankingSortOrderInfo rebuild(void Function(EventRankingSortOrderInfoBuilder) updates) =>
+  EventRankingSortOrderInfo rebuild(
+          void Function(EventRankingSortOrderInfoBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventRankingSortOrderInfoBuilder toBuilder() => new EventRankingSortOrderInfoBuilder()..replace(this);
+  EventRankingSortOrderInfoBuilder toBuilder() =>
+      new EventRankingSortOrderInfoBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EventRankingSortOrderInfo && precision == other.precision && name == other.name;
+    return other is EventRankingSortOrderInfo &&
+        precision == other.precision &&
+        name == other.name;
   }
 
   @override
@@ -40,12 +48,16 @@ class _$EventRankingSortOrderInfo extends EventRankingSortOrderInfo {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventRankingSortOrderInfo')..add('precision', precision)..add('name', name))
+    return (newBuiltValueToStringHelper('EventRankingSortOrderInfo')
+          ..add('precision', precision)
+          ..add('name', name))
         .toString();
   }
 }
 
-class EventRankingSortOrderInfoBuilder implements Builder<EventRankingSortOrderInfo, EventRankingSortOrderInfoBuilder> {
+class EventRankingSortOrderInfoBuilder
+    implements
+        Builder<EventRankingSortOrderInfo, EventRankingSortOrderInfoBuilder> {
   _$EventRankingSortOrderInfo? _$v;
 
   int? _precision;
@@ -85,8 +97,10 @@ class EventRankingSortOrderInfoBuilder implements Builder<EventRankingSortOrderI
   _$EventRankingSortOrderInfo build() {
     final _$result = _$v ??
         new _$EventRankingSortOrderInfo._(
-            precision: BuiltValueNullFieldError.checkNotNull(precision, 'EventRankingSortOrderInfo', 'precision'),
-            name: BuiltValueNullFieldError.checkNotNull(name, 'EventRankingSortOrderInfo', 'name'));
+            precision: BuiltValueNullFieldError.checkNotNull(
+                precision, 'EventRankingSortOrderInfo', 'precision'),
+            name: BuiltValueNullFieldError.checkNotNull(
+                name, 'EventRankingSortOrderInfo', 'name'));
     replace(_$result);
     return _$result;
   }

@@ -41,9 +41,18 @@ class _$WLTRecordSerializer implements StructuredSerializer<WLTRecord> {
   Iterable<Object?> serialize(Serializers serializers, WLTRecord object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
-    result..add(r'losses')..add(serializers.serialize(object.losses, specifiedType: const FullType(int)));
-    result..add(r'wins')..add(serializers.serialize(object.wins, specifiedType: const FullType(int)));
-    result..add(r'ties')..add(serializers.serialize(object.ties, specifiedType: const FullType(int)));
+    result
+      ..add(r'losses')
+      ..add(serializers.serialize(object.losses,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'wins')
+      ..add(serializers.serialize(object.wins,
+          specifiedType: const FullType(int)));
+    result
+      ..add(r'ties')
+      ..add(serializers.serialize(object.ties,
+          specifiedType: const FullType(int)));
     return result;
   }
 
@@ -59,13 +68,16 @@ class _$WLTRecordSerializer implements StructuredSerializer<WLTRecord> {
       final Object? value = iterator.current;
       switch (key) {
         case r'losses':
-          result.losses = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.losses = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'wins':
-          result.wins = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.wins = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case r'ties':
-          result.ties = serializers.deserialize(value, specifiedType: const FullType(int)) as int;
+          result.ties = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
       }
     }

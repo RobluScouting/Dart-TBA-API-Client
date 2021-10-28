@@ -18,7 +18,8 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
   @override
   final int qualPoints;
 
-  factory _$EventDistrictPointsPoints([void Function(EventDistrictPointsPointsBuilder)? updates]) =>
+  factory _$EventDistrictPointsPoints(
+          [void Function(EventDistrictPointsPointsBuilder)? updates]) =>
       (new EventDistrictPointsPointsBuilder()..update(updates)).build();
 
   _$EventDistrictPointsPoints._(
@@ -28,19 +29,26 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
       required this.awardPoints,
       required this.qualPoints})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(total, 'EventDistrictPointsPoints', 'total');
-    BuiltValueNullFieldError.checkNotNull(alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints');
-    BuiltValueNullFieldError.checkNotNull(elimPoints, 'EventDistrictPointsPoints', 'elimPoints');
-    BuiltValueNullFieldError.checkNotNull(awardPoints, 'EventDistrictPointsPoints', 'awardPoints');
-    BuiltValueNullFieldError.checkNotNull(qualPoints, 'EventDistrictPointsPoints', 'qualPoints');
+    BuiltValueNullFieldError.checkNotNull(
+        total, 'EventDistrictPointsPoints', 'total');
+    BuiltValueNullFieldError.checkNotNull(
+        alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints');
+    BuiltValueNullFieldError.checkNotNull(
+        elimPoints, 'EventDistrictPointsPoints', 'elimPoints');
+    BuiltValueNullFieldError.checkNotNull(
+        awardPoints, 'EventDistrictPointsPoints', 'awardPoints');
+    BuiltValueNullFieldError.checkNotNull(
+        qualPoints, 'EventDistrictPointsPoints', 'qualPoints');
   }
 
   @override
-  EventDistrictPointsPoints rebuild(void Function(EventDistrictPointsPointsBuilder) updates) =>
+  EventDistrictPointsPoints rebuild(
+          void Function(EventDistrictPointsPointsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventDistrictPointsPointsBuilder toBuilder() => new EventDistrictPointsPointsBuilder()..replace(this);
+  EventDistrictPointsPointsBuilder toBuilder() =>
+      new EventDistrictPointsPointsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -56,7 +64,10 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
   @override
   int get hashCode {
     return $jf($jc(
-        $jc($jc($jc($jc(0, total.hashCode), alliancePoints.hashCode), elimPoints.hashCode), awardPoints.hashCode),
+        $jc(
+            $jc($jc($jc(0, total.hashCode), alliancePoints.hashCode),
+                elimPoints.hashCode),
+            awardPoints.hashCode),
         qualPoints.hashCode));
   }
 
@@ -72,7 +83,9 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
   }
 }
 
-class EventDistrictPointsPointsBuilder implements Builder<EventDistrictPointsPoints, EventDistrictPointsPointsBuilder> {
+class EventDistrictPointsPointsBuilder
+    implements
+        Builder<EventDistrictPointsPoints, EventDistrictPointsPointsBuilder> {
   _$EventDistrictPointsPoints? _$v;
 
   int? _total;
@@ -81,7 +94,8 @@ class EventDistrictPointsPointsBuilder implements Builder<EventDistrictPointsPoi
 
   int? _alliancePoints;
   int? get alliancePoints => _$this._alliancePoints;
-  set alliancePoints(int? alliancePoints) => _$this._alliancePoints = alliancePoints;
+  set alliancePoints(int? alliancePoints) =>
+      _$this._alliancePoints = alliancePoints;
 
   int? _elimPoints;
   int? get elimPoints => _$this._elimPoints;
@@ -127,12 +141,16 @@ class EventDistrictPointsPointsBuilder implements Builder<EventDistrictPointsPoi
   _$EventDistrictPointsPoints build() {
     final _$result = _$v ??
         new _$EventDistrictPointsPoints._(
-            total: BuiltValueNullFieldError.checkNotNull(total, 'EventDistrictPointsPoints', 'total'),
-            alliancePoints:
-                BuiltValueNullFieldError.checkNotNull(alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints'),
-            elimPoints: BuiltValueNullFieldError.checkNotNull(elimPoints, 'EventDistrictPointsPoints', 'elimPoints'),
-            awardPoints: BuiltValueNullFieldError.checkNotNull(awardPoints, 'EventDistrictPointsPoints', 'awardPoints'),
-            qualPoints: BuiltValueNullFieldError.checkNotNull(qualPoints, 'EventDistrictPointsPoints', 'qualPoints'));
+            total: BuiltValueNullFieldError.checkNotNull(
+                total, 'EventDistrictPointsPoints', 'total'),
+            alliancePoints: BuiltValueNullFieldError.checkNotNull(
+                alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints'),
+            elimPoints: BuiltValueNullFieldError.checkNotNull(
+                elimPoints, 'EventDistrictPointsPoints', 'elimPoints'),
+            awardPoints: BuiltValueNullFieldError.checkNotNull(
+                awardPoints, 'EventDistrictPointsPoints', 'awardPoints'),
+            qualPoints: BuiltValueNullFieldError.checkNotNull(
+                qualPoints, 'EventDistrictPointsPoints', 'qualPoints'));
     replace(_$result);
     return _$result;
   }

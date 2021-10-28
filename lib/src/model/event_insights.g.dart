@@ -18,7 +18,8 @@ class _$EventInsights extends EventInsights {
   _$EventInsights._({this.qual, this.playoff}) : super._();
 
   @override
-  EventInsights rebuild(void Function(EventInsightsBuilder) updates) => (toBuilder()..update(updates)).build();
+  EventInsights rebuild(void Function(EventInsightsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   EventInsightsBuilder toBuilder() => new EventInsightsBuilder()..replace(this);
@@ -26,7 +27,9 @@ class _$EventInsights extends EventInsights {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is EventInsights && qual == other.qual && playoff == other.playoff;
+    return other is EventInsights &&
+        qual == other.qual &&
+        playoff == other.playoff;
   }
 
   @override
@@ -36,11 +39,15 @@ class _$EventInsights extends EventInsights {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventInsights')..add('qual', qual)..add('playoff', playoff)).toString();
+    return (newBuiltValueToStringHelper('EventInsights')
+          ..add('qual', qual)
+          ..add('playoff', playoff))
+        .toString();
   }
 }
 
-class EventInsightsBuilder implements Builder<EventInsights, EventInsightsBuilder> {
+class EventInsightsBuilder
+    implements Builder<EventInsights, EventInsightsBuilder> {
   _$EventInsights? _$v;
 
   JsonObject? _qual;

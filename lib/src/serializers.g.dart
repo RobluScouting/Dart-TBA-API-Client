@@ -81,85 +81,213 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(ZebraAlliances.serializer)
       ..add(ZebraTeam.serializer)
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(AwardRecipient)]), () => new ListBuilder<AwardRecipient>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(DistrictRankingEventPoints)]),
+          const FullType(BuiltList, const [const FullType(AwardRecipient)]),
+          () => new ListBuilder<AwardRecipient>())
+      ..addBuilderFactory(
+          const FullType(
+              BuiltList, const [const FullType(DistrictRankingEventPoints)]),
           () => new ListBuilder<DistrictRankingEventPoints>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(EventRankingRankings)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltList, const [const FullType(EventRankingRankings)]),
           () => new ListBuilder<EventRankingRankings>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(EventRankingExtraStatsInfo)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltList, const [const FullType(EventRankingExtraStatsInfo)]),
           () => new ListBuilder<EventRankingExtraStatsInfo>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(EventRankingSortOrderInfo)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltList, const [const FullType(EventRankingSortOrderInfo)]),
           () => new ListBuilder<EventRankingSortOrderInfo>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(MatchVideos)]), () => new ListBuilder<MatchVideos>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(TeamEventStatusRankSortOrderInfo)]),
+          const FullType(BuiltList, const [const FullType(MatchVideos)]),
+          () => new ListBuilder<MatchVideos>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType(TeamEventStatusRankSortOrderInfo)]),
           () => new ListBuilder<TeamEventStatusRankSortOrderInfo>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(Webcast)]), () => new ListBuilder<Webcast>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(ZebraTeam)]), () => new ListBuilder<ZebraTeam>())
+          const FullType(BuiltList, const [const FullType(Webcast)]),
+          () => new ListBuilder<Webcast>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(ZebraTeam)]), () => new ListBuilder<ZebraTeam>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(double)]), () => new ListBuilder<double>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(String)]), () => new ListBuilder<String>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(int)]), () => new ListBuilder<int>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(num)]), () => new ListBuilder<num>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(num)]), () => new ListBuilder<num>())
-      ..addBuilderFactory(const FullType(BuiltList, const [const FullType(num)]), () => new ListBuilder<num>())
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
       ..addBuilderFactory(
-          const FullType(BuiltMap, const [const FullType(String), const FullType(EventDistrictPointsPoints)]),
+          const FullType(BuiltList, const [const FullType(ZebraTeam)]),
+          () => new ListBuilder<ZebraTeam>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(ZebraTeam)]),
+          () => new ListBuilder<ZebraTeam>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(double)]),
+          () => new ListBuilder<double>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(int)]),
+          () => new ListBuilder<int>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(num)]),
+          () => new ListBuilder<num>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(num)]),
+          () => new ListBuilder<num>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(num)]),
+          () => new ListBuilder<num>())
+      ..addBuilderFactory(
+          const FullType(BuiltMap, const [
+            const FullType(String),
+            const FullType(EventDistrictPointsPoints)
+          ]),
           () => new MapBuilder<String, EventDistrictPointsPoints>())
       ..addBuilderFactory(
-          const FullType(BuiltMap, const [const FullType(String), const FullType(EventDistrictPointsTiebreakers)]),
+          const FullType(BuiltMap, const [
+            const FullType(String),
+            const FullType(EventDistrictPointsTiebreakers)
+          ]),
           () => new MapBuilder<String, EventDistrictPointsTiebreakers>())
-      ..addBuilderFactory(const FullType(BuiltMap, const [const FullType(String), const FullType(double)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltMap, const [const FullType(String), const FullType(double)]),
           () => new MapBuilder<String, double>())
-      ..addBuilderFactory(const FullType(BuiltMap, const [const FullType(String), const FullType(double)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltMap, const [const FullType(String), const FullType(double)]),
           () => new MapBuilder<String, double>())
-      ..addBuilderFactory(const FullType(BuiltMap, const [const FullType(String), const FullType(double)]),
+      ..addBuilderFactory(
+          const FullType(
+              BuiltMap, const [const FullType(String), const FullType(double)]),
           () => new MapBuilder<String, double>()))
     .build();
 

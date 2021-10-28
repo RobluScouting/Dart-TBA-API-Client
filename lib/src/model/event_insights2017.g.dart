@@ -72,7 +72,8 @@ class _$EventInsights2017 extends EventInsights2017 {
   @override
   final BuiltList<double> unicornMatches;
 
-  factory _$EventInsights2017([void Function(EventInsights2017Builder)? updates]) =>
+  factory _$EventInsights2017(
+          [void Function(EventInsights2017Builder)? updates]) =>
       (new EventInsights2017Builder()..update(updates)).build();
 
   _$EventInsights2017._(
@@ -109,46 +110,79 @@ class _$EventInsights2017 extends EventInsights2017 {
       required this.takeoffCounts,
       required this.unicornMatches})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(averageFoulScore, 'EventInsights2017', 'averageFoulScore');
-    BuiltValueNullFieldError.checkNotNull(averageFuelPoints, 'EventInsights2017', 'averageFuelPoints');
-    BuiltValueNullFieldError.checkNotNull(averageFuelPointsAuto, 'EventInsights2017', 'averageFuelPointsAuto');
-    BuiltValueNullFieldError.checkNotNull(averageFuelPointsTeleop, 'EventInsights2017', 'averageFuelPointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageHighGoals, 'EventInsights2017', 'averageHighGoals');
-    BuiltValueNullFieldError.checkNotNull(averageHighGoalsAuto, 'EventInsights2017', 'averageHighGoalsAuto');
-    BuiltValueNullFieldError.checkNotNull(averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageLowGoals, 'EventInsights2017', 'averageLowGoals');
-    BuiltValueNullFieldError.checkNotNull(averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto');
-    BuiltValueNullFieldError.checkNotNull(averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto, 'EventInsights2017', 'averageMobilityPointsAuto');
-    BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2017', 'averagePointsAuto');
-    BuiltValueNullFieldError.checkNotNull(averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageRotorPoints, 'EventInsights2017', 'averageRotorPoints');
-    BuiltValueNullFieldError.checkNotNull(averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto');
-    BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop, 'EventInsights2017', 'averageRotorPointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2017', 'averageScore');
     BuiltValueNullFieldError.checkNotNull(
-        averageTakeoffPointsTeleop, 'EventInsights2017', 'averageTakeoffPointsTeleop');
-    BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2017', 'averageWinMargin');
-    BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2017', 'averageWinScore');
-    BuiltValueNullFieldError.checkNotNull(highKpa, 'EventInsights2017', 'highKpa');
-    BuiltValueNullFieldError.checkNotNull(highScore, 'EventInsights2017', 'highScore');
-    BuiltValueNullFieldError.checkNotNull(kpaAchieved, 'EventInsights2017', 'kpaAchieved');
-    BuiltValueNullFieldError.checkNotNull(mobilityCounts, 'EventInsights2017', 'mobilityCounts');
-    BuiltValueNullFieldError.checkNotNull(rotor1Engaged, 'EventInsights2017', 'rotor1Engaged');
-    BuiltValueNullFieldError.checkNotNull(rotor1EngagedAuto, 'EventInsights2017', 'rotor1EngagedAuto');
-    BuiltValueNullFieldError.checkNotNull(rotor2Engaged, 'EventInsights2017', 'rotor2Engaged');
-    BuiltValueNullFieldError.checkNotNull(rotor2EngagedAuto, 'EventInsights2017', 'rotor2EngagedAuto');
-    BuiltValueNullFieldError.checkNotNull(rotor3Engaged, 'EventInsights2017', 'rotor3Engaged');
-    BuiltValueNullFieldError.checkNotNull(rotor4Engaged, 'EventInsights2017', 'rotor4Engaged');
-    BuiltValueNullFieldError.checkNotNull(takeoffCounts, 'EventInsights2017', 'takeoffCounts');
-    BuiltValueNullFieldError.checkNotNull(unicornMatches, 'EventInsights2017', 'unicornMatches');
+        averageFoulScore, 'EventInsights2017', 'averageFoulScore');
+    BuiltValueNullFieldError.checkNotNull(
+        averageFuelPoints, 'EventInsights2017', 'averageFuelPoints');
+    BuiltValueNullFieldError.checkNotNull(
+        averageFuelPointsAuto, 'EventInsights2017', 'averageFuelPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(averageFuelPointsTeleop,
+        'EventInsights2017', 'averageFuelPointsTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        averageHighGoals, 'EventInsights2017', 'averageHighGoals');
+    BuiltValueNullFieldError.checkNotNull(
+        averageHighGoalsAuto, 'EventInsights2017', 'averageHighGoalsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        averageLowGoals, 'EventInsights2017', 'averageLowGoals');
+    BuiltValueNullFieldError.checkNotNull(
+        averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop');
+    BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto,
+        'EventInsights2017', 'averageMobilityPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        averagePointsAuto, 'EventInsights2017', 'averagePointsAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        averageRotorPoints, 'EventInsights2017', 'averageRotorPoints');
+    BuiltValueNullFieldError.checkNotNull(
+        averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto');
+    BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop,
+        'EventInsights2017', 'averageRotorPointsTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        averageScore, 'EventInsights2017', 'averageScore');
+    BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop,
+        'EventInsights2017', 'averageTakeoffPointsTeleop');
+    BuiltValueNullFieldError.checkNotNull(
+        averageWinMargin, 'EventInsights2017', 'averageWinMargin');
+    BuiltValueNullFieldError.checkNotNull(
+        averageWinScore, 'EventInsights2017', 'averageWinScore');
+    BuiltValueNullFieldError.checkNotNull(
+        highKpa, 'EventInsights2017', 'highKpa');
+    BuiltValueNullFieldError.checkNotNull(
+        highScore, 'EventInsights2017', 'highScore');
+    BuiltValueNullFieldError.checkNotNull(
+        kpaAchieved, 'EventInsights2017', 'kpaAchieved');
+    BuiltValueNullFieldError.checkNotNull(
+        mobilityCounts, 'EventInsights2017', 'mobilityCounts');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor1Engaged, 'EventInsights2017', 'rotor1Engaged');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor1EngagedAuto, 'EventInsights2017', 'rotor1EngagedAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor2Engaged, 'EventInsights2017', 'rotor2Engaged');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor2EngagedAuto, 'EventInsights2017', 'rotor2EngagedAuto');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor3Engaged, 'EventInsights2017', 'rotor3Engaged');
+    BuiltValueNullFieldError.checkNotNull(
+        rotor4Engaged, 'EventInsights2017', 'rotor4Engaged');
+    BuiltValueNullFieldError.checkNotNull(
+        takeoffCounts, 'EventInsights2017', 'takeoffCounts');
+    BuiltValueNullFieldError.checkNotNull(
+        unicornMatches, 'EventInsights2017', 'unicornMatches');
   }
 
   @override
-  EventInsights2017 rebuild(void Function(EventInsights2017Builder) updates) => (toBuilder()..update(updates)).build();
+  EventInsights2017 rebuild(void Function(EventInsights2017Builder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
-  EventInsights2017Builder toBuilder() => new EventInsights2017Builder()..replace(this);
+  EventInsights2017Builder toBuilder() =>
+      new EventInsights2017Builder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -208,27 +242,7 @@ class _$EventInsights2017 extends EventInsights2017 {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc(
-                                                                                $jc(
-                                                                                    $jc(
-                                                                                        $jc(
-                                                                                            $jc(
-                                                                                                $jc(
-                                                                                                    $jc(
-                                                                                                        $jc(
-                                                                                                            $jc(
-                                                                                                                $jc(
-                                                                                                                    $jc($jc($jc($jc(0, averageFoulScore.hashCode), averageFuelPoints.hashCode), averageFuelPointsAuto.hashCode),
-                                                                                                                        averageFuelPointsTeleop.hashCode),
-                                                                                                                    averageHighGoals.hashCode),
-                                                                                                                averageHighGoalsAuto.hashCode),
-                                                                                                            averageHighGoalsTeleop.hashCode),
-                                                                                                        averageLowGoals.hashCode),
-                                                                                                    averageLowGoalsAuto.hashCode),
-                                                                                                averageLowGoalsTeleop.hashCode),
-                                                                                            averageMobilityPointsAuto.hashCode),
-                                                                                        averagePointsAuto.hashCode),
-                                                                                    averagePointsTeleop.hashCode),
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, averageFoulScore.hashCode), averageFuelPoints.hashCode), averageFuelPointsAuto.hashCode), averageFuelPointsTeleop.hashCode), averageHighGoals.hashCode), averageHighGoalsAuto.hashCode), averageHighGoalsTeleop.hashCode), averageLowGoals.hashCode), averageLowGoalsAuto.hashCode), averageLowGoalsTeleop.hashCode), averageMobilityPointsAuto.hashCode), averagePointsAuto.hashCode), averagePointsTeleop.hashCode),
                                                                                 averageRotorPoints.hashCode),
                                                                             averageRotorPointsAuto.hashCode),
                                                                         averageRotorPointsTeleop.hashCode),
@@ -289,20 +303,24 @@ class _$EventInsights2017 extends EventInsights2017 {
   }
 }
 
-class EventInsights2017Builder implements Builder<EventInsights2017, EventInsights2017Builder> {
+class EventInsights2017Builder
+    implements Builder<EventInsights2017, EventInsights2017Builder> {
   _$EventInsights2017? _$v;
 
   double? _averageFoulScore;
   double? get averageFoulScore => _$this._averageFoulScore;
-  set averageFoulScore(double? averageFoulScore) => _$this._averageFoulScore = averageFoulScore;
+  set averageFoulScore(double? averageFoulScore) =>
+      _$this._averageFoulScore = averageFoulScore;
 
   double? _averageFuelPoints;
   double? get averageFuelPoints => _$this._averageFuelPoints;
-  set averageFuelPoints(double? averageFuelPoints) => _$this._averageFuelPoints = averageFuelPoints;
+  set averageFuelPoints(double? averageFuelPoints) =>
+      _$this._averageFuelPoints = averageFuelPoints;
 
   double? _averageFuelPointsAuto;
   double? get averageFuelPointsAuto => _$this._averageFuelPointsAuto;
-  set averageFuelPointsAuto(double? averageFuelPointsAuto) => _$this._averageFuelPointsAuto = averageFuelPointsAuto;
+  set averageFuelPointsAuto(double? averageFuelPointsAuto) =>
+      _$this._averageFuelPointsAuto = averageFuelPointsAuto;
 
   double? _averageFuelPointsTeleop;
   double? get averageFuelPointsTeleop => _$this._averageFuelPointsTeleop;
@@ -311,27 +329,33 @@ class EventInsights2017Builder implements Builder<EventInsights2017, EventInsigh
 
   double? _averageHighGoals;
   double? get averageHighGoals => _$this._averageHighGoals;
-  set averageHighGoals(double? averageHighGoals) => _$this._averageHighGoals = averageHighGoals;
+  set averageHighGoals(double? averageHighGoals) =>
+      _$this._averageHighGoals = averageHighGoals;
 
   double? _averageHighGoalsAuto;
   double? get averageHighGoalsAuto => _$this._averageHighGoalsAuto;
-  set averageHighGoalsAuto(double? averageHighGoalsAuto) => _$this._averageHighGoalsAuto = averageHighGoalsAuto;
+  set averageHighGoalsAuto(double? averageHighGoalsAuto) =>
+      _$this._averageHighGoalsAuto = averageHighGoalsAuto;
 
   double? _averageHighGoalsTeleop;
   double? get averageHighGoalsTeleop => _$this._averageHighGoalsTeleop;
-  set averageHighGoalsTeleop(double? averageHighGoalsTeleop) => _$this._averageHighGoalsTeleop = averageHighGoalsTeleop;
+  set averageHighGoalsTeleop(double? averageHighGoalsTeleop) =>
+      _$this._averageHighGoalsTeleop = averageHighGoalsTeleop;
 
   double? _averageLowGoals;
   double? get averageLowGoals => _$this._averageLowGoals;
-  set averageLowGoals(double? averageLowGoals) => _$this._averageLowGoals = averageLowGoals;
+  set averageLowGoals(double? averageLowGoals) =>
+      _$this._averageLowGoals = averageLowGoals;
 
   double? _averageLowGoalsAuto;
   double? get averageLowGoalsAuto => _$this._averageLowGoalsAuto;
-  set averageLowGoalsAuto(double? averageLowGoalsAuto) => _$this._averageLowGoalsAuto = averageLowGoalsAuto;
+  set averageLowGoalsAuto(double? averageLowGoalsAuto) =>
+      _$this._averageLowGoalsAuto = averageLowGoalsAuto;
 
   double? _averageLowGoalsTeleop;
   double? get averageLowGoalsTeleop => _$this._averageLowGoalsTeleop;
-  set averageLowGoalsTeleop(double? averageLowGoalsTeleop) => _$this._averageLowGoalsTeleop = averageLowGoalsTeleop;
+  set averageLowGoalsTeleop(double? averageLowGoalsTeleop) =>
+      _$this._averageLowGoalsTeleop = averageLowGoalsTeleop;
 
   double? _averageMobilityPointsAuto;
   double? get averageMobilityPointsAuto => _$this._averageMobilityPointsAuto;
@@ -340,19 +364,23 @@ class EventInsights2017Builder implements Builder<EventInsights2017, EventInsigh
 
   double? _averagePointsAuto;
   double? get averagePointsAuto => _$this._averagePointsAuto;
-  set averagePointsAuto(double? averagePointsAuto) => _$this._averagePointsAuto = averagePointsAuto;
+  set averagePointsAuto(double? averagePointsAuto) =>
+      _$this._averagePointsAuto = averagePointsAuto;
 
   double? _averagePointsTeleop;
   double? get averagePointsTeleop => _$this._averagePointsTeleop;
-  set averagePointsTeleop(double? averagePointsTeleop) => _$this._averagePointsTeleop = averagePointsTeleop;
+  set averagePointsTeleop(double? averagePointsTeleop) =>
+      _$this._averagePointsTeleop = averagePointsTeleop;
 
   double? _averageRotorPoints;
   double? get averageRotorPoints => _$this._averageRotorPoints;
-  set averageRotorPoints(double? averageRotorPoints) => _$this._averageRotorPoints = averageRotorPoints;
+  set averageRotorPoints(double? averageRotorPoints) =>
+      _$this._averageRotorPoints = averageRotorPoints;
 
   double? _averageRotorPointsAuto;
   double? get averageRotorPointsAuto => _$this._averageRotorPointsAuto;
-  set averageRotorPointsAuto(double? averageRotorPointsAuto) => _$this._averageRotorPointsAuto = averageRotorPointsAuto;
+  set averageRotorPointsAuto(double? averageRotorPointsAuto) =>
+      _$this._averageRotorPointsAuto = averageRotorPointsAuto;
 
   double? _averageRotorPointsTeleop;
   double? get averageRotorPointsTeleop => _$this._averageRotorPointsTeleop;
@@ -370,59 +398,84 @@ class EventInsights2017Builder implements Builder<EventInsights2017, EventInsigh
 
   double? _averageWinMargin;
   double? get averageWinMargin => _$this._averageWinMargin;
-  set averageWinMargin(double? averageWinMargin) => _$this._averageWinMargin = averageWinMargin;
+  set averageWinMargin(double? averageWinMargin) =>
+      _$this._averageWinMargin = averageWinMargin;
 
   double? _averageWinScore;
   double? get averageWinScore => _$this._averageWinScore;
-  set averageWinScore(double? averageWinScore) => _$this._averageWinScore = averageWinScore;
+  set averageWinScore(double? averageWinScore) =>
+      _$this._averageWinScore = averageWinScore;
 
   ListBuilder<String>? _highKpa;
-  ListBuilder<String> get highKpa => _$this._highKpa ??= new ListBuilder<String>();
+  ListBuilder<String> get highKpa =>
+      _$this._highKpa ??= new ListBuilder<String>();
   set highKpa(ListBuilder<String>? highKpa) => _$this._highKpa = highKpa;
 
   ListBuilder<String>? _highScore;
-  ListBuilder<String> get highScore => _$this._highScore ??= new ListBuilder<String>();
-  set highScore(ListBuilder<String>? highScore) => _$this._highScore = highScore;
+  ListBuilder<String> get highScore =>
+      _$this._highScore ??= new ListBuilder<String>();
+  set highScore(ListBuilder<String>? highScore) =>
+      _$this._highScore = highScore;
 
   ListBuilder<double>? _kpaAchieved;
-  ListBuilder<double> get kpaAchieved => _$this._kpaAchieved ??= new ListBuilder<double>();
-  set kpaAchieved(ListBuilder<double>? kpaAchieved) => _$this._kpaAchieved = kpaAchieved;
+  ListBuilder<double> get kpaAchieved =>
+      _$this._kpaAchieved ??= new ListBuilder<double>();
+  set kpaAchieved(ListBuilder<double>? kpaAchieved) =>
+      _$this._kpaAchieved = kpaAchieved;
 
   ListBuilder<double>? _mobilityCounts;
-  ListBuilder<double> get mobilityCounts => _$this._mobilityCounts ??= new ListBuilder<double>();
-  set mobilityCounts(ListBuilder<double>? mobilityCounts) => _$this._mobilityCounts = mobilityCounts;
+  ListBuilder<double> get mobilityCounts =>
+      _$this._mobilityCounts ??= new ListBuilder<double>();
+  set mobilityCounts(ListBuilder<double>? mobilityCounts) =>
+      _$this._mobilityCounts = mobilityCounts;
 
   ListBuilder<double>? _rotor1Engaged;
-  ListBuilder<double> get rotor1Engaged => _$this._rotor1Engaged ??= new ListBuilder<double>();
-  set rotor1Engaged(ListBuilder<double>? rotor1Engaged) => _$this._rotor1Engaged = rotor1Engaged;
+  ListBuilder<double> get rotor1Engaged =>
+      _$this._rotor1Engaged ??= new ListBuilder<double>();
+  set rotor1Engaged(ListBuilder<double>? rotor1Engaged) =>
+      _$this._rotor1Engaged = rotor1Engaged;
 
   ListBuilder<double>? _rotor1EngagedAuto;
-  ListBuilder<double> get rotor1EngagedAuto => _$this._rotor1EngagedAuto ??= new ListBuilder<double>();
-  set rotor1EngagedAuto(ListBuilder<double>? rotor1EngagedAuto) => _$this._rotor1EngagedAuto = rotor1EngagedAuto;
+  ListBuilder<double> get rotor1EngagedAuto =>
+      _$this._rotor1EngagedAuto ??= new ListBuilder<double>();
+  set rotor1EngagedAuto(ListBuilder<double>? rotor1EngagedAuto) =>
+      _$this._rotor1EngagedAuto = rotor1EngagedAuto;
 
   ListBuilder<double>? _rotor2Engaged;
-  ListBuilder<double> get rotor2Engaged => _$this._rotor2Engaged ??= new ListBuilder<double>();
-  set rotor2Engaged(ListBuilder<double>? rotor2Engaged) => _$this._rotor2Engaged = rotor2Engaged;
+  ListBuilder<double> get rotor2Engaged =>
+      _$this._rotor2Engaged ??= new ListBuilder<double>();
+  set rotor2Engaged(ListBuilder<double>? rotor2Engaged) =>
+      _$this._rotor2Engaged = rotor2Engaged;
 
   ListBuilder<double>? _rotor2EngagedAuto;
-  ListBuilder<double> get rotor2EngagedAuto => _$this._rotor2EngagedAuto ??= new ListBuilder<double>();
-  set rotor2EngagedAuto(ListBuilder<double>? rotor2EngagedAuto) => _$this._rotor2EngagedAuto = rotor2EngagedAuto;
+  ListBuilder<double> get rotor2EngagedAuto =>
+      _$this._rotor2EngagedAuto ??= new ListBuilder<double>();
+  set rotor2EngagedAuto(ListBuilder<double>? rotor2EngagedAuto) =>
+      _$this._rotor2EngagedAuto = rotor2EngagedAuto;
 
   ListBuilder<double>? _rotor3Engaged;
-  ListBuilder<double> get rotor3Engaged => _$this._rotor3Engaged ??= new ListBuilder<double>();
-  set rotor3Engaged(ListBuilder<double>? rotor3Engaged) => _$this._rotor3Engaged = rotor3Engaged;
+  ListBuilder<double> get rotor3Engaged =>
+      _$this._rotor3Engaged ??= new ListBuilder<double>();
+  set rotor3Engaged(ListBuilder<double>? rotor3Engaged) =>
+      _$this._rotor3Engaged = rotor3Engaged;
 
   ListBuilder<double>? _rotor4Engaged;
-  ListBuilder<double> get rotor4Engaged => _$this._rotor4Engaged ??= new ListBuilder<double>();
-  set rotor4Engaged(ListBuilder<double>? rotor4Engaged) => _$this._rotor4Engaged = rotor4Engaged;
+  ListBuilder<double> get rotor4Engaged =>
+      _$this._rotor4Engaged ??= new ListBuilder<double>();
+  set rotor4Engaged(ListBuilder<double>? rotor4Engaged) =>
+      _$this._rotor4Engaged = rotor4Engaged;
 
   ListBuilder<double>? _takeoffCounts;
-  ListBuilder<double> get takeoffCounts => _$this._takeoffCounts ??= new ListBuilder<double>();
-  set takeoffCounts(ListBuilder<double>? takeoffCounts) => _$this._takeoffCounts = takeoffCounts;
+  ListBuilder<double> get takeoffCounts =>
+      _$this._takeoffCounts ??= new ListBuilder<double>();
+  set takeoffCounts(ListBuilder<double>? takeoffCounts) =>
+      _$this._takeoffCounts = takeoffCounts;
 
   ListBuilder<double>? _unicornMatches;
-  ListBuilder<double> get unicornMatches => _$this._unicornMatches ??= new ListBuilder<double>();
-  set unicornMatches(ListBuilder<double>? unicornMatches) => _$this._unicornMatches = unicornMatches;
+  ListBuilder<double> get unicornMatches =>
+      _$this._unicornMatches ??= new ListBuilder<double>();
+  set unicornMatches(ListBuilder<double>? unicornMatches) =>
+      _$this._unicornMatches = unicornMatches;
 
   EventInsights2017Builder() {
     EventInsights2017._initializeBuilder(this);
@@ -485,41 +538,31 @@ class EventInsights2017Builder implements Builder<EventInsights2017, EventInsigh
     try {
       _$result = _$v ??
           new _$EventInsights2017._(
-              averageFoulScore:
-                  BuiltValueNullFieldError.checkNotNull(averageFoulScore, 'EventInsights2017', 'averageFoulScore'),
-              averageFuelPoints:
-                  BuiltValueNullFieldError.checkNotNull(averageFuelPoints, 'EventInsights2017', 'averageFuelPoints'),
+              averageFoulScore: BuiltValueNullFieldError.checkNotNull(
+                  averageFoulScore, 'EventInsights2017', 'averageFoulScore'),
+              averageFuelPoints: BuiltValueNullFieldError.checkNotNull(
+                  averageFuelPoints, 'EventInsights2017', 'averageFuelPoints'),
               averageFuelPointsAuto: BuiltValueNullFieldError.checkNotNull(
                   averageFuelPointsAuto, 'EventInsights2017', 'averageFuelPointsAuto'),
               averageFuelPointsTeleop: BuiltValueNullFieldError.checkNotNull(
                   averageFuelPointsTeleop, 'EventInsights2017', 'averageFuelPointsTeleop'),
-              averageHighGoals:
-                  BuiltValueNullFieldError.checkNotNull(averageHighGoals, 'EventInsights2017', 'averageHighGoals'),
+              averageHighGoals: BuiltValueNullFieldError.checkNotNull(
+                  averageHighGoals, 'EventInsights2017', 'averageHighGoals'),
               averageHighGoalsAuto: BuiltValueNullFieldError.checkNotNull(
                   averageHighGoalsAuto, 'EventInsights2017', 'averageHighGoalsAuto'),
-              averageHighGoalsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop'),
-              averageLowGoals:
-                  BuiltValueNullFieldError.checkNotNull(averageLowGoals, 'EventInsights2017', 'averageLowGoals'),
-              averageLowGoalsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto'),
-              averageLowGoalsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop'),
-              averageMobilityPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageMobilityPointsAuto, 'EventInsights2017', 'averageMobilityPointsAuto'),
-              averagePointsAuto:
-                  BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2017', 'averagePointsAuto'),
-              averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop'),
-              averageRotorPoints:
-                  BuiltValueNullFieldError.checkNotNull(averageRotorPoints, 'EventInsights2017', 'averageRotorPoints'),
-              averageRotorPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto'),
-              averageRotorPointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageRotorPointsTeleop, 'EventInsights2017', 'averageRotorPointsTeleop'),
+              averageHighGoalsTeleop:
+                  BuiltValueNullFieldError.checkNotNull(averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop'),
+              averageLowGoals: BuiltValueNullFieldError.checkNotNull(averageLowGoals, 'EventInsights2017', 'averageLowGoals'),
+              averageLowGoalsAuto: BuiltValueNullFieldError.checkNotNull(averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto'),
+              averageLowGoalsTeleop: BuiltValueNullFieldError.checkNotNull(averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop'),
+              averageMobilityPointsAuto: BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto, 'EventInsights2017', 'averageMobilityPointsAuto'),
+              averagePointsAuto: BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2017', 'averagePointsAuto'),
+              averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop'),
+              averageRotorPoints: BuiltValueNullFieldError.checkNotNull(averageRotorPoints, 'EventInsights2017', 'averageRotorPoints'),
+              averageRotorPointsAuto: BuiltValueNullFieldError.checkNotNull(averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto'),
+              averageRotorPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop, 'EventInsights2017', 'averageRotorPointsTeleop'),
               averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2017', 'averageScore'),
-              averageTakeoffPointsTeleop:
-                  BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop, 'EventInsights2017', 'averageTakeoffPointsTeleop'),
+              averageTakeoffPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop, 'EventInsights2017', 'averageTakeoffPointsTeleop'),
               averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2017', 'averageWinMargin'),
               averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2017', 'averageWinScore'),
               highKpa: highKpa.build(),
@@ -562,7 +605,8 @@ class EventInsights2017Builder implements Builder<EventInsights2017, EventInsigh
         _$failedField = 'unicornMatches';
         unicornMatches.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError('EventInsights2017', _$failedField, e.toString());
+        throw new BuiltValueNestedFieldError(
+            'EventInsights2017', _$failedField, e.toString());
       }
       rethrow;
     }
