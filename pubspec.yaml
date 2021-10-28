@@ -1,5 +1,5 @@
 name: tba_api_v3
-version: 1.0.2
+version: 1.0.3
 description: Dart API client library for www.thebluealliance.com. Maintained by the RobluScouting team at www.roblu.net.
 homepage: https://github.com/RobluScouting/Dart-TBA-API-Client
 environment:

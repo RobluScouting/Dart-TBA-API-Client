@@ -46,7 +46,11 @@ dependencies:
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```dart
-Dio dio = Dio(BaseOptions(
+import 'package:tba_api_v3/tba_api_v3.dart';
+import 'package:dio/dio.dart';
+
+void main() {
+  Dio dio = Dio(BaseOptions(
       headers: {"X-TBA-Auth-Key": "Your-TBA-Auth-Key"},
       baseUrl: "https://www.thebluealliance.com/api/v3"));
 
@@ -58,6 +62,7 @@ Dio dio = Dio(BaseOptions(
   } catch (e) {
     print("Exception when calling DistrictApi->getDistrictEvents: $e\n");
   }
+}
 ```
 
 ## Documentation for API Endpoints
