@@ -10,7 +10,6 @@ import 'package:dio/dio.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/json_object.dart';
 import 'package:tba_api_v3/src/api_util.dart';
-import 'package:tba_api_v3/src/model/get_status401_response.dart';
 import 'package:tba_api_v3/src/model/match.dart';
 import 'package:tba_api_v3/src/model/match_simple.dart';
 import 'package:tba_api_v3/src/model/zebra.dart';

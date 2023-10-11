@@ -18,7 +18,6 @@ import 'package:tba_api_v3/src/model/event_insights.dart';
 import 'package:tba_api_v3/src/model/event_oprs.dart';
 import 'package:tba_api_v3/src/model/event_ranking.dart';
 import 'package:tba_api_v3/src/model/event_simple.dart';
-import 'package:tba_api_v3/src/model/get_status401_response.dart';
 import 'package:tba_api_v3/src/model/match.dart';
 import 'package:tba_api_v3/src/model/match_simple.dart';
 import 'package:tba_api_v3/src/model/team.dart';

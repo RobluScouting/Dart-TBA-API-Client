@@ -1,3 +1,6 @@
+## [1.1.0] - 10/11/2023
+Regenerating client API
+
 ## [1.0.3] - 10/27/2021
 Updating README
 

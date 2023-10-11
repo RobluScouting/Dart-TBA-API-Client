@@ -14,7 +14,6 @@ import 'package:tba_api_v3/src/model/district_ranking.dart';
 import 'package:tba_api_v3/src/model/event.dart';
 import 'package:tba_api_v3/src/model/event_district_points.dart';
 import 'package:tba_api_v3/src/model/event_simple.dart';
-import 'package:tba_api_v3/src/model/get_status401_response.dart';
 import 'package:tba_api_v3/src/model/team.dart';
 import 'package:tba_api_v3/src/model/team_simple.dart';
 
