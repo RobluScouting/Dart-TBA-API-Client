@@ -1,6 +1,6 @@
 name: tba_api_v3
-version: 1.1.0
-description: Unofficial Dart library for the TheBlueAlliance.com API
+version: 1.1.1
+description: Unofficial Dart library for the TheBlueAlliance.com API. This uses the OpenAPI cli to generate the dart library.
 homepage: https://github.com/RobluScouting/Dart-TBA-API-Client
 
 environment:

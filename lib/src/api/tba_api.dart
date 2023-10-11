@@ -10,7 +10,6 @@ import 'package:dio/dio.dart';
 import 'package:tba_api_v3/src/model/api_status.dart';
 
 class TBAApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
@@ -31,7 +30,7 @@ class TBAApi {
   ///
   /// Returns a [Future] containing a [Response] with a [APIStatus] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<APIStatus>> getStatus({ 
+  Future<Response<APIStatus>> getStatus({
     String? ifNoneMatch,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -73,11 +72,12 @@ class TBAApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(APIStatus),
-      ) as APIStatus;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(APIStatus),
+            ) as APIStatus;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -99,5 +99,4 @@ class TBAApi {
       extra: _response.extra,
     );
   }
-
 }

@@ -1,3 +1,6 @@
+## [1.1.1] - 10/11/2023
+Fixing Dart analysis issues (no actual changes)
+
 ## [1.1.0] - 10/11/2023
 Regenerating client API
 

@@ -13,25 +13,32 @@ part 'get_status401_response.g.dart';
 /// Properties:
 /// * [error] - Authorization error description.
 @BuiltValue()
-abstract class GetStatus401Response implements Built<GetStatus401Response, GetStatus401ResponseBuilder> {
+abstract class GetStatus401Response
+    implements Built<GetStatus401Response, GetStatus401ResponseBuilder> {
   /// Authorization error description.
   @BuiltValueField(wireName: r'Error')
   String get error;
 
   GetStatus401Response._();
 
-  factory GetStatus401Response([void updates(GetStatus401ResponseBuilder b)]) = _$GetStatus401Response;
+  factory GetStatus401Response([void updates(GetStatus401ResponseBuilder b)]) =
+      _$GetStatus401Response;
 
   @BuiltValueHook(initializeBuilder: true)
   static void _defaults(GetStatus401ResponseBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<GetStatus401Response> get serializer => _$GetStatus401ResponseSerializer();
+  static Serializer<GetStatus401Response> get serializer =>
+      _$GetStatus401ResponseSerializer();
 }
 
-class _$GetStatus401ResponseSerializer implements PrimitiveSerializer<GetStatus401Response> {
+class _$GetStatus401ResponseSerializer
+    implements PrimitiveSerializer<GetStatus401Response> {
   @override
-  final Iterable<Type> types = const [GetStatus401Response, _$GetStatus401Response];
+  final Iterable<Type> types = const [
+    GetStatus401Response,
+    _$GetStatus401Response
+  ];
 
   @override
   final String wireName = r'GetStatus401Response';
@@ -54,7 +61,9 @@ class _$GetStatus401ResponseSerializer implements PrimitiveSerializer<GetStatus4
     GetStatus401Response object, {
     FullType specifiedType = FullType.unspecified,
   }) {
-    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+    return _serializeProperties(serializers, object,
+            specifiedType: specifiedType)
+        .toList();
   }
 
   void _deserializeProperties(
@@ -104,4 +113,3 @@ class _$GetStatus401ResponseSerializer implements PrimitiveSerializer<GetStatus4
     return result.build();
   }
 }
-

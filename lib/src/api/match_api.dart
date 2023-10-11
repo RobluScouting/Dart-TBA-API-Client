@@ -15,7 +15,6 @@ import 'package:tba_api_v3/src/model/match_simple.dart';
 import 'package:tba_api_v3/src/model/zebra.dart';
 
 class MatchApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
@@ -37,7 +36,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getEventMatchTimeseries({ 
+  Future<Response<BuiltList<String>>> getEventMatchTimeseries({
     required String eventKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -47,7 +46,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/timeseries'.replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/event/{event_key}/matches/timeseries'.replaceAll(
+        '{' r'event_key' '}',
+        encodeQueryParameter(_serializers, eventKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -80,11 +82,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -122,7 +125,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Match>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Match>>> getEventMatches({ 
+  Future<Response<BuiltList<Match>>> getEventMatches({
     required String eventKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -132,7 +135,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches'.replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/event/{event_key}/matches'.replaceAll(
+        '{' r'event_key' '}',
+        encodeQueryParameter(_serializers, eventKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -165,11 +171,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Match)]),
-      ) as BuiltList<Match>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Match)]),
+            ) as BuiltList<Match>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -207,7 +214,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getEventMatchesKeys({ 
+  Future<Response<BuiltList<String>>> getEventMatchesKeys({
     required String eventKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -217,7 +224,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/keys'.replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/event/{event_key}/matches/keys'.replaceAll(
+        '{' r'event_key' '}',
+        encodeQueryParameter(_serializers, eventKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -250,11 +260,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -292,7 +303,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<MatchSimple>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<MatchSimple>>> getEventMatchesSimple({ 
+  Future<Response<BuiltList<MatchSimple>>> getEventMatchesSimple({
     required String eventKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -302,7 +313,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/matches/simple'.replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/event/{event_key}/matches/simple'.replaceAll(
+        '{' r'event_key' '}',
+        encodeQueryParameter(_serializers, eventKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -335,11 +349,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(MatchSimple)]),
-      ) as BuiltList<MatchSimple>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(MatchSimple)]),
+            ) as BuiltList<MatchSimple>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -377,7 +392,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Match] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Match>> getMatch({ 
+  Future<Response<Match>> getMatch({
     required String matchKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -387,7 +402,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}'.replaceAll('{' r'match_key' '}', encodeQueryParameter(_serializers, matchKey, const FullType(String)).toString());
+    final _path = r'/match/{match_key}'.replaceAll(
+        '{' r'match_key' '}',
+        encodeQueryParameter(_serializers, matchKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -420,11 +438,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(Match),
-      ) as Match;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(Match),
+            ) as Match;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -462,7 +481,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [MatchSimple] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<MatchSimple>> getMatchSimple({ 
+  Future<Response<MatchSimple>> getMatchSimple({
     required String matchKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -472,7 +491,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/simple'.replaceAll('{' r'match_key' '}', encodeQueryParameter(_serializers, matchKey, const FullType(String)).toString());
+    final _path = r'/match/{match_key}/simple'.replaceAll(
+        '{' r'match_key' '}',
+        encodeQueryParameter(_serializers, matchKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -505,11 +527,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(MatchSimple),
-      ) as MatchSimple;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(MatchSimple),
+            ) as MatchSimple;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -547,7 +570,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<JsonObject>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<JsonObject>>> getMatchTimeseries({ 
+  Future<Response<BuiltList<JsonObject>>> getMatchTimeseries({
     required String matchKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -557,7 +580,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/timeseries'.replaceAll('{' r'match_key' '}', encodeQueryParameter(_serializers, matchKey, const FullType(String)).toString());
+    final _path = r'/match/{match_key}/timeseries'.replaceAll(
+        '{' r'match_key' '}',
+        encodeQueryParameter(_serializers, matchKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -590,11 +616,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(JsonObject)]),
-      ) as BuiltList<JsonObject>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(JsonObject)]),
+            ) as BuiltList<JsonObject>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -632,7 +659,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Zebra] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Zebra>> getMatchZebra({ 
+  Future<Response<Zebra>> getMatchZebra({
     required String matchKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -642,7 +669,10 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/match/{match_key}/zebra_motionworks'.replaceAll('{' r'match_key' '}', encodeQueryParameter(_serializers, matchKey, const FullType(String)).toString());
+    final _path = r'/match/{match_key}/zebra_motionworks'.replaceAll(
+        '{' r'match_key' '}',
+        encodeQueryParameter(_serializers, matchKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -675,11 +705,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(Zebra),
-      ) as Zebra;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(Zebra),
+            ) as Zebra;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -718,7 +749,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Match>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Match>>> getTeamEventMatches({ 
+  Future<Response<BuiltList<Match>>> getTeamEventMatches({
     required String teamKey,
     required String eventKey,
     String? ifNoneMatch,
@@ -729,7 +760,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/event/{event_key}/matches'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/team/{team_key}/event/{event_key}/matches'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'event_key' '}',
+            encodeQueryParameter(_serializers, eventKey, const FullType(String))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -762,11 +801,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Match)]),
-      ) as BuiltList<Match>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Match)]),
+            ) as BuiltList<Match>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -805,7 +845,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getTeamEventMatchesKeys({ 
+  Future<Response<BuiltList<String>>> getTeamEventMatchesKeys({
     required String teamKey,
     required String eventKey,
     String? ifNoneMatch,
@@ -816,7 +856,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/event/{event_key}/matches/keys'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/team/{team_key}/event/{event_key}/matches/keys'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'event_key' '}',
+            encodeQueryParameter(_serializers, eventKey, const FullType(String))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -849,11 +897,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -892,7 +941,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Match>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Match>>> getTeamEventMatchesSimple({ 
+  Future<Response<BuiltList<Match>>> getTeamEventMatchesSimple({
     required String teamKey,
     required String eventKey,
     String? ifNoneMatch,
@@ -903,7 +952,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/event/{event_key}/matches/simple'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/team/{team_key}/event/{event_key}/matches/simple'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'event_key' '}',
+            encodeQueryParameter(_serializers, eventKey, const FullType(String))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -936,11 +993,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Match)]),
-      ) as BuiltList<Match>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Match)]),
+            ) as BuiltList<Match>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -979,7 +1037,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Match>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Match>>> getTeamMatchesByYear({ 
+  Future<Response<BuiltList<Match>>> getTeamMatchesByYear({
     required String teamKey,
     required int year,
     String? ifNoneMatch,
@@ -990,7 +1048,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/matches/{year}'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'year' '}', encodeQueryParameter(_serializers, year, const FullType(int)).toString());
+    final _path = r'/team/{team_key}/matches/{year}'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'year' '}',
+            encodeQueryParameter(_serializers, year, const FullType(int))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1023,11 +1089,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Match)]),
-      ) as BuiltList<Match>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Match)]),
+            ) as BuiltList<Match>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1066,7 +1133,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getTeamMatchesByYearKeys({ 
+  Future<Response<BuiltList<String>>> getTeamMatchesByYearKeys({
     required String teamKey,
     required int year,
     String? ifNoneMatch,
@@ -1077,7 +1144,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/matches/{year}/keys'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'year' '}', encodeQueryParameter(_serializers, year, const FullType(int)).toString());
+    final _path = r'/team/{team_key}/matches/{year}/keys'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'year' '}',
+            encodeQueryParameter(_serializers, year, const FullType(int))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1110,11 +1185,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1153,7 +1229,7 @@ class MatchApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<MatchSimple>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<MatchSimple>>> getTeamMatchesByYearSimple({ 
+  Future<Response<BuiltList<MatchSimple>>> getTeamMatchesByYearSimple({
     required String teamKey,
     required int year,
     String? ifNoneMatch,
@@ -1164,7 +1240,15 @@ class MatchApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/matches/{year}/simple'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString()).replaceAll('{' r'year' '}', encodeQueryParameter(_serializers, year, const FullType(int)).toString());
+    final _path = r'/team/{team_key}/matches/{year}/simple'
+        .replaceAll(
+            '{' r'team_key' '}',
+            encodeQueryParameter(_serializers, teamKey, const FullType(String))
+                .toString())
+        .replaceAll(
+            '{' r'year' '}',
+            encodeQueryParameter(_serializers, year, const FullType(int))
+                .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -1197,11 +1281,12 @@ class MatchApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(MatchSimple)]),
-      ) as BuiltList<MatchSimple>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(MatchSimple)]),
+            ) as BuiltList<MatchSimple>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1223,5 +1308,4 @@ class MatchApi {
       extra: _response.extra,
     );
   }
-
 }

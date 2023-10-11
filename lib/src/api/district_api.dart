@@ -18,7 +18,6 @@ import 'package:tba_api_v3/src/model/team.dart';
 import 'package:tba_api_v3/src/model/team_simple.dart';
 
 class DistrictApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
@@ -40,7 +39,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Event>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Event>>> getDistrictEvents({ 
+  Future<Response<BuiltList<Event>>> getDistrictEvents({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -50,7 +49,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/events'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -83,11 +85,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Event)]),
-      ) as BuiltList<Event>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Event)]),
+            ) as BuiltList<Event>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -125,7 +128,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getDistrictEventsKeys({ 
+  Future<Response<BuiltList<String>>> getDistrictEventsKeys({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -135,7 +138,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/keys'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/events/keys'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -168,11 +174,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -210,7 +217,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<EventSimple>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<EventSimple>>> getDistrictEventsSimple({ 
+  Future<Response<BuiltList<EventSimple>>> getDistrictEventsSimple({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -220,7 +227,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/events/simple'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/events/simple'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -253,11 +263,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(EventSimple)]),
-      ) as BuiltList<EventSimple>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(EventSimple)]),
+            ) as BuiltList<EventSimple>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -295,7 +306,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<DistrictRanking>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<DistrictRanking>>> getDistrictRankings({ 
+  Future<Response<BuiltList<DistrictRanking>>> getDistrictRankings({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -305,7 +316,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/rankings'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/rankings'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -338,11 +352,13 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(DistrictRanking)]),
-      ) as BuiltList<DistrictRanking>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType:
+                  const FullType(BuiltList, [FullType(DistrictRanking)]),
+            ) as BuiltList<DistrictRanking>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -380,7 +396,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<Team>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<Team>>> getDistrictTeams({ 
+  Future<Response<BuiltList<Team>>> getDistrictTeams({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -390,7 +406,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/teams'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -423,11 +442,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(Team)]),
-      ) as BuiltList<Team>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(Team)]),
+            ) as BuiltList<Team>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -465,7 +485,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<String>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<String>>> getDistrictTeamsKeys({ 
+  Future<Response<BuiltList<String>>> getDistrictTeamsKeys({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -475,7 +495,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/keys'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/teams/keys'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -508,11 +531,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(String)]),
-      ) as BuiltList<String>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(String)]),
+            ) as BuiltList<String>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -550,7 +574,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<TeamSimple>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<TeamSimple>>> getDistrictTeamsSimple({ 
+  Future<Response<BuiltList<TeamSimple>>> getDistrictTeamsSimple({
     required String districtKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -560,7 +584,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/district/{district_key}/teams/simple'.replaceAll('{' r'district_key' '}', encodeQueryParameter(_serializers, districtKey, const FullType(String)).toString());
+    final _path = r'/district/{district_key}/teams/simple'.replaceAll(
+        '{' r'district_key' '}',
+        encodeQueryParameter(_serializers, districtKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -593,11 +620,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(TeamSimple)]),
-      ) as BuiltList<TeamSimple>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(BuiltList, [FullType(TeamSimple)]),
+            ) as BuiltList<TeamSimple>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -635,7 +663,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<DistrictList>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<DistrictList>>> getDistrictsByYear({ 
+  Future<Response<BuiltList<DistrictList>>> getDistrictsByYear({
     required int year,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -645,7 +673,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/districts/{year}'.replaceAll('{' r'year' '}', encodeQueryParameter(_serializers, year, const FullType(int)).toString());
+    final _path = r'/districts/{year}'.replaceAll(
+        '{' r'year' '}',
+        encodeQueryParameter(_serializers, year, const FullType(int))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -678,11 +709,13 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(DistrictList)]),
-      ) as BuiltList<DistrictList>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType:
+                  const FullType(BuiltList, [FullType(DistrictList)]),
+            ) as BuiltList<DistrictList>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -720,7 +753,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [EventDistrictPoints] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<EventDistrictPoints>> getEventDistrictPoints({ 
+  Future<Response<EventDistrictPoints>> getEventDistrictPoints({
     required String eventKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -730,7 +763,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/event/{event_key}/district_points'.replaceAll('{' r'event_key' '}', encodeQueryParameter(_serializers, eventKey, const FullType(String)).toString());
+    final _path = r'/event/{event_key}/district_points'.replaceAll(
+        '{' r'event_key' '}',
+        encodeQueryParameter(_serializers, eventKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -763,11 +799,12 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(EventDistrictPoints),
-      ) as EventDistrictPoints;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(EventDistrictPoints),
+            ) as EventDistrictPoints;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -805,7 +842,7 @@ class DistrictApi {
   ///
   /// Returns a [Future] containing a [Response] with a [BuiltList<DistrictList>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<BuiltList<DistrictList>>> getTeamDistricts({ 
+  Future<Response<BuiltList<DistrictList>>> getTeamDistricts({
     required String teamKey,
     String? ifNoneMatch,
     CancelToken? cancelToken,
@@ -815,7 +852,10 @@ class DistrictApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/team/{team_key}/districts'.replaceAll('{' r'team_key' '}', encodeQueryParameter(_serializers, teamKey, const FullType(String)).toString());
+    final _path = r'/team/{team_key}/districts'.replaceAll(
+        '{' r'team_key' '}',
+        encodeQueryParameter(_serializers, teamKey, const FullType(String))
+            .toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
@@ -848,11 +888,13 @@ class DistrictApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(BuiltList, [FullType(DistrictList)]),
-      ) as BuiltList<DistrictList>;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType:
+                  const FullType(BuiltList, [FullType(DistrictList)]),
+            ) as BuiltList<DistrictList>;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -874,5 +916,4 @@ class DistrictApi {
       extra: _response.extra,
     );
   }
-
 }
