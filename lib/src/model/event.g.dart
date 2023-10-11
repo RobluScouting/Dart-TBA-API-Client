@@ -69,7 +69,7 @@ class _$Event extends Event {
   final String? playoffTypeString;
 
   factory _$Event([void Function(EventBuilder)? updates]) =>
-      (new EventBuilder()..update(updates)).build();
+      (new EventBuilder()..update(updates))._build();
 
   _$Event._(
       {required this.key,
@@ -103,15 +103,15 @@ class _$Event extends Event {
       this.playoffType,
       this.playoffTypeString})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(key, 'Event', 'key');
-    BuiltValueNullFieldError.checkNotNull(name, 'Event', 'name');
-    BuiltValueNullFieldError.checkNotNull(eventCode, 'Event', 'eventCode');
-    BuiltValueNullFieldError.checkNotNull(eventType, 'Event', 'eventType');
-    BuiltValueNullFieldError.checkNotNull(startDate, 'Event', 'startDate');
-    BuiltValueNullFieldError.checkNotNull(endDate, 'Event', 'endDate');
-    BuiltValueNullFieldError.checkNotNull(year, 'Event', 'year');
+    BuiltValueNullFieldError.checkNotNull(key, r'Event', 'key');
+    BuiltValueNullFieldError.checkNotNull(name, r'Event', 'name');
+    BuiltValueNullFieldError.checkNotNull(eventCode, r'Event', 'eventCode');
+    BuiltValueNullFieldError.checkNotNull(eventType, r'Event', 'eventType');
+    BuiltValueNullFieldError.checkNotNull(startDate, r'Event', 'startDate');
+    BuiltValueNullFieldError.checkNotNull(endDate, r'Event', 'endDate');
+    BuiltValueNullFieldError.checkNotNull(year, r'Event', 'year');
     BuiltValueNullFieldError.checkNotNull(
-        eventTypeString, 'Event', 'eventTypeString');
+        eventTypeString, r'Event', 'eventTypeString');
   }
 
   @override
@@ -159,49 +159,44 @@ class _$Event extends Event {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc(
-                                            $jc(
-                                                $jc(
-                                                    $jc(
-                                                        $jc(
-                                                            $jc(
-                                                                $jc(
-                                                                    $jc(
-                                                                        $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, key.hashCode), name.hashCode), eventCode.hashCode), eventType.hashCode), district.hashCode), city.hashCode), stateProv.hashCode), country.hashCode), startDate.hashCode), endDate.hashCode), year.hashCode),
-                                                                                shortName.hashCode),
-                                                                            eventTypeString.hashCode),
-                                                                        week.hashCode),
-                                                                    address.hashCode),
-                                                                postalCode.hashCode),
-                                                            gmapsPlaceId.hashCode),
-                                                        gmapsUrl.hashCode),
-                                                    lat.hashCode),
-                                                lng.hashCode),
-                                            locationName.hashCode),
-                                        timezone.hashCode),
-                                    website.hashCode),
-                                firstEventId.hashCode),
-                            firstEventCode.hashCode),
-                        webcasts.hashCode),
-                    divisionKeys.hashCode),
-                parentEventKey.hashCode),
-            playoffType.hashCode),
-        playoffTypeString.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, key.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, eventCode.hashCode);
+    _$hash = $jc(_$hash, eventType.hashCode);
+    _$hash = $jc(_$hash, district.hashCode);
+    _$hash = $jc(_$hash, city.hashCode);
+    _$hash = $jc(_$hash, stateProv.hashCode);
+    _$hash = $jc(_$hash, country.hashCode);
+    _$hash = $jc(_$hash, startDate.hashCode);
+    _$hash = $jc(_$hash, endDate.hashCode);
+    _$hash = $jc(_$hash, year.hashCode);
+    _$hash = $jc(_$hash, shortName.hashCode);
+    _$hash = $jc(_$hash, eventTypeString.hashCode);
+    _$hash = $jc(_$hash, week.hashCode);
+    _$hash = $jc(_$hash, address.hashCode);
+    _$hash = $jc(_$hash, postalCode.hashCode);
+    _$hash = $jc(_$hash, gmapsPlaceId.hashCode);
+    _$hash = $jc(_$hash, gmapsUrl.hashCode);
+    _$hash = $jc(_$hash, lat.hashCode);
+    _$hash = $jc(_$hash, lng.hashCode);
+    _$hash = $jc(_$hash, locationName.hashCode);
+    _$hash = $jc(_$hash, timezone.hashCode);
+    _$hash = $jc(_$hash, website.hashCode);
+    _$hash = $jc(_$hash, firstEventId.hashCode);
+    _$hash = $jc(_$hash, firstEventCode.hashCode);
+    _$hash = $jc(_$hash, webcasts.hashCode);
+    _$hash = $jc(_$hash, divisionKeys.hashCode);
+    _$hash = $jc(_$hash, parentEventKey.hashCode);
+    _$hash = $jc(_$hash, playoffType.hashCode);
+    _$hash = $jc(_$hash, playoffTypeString.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Event')
+    return (newBuiltValueToStringHelper(r'Event')
           ..add('key', key)
           ..add('name', name)
           ..add('eventCode', eventCode)
@@ -368,7 +363,7 @@ class EventBuilder implements Builder<Event, EventBuilder> {
       _$this._playoffTypeString = playoffTypeString;
 
   EventBuilder() {
-    Event._initializeBuilder(this);
+    Event._defaults(this);
   }
 
   EventBuilder get _$this {
@@ -421,31 +416,33 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   }
 
   @override
-  _$Event build() {
+  Event build() => _build();
+
+  _$Event _build() {
     _$Event _$result;
     try {
       _$result = _$v ??
           new _$Event._(
-              key: BuiltValueNullFieldError.checkNotNull(key, 'Event', 'key'),
+              key: BuiltValueNullFieldError.checkNotNull(key, r'Event', 'key'),
               name:
-                  BuiltValueNullFieldError.checkNotNull(name, 'Event', 'name'),
+                  BuiltValueNullFieldError.checkNotNull(name, r'Event', 'name'),
               eventCode: BuiltValueNullFieldError.checkNotNull(
-                  eventCode, 'Event', 'eventCode'),
+                  eventCode, r'Event', 'eventCode'),
               eventType: BuiltValueNullFieldError.checkNotNull(
-                  eventType, 'Event', 'eventType'),
+                  eventType, r'Event', 'eventType'),
               district: _district?.build(),
               city: city,
               stateProv: stateProv,
               country: country,
               startDate: BuiltValueNullFieldError.checkNotNull(
-                  startDate, 'Event', 'startDate'),
+                  startDate, r'Event', 'startDate'),
               endDate: BuiltValueNullFieldError.checkNotNull(
-                  endDate, 'Event', 'endDate'),
+                  endDate, r'Event', 'endDate'),
               year:
-                  BuiltValueNullFieldError.checkNotNull(year, 'Event', 'year'),
+                  BuiltValueNullFieldError.checkNotNull(year, r'Event', 'year'),
               shortName: shortName,
               eventTypeString: BuiltValueNullFieldError.checkNotNull(
-                  eventTypeString, 'Event', 'eventTypeString'),
+                  eventTypeString, r'Event', 'eventTypeString'),
               week: week,
               address: address,
               postalCode: postalCode,
@@ -475,7 +472,7 @@ class EventBuilder implements Builder<Event, EventBuilder> {
         _divisionKeys?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'Event', _$failedField, e.toString());
+            r'Event', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -484,4 +481,4 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

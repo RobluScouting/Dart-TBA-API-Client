@@ -138,12 +138,12 @@ class _$Webcast extends Webcast {
   final String? file;
 
   factory _$Webcast([void Function(WebcastBuilder)? updates]) =>
-      (new WebcastBuilder()..update(updates)).build();
+      (new WebcastBuilder()..update(updates))._build();
 
   _$Webcast._({required this.type, required this.channel, this.date, this.file})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(type, 'Webcast', 'type');
-    BuiltValueNullFieldError.checkNotNull(channel, 'Webcast', 'channel');
+    BuiltValueNullFieldError.checkNotNull(type, r'Webcast', 'type');
+    BuiltValueNullFieldError.checkNotNull(channel, r'Webcast', 'channel');
   }
 
   @override
@@ -165,14 +165,18 @@ class _$Webcast extends Webcast {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc($jc($jc(0, type.hashCode), channel.hashCode), date.hashCode),
-        file.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, type.hashCode);
+    _$hash = $jc(_$hash, channel.hashCode);
+    _$hash = $jc(_$hash, date.hashCode);
+    _$hash = $jc(_$hash, file.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Webcast')
+    return (newBuiltValueToStringHelper(r'Webcast')
           ..add('type', type)
           ..add('channel', channel)
           ..add('date', date)
@@ -201,7 +205,7 @@ class WebcastBuilder implements Builder<Webcast, WebcastBuilder> {
   set file(String? file) => _$this._file = file;
 
   WebcastBuilder() {
-    Webcast._initializeBuilder(this);
+    Webcast._defaults(this);
   }
 
   WebcastBuilder get _$this {
@@ -228,13 +232,15 @@ class WebcastBuilder implements Builder<Webcast, WebcastBuilder> {
   }
 
   @override
-  _$Webcast build() {
+  Webcast build() => _build();
+
+  _$Webcast _build() {
     final _$result = _$v ??
         new _$Webcast._(
             type:
-                BuiltValueNullFieldError.checkNotNull(type, 'Webcast', 'type'),
+                BuiltValueNullFieldError.checkNotNull(type, r'Webcast', 'type'),
             channel: BuiltValueNullFieldError.checkNotNull(
-                channel, 'Webcast', 'channel'),
+                channel, r'Webcast', 'channel'),
             date: date,
             file: file);
     replace(_$result);
@@ -242,4 +248,4 @@ class WebcastBuilder implements Builder<Webcast, WebcastBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

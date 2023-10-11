@@ -9,17 +9,17 @@ All URIs are relative to *https://www.thebluealliance.com/api/v3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getStatus**](TBAApi.md#getstatus) | **get** /status | 
+[**getStatus**](TBAApi.md#getstatus) | **GET** /status | 
 
 
 # **getStatus**
-> APIStatus getStatus(ifModifiedSince)
+> APIStatus getStatus(ifNoneMatch)
 
 
 
 Returns API status, and TBA status information.
 
-### Example 
+### Example
 ```dart
 import 'package:tba_api_v3/api.dart';
 // TODO Configure API key authorization: apiKey
@@ -27,13 +27,13 @@ import 'package:tba_api_v3/api.dart';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //defaultApiClient.getAuthentication<ApiKeyAuth>('apiKey').apiKeyPrefix = 'Bearer';
 
-var api_instance = new TBAApi();
-var ifModifiedSince = ifModifiedSince_example; // String | Value of the `Last-Modified` header in the most recently cached response by the client.
+final api = TbaApiV3().getTBAApi();
+final String ifNoneMatch = ifNoneMatch_example; // String | Value of the `ETag` header in the most recently cached response by the client.
 
-try { 
-    var result = api_instance.getStatus(ifModifiedSince);
-    print(result);
-} catch (e) {
+try {
+    final response = api.getStatus(ifNoneMatch);
+    print(response);
+} catch on DioException (e) {
     print('Exception when calling TBAApi->getStatus: $e\n');
 }
 ```
@@ -42,7 +42,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ifModifiedSince** | **String**| Value of the `Last-Modified` header in the most recently cached response by the client. | [optional] 
+ **ifNoneMatch** | **String**| Value of the `ETag` header in the most recently cached response by the client. | [optional] 
 
 ### Return type
 

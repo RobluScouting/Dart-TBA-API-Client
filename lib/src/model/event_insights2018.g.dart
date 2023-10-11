@@ -84,7 +84,7 @@ class _$EventInsights2018 extends EventInsights2018 {
 
   factory _$EventInsights2018(
           [void Function(EventInsights2018Builder)? updates]) =>
-      (new EventInsights2018Builder()..update(updates)).build();
+      (new EventInsights2018Builder()..update(updates))._build();
 
   _$EventInsights2018._(
       {required this.autoQuestAchieved,
@@ -126,85 +126,85 @@ class _$EventInsights2018 extends EventInsights2018 {
       required this.winningScaleOwnershipPercentageTeleop})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        autoQuestAchieved, 'EventInsights2018', 'autoQuestAchieved');
+        autoQuestAchieved, r'EventInsights2018', 'autoQuestAchieved');
     BuiltValueNullFieldError.checkNotNull(
-        averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed');
+        averageBoostPlayed, r'EventInsights2018', 'averageBoostPlayed');
     BuiltValueNullFieldError.checkNotNull(
-        averageEndgamePoints, 'EventInsights2018', 'averageEndgamePoints');
+        averageEndgamePoints, r'EventInsights2018', 'averageEndgamePoints');
     BuiltValueNullFieldError.checkNotNull(
-        averageForcePlayed, 'EventInsights2018', 'averageForcePlayed');
+        averageForcePlayed, r'EventInsights2018', 'averageForcePlayed');
     BuiltValueNullFieldError.checkNotNull(
-        averageFoulScore, 'EventInsights2018', 'averageFoulScore');
+        averageFoulScore, r'EventInsights2018', 'averageFoulScore');
     BuiltValueNullFieldError.checkNotNull(
-        averagePointsAuto, 'EventInsights2018', 'averagePointsAuto');
+        averagePointsAuto, r'EventInsights2018', 'averagePointsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averagePointsTeleop, 'EventInsights2018', 'averagePointsTeleop');
+        averagePointsTeleop, r'EventInsights2018', 'averagePointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageRunPointsAuto, 'EventInsights2018', 'averageRunPointsAuto');
+        averageRunPointsAuto, r'EventInsights2018', 'averageRunPointsAuto');
     BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPoints,
-        'EventInsights2018', 'averageScaleOwnershipPoints');
+        r'EventInsights2018', 'averageScaleOwnershipPoints');
     BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsAuto,
-        'EventInsights2018', 'averageScaleOwnershipPointsAuto');
+        r'EventInsights2018', 'averageScaleOwnershipPointsAuto');
     BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsTeleop,
-        'EventInsights2018', 'averageScaleOwnershipPointsTeleop');
+        r'EventInsights2018', 'averageScaleOwnershipPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageScore, 'EventInsights2018', 'averageScore');
+        averageScore, r'EventInsights2018', 'averageScore');
     BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPoints,
-        'EventInsights2018', 'averageSwitchOwnershipPoints');
+        r'EventInsights2018', 'averageSwitchOwnershipPoints');
     BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsAuto,
-        'EventInsights2018', 'averageSwitchOwnershipPointsAuto');
+        r'EventInsights2018', 'averageSwitchOwnershipPointsAuto');
     BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsTeleop,
-        'EventInsights2018', 'averageSwitchOwnershipPointsTeleop');
+        r'EventInsights2018', 'averageSwitchOwnershipPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageVaultPoints, 'EventInsights2018', 'averageVaultPoints');
+        averageVaultPoints, r'EventInsights2018', 'averageVaultPoints');
     BuiltValueNullFieldError.checkNotNull(
-        averageWinMargin, 'EventInsights2018', 'averageWinMargin');
+        averageWinMargin, r'EventInsights2018', 'averageWinMargin');
     BuiltValueNullFieldError.checkNotNull(
-        averageWinScore, 'EventInsights2018', 'averageWinScore');
+        averageWinScore, r'EventInsights2018', 'averageWinScore');
     BuiltValueNullFieldError.checkNotNull(
-        boostPlayedCounts, 'EventInsights2018', 'boostPlayedCounts');
+        boostPlayedCounts, r'EventInsights2018', 'boostPlayedCounts');
     BuiltValueNullFieldError.checkNotNull(
-        climbCounts, 'EventInsights2018', 'climbCounts');
+        climbCounts, r'EventInsights2018', 'climbCounts');
     BuiltValueNullFieldError.checkNotNull(
-        faceTheBossAchieved, 'EventInsights2018', 'faceTheBossAchieved');
+        faceTheBossAchieved, r'EventInsights2018', 'faceTheBossAchieved');
     BuiltValueNullFieldError.checkNotNull(
-        forcePlayedCounts, 'EventInsights2018', 'forcePlayedCounts');
+        forcePlayedCounts, r'EventInsights2018', 'forcePlayedCounts');
     BuiltValueNullFieldError.checkNotNull(
-        highScore, 'EventInsights2018', 'highScore');
+        highScore, r'EventInsights2018', 'highScore');
     BuiltValueNullFieldError.checkNotNull(
-        levitatePlayedCounts, 'EventInsights2018', 'levitatePlayedCounts');
+        levitatePlayedCounts, r'EventInsights2018', 'levitatePlayedCounts');
     BuiltValueNullFieldError.checkNotNull(
-        runCountsAuto, 'EventInsights2018', 'runCountsAuto');
+        runCountsAuto, r'EventInsights2018', 'runCountsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage');
+        scaleNeutralPercentage, r'EventInsights2018', 'scaleNeutralPercentage');
     BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageAuto,
-        'EventInsights2018', 'scaleNeutralPercentageAuto');
+        r'EventInsights2018', 'scaleNeutralPercentageAuto');
     BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageTeleop,
-        'EventInsights2018', 'scaleNeutralPercentageTeleop');
+        r'EventInsights2018', 'scaleNeutralPercentageTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        switchOwnedCountsAuto, 'EventInsights2018', 'switchOwnedCountsAuto');
+        switchOwnedCountsAuto, r'EventInsights2018', 'switchOwnedCountsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        unicornMatches, 'EventInsights2018', 'unicornMatches');
+        unicornMatches, r'EventInsights2018', 'unicornMatches');
     BuiltValueNullFieldError.checkNotNull(
         winningOppSwitchDenialPercentageTeleop,
-        'EventInsights2018',
+        r'EventInsights2018',
         'winningOppSwitchDenialPercentageTeleop');
     BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentage,
-        'EventInsights2018', 'winningOwnSwitchOwnershipPercentage');
+        r'EventInsights2018', 'winningOwnSwitchOwnershipPercentage');
     BuiltValueNullFieldError.checkNotNull(
         winningOwnSwitchOwnershipPercentageAuto,
-        'EventInsights2018',
+        r'EventInsights2018',
         'winningOwnSwitchOwnershipPercentageAuto');
     BuiltValueNullFieldError.checkNotNull(
         winningOwnSwitchOwnershipPercentageTeleop,
-        'EventInsights2018',
+        r'EventInsights2018',
         'winningOwnSwitchOwnershipPercentageTeleop');
     BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentage,
-        'EventInsights2018', 'winningScaleOwnershipPercentage');
+        r'EventInsights2018', 'winningScaleOwnershipPercentage');
     BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageAuto,
-        'EventInsights2018', 'winningScaleOwnershipPercentageAuto');
+        r'EventInsights2018', 'winningScaleOwnershipPercentageAuto');
     BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageTeleop,
-        'EventInsights2018', 'winningScaleOwnershipPercentageTeleop');
+        r'EventInsights2018', 'winningScaleOwnershipPercentageTeleop');
   }
 
   @override
@@ -271,49 +271,51 @@ class _$EventInsights2018 extends EventInsights2018 {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc(
-                                            $jc(
-                                                $jc(
-                                                    $jc(
-                                                        $jc(
-                                                            $jc(
-                                                                $jc(
-                                                                    $jc(
-                                                                        $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, autoQuestAchieved.hashCode), averageBoostPlayed.hashCode), averageEndgamePoints.hashCode), averageForcePlayed.hashCode), averageFoulScore.hashCode), averagePointsAuto.hashCode), averagePointsTeleop.hashCode), averageRunPointsAuto.hashCode), averageScaleOwnershipPoints.hashCode), averageScaleOwnershipPointsAuto.hashCode), averageScaleOwnershipPointsTeleop.hashCode), averageScore.hashCode), averageSwitchOwnershipPoints.hashCode), averageSwitchOwnershipPointsAuto.hashCode), averageSwitchOwnershipPointsTeleop.hashCode), averageVaultPoints.hashCode), averageWinMargin.hashCode), averageWinScore.hashCode),
-                                                                                boostPlayedCounts.hashCode),
-                                                                            climbCounts.hashCode),
-                                                                        faceTheBossAchieved.hashCode),
-                                                                    forcePlayedCounts.hashCode),
-                                                                highScore.hashCode),
-                                                            levitatePlayedCounts.hashCode),
-                                                        runCountsAuto.hashCode),
-                                                    scaleNeutralPercentage.hashCode),
-                                                scaleNeutralPercentageAuto.hashCode),
-                                            scaleNeutralPercentageTeleop.hashCode),
-                                        switchOwnedCountsAuto.hashCode),
-                                    unicornMatches.hashCode),
-                                winningOppSwitchDenialPercentageTeleop.hashCode),
-                            winningOwnSwitchOwnershipPercentage.hashCode),
-                        winningOwnSwitchOwnershipPercentageAuto.hashCode),
-                    winningOwnSwitchOwnershipPercentageTeleop.hashCode),
-                winningScaleOwnershipPercentage.hashCode),
-            winningScaleOwnershipPercentageAuto.hashCode),
-        winningScaleOwnershipPercentageTeleop.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, autoQuestAchieved.hashCode);
+    _$hash = $jc(_$hash, averageBoostPlayed.hashCode);
+    _$hash = $jc(_$hash, averageEndgamePoints.hashCode);
+    _$hash = $jc(_$hash, averageForcePlayed.hashCode);
+    _$hash = $jc(_$hash, averageFoulScore.hashCode);
+    _$hash = $jc(_$hash, averagePointsAuto.hashCode);
+    _$hash = $jc(_$hash, averagePointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageRunPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averageScaleOwnershipPoints.hashCode);
+    _$hash = $jc(_$hash, averageScaleOwnershipPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averageScaleOwnershipPointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageScore.hashCode);
+    _$hash = $jc(_$hash, averageSwitchOwnershipPoints.hashCode);
+    _$hash = $jc(_$hash, averageSwitchOwnershipPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averageSwitchOwnershipPointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageVaultPoints.hashCode);
+    _$hash = $jc(_$hash, averageWinMargin.hashCode);
+    _$hash = $jc(_$hash, averageWinScore.hashCode);
+    _$hash = $jc(_$hash, boostPlayedCounts.hashCode);
+    _$hash = $jc(_$hash, climbCounts.hashCode);
+    _$hash = $jc(_$hash, faceTheBossAchieved.hashCode);
+    _$hash = $jc(_$hash, forcePlayedCounts.hashCode);
+    _$hash = $jc(_$hash, highScore.hashCode);
+    _$hash = $jc(_$hash, levitatePlayedCounts.hashCode);
+    _$hash = $jc(_$hash, runCountsAuto.hashCode);
+    _$hash = $jc(_$hash, scaleNeutralPercentage.hashCode);
+    _$hash = $jc(_$hash, scaleNeutralPercentageAuto.hashCode);
+    _$hash = $jc(_$hash, scaleNeutralPercentageTeleop.hashCode);
+    _$hash = $jc(_$hash, switchOwnedCountsAuto.hashCode);
+    _$hash = $jc(_$hash, unicornMatches.hashCode);
+    _$hash = $jc(_$hash, winningOppSwitchDenialPercentageTeleop.hashCode);
+    _$hash = $jc(_$hash, winningOwnSwitchOwnershipPercentage.hashCode);
+    _$hash = $jc(_$hash, winningOwnSwitchOwnershipPercentageAuto.hashCode);
+    _$hash = $jc(_$hash, winningOwnSwitchOwnershipPercentageTeleop.hashCode);
+    _$hash = $jc(_$hash, winningScaleOwnershipPercentage.hashCode);
+    _$hash = $jc(_$hash, winningScaleOwnershipPercentageAuto.hashCode);
+    _$hash = $jc(_$hash, winningScaleOwnershipPercentageTeleop.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventInsights2018')
+    return (newBuiltValueToStringHelper(r'EventInsights2018')
           ..add('autoQuestAchieved', autoQuestAchieved)
           ..add('averageBoostPlayed', averageBoostPlayed)
           ..add('averageEndgamePoints', averageEndgamePoints)
@@ -599,7 +601,7 @@ class EventInsights2018Builder
           winningScaleOwnershipPercentageTeleop;
 
   EventInsights2018Builder() {
-    EventInsights2018._initializeBuilder(this);
+    EventInsights2018._defaults(this);
   }
 
   EventInsights2018Builder get _$this {
@@ -666,36 +668,38 @@ class EventInsights2018Builder
   }
 
   @override
-  _$EventInsights2018 build() {
+  EventInsights2018 build() => _build();
+
+  _$EventInsights2018 _build() {
     _$EventInsights2018 _$result;
     try {
       _$result = _$v ??
           new _$EventInsights2018._(
               autoQuestAchieved: autoQuestAchieved.build(),
               averageBoostPlayed: BuiltValueNullFieldError.checkNotNull(
-                  averageBoostPlayed, 'EventInsights2018', 'averageBoostPlayed'),
+                  averageBoostPlayed, r'EventInsights2018', 'averageBoostPlayed'),
               averageEndgamePoints: BuiltValueNullFieldError.checkNotNull(
-                  averageEndgamePoints, 'EventInsights2018', 'averageEndgamePoints'),
+                  averageEndgamePoints, r'EventInsights2018', 'averageEndgamePoints'),
               averageForcePlayed: BuiltValueNullFieldError.checkNotNull(
-                  averageForcePlayed, 'EventInsights2018', 'averageForcePlayed'),
+                  averageForcePlayed, r'EventInsights2018', 'averageForcePlayed'),
               averageFoulScore: BuiltValueNullFieldError.checkNotNull(
-                  averageFoulScore, 'EventInsights2018', 'averageFoulScore'),
+                  averageFoulScore, r'EventInsights2018', 'averageFoulScore'),
               averagePointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averagePointsAuto, 'EventInsights2018', 'averagePointsAuto'),
+                  averagePointsAuto, r'EventInsights2018', 'averagePointsAuto'),
               averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averagePointsTeleop, 'EventInsights2018', 'averagePointsTeleop'),
+                  averagePointsTeleop, r'EventInsights2018', 'averagePointsTeleop'),
               averageRunPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageRunPointsAuto, 'EventInsights2018', 'averageRunPointsAuto'),
-              averageScaleOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPoints, 'EventInsights2018', 'averageScaleOwnershipPoints'),
-              averageScaleOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsAuto, 'EventInsights2018', 'averageScaleOwnershipPointsAuto'),
-              averageScaleOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsTeleop, 'EventInsights2018', 'averageScaleOwnershipPointsTeleop'),
-              averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2018', 'averageScore'),
-              averageSwitchOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPoints, 'EventInsights2018', 'averageSwitchOwnershipPoints'),
-              averageSwitchOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsAuto, 'EventInsights2018', 'averageSwitchOwnershipPointsAuto'),
-              averageSwitchOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsTeleop, 'EventInsights2018', 'averageSwitchOwnershipPointsTeleop'),
-              averageVaultPoints: BuiltValueNullFieldError.checkNotNull(averageVaultPoints, 'EventInsights2018', 'averageVaultPoints'),
-              averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2018', 'averageWinMargin'),
-              averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2018', 'averageWinScore'),
+                  averageRunPointsAuto, r'EventInsights2018', 'averageRunPointsAuto'),
+              averageScaleOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPoints, r'EventInsights2018', 'averageScaleOwnershipPoints'),
+              averageScaleOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsAuto, r'EventInsights2018', 'averageScaleOwnershipPointsAuto'),
+              averageScaleOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageScaleOwnershipPointsTeleop, r'EventInsights2018', 'averageScaleOwnershipPointsTeleop'),
+              averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, r'EventInsights2018', 'averageScore'),
+              averageSwitchOwnershipPoints: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPoints, r'EventInsights2018', 'averageSwitchOwnershipPoints'),
+              averageSwitchOwnershipPointsAuto: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsAuto, r'EventInsights2018', 'averageSwitchOwnershipPointsAuto'),
+              averageSwitchOwnershipPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageSwitchOwnershipPointsTeleop, r'EventInsights2018', 'averageSwitchOwnershipPointsTeleop'),
+              averageVaultPoints: BuiltValueNullFieldError.checkNotNull(averageVaultPoints, r'EventInsights2018', 'averageVaultPoints'),
+              averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, r'EventInsights2018', 'averageWinMargin'),
+              averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, r'EventInsights2018', 'averageWinScore'),
               boostPlayedCounts: boostPlayedCounts.build(),
               climbCounts: climbCounts.build(),
               faceTheBossAchieved: faceTheBossAchieved.build(),
@@ -703,18 +707,18 @@ class EventInsights2018Builder
               highScore: highScore.build(),
               levitatePlayedCounts: levitatePlayedCounts.build(),
               runCountsAuto: runCountsAuto.build(),
-              scaleNeutralPercentage: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentage, 'EventInsights2018', 'scaleNeutralPercentage'),
-              scaleNeutralPercentageAuto: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageAuto, 'EventInsights2018', 'scaleNeutralPercentageAuto'),
-              scaleNeutralPercentageTeleop: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageTeleop, 'EventInsights2018', 'scaleNeutralPercentageTeleop'),
+              scaleNeutralPercentage: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentage, r'EventInsights2018', 'scaleNeutralPercentage'),
+              scaleNeutralPercentageAuto: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageAuto, r'EventInsights2018', 'scaleNeutralPercentageAuto'),
+              scaleNeutralPercentageTeleop: BuiltValueNullFieldError.checkNotNull(scaleNeutralPercentageTeleop, r'EventInsights2018', 'scaleNeutralPercentageTeleop'),
               switchOwnedCountsAuto: switchOwnedCountsAuto.build(),
               unicornMatches: unicornMatches.build(),
-              winningOppSwitchDenialPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningOppSwitchDenialPercentageTeleop, 'EventInsights2018', 'winningOppSwitchDenialPercentageTeleop'),
-              winningOwnSwitchOwnershipPercentage: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentage, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentage'),
-              winningOwnSwitchOwnershipPercentageAuto: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentageAuto, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentageAuto'),
-              winningOwnSwitchOwnershipPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentageTeleop, 'EventInsights2018', 'winningOwnSwitchOwnershipPercentageTeleop'),
-              winningScaleOwnershipPercentage: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentage, 'EventInsights2018', 'winningScaleOwnershipPercentage'),
-              winningScaleOwnershipPercentageAuto: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageAuto, 'EventInsights2018', 'winningScaleOwnershipPercentageAuto'),
-              winningScaleOwnershipPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageTeleop, 'EventInsights2018', 'winningScaleOwnershipPercentageTeleop'));
+              winningOppSwitchDenialPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningOppSwitchDenialPercentageTeleop, r'EventInsights2018', 'winningOppSwitchDenialPercentageTeleop'),
+              winningOwnSwitchOwnershipPercentage: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentage, r'EventInsights2018', 'winningOwnSwitchOwnershipPercentage'),
+              winningOwnSwitchOwnershipPercentageAuto: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentageAuto, r'EventInsights2018', 'winningOwnSwitchOwnershipPercentageAuto'),
+              winningOwnSwitchOwnershipPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningOwnSwitchOwnershipPercentageTeleop, r'EventInsights2018', 'winningOwnSwitchOwnershipPercentageTeleop'),
+              winningScaleOwnershipPercentage: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentage, r'EventInsights2018', 'winningScaleOwnershipPercentage'),
+              winningScaleOwnershipPercentageAuto: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageAuto, r'EventInsights2018', 'winningScaleOwnershipPercentageAuto'),
+              winningScaleOwnershipPercentageTeleop: BuiltValueNullFieldError.checkNotNull(winningScaleOwnershipPercentageTeleop, r'EventInsights2018', 'winningScaleOwnershipPercentageTeleop'));
     } catch (_) {
       late String _$failedField;
       try {
@@ -742,7 +746,7 @@ class EventInsights2018Builder
         unicornMatches.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventInsights2018', _$failedField, e.toString());
+            r'EventInsights2018', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -751,4 +755,4 @@ class EventInsights2018Builder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

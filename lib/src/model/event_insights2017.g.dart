@@ -74,7 +74,7 @@ class _$EventInsights2017 extends EventInsights2017 {
 
   factory _$EventInsights2017(
           [void Function(EventInsights2017Builder)? updates]) =>
-      (new EventInsights2017Builder()..update(updates)).build();
+      (new EventInsights2017Builder()..update(updates))._build();
 
   _$EventInsights2017._(
       {required this.averageFoulScore,
@@ -111,69 +111,69 @@ class _$EventInsights2017 extends EventInsights2017 {
       required this.unicornMatches})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        averageFoulScore, 'EventInsights2017', 'averageFoulScore');
+        averageFoulScore, r'EventInsights2017', 'averageFoulScore');
     BuiltValueNullFieldError.checkNotNull(
-        averageFuelPoints, 'EventInsights2017', 'averageFuelPoints');
+        averageFuelPoints, r'EventInsights2017', 'averageFuelPoints');
     BuiltValueNullFieldError.checkNotNull(
-        averageFuelPointsAuto, 'EventInsights2017', 'averageFuelPointsAuto');
+        averageFuelPointsAuto, r'EventInsights2017', 'averageFuelPointsAuto');
     BuiltValueNullFieldError.checkNotNull(averageFuelPointsTeleop,
-        'EventInsights2017', 'averageFuelPointsTeleop');
+        r'EventInsights2017', 'averageFuelPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageHighGoals, 'EventInsights2017', 'averageHighGoals');
+        averageHighGoals, r'EventInsights2017', 'averageHighGoals');
     BuiltValueNullFieldError.checkNotNull(
-        averageHighGoalsAuto, 'EventInsights2017', 'averageHighGoalsAuto');
+        averageHighGoalsAuto, r'EventInsights2017', 'averageHighGoalsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop');
+        averageHighGoalsTeleop, r'EventInsights2017', 'averageHighGoalsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageLowGoals, 'EventInsights2017', 'averageLowGoals');
+        averageLowGoals, r'EventInsights2017', 'averageLowGoals');
     BuiltValueNullFieldError.checkNotNull(
-        averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto');
+        averageLowGoalsAuto, r'EventInsights2017', 'averageLowGoalsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop');
+        averageLowGoalsTeleop, r'EventInsights2017', 'averageLowGoalsTeleop');
     BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto,
-        'EventInsights2017', 'averageMobilityPointsAuto');
+        r'EventInsights2017', 'averageMobilityPointsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averagePointsAuto, 'EventInsights2017', 'averagePointsAuto');
+        averagePointsAuto, r'EventInsights2017', 'averagePointsAuto');
     BuiltValueNullFieldError.checkNotNull(
-        averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop');
+        averagePointsTeleop, r'EventInsights2017', 'averagePointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageRotorPoints, 'EventInsights2017', 'averageRotorPoints');
+        averageRotorPoints, r'EventInsights2017', 'averageRotorPoints');
     BuiltValueNullFieldError.checkNotNull(
-        averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto');
+        averageRotorPointsAuto, r'EventInsights2017', 'averageRotorPointsAuto');
     BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop,
-        'EventInsights2017', 'averageRotorPointsTeleop');
+        r'EventInsights2017', 'averageRotorPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageScore, 'EventInsights2017', 'averageScore');
+        averageScore, r'EventInsights2017', 'averageScore');
     BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop,
-        'EventInsights2017', 'averageTakeoffPointsTeleop');
+        r'EventInsights2017', 'averageTakeoffPointsTeleop');
     BuiltValueNullFieldError.checkNotNull(
-        averageWinMargin, 'EventInsights2017', 'averageWinMargin');
+        averageWinMargin, r'EventInsights2017', 'averageWinMargin');
     BuiltValueNullFieldError.checkNotNull(
-        averageWinScore, 'EventInsights2017', 'averageWinScore');
+        averageWinScore, r'EventInsights2017', 'averageWinScore');
     BuiltValueNullFieldError.checkNotNull(
-        highKpa, 'EventInsights2017', 'highKpa');
+        highKpa, r'EventInsights2017', 'highKpa');
     BuiltValueNullFieldError.checkNotNull(
-        highScore, 'EventInsights2017', 'highScore');
+        highScore, r'EventInsights2017', 'highScore');
     BuiltValueNullFieldError.checkNotNull(
-        kpaAchieved, 'EventInsights2017', 'kpaAchieved');
+        kpaAchieved, r'EventInsights2017', 'kpaAchieved');
     BuiltValueNullFieldError.checkNotNull(
-        mobilityCounts, 'EventInsights2017', 'mobilityCounts');
+        mobilityCounts, r'EventInsights2017', 'mobilityCounts');
     BuiltValueNullFieldError.checkNotNull(
-        rotor1Engaged, 'EventInsights2017', 'rotor1Engaged');
+        rotor1Engaged, r'EventInsights2017', 'rotor1Engaged');
     BuiltValueNullFieldError.checkNotNull(
-        rotor1EngagedAuto, 'EventInsights2017', 'rotor1EngagedAuto');
+        rotor1EngagedAuto, r'EventInsights2017', 'rotor1EngagedAuto');
     BuiltValueNullFieldError.checkNotNull(
-        rotor2Engaged, 'EventInsights2017', 'rotor2Engaged');
+        rotor2Engaged, r'EventInsights2017', 'rotor2Engaged');
     BuiltValueNullFieldError.checkNotNull(
-        rotor2EngagedAuto, 'EventInsights2017', 'rotor2EngagedAuto');
+        rotor2EngagedAuto, r'EventInsights2017', 'rotor2EngagedAuto');
     BuiltValueNullFieldError.checkNotNull(
-        rotor3Engaged, 'EventInsights2017', 'rotor3Engaged');
+        rotor3Engaged, r'EventInsights2017', 'rotor3Engaged');
     BuiltValueNullFieldError.checkNotNull(
-        rotor4Engaged, 'EventInsights2017', 'rotor4Engaged');
+        rotor4Engaged, r'EventInsights2017', 'rotor4Engaged');
     BuiltValueNullFieldError.checkNotNull(
-        takeoffCounts, 'EventInsights2017', 'takeoffCounts');
+        takeoffCounts, r'EventInsights2017', 'takeoffCounts');
     BuiltValueNullFieldError.checkNotNull(
-        unicornMatches, 'EventInsights2017', 'unicornMatches');
+        unicornMatches, r'EventInsights2017', 'unicornMatches');
   }
 
   @override
@@ -224,49 +224,46 @@ class _$EventInsights2017 extends EventInsights2017 {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc(
-                                            $jc(
-                                                $jc(
-                                                    $jc(
-                                                        $jc(
-                                                            $jc(
-                                                                $jc(
-                                                                    $jc(
-                                                                        $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, averageFoulScore.hashCode), averageFuelPoints.hashCode), averageFuelPointsAuto.hashCode), averageFuelPointsTeleop.hashCode), averageHighGoals.hashCode), averageHighGoalsAuto.hashCode), averageHighGoalsTeleop.hashCode), averageLowGoals.hashCode), averageLowGoalsAuto.hashCode), averageLowGoalsTeleop.hashCode), averageMobilityPointsAuto.hashCode), averagePointsAuto.hashCode), averagePointsTeleop.hashCode),
-                                                                                averageRotorPoints.hashCode),
-                                                                            averageRotorPointsAuto.hashCode),
-                                                                        averageRotorPointsTeleop.hashCode),
-                                                                    averageScore.hashCode),
-                                                                averageTakeoffPointsTeleop.hashCode),
-                                                            averageWinMargin.hashCode),
-                                                        averageWinScore.hashCode),
-                                                    highKpa.hashCode),
-                                                highScore.hashCode),
-                                            kpaAchieved.hashCode),
-                                        mobilityCounts.hashCode),
-                                    rotor1Engaged.hashCode),
-                                rotor1EngagedAuto.hashCode),
-                            rotor2Engaged.hashCode),
-                        rotor2EngagedAuto.hashCode),
-                    rotor3Engaged.hashCode),
-                rotor4Engaged.hashCode),
-            takeoffCounts.hashCode),
-        unicornMatches.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, averageFoulScore.hashCode);
+    _$hash = $jc(_$hash, averageFuelPoints.hashCode);
+    _$hash = $jc(_$hash, averageFuelPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averageFuelPointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageHighGoals.hashCode);
+    _$hash = $jc(_$hash, averageHighGoalsAuto.hashCode);
+    _$hash = $jc(_$hash, averageHighGoalsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageLowGoals.hashCode);
+    _$hash = $jc(_$hash, averageLowGoalsAuto.hashCode);
+    _$hash = $jc(_$hash, averageLowGoalsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageMobilityPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averagePointsAuto.hashCode);
+    _$hash = $jc(_$hash, averagePointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageRotorPoints.hashCode);
+    _$hash = $jc(_$hash, averageRotorPointsAuto.hashCode);
+    _$hash = $jc(_$hash, averageRotorPointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageScore.hashCode);
+    _$hash = $jc(_$hash, averageTakeoffPointsTeleop.hashCode);
+    _$hash = $jc(_$hash, averageWinMargin.hashCode);
+    _$hash = $jc(_$hash, averageWinScore.hashCode);
+    _$hash = $jc(_$hash, highKpa.hashCode);
+    _$hash = $jc(_$hash, highScore.hashCode);
+    _$hash = $jc(_$hash, kpaAchieved.hashCode);
+    _$hash = $jc(_$hash, mobilityCounts.hashCode);
+    _$hash = $jc(_$hash, rotor1Engaged.hashCode);
+    _$hash = $jc(_$hash, rotor1EngagedAuto.hashCode);
+    _$hash = $jc(_$hash, rotor2Engaged.hashCode);
+    _$hash = $jc(_$hash, rotor2EngagedAuto.hashCode);
+    _$hash = $jc(_$hash, rotor3Engaged.hashCode);
+    _$hash = $jc(_$hash, rotor4Engaged.hashCode);
+    _$hash = $jc(_$hash, takeoffCounts.hashCode);
+    _$hash = $jc(_$hash, unicornMatches.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventInsights2017')
+    return (newBuiltValueToStringHelper(r'EventInsights2017')
           ..add('averageFoulScore', averageFoulScore)
           ..add('averageFuelPoints', averageFuelPoints)
           ..add('averageFuelPointsAuto', averageFuelPointsAuto)
@@ -478,7 +475,7 @@ class EventInsights2017Builder
       _$this._unicornMatches = unicornMatches;
 
   EventInsights2017Builder() {
-    EventInsights2017._initializeBuilder(this);
+    EventInsights2017._defaults(this);
   }
 
   EventInsights2017Builder get _$this {
@@ -533,38 +530,40 @@ class EventInsights2017Builder
   }
 
   @override
-  _$EventInsights2017 build() {
+  EventInsights2017 build() => _build();
+
+  _$EventInsights2017 _build() {
     _$EventInsights2017 _$result;
     try {
       _$result = _$v ??
           new _$EventInsights2017._(
               averageFoulScore: BuiltValueNullFieldError.checkNotNull(
-                  averageFoulScore, 'EventInsights2017', 'averageFoulScore'),
+                  averageFoulScore, r'EventInsights2017', 'averageFoulScore'),
               averageFuelPoints: BuiltValueNullFieldError.checkNotNull(
-                  averageFuelPoints, 'EventInsights2017', 'averageFuelPoints'),
+                  averageFuelPoints, r'EventInsights2017', 'averageFuelPoints'),
               averageFuelPointsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageFuelPointsAuto, 'EventInsights2017', 'averageFuelPointsAuto'),
+                  averageFuelPointsAuto, r'EventInsights2017', 'averageFuelPointsAuto'),
               averageFuelPointsTeleop: BuiltValueNullFieldError.checkNotNull(
-                  averageFuelPointsTeleop, 'EventInsights2017', 'averageFuelPointsTeleop'),
+                  averageFuelPointsTeleop, r'EventInsights2017', 'averageFuelPointsTeleop'),
               averageHighGoals: BuiltValueNullFieldError.checkNotNull(
-                  averageHighGoals, 'EventInsights2017', 'averageHighGoals'),
+                  averageHighGoals, r'EventInsights2017', 'averageHighGoals'),
               averageHighGoalsAuto: BuiltValueNullFieldError.checkNotNull(
-                  averageHighGoalsAuto, 'EventInsights2017', 'averageHighGoalsAuto'),
+                  averageHighGoalsAuto, r'EventInsights2017', 'averageHighGoalsAuto'),
               averageHighGoalsTeleop:
-                  BuiltValueNullFieldError.checkNotNull(averageHighGoalsTeleop, 'EventInsights2017', 'averageHighGoalsTeleop'),
-              averageLowGoals: BuiltValueNullFieldError.checkNotNull(averageLowGoals, 'EventInsights2017', 'averageLowGoals'),
-              averageLowGoalsAuto: BuiltValueNullFieldError.checkNotNull(averageLowGoalsAuto, 'EventInsights2017', 'averageLowGoalsAuto'),
-              averageLowGoalsTeleop: BuiltValueNullFieldError.checkNotNull(averageLowGoalsTeleop, 'EventInsights2017', 'averageLowGoalsTeleop'),
-              averageMobilityPointsAuto: BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto, 'EventInsights2017', 'averageMobilityPointsAuto'),
-              averagePointsAuto: BuiltValueNullFieldError.checkNotNull(averagePointsAuto, 'EventInsights2017', 'averagePointsAuto'),
-              averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(averagePointsTeleop, 'EventInsights2017', 'averagePointsTeleop'),
-              averageRotorPoints: BuiltValueNullFieldError.checkNotNull(averageRotorPoints, 'EventInsights2017', 'averageRotorPoints'),
-              averageRotorPointsAuto: BuiltValueNullFieldError.checkNotNull(averageRotorPointsAuto, 'EventInsights2017', 'averageRotorPointsAuto'),
-              averageRotorPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop, 'EventInsights2017', 'averageRotorPointsTeleop'),
-              averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, 'EventInsights2017', 'averageScore'),
-              averageTakeoffPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop, 'EventInsights2017', 'averageTakeoffPointsTeleop'),
-              averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, 'EventInsights2017', 'averageWinMargin'),
-              averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, 'EventInsights2017', 'averageWinScore'),
+                  BuiltValueNullFieldError.checkNotNull(averageHighGoalsTeleop, r'EventInsights2017', 'averageHighGoalsTeleop'),
+              averageLowGoals: BuiltValueNullFieldError.checkNotNull(averageLowGoals, r'EventInsights2017', 'averageLowGoals'),
+              averageLowGoalsAuto: BuiltValueNullFieldError.checkNotNull(averageLowGoalsAuto, r'EventInsights2017', 'averageLowGoalsAuto'),
+              averageLowGoalsTeleop: BuiltValueNullFieldError.checkNotNull(averageLowGoalsTeleop, r'EventInsights2017', 'averageLowGoalsTeleop'),
+              averageMobilityPointsAuto: BuiltValueNullFieldError.checkNotNull(averageMobilityPointsAuto, r'EventInsights2017', 'averageMobilityPointsAuto'),
+              averagePointsAuto: BuiltValueNullFieldError.checkNotNull(averagePointsAuto, r'EventInsights2017', 'averagePointsAuto'),
+              averagePointsTeleop: BuiltValueNullFieldError.checkNotNull(averagePointsTeleop, r'EventInsights2017', 'averagePointsTeleop'),
+              averageRotorPoints: BuiltValueNullFieldError.checkNotNull(averageRotorPoints, r'EventInsights2017', 'averageRotorPoints'),
+              averageRotorPointsAuto: BuiltValueNullFieldError.checkNotNull(averageRotorPointsAuto, r'EventInsights2017', 'averageRotorPointsAuto'),
+              averageRotorPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageRotorPointsTeleop, r'EventInsights2017', 'averageRotorPointsTeleop'),
+              averageScore: BuiltValueNullFieldError.checkNotNull(averageScore, r'EventInsights2017', 'averageScore'),
+              averageTakeoffPointsTeleop: BuiltValueNullFieldError.checkNotNull(averageTakeoffPointsTeleop, r'EventInsights2017', 'averageTakeoffPointsTeleop'),
+              averageWinMargin: BuiltValueNullFieldError.checkNotNull(averageWinMargin, r'EventInsights2017', 'averageWinMargin'),
+              averageWinScore: BuiltValueNullFieldError.checkNotNull(averageWinScore, r'EventInsights2017', 'averageWinScore'),
               highKpa: highKpa.build(),
               highScore: highScore.build(),
               kpaAchieved: kpaAchieved.build(),
@@ -606,7 +605,7 @@ class EventInsights2017Builder
         unicornMatches.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventInsights2017', _$failedField, e.toString());
+            r'EventInsights2017', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -615,4 +614,4 @@ class EventInsights2017Builder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

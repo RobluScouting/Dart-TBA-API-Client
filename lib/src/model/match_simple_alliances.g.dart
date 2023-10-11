@@ -14,7 +14,7 @@ class _$MatchSimpleAlliances extends MatchSimpleAlliances {
 
   factory _$MatchSimpleAlliances(
           [void Function(MatchSimpleAlliancesBuilder)? updates]) =>
-      (new MatchSimpleAlliancesBuilder()..update(updates)).build();
+      (new MatchSimpleAlliancesBuilder()..update(updates))._build();
 
   _$MatchSimpleAlliances._({this.red, this.blue}) : super._();
 
@@ -37,12 +37,16 @@ class _$MatchSimpleAlliances extends MatchSimpleAlliances {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, red.hashCode), blue.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, red.hashCode);
+    _$hash = $jc(_$hash, blue.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('MatchSimpleAlliances')
+    return (newBuiltValueToStringHelper(r'MatchSimpleAlliances')
           ..add('red', red)
           ..add('blue', blue))
         .toString();
@@ -62,7 +66,7 @@ class MatchSimpleAlliancesBuilder
   set blue(MatchAllianceBuilder? blue) => _$this._blue = blue;
 
   MatchSimpleAlliancesBuilder() {
-    MatchSimpleAlliances._initializeBuilder(this);
+    MatchSimpleAlliances._defaults(this);
   }
 
   MatchSimpleAlliancesBuilder get _$this {
@@ -87,7 +91,9 @@ class MatchSimpleAlliancesBuilder
   }
 
   @override
-  _$MatchSimpleAlliances build() {
+  MatchSimpleAlliances build() => _build();
+
+  _$MatchSimpleAlliances _build() {
     _$MatchSimpleAlliances _$result;
     try {
       _$result = _$v ??
@@ -102,7 +108,7 @@ class MatchSimpleAlliancesBuilder
         _blue?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'MatchSimpleAlliances', _$failedField, e.toString());
+            r'MatchSimpleAlliances', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -111,4 +117,4 @@ class MatchSimpleAlliancesBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

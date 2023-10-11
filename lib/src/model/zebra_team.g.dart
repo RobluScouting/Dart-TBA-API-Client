@@ -15,13 +15,13 @@ class _$ZebraTeam extends ZebraTeam {
   final BuiltList<double> ys;
 
   factory _$ZebraTeam([void Function(ZebraTeamBuilder)? updates]) =>
-      (new ZebraTeamBuilder()..update(updates)).build();
+      (new ZebraTeamBuilder()..update(updates))._build();
 
   _$ZebraTeam._({required this.teamKey, required this.xs, required this.ys})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(teamKey, 'ZebraTeam', 'teamKey');
-    BuiltValueNullFieldError.checkNotNull(xs, 'ZebraTeam', 'xs');
-    BuiltValueNullFieldError.checkNotNull(ys, 'ZebraTeam', 'ys');
+    BuiltValueNullFieldError.checkNotNull(teamKey, r'ZebraTeam', 'teamKey');
+    BuiltValueNullFieldError.checkNotNull(xs, r'ZebraTeam', 'xs');
+    BuiltValueNullFieldError.checkNotNull(ys, r'ZebraTeam', 'ys');
   }
 
   @override
@@ -42,12 +42,17 @@ class _$ZebraTeam extends ZebraTeam {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, teamKey.hashCode), xs.hashCode), ys.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, teamKey.hashCode);
+    _$hash = $jc(_$hash, xs.hashCode);
+    _$hash = $jc(_$hash, ys.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('ZebraTeam')
+    return (newBuiltValueToStringHelper(r'ZebraTeam')
           ..add('teamKey', teamKey)
           ..add('xs', xs)
           ..add('ys', ys))
@@ -71,7 +76,7 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
   set ys(ListBuilder<double>? ys) => _$this._ys = ys;
 
   ZebraTeamBuilder() {
-    ZebraTeam._initializeBuilder(this);
+    ZebraTeam._defaults(this);
   }
 
   ZebraTeamBuilder get _$this {
@@ -97,13 +102,15 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
   }
 
   @override
-  _$ZebraTeam build() {
+  ZebraTeam build() => _build();
+
+  _$ZebraTeam _build() {
     _$ZebraTeam _$result;
     try {
       _$result = _$v ??
           new _$ZebraTeam._(
               teamKey: BuiltValueNullFieldError.checkNotNull(
-                  teamKey, 'ZebraTeam', 'teamKey'),
+                  teamKey, r'ZebraTeam', 'teamKey'),
               xs: xs.build(),
               ys: ys.build());
     } catch (_) {
@@ -115,7 +122,7 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
         ys.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'ZebraTeam', _$failedField, e.toString());
+            r'ZebraTeam', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -124,4 +131,4 @@ class ZebraTeamBuilder implements Builder<ZebraTeam, ZebraTeamBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

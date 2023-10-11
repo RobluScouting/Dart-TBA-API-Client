@@ -1,2 +1,2 @@
-java -jar C:\src\openapigenerator\openapi-generator-cli.jar generate -i https://www.thebluealliance.com/swagger/api_v3.json -g dart-dio-next --git-repo-id Dart-TBA-API-Client --git-host github.com --git-user-id aidan-mundy --package-name tba_api_v3 --additional-properties=pubAuthor="Aidan Mundy",pubAuthorEmail=amboyscout@aol.com,pubDescription="Unofficial Dart library for the TheBlueAlliance.com API",pubLibrary="tba_api_v3",pubName="tba_api_v3"
-flutter pub run build_runner build
+java -jar C:\Users\WillD\Downloads\openapi-generator-cli-7.0.1.jar generate -i https://www.thebluealliance.com/swagger/api_v3.json -g dart-dio --git-repo-id Dart-TBA-API-Client --git-host github.com --git-user-id aidan-mundy --package-name tba_api_v3 --additional-properties=pubAuthor="Aidan Mundy",pubAuthorEmail=amboyscout@aol.com,pubDescription="Unofficial Dart library for the TheBlueAlliance.com API",pubLibrary="tba_api_v3",pubName="tba_api_v3"
+dart run build_runner build

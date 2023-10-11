@@ -166,10 +166,10 @@ class _$Match extends Match {
   @override
   final JsonObject? scoreBreakdown;
   @override
-  final BuiltList<MatchVideos>? videos;
+  final BuiltList<MatchVideosInner>? videos;
 
   factory _$Match([void Function(MatchBuilder)? updates]) =>
-      (new MatchBuilder()..update(updates)).build();
+      (new MatchBuilder()..update(updates))._build();
 
   _$Match._(
       {required this.key,
@@ -186,11 +186,11 @@ class _$Match extends Match {
       this.scoreBreakdown,
       this.videos})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(key, 'Match', 'key');
-    BuiltValueNullFieldError.checkNotNull(compLevel, 'Match', 'compLevel');
-    BuiltValueNullFieldError.checkNotNull(setNumber, 'Match', 'setNumber');
-    BuiltValueNullFieldError.checkNotNull(matchNumber, 'Match', 'matchNumber');
-    BuiltValueNullFieldError.checkNotNull(eventKey, 'Match', 'eventKey');
+    BuiltValueNullFieldError.checkNotNull(key, r'Match', 'key');
+    BuiltValueNullFieldError.checkNotNull(compLevel, r'Match', 'compLevel');
+    BuiltValueNullFieldError.checkNotNull(setNumber, r'Match', 'setNumber');
+    BuiltValueNullFieldError.checkNotNull(matchNumber, r'Match', 'matchNumber');
+    BuiltValueNullFieldError.checkNotNull(eventKey, r'Match', 'eventKey');
   }
 
   @override
@@ -221,35 +221,27 @@ class _$Match extends Match {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc(
-                                            $jc(
-                                                $jc($jc(0, key.hashCode),
-                                                    compLevel.hashCode),
-                                                setNumber.hashCode),
-                                            matchNumber.hashCode),
-                                        alliances.hashCode),
-                                    winningAlliance.hashCode),
-                                eventKey.hashCode),
-                            time.hashCode),
-                        actualTime.hashCode),
-                    predictedTime.hashCode),
-                postResultTime.hashCode),
-            scoreBreakdown.hashCode),
-        videos.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, key.hashCode);
+    _$hash = $jc(_$hash, compLevel.hashCode);
+    _$hash = $jc(_$hash, setNumber.hashCode);
+    _$hash = $jc(_$hash, matchNumber.hashCode);
+    _$hash = $jc(_$hash, alliances.hashCode);
+    _$hash = $jc(_$hash, winningAlliance.hashCode);
+    _$hash = $jc(_$hash, eventKey.hashCode);
+    _$hash = $jc(_$hash, time.hashCode);
+    _$hash = $jc(_$hash, actualTime.hashCode);
+    _$hash = $jc(_$hash, predictedTime.hashCode);
+    _$hash = $jc(_$hash, postResultTime.hashCode);
+    _$hash = $jc(_$hash, scoreBreakdown.hashCode);
+    _$hash = $jc(_$hash, videos.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Match')
+    return (newBuiltValueToStringHelper(r'Match')
           ..add('key', key)
           ..add('compLevel', compLevel)
           ..add('setNumber', setNumber)
@@ -324,13 +316,13 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
   set scoreBreakdown(JsonObject? scoreBreakdown) =>
       _$this._scoreBreakdown = scoreBreakdown;
 
-  ListBuilder<MatchVideos>? _videos;
-  ListBuilder<MatchVideos> get videos =>
-      _$this._videos ??= new ListBuilder<MatchVideos>();
-  set videos(ListBuilder<MatchVideos>? videos) => _$this._videos = videos;
+  ListBuilder<MatchVideosInner>? _videos;
+  ListBuilder<MatchVideosInner> get videos =>
+      _$this._videos ??= new ListBuilder<MatchVideosInner>();
+  set videos(ListBuilder<MatchVideosInner>? videos) => _$this._videos = videos;
 
   MatchBuilder() {
-    Match._initializeBuilder(this);
+    Match._defaults(this);
   }
 
   MatchBuilder get _$this {
@@ -366,22 +358,24 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
   }
 
   @override
-  _$Match build() {
+  Match build() => _build();
+
+  _$Match _build() {
     _$Match _$result;
     try {
       _$result = _$v ??
           new _$Match._(
-              key: BuiltValueNullFieldError.checkNotNull(key, 'Match', 'key'),
+              key: BuiltValueNullFieldError.checkNotNull(key, r'Match', 'key'),
               compLevel: BuiltValueNullFieldError.checkNotNull(
-                  compLevel, 'Match', 'compLevel'),
+                  compLevel, r'Match', 'compLevel'),
               setNumber: BuiltValueNullFieldError.checkNotNull(
-                  setNumber, 'Match', 'setNumber'),
+                  setNumber, r'Match', 'setNumber'),
               matchNumber: BuiltValueNullFieldError.checkNotNull(
-                  matchNumber, 'Match', 'matchNumber'),
+                  matchNumber, r'Match', 'matchNumber'),
               alliances: _alliances?.build(),
               winningAlliance: winningAlliance,
               eventKey: BuiltValueNullFieldError.checkNotNull(
-                  eventKey, 'Match', 'eventKey'),
+                  eventKey, r'Match', 'eventKey'),
               time: time,
               actualTime: actualTime,
               predictedTime: predictedTime,
@@ -398,7 +392,7 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
         _videos?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'Match', _$failedField, e.toString());
+            r'Match', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -407,4 +401,4 @@ class MatchBuilder implements Builder<Match, MatchBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

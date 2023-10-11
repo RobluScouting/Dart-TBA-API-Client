@@ -20,7 +20,7 @@ class _$EliminationAllianceStatus extends EliminationAllianceStatus {
 
   factory _$EliminationAllianceStatus(
           [void Function(EliminationAllianceStatusBuilder)? updates]) =>
-      (new EliminationAllianceStatusBuilder()..update(updates)).build();
+      (new EliminationAllianceStatusBuilder()..update(updates))._build();
 
   _$EliminationAllianceStatus._(
       {this.playoffAverage,
@@ -52,17 +52,19 @@ class _$EliminationAllianceStatus extends EliminationAllianceStatus {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc($jc($jc(0, playoffAverage.hashCode), level.hashCode),
-                record.hashCode),
-            currentLevelRecord.hashCode),
-        status.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, playoffAverage.hashCode);
+    _$hash = $jc(_$hash, level.hashCode);
+    _$hash = $jc(_$hash, record.hashCode);
+    _$hash = $jc(_$hash, currentLevelRecord.hashCode);
+    _$hash = $jc(_$hash, status.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EliminationAllianceStatus')
+    return (newBuiltValueToStringHelper(r'EliminationAllianceStatus')
           ..add('playoffAverage', playoffAverage)
           ..add('level', level)
           ..add('record', record)
@@ -101,7 +103,7 @@ class EliminationAllianceStatusBuilder
   set status(String? status) => _$this._status = status;
 
   EliminationAllianceStatusBuilder() {
-    EliminationAllianceStatus._initializeBuilder(this);
+    EliminationAllianceStatus._defaults(this);
   }
 
   EliminationAllianceStatusBuilder get _$this {
@@ -129,7 +131,9 @@ class EliminationAllianceStatusBuilder
   }
 
   @override
-  _$EliminationAllianceStatus build() {
+  EliminationAllianceStatus build() => _build();
+
+  _$EliminationAllianceStatus _build() {
     _$EliminationAllianceStatus _$result;
     try {
       _$result = _$v ??
@@ -148,7 +152,7 @@ class EliminationAllianceStatusBuilder
         _currentLevelRecord?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EliminationAllianceStatus', _$failedField, e.toString());
+            r'EliminationAllianceStatus', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -157,4 +161,4 @@ class EliminationAllianceStatusBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

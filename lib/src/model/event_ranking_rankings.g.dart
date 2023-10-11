@@ -26,7 +26,7 @@ class _$EventRankingRankings extends EventRankingRankings {
 
   factory _$EventRankingRankings(
           [void Function(EventRankingRankingsBuilder)? updates]) =>
-      (new EventRankingRankingsBuilder()..update(updates)).build();
+      (new EventRankingRankingsBuilder()..update(updates))._build();
 
   _$EventRankingRankings._(
       {required this.matchesPlayed,
@@ -39,13 +39,14 @@ class _$EventRankingRankings extends EventRankingRankings {
       required this.teamKey})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        matchesPlayed, 'EventRankingRankings', 'matchesPlayed');
+        matchesPlayed, r'EventRankingRankings', 'matchesPlayed');
     BuiltValueNullFieldError.checkNotNull(
-        record, 'EventRankingRankings', 'record');
-    BuiltValueNullFieldError.checkNotNull(rank, 'EventRankingRankings', 'rank');
-    BuiltValueNullFieldError.checkNotNull(dq, 'EventRankingRankings', 'dq');
+        record, r'EventRankingRankings', 'record');
     BuiltValueNullFieldError.checkNotNull(
-        teamKey, 'EventRankingRankings', 'teamKey');
+        rank, r'EventRankingRankings', 'rank');
+    BuiltValueNullFieldError.checkNotNull(dq, r'EventRankingRankings', 'dq');
+    BuiltValueNullFieldError.checkNotNull(
+        teamKey, r'EventRankingRankings', 'teamKey');
   }
 
   @override
@@ -73,25 +74,22 @@ class _$EventRankingRankings extends EventRankingRankings {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc($jc(0, matchesPlayed.hashCode),
-                                qualAverage.hashCode),
-                            extraStats.hashCode),
-                        sortOrders.hashCode),
-                    record.hashCode),
-                rank.hashCode),
-            dq.hashCode),
-        teamKey.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, matchesPlayed.hashCode);
+    _$hash = $jc(_$hash, qualAverage.hashCode);
+    _$hash = $jc(_$hash, extraStats.hashCode);
+    _$hash = $jc(_$hash, sortOrders.hashCode);
+    _$hash = $jc(_$hash, record.hashCode);
+    _$hash = $jc(_$hash, rank.hashCode);
+    _$hash = $jc(_$hash, dq.hashCode);
+    _$hash = $jc(_$hash, teamKey.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventRankingRankings')
+    return (newBuiltValueToStringHelper(r'EventRankingRankings')
           ..add('matchesPlayed', matchesPlayed)
           ..add('qualAverage', qualAverage)
           ..add('extraStats', extraStats)
@@ -177,23 +175,25 @@ class EventRankingRankingsBuilder
   }
 
   @override
-  _$EventRankingRankings build() {
+  EventRankingRankings build() => _build();
+
+  _$EventRankingRankings _build() {
     _$EventRankingRankings _$result;
     try {
       _$result = _$v ??
           new _$EventRankingRankings._(
               matchesPlayed: BuiltValueNullFieldError.checkNotNull(
-                  matchesPlayed, 'EventRankingRankings', 'matchesPlayed'),
+                  matchesPlayed, r'EventRankingRankings', 'matchesPlayed'),
               qualAverage: qualAverage,
               extraStats: _extraStats?.build(),
               sortOrders: _sortOrders?.build(),
               record: record.build(),
               rank: BuiltValueNullFieldError.checkNotNull(
-                  rank, 'EventRankingRankings', 'rank'),
+                  rank, r'EventRankingRankings', 'rank'),
               dq: BuiltValueNullFieldError.checkNotNull(
-                  dq, 'EventRankingRankings', 'dq'),
+                  dq, r'EventRankingRankings', 'dq'),
               teamKey: BuiltValueNullFieldError.checkNotNull(
-                  teamKey, 'EventRankingRankings', 'teamKey'));
+                  teamKey, r'EventRankingRankings', 'teamKey'));
     } catch (_) {
       late String _$failedField;
       try {
@@ -205,7 +205,7 @@ class EventRankingRankingsBuilder
         record.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventRankingRankings', _$failedField, e.toString());
+            r'EventRankingRankings', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -214,4 +214,4 @@ class EventRankingRankingsBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

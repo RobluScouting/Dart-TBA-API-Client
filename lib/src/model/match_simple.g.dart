@@ -168,7 +168,7 @@ class _$MatchSimple extends MatchSimple {
   final int? actualTime;
 
   factory _$MatchSimple([void Function(MatchSimpleBuilder)? updates]) =>
-      (new MatchSimpleBuilder()..update(updates)).build();
+      (new MatchSimpleBuilder()..update(updates))._build();
 
   _$MatchSimple._(
       {required this.key,
@@ -182,14 +182,14 @@ class _$MatchSimple extends MatchSimple {
       this.predictedTime,
       this.actualTime})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(key, 'MatchSimple', 'key');
+    BuiltValueNullFieldError.checkNotNull(key, r'MatchSimple', 'key');
     BuiltValueNullFieldError.checkNotNull(
-        compLevel, 'MatchSimple', 'compLevel');
+        compLevel, r'MatchSimple', 'compLevel');
     BuiltValueNullFieldError.checkNotNull(
-        setNumber, 'MatchSimple', 'setNumber');
+        setNumber, r'MatchSimple', 'setNumber');
     BuiltValueNullFieldError.checkNotNull(
-        matchNumber, 'MatchSimple', 'matchNumber');
-    BuiltValueNullFieldError.checkNotNull(eventKey, 'MatchSimple', 'eventKey');
+        matchNumber, r'MatchSimple', 'matchNumber');
+    BuiltValueNullFieldError.checkNotNull(eventKey, r'MatchSimple', 'eventKey');
   }
 
   @override
@@ -217,29 +217,24 @@ class _$MatchSimple extends MatchSimple {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc($jc(0, key.hashCode),
-                                        compLevel.hashCode),
-                                    setNumber.hashCode),
-                                matchNumber.hashCode),
-                            alliances.hashCode),
-                        winningAlliance.hashCode),
-                    eventKey.hashCode),
-                time.hashCode),
-            predictedTime.hashCode),
-        actualTime.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, key.hashCode);
+    _$hash = $jc(_$hash, compLevel.hashCode);
+    _$hash = $jc(_$hash, setNumber.hashCode);
+    _$hash = $jc(_$hash, matchNumber.hashCode);
+    _$hash = $jc(_$hash, alliances.hashCode);
+    _$hash = $jc(_$hash, winningAlliance.hashCode);
+    _$hash = $jc(_$hash, eventKey.hashCode);
+    _$hash = $jc(_$hash, time.hashCode);
+    _$hash = $jc(_$hash, predictedTime.hashCode);
+    _$hash = $jc(_$hash, actualTime.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('MatchSimple')
+    return (newBuiltValueToStringHelper(r'MatchSimple')
           ..add('key', key)
           ..add('compLevel', compLevel)
           ..add('setNumber', setNumber)
@@ -304,7 +299,7 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
   set actualTime(int? actualTime) => _$this._actualTime = actualTime;
 
   MatchSimpleBuilder() {
-    MatchSimple._initializeBuilder(this);
+    MatchSimple._defaults(this);
   }
 
   MatchSimpleBuilder get _$this {
@@ -337,23 +332,25 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
   }
 
   @override
-  _$MatchSimple build() {
+  MatchSimple build() => _build();
+
+  _$MatchSimple _build() {
     _$MatchSimple _$result;
     try {
       _$result = _$v ??
           new _$MatchSimple._(
               key: BuiltValueNullFieldError.checkNotNull(
-                  key, 'MatchSimple', 'key'),
+                  key, r'MatchSimple', 'key'),
               compLevel: BuiltValueNullFieldError.checkNotNull(
-                  compLevel, 'MatchSimple', 'compLevel'),
+                  compLevel, r'MatchSimple', 'compLevel'),
               setNumber: BuiltValueNullFieldError.checkNotNull(
-                  setNumber, 'MatchSimple', 'setNumber'),
+                  setNumber, r'MatchSimple', 'setNumber'),
               matchNumber: BuiltValueNullFieldError.checkNotNull(
-                  matchNumber, 'MatchSimple', 'matchNumber'),
+                  matchNumber, r'MatchSimple', 'matchNumber'),
               alliances: _alliances?.build(),
               winningAlliance: winningAlliance,
               eventKey: BuiltValueNullFieldError.checkNotNull(
-                  eventKey, 'MatchSimple', 'eventKey'),
+                  eventKey, r'MatchSimple', 'eventKey'),
               time: time,
               predictedTime: predictedTime,
               actualTime: actualTime);
@@ -364,7 +361,7 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
         _alliances?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'MatchSimple', _$failedField, e.toString());
+            r'MatchSimple', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -373,4 +370,4 @@ class MatchSimpleBuilder implements Builder<MatchSimple, MatchSimpleBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

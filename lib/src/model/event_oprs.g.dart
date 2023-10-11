@@ -15,7 +15,7 @@ class _$EventOPRs extends EventOPRs {
   final BuiltMap<String, double>? ccwms;
 
   factory _$EventOPRs([void Function(EventOPRsBuilder)? updates]) =>
-      (new EventOPRsBuilder()..update(updates)).build();
+      (new EventOPRsBuilder()..update(updates))._build();
 
   _$EventOPRs._({this.oprs, this.dprs, this.ccwms}) : super._();
 
@@ -37,12 +37,17 @@ class _$EventOPRs extends EventOPRs {
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, oprs.hashCode), dprs.hashCode), ccwms.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, oprs.hashCode);
+    _$hash = $jc(_$hash, dprs.hashCode);
+    _$hash = $jc(_$hash, ccwms.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventOPRs')
+    return (newBuiltValueToStringHelper(r'EventOPRs')
           ..add('oprs', oprs)
           ..add('dprs', dprs)
           ..add('ccwms', ccwms))
@@ -69,7 +74,7 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
   set ccwms(MapBuilder<String, double>? ccwms) => _$this._ccwms = ccwms;
 
   EventOPRsBuilder() {
-    EventOPRs._initializeBuilder(this);
+    EventOPRs._defaults(this);
   }
 
   EventOPRsBuilder get _$this {
@@ -95,7 +100,9 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
   }
 
   @override
-  _$EventOPRs build() {
+  EventOPRs build() => _build();
+
+  _$EventOPRs _build() {
     _$EventOPRs _$result;
     try {
       _$result = _$v ??
@@ -114,7 +121,7 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
         _ccwms?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventOPRs', _$failedField, e.toString());
+            r'EventOPRs', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -123,4 +130,4 @@ class EventOPRsBuilder implements Builder<EventOPRs, EventOPRsBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

@@ -8,19 +8,32 @@ import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
 import 'package:tba_api_v3/src/model/api_status.dart';
+import 'package:tba_api_v3/src/model/get_status401_response.dart';
 
 class TBAApi {
+
   final Dio _dio;
 
   final Serializers _serializers;
 
   const TBAApi(this._dio, this._serializers);
 
-  ///
-  ///
+  /// getStatus
   /// Returns API status, and TBA status information.
-  Future<Response<APIStatus>> getStatus({
-    String? ifModifiedSince,
+  ///
+  /// Parameters:
+  /// * [ifNoneMatch] - Value of the `ETag` header in the most recently cached response by the client.
+  /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
+  /// * [headers] - Can be used to add additional headers to the request
+  /// * [extras] - Can be used to add flags to the request
+  /// * [validateStatus] - A [ValidateStatus] callback that can be used to determine request success based on the HTTP status of the response
+  /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
+  /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
+  ///
+  /// Returns a [Future] containing a [Response] with a [APIStatus] as data
+  /// Throws [DioException] if API call or serialization fails
+  Future<Response<APIStatus>> getStatus({ 
+    String? ifNoneMatch,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -32,7 +45,7 @@ class TBAApi {
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{
-        if (ifModifiedSince != null) r'If-Modified-Since': ifModifiedSince,
+        if (ifNoneMatch != null) r'If-None-Match': ifNoneMatch,
         ...?headers,
       },
       extra: <String, dynamic>{
@@ -46,37 +59,33 @@ class TBAApi {
         ],
         ...?extra,
       },
-      contentType: [
-        'application/json',
-      ].first,
       validateStatus: validateStatus,
     );
-
-    final _queryParameters = <String, dynamic>{};
 
     final _response = await _dio.request<Object>(
       _path,
       options: _options,
-      queryParameters: _queryParameters,
       cancelToken: cancelToken,
       onSendProgress: onSendProgress,
       onReceiveProgress: onReceiveProgress,
     );
 
-    APIStatus _responseData;
+    APIStatus? _responseData;
 
     try {
-      const _responseType = FullType(APIStatus);
-      _responseData = _serializers.deserialize(
-        _response.data!,
-        specifiedType: _responseType,
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null ? null : _serializers.deserialize(
+        rawResponse,
+        specifiedType: const FullType(APIStatus),
       ) as APIStatus;
-    } catch (error) {
-      throw DioError(
+
+    } catch (error, stackTrace) {
+      throw DioException(
         requestOptions: _response.requestOptions,
         response: _response,
-        type: DioErrorType.other,
+        type: DioExceptionType.unknown,
         error: error,
+        stackTrace: stackTrace,
       );
     }
 
@@ -91,4 +100,5 @@ class TBAApi {
       extra: _response.extra,
     );
   }
+
 }

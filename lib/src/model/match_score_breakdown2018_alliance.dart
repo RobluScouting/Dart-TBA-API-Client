@@ -2,15 +2,54 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'match_score_breakdown2018_alliance.g.dart';
 
-abstract class MatchScoreBreakdown2018Alliance
-    implements
-        Built<MatchScoreBreakdown2018Alliance,
-            MatchScoreBreakdown2018AllianceBuilder> {
+/// MatchScoreBreakdown2018Alliance
+///
+/// Properties:
+/// * [adjustPoints] 
+/// * [autoOwnershipPoints] 
+/// * [autoPoints] 
+/// * [autoQuestRankingPoint] 
+/// * [autoRobot1] 
+/// * [autoRobot2] 
+/// * [autoRobot3] 
+/// * [autoRunPoints] 
+/// * [autoScaleOwnershipSec] 
+/// * [autoSwitchAtZero] 
+/// * [autoSwitchOwnershipSec] 
+/// * [endgamePoints] 
+/// * [endgameRobot1] 
+/// * [endgameRobot2] 
+/// * [endgameRobot3] 
+/// * [faceTheBossRankingPoint] 
+/// * [foulCount] 
+/// * [foulPoints] 
+/// * [rp] 
+/// * [techFoulCount] 
+/// * [teleopOwnershipPoints] 
+/// * [teleopPoints] 
+/// * [teleopScaleBoostSec] 
+/// * [teleopScaleForceSec] 
+/// * [teleopScaleOwnershipSec] 
+/// * [teleopSwitchBoostSec] 
+/// * [teleopSwitchForceSec] 
+/// * [teleopSwitchOwnershipSec] 
+/// * [totalPoints] 
+/// * [vaultBoostPlayed] 
+/// * [vaultBoostTotal] 
+/// * [vaultForcePlayed] 
+/// * [vaultForceTotal] 
+/// * [vaultLevitatePlayed] 
+/// * [vaultLevitateTotal] 
+/// * [vaultPoints] 
+/// * [tbaGameData] - Unofficial TBA-computed value of the FMS provided GameData given to the alliance teams at the start of the match. 3 Character String containing `L` and `R` only. The first character represents the near switch, the 2nd the scale, and the 3rd the far, opposing, switch from the alliance's perspective. An `L` in a position indicates the platform on the left will be lit for the alliance while an `R` will indicate the right platform will be lit for the alliance. See also [WPI Screen Steps](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/826278-2018-game-data-details).
+@BuiltValue()
+abstract class MatchScoreBreakdown2018Alliance implements Built<MatchScoreBreakdown2018Alliance, MatchScoreBreakdown2018AllianceBuilder> {
   @BuiltValueField(wireName: r'adjustPoints')
   int? get adjustPoints;
 
@@ -125,420 +164,594 @@ abstract class MatchScoreBreakdown2018Alliance
 
   MatchScoreBreakdown2018Alliance._();
 
-  static void _initializeBuilder(MatchScoreBreakdown2018AllianceBuilder b) => b;
+  factory MatchScoreBreakdown2018Alliance([void updates(MatchScoreBreakdown2018AllianceBuilder b)]) = _$MatchScoreBreakdown2018Alliance;
 
-  factory MatchScoreBreakdown2018Alliance(
-          [void updates(MatchScoreBreakdown2018AllianceBuilder b)]) =
-      _$MatchScoreBreakdown2018Alliance;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(MatchScoreBreakdown2018AllianceBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchScoreBreakdown2018Alliance> get serializer =>
-      _$MatchScoreBreakdown2018AllianceSerializer();
+  static Serializer<MatchScoreBreakdown2018Alliance> get serializer => _$MatchScoreBreakdown2018AllianceSerializer();
 }
 
-class _$MatchScoreBreakdown2018AllianceSerializer
-    implements StructuredSerializer<MatchScoreBreakdown2018Alliance> {
+class _$MatchScoreBreakdown2018AllianceSerializer implements PrimitiveSerializer<MatchScoreBreakdown2018Alliance> {
   @override
-  final Iterable<Type> types = const [
-    MatchScoreBreakdown2018Alliance,
-    _$MatchScoreBreakdown2018Alliance
-  ];
+  final Iterable<Type> types = const [MatchScoreBreakdown2018Alliance, _$MatchScoreBreakdown2018Alliance];
 
   @override
   final String wireName = r'MatchScoreBreakdown2018Alliance';
 
-  @override
-  Iterable<Object?> serialize(
-      Serializers serializers, MatchScoreBreakdown2018Alliance object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    MatchScoreBreakdown2018Alliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.adjustPoints != null) {
-      result
-        ..add(r'adjustPoints')
-        ..add(serializers.serialize(object.adjustPoints,
-            specifiedType: const FullType(int)));
+      yield r'adjustPoints';
+      yield serializers.serialize(
+        object.adjustPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.autoOwnershipPoints != null) {
-      result
-        ..add(r'autoOwnershipPoints')
-        ..add(serializers.serialize(object.autoOwnershipPoints,
-            specifiedType: const FullType(int)));
+      yield r'autoOwnershipPoints';
+      yield serializers.serialize(
+        object.autoOwnershipPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.autoPoints != null) {
-      result
-        ..add(r'autoPoints')
-        ..add(serializers.serialize(object.autoPoints,
-            specifiedType: const FullType(int)));
+      yield r'autoPoints';
+      yield serializers.serialize(
+        object.autoPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.autoQuestRankingPoint != null) {
-      result
-        ..add(r'autoQuestRankingPoint')
-        ..add(serializers.serialize(object.autoQuestRankingPoint,
-            specifiedType: const FullType(bool)));
+      yield r'autoQuestRankingPoint';
+      yield serializers.serialize(
+        object.autoQuestRankingPoint,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.autoRobot1 != null) {
-      result
-        ..add(r'autoRobot1')
-        ..add(serializers.serialize(object.autoRobot1,
-            specifiedType: const FullType(String)));
+      yield r'autoRobot1';
+      yield serializers.serialize(
+        object.autoRobot1,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.autoRobot2 != null) {
-      result
-        ..add(r'autoRobot2')
-        ..add(serializers.serialize(object.autoRobot2,
-            specifiedType: const FullType(String)));
+      yield r'autoRobot2';
+      yield serializers.serialize(
+        object.autoRobot2,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.autoRobot3 != null) {
-      result
-        ..add(r'autoRobot3')
-        ..add(serializers.serialize(object.autoRobot3,
-            specifiedType: const FullType(String)));
+      yield r'autoRobot3';
+      yield serializers.serialize(
+        object.autoRobot3,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.autoRunPoints != null) {
-      result
-        ..add(r'autoRunPoints')
-        ..add(serializers.serialize(object.autoRunPoints,
-            specifiedType: const FullType(int)));
+      yield r'autoRunPoints';
+      yield serializers.serialize(
+        object.autoRunPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.autoScaleOwnershipSec != null) {
-      result
-        ..add(r'autoScaleOwnershipSec')
-        ..add(serializers.serialize(object.autoScaleOwnershipSec,
-            specifiedType: const FullType(int)));
+      yield r'autoScaleOwnershipSec';
+      yield serializers.serialize(
+        object.autoScaleOwnershipSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.autoSwitchAtZero != null) {
-      result
-        ..add(r'autoSwitchAtZero')
-        ..add(serializers.serialize(object.autoSwitchAtZero,
-            specifiedType: const FullType(bool)));
+      yield r'autoSwitchAtZero';
+      yield serializers.serialize(
+        object.autoSwitchAtZero,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.autoSwitchOwnershipSec != null) {
-      result
-        ..add(r'autoSwitchOwnershipSec')
-        ..add(serializers.serialize(object.autoSwitchOwnershipSec,
-            specifiedType: const FullType(int)));
+      yield r'autoSwitchOwnershipSec';
+      yield serializers.serialize(
+        object.autoSwitchOwnershipSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.endgamePoints != null) {
-      result
-        ..add(r'endgamePoints')
-        ..add(serializers.serialize(object.endgamePoints,
-            specifiedType: const FullType(int)));
+      yield r'endgamePoints';
+      yield serializers.serialize(
+        object.endgamePoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.endgameRobot1 != null) {
-      result
-        ..add(r'endgameRobot1')
-        ..add(serializers.serialize(object.endgameRobot1,
-            specifiedType: const FullType(String)));
+      yield r'endgameRobot1';
+      yield serializers.serialize(
+        object.endgameRobot1,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.endgameRobot2 != null) {
-      result
-        ..add(r'endgameRobot2')
-        ..add(serializers.serialize(object.endgameRobot2,
-            specifiedType: const FullType(String)));
+      yield r'endgameRobot2';
+      yield serializers.serialize(
+        object.endgameRobot2,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.endgameRobot3 != null) {
-      result
-        ..add(r'endgameRobot3')
-        ..add(serializers.serialize(object.endgameRobot3,
-            specifiedType: const FullType(String)));
+      yield r'endgameRobot3';
+      yield serializers.serialize(
+        object.endgameRobot3,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.faceTheBossRankingPoint != null) {
-      result
-        ..add(r'faceTheBossRankingPoint')
-        ..add(serializers.serialize(object.faceTheBossRankingPoint,
-            specifiedType: const FullType(bool)));
+      yield r'faceTheBossRankingPoint';
+      yield serializers.serialize(
+        object.faceTheBossRankingPoint,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.foulCount != null) {
-      result
-        ..add(r'foulCount')
-        ..add(serializers.serialize(object.foulCount,
-            specifiedType: const FullType(int)));
+      yield r'foulCount';
+      yield serializers.serialize(
+        object.foulCount,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.foulPoints != null) {
-      result
-        ..add(r'foulPoints')
-        ..add(serializers.serialize(object.foulPoints,
-            specifiedType: const FullType(int)));
+      yield r'foulPoints';
+      yield serializers.serialize(
+        object.foulPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.rp != null) {
-      result
-        ..add(r'rp')
-        ..add(serializers.serialize(object.rp,
-            specifiedType: const FullType(int)));
+      yield r'rp';
+      yield serializers.serialize(
+        object.rp,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.techFoulCount != null) {
-      result
-        ..add(r'techFoulCount')
-        ..add(serializers.serialize(object.techFoulCount,
-            specifiedType: const FullType(int)));
+      yield r'techFoulCount';
+      yield serializers.serialize(
+        object.techFoulCount,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopOwnershipPoints != null) {
-      result
-        ..add(r'teleopOwnershipPoints')
-        ..add(serializers.serialize(object.teleopOwnershipPoints,
-            specifiedType: const FullType(int)));
+      yield r'teleopOwnershipPoints';
+      yield serializers.serialize(
+        object.teleopOwnershipPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopPoints != null) {
-      result
-        ..add(r'teleopPoints')
-        ..add(serializers.serialize(object.teleopPoints,
-            specifiedType: const FullType(int)));
+      yield r'teleopPoints';
+      yield serializers.serialize(
+        object.teleopPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopScaleBoostSec != null) {
-      result
-        ..add(r'teleopScaleBoostSec')
-        ..add(serializers.serialize(object.teleopScaleBoostSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopScaleBoostSec';
+      yield serializers.serialize(
+        object.teleopScaleBoostSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopScaleForceSec != null) {
-      result
-        ..add(r'teleopScaleForceSec')
-        ..add(serializers.serialize(object.teleopScaleForceSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopScaleForceSec';
+      yield serializers.serialize(
+        object.teleopScaleForceSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopScaleOwnershipSec != null) {
-      result
-        ..add(r'teleopScaleOwnershipSec')
-        ..add(serializers.serialize(object.teleopScaleOwnershipSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopScaleOwnershipSec';
+      yield serializers.serialize(
+        object.teleopScaleOwnershipSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopSwitchBoostSec != null) {
-      result
-        ..add(r'teleopSwitchBoostSec')
-        ..add(serializers.serialize(object.teleopSwitchBoostSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopSwitchBoostSec';
+      yield serializers.serialize(
+        object.teleopSwitchBoostSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopSwitchForceSec != null) {
-      result
-        ..add(r'teleopSwitchForceSec')
-        ..add(serializers.serialize(object.teleopSwitchForceSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopSwitchForceSec';
+      yield serializers.serialize(
+        object.teleopSwitchForceSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopSwitchOwnershipSec != null) {
-      result
-        ..add(r'teleopSwitchOwnershipSec')
-        ..add(serializers.serialize(object.teleopSwitchOwnershipSec,
-            specifiedType: const FullType(int)));
+      yield r'teleopSwitchOwnershipSec';
+      yield serializers.serialize(
+        object.teleopSwitchOwnershipSec,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.totalPoints != null) {
-      result
-        ..add(r'totalPoints')
-        ..add(serializers.serialize(object.totalPoints,
-            specifiedType: const FullType(int)));
+      yield r'totalPoints';
+      yield serializers.serialize(
+        object.totalPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultBoostPlayed != null) {
-      result
-        ..add(r'vaultBoostPlayed')
-        ..add(serializers.serialize(object.vaultBoostPlayed,
-            specifiedType: const FullType(int)));
+      yield r'vaultBoostPlayed';
+      yield serializers.serialize(
+        object.vaultBoostPlayed,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultBoostTotal != null) {
-      result
-        ..add(r'vaultBoostTotal')
-        ..add(serializers.serialize(object.vaultBoostTotal,
-            specifiedType: const FullType(int)));
+      yield r'vaultBoostTotal';
+      yield serializers.serialize(
+        object.vaultBoostTotal,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultForcePlayed != null) {
-      result
-        ..add(r'vaultForcePlayed')
-        ..add(serializers.serialize(object.vaultForcePlayed,
-            specifiedType: const FullType(int)));
+      yield r'vaultForcePlayed';
+      yield serializers.serialize(
+        object.vaultForcePlayed,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultForceTotal != null) {
-      result
-        ..add(r'vaultForceTotal')
-        ..add(serializers.serialize(object.vaultForceTotal,
-            specifiedType: const FullType(int)));
+      yield r'vaultForceTotal';
+      yield serializers.serialize(
+        object.vaultForceTotal,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultLevitatePlayed != null) {
-      result
-        ..add(r'vaultLevitatePlayed')
-        ..add(serializers.serialize(object.vaultLevitatePlayed,
-            specifiedType: const FullType(int)));
+      yield r'vaultLevitatePlayed';
+      yield serializers.serialize(
+        object.vaultLevitatePlayed,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultLevitateTotal != null) {
-      result
-        ..add(r'vaultLevitateTotal')
-        ..add(serializers.serialize(object.vaultLevitateTotal,
-            specifiedType: const FullType(int)));
+      yield r'vaultLevitateTotal';
+      yield serializers.serialize(
+        object.vaultLevitateTotal,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.vaultPoints != null) {
-      result
-        ..add(r'vaultPoints')
-        ..add(serializers.serialize(object.vaultPoints,
-            specifiedType: const FullType(int)));
+      yield r'vaultPoints';
+      yield serializers.serialize(
+        object.vaultPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.tbaGameData != null) {
-      result
-        ..add(r'tba_gameData')
-        ..add(serializers.serialize(object.tbaGameData,
-            specifiedType: const FullType(String)));
+      yield r'tba_gameData';
+      yield serializers.serialize(
+        object.tbaGameData,
+        specifiedType: const FullType(String),
+      );
     }
-    return result;
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    MatchScoreBreakdown2018Alliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required MatchScoreBreakdown2018AllianceBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'adjustPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.adjustPoints = valueDes;
+          break;
+        case r'autoOwnershipPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoOwnershipPoints = valueDes;
+          break;
+        case r'autoPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoPoints = valueDes;
+          break;
+        case r'autoQuestRankingPoint':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.autoQuestRankingPoint = valueDes;
+          break;
+        case r'autoRobot1':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.autoRobot1 = valueDes;
+          break;
+        case r'autoRobot2':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.autoRobot2 = valueDes;
+          break;
+        case r'autoRobot3':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.autoRobot3 = valueDes;
+          break;
+        case r'autoRunPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoRunPoints = valueDes;
+          break;
+        case r'autoScaleOwnershipSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoScaleOwnershipSec = valueDes;
+          break;
+        case r'autoSwitchAtZero':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.autoSwitchAtZero = valueDes;
+          break;
+        case r'autoSwitchOwnershipSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoSwitchOwnershipSec = valueDes;
+          break;
+        case r'endgamePoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.endgamePoints = valueDes;
+          break;
+        case r'endgameRobot1':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.endgameRobot1 = valueDes;
+          break;
+        case r'endgameRobot2':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.endgameRobot2 = valueDes;
+          break;
+        case r'endgameRobot3':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.endgameRobot3 = valueDes;
+          break;
+        case r'faceTheBossRankingPoint':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.faceTheBossRankingPoint = valueDes;
+          break;
+        case r'foulCount':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.foulCount = valueDes;
+          break;
+        case r'foulPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.foulPoints = valueDes;
+          break;
+        case r'rp':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.rp = valueDes;
+          break;
+        case r'techFoulCount':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.techFoulCount = valueDes;
+          break;
+        case r'teleopOwnershipPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopOwnershipPoints = valueDes;
+          break;
+        case r'teleopPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopPoints = valueDes;
+          break;
+        case r'teleopScaleBoostSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopScaleBoostSec = valueDes;
+          break;
+        case r'teleopScaleForceSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopScaleForceSec = valueDes;
+          break;
+        case r'teleopScaleOwnershipSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopScaleOwnershipSec = valueDes;
+          break;
+        case r'teleopSwitchBoostSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopSwitchBoostSec = valueDes;
+          break;
+        case r'teleopSwitchForceSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopSwitchForceSec = valueDes;
+          break;
+        case r'teleopSwitchOwnershipSec':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopSwitchOwnershipSec = valueDes;
+          break;
+        case r'totalPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.totalPoints = valueDes;
+          break;
+        case r'vaultBoostPlayed':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultBoostPlayed = valueDes;
+          break;
+        case r'vaultBoostTotal':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultBoostTotal = valueDes;
+          break;
+        case r'vaultForcePlayed':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultForcePlayed = valueDes;
+          break;
+        case r'vaultForceTotal':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultForceTotal = valueDes;
+          break;
+        case r'vaultLevitatePlayed':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultLevitatePlayed = valueDes;
+          break;
+        case r'vaultLevitateTotal':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultLevitateTotal = valueDes;
+          break;
+        case r'vaultPoints':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.vaultPoints = valueDes;
+          break;
+        case r'tba_gameData':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.tbaGameData = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   MatchScoreBreakdown2018Alliance deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = MatchScoreBreakdown2018AllianceBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'adjustPoints':
-          result.adjustPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'autoOwnershipPoints':
-          result.autoOwnershipPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'autoPoints':
-          result.autoPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'autoQuestRankingPoint':
-          result.autoQuestRankingPoint = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'autoRobot1':
-          result.autoRobot1 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'autoRobot2':
-          result.autoRobot2 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'autoRobot3':
-          result.autoRobot3 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'autoRunPoints':
-          result.autoRunPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'autoScaleOwnershipSec':
-          result.autoScaleOwnershipSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'autoSwitchAtZero':
-          result.autoSwitchAtZero = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'autoSwitchOwnershipSec':
-          result.autoSwitchOwnershipSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'endgamePoints':
-          result.endgamePoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'endgameRobot1':
-          result.endgameRobot1 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'endgameRobot2':
-          result.endgameRobot2 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'endgameRobot3':
-          result.endgameRobot3 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'faceTheBossRankingPoint':
-          result.faceTheBossRankingPoint = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'foulCount':
-          result.foulCount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'foulPoints':
-          result.foulPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'rp':
-          result.rp = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'techFoulCount':
-          result.techFoulCount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopOwnershipPoints':
-          result.teleopOwnershipPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopPoints':
-          result.teleopPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopScaleBoostSec':
-          result.teleopScaleBoostSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopScaleForceSec':
-          result.teleopScaleForceSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopScaleOwnershipSec':
-          result.teleopScaleOwnershipSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopSwitchBoostSec':
-          result.teleopSwitchBoostSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopSwitchForceSec':
-          result.teleopSwitchForceSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleopSwitchOwnershipSec':
-          result.teleopSwitchOwnershipSec = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'totalPoints':
-          result.totalPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultBoostPlayed':
-          result.vaultBoostPlayed = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultBoostTotal':
-          result.vaultBoostTotal = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultForcePlayed':
-          result.vaultForcePlayed = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultForceTotal':
-          result.vaultForceTotal = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultLevitatePlayed':
-          result.vaultLevitatePlayed = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultLevitateTotal':
-          result.vaultLevitateTotal = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'vaultPoints':
-          result.vaultPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'tba_gameData':
-          result.tbaGameData = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

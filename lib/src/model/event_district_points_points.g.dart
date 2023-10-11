@@ -20,7 +20,7 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
 
   factory _$EventDistrictPointsPoints(
           [void Function(EventDistrictPointsPointsBuilder)? updates]) =>
-      (new EventDistrictPointsPointsBuilder()..update(updates)).build();
+      (new EventDistrictPointsPointsBuilder()..update(updates))._build();
 
   _$EventDistrictPointsPoints._(
       {required this.total,
@@ -30,15 +30,15 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
       required this.qualPoints})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        total, 'EventDistrictPointsPoints', 'total');
+        total, r'EventDistrictPointsPoints', 'total');
     BuiltValueNullFieldError.checkNotNull(
-        alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints');
+        alliancePoints, r'EventDistrictPointsPoints', 'alliancePoints');
     BuiltValueNullFieldError.checkNotNull(
-        elimPoints, 'EventDistrictPointsPoints', 'elimPoints');
+        elimPoints, r'EventDistrictPointsPoints', 'elimPoints');
     BuiltValueNullFieldError.checkNotNull(
-        awardPoints, 'EventDistrictPointsPoints', 'awardPoints');
+        awardPoints, r'EventDistrictPointsPoints', 'awardPoints');
     BuiltValueNullFieldError.checkNotNull(
-        qualPoints, 'EventDistrictPointsPoints', 'qualPoints');
+        qualPoints, r'EventDistrictPointsPoints', 'qualPoints');
   }
 
   @override
@@ -63,17 +63,19 @@ class _$EventDistrictPointsPoints extends EventDistrictPointsPoints {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc($jc($jc(0, total.hashCode), alliancePoints.hashCode),
-                elimPoints.hashCode),
-            awardPoints.hashCode),
-        qualPoints.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, total.hashCode);
+    _$hash = $jc(_$hash, alliancePoints.hashCode);
+    _$hash = $jc(_$hash, elimPoints.hashCode);
+    _$hash = $jc(_$hash, awardPoints.hashCode);
+    _$hash = $jc(_$hash, qualPoints.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventDistrictPointsPoints')
+    return (newBuiltValueToStringHelper(r'EventDistrictPointsPoints')
           ..add('total', total)
           ..add('alliancePoints', alliancePoints)
           ..add('elimPoints', elimPoints)
@@ -138,22 +140,24 @@ class EventDistrictPointsPointsBuilder
   }
 
   @override
-  _$EventDistrictPointsPoints build() {
+  EventDistrictPointsPoints build() => _build();
+
+  _$EventDistrictPointsPoints _build() {
     final _$result = _$v ??
         new _$EventDistrictPointsPoints._(
             total: BuiltValueNullFieldError.checkNotNull(
-                total, 'EventDistrictPointsPoints', 'total'),
+                total, r'EventDistrictPointsPoints', 'total'),
             alliancePoints: BuiltValueNullFieldError.checkNotNull(
-                alliancePoints, 'EventDistrictPointsPoints', 'alliancePoints'),
+                alliancePoints, r'EventDistrictPointsPoints', 'alliancePoints'),
             elimPoints: BuiltValueNullFieldError.checkNotNull(
-                elimPoints, 'EventDistrictPointsPoints', 'elimPoints'),
+                elimPoints, r'EventDistrictPointsPoints', 'elimPoints'),
             awardPoints: BuiltValueNullFieldError.checkNotNull(
-                awardPoints, 'EventDistrictPointsPoints', 'awardPoints'),
+                awardPoints, r'EventDistrictPointsPoints', 'awardPoints'),
             qualPoints: BuiltValueNullFieldError.checkNotNull(
-                qualPoints, 'EventDistrictPointsPoints', 'qualPoints'));
+                qualPoints, r'EventDistrictPointsPoints', 'qualPoints'));
     replace(_$result);
     return _$result;
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

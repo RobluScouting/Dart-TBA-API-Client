@@ -31,7 +31,7 @@ class _$EventSimple extends EventSimple {
   final int year;
 
   factory _$EventSimple([void Function(EventSimpleBuilder)? updates]) =>
-      (new EventSimpleBuilder()..update(updates)).build();
+      (new EventSimpleBuilder()..update(updates))._build();
 
   _$EventSimple._(
       {required this.key,
@@ -46,16 +46,16 @@ class _$EventSimple extends EventSimple {
       required this.endDate,
       required this.year})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(key, 'EventSimple', 'key');
-    BuiltValueNullFieldError.checkNotNull(name, 'EventSimple', 'name');
+    BuiltValueNullFieldError.checkNotNull(key, r'EventSimple', 'key');
+    BuiltValueNullFieldError.checkNotNull(name, r'EventSimple', 'name');
     BuiltValueNullFieldError.checkNotNull(
-        eventCode, 'EventSimple', 'eventCode');
+        eventCode, r'EventSimple', 'eventCode');
     BuiltValueNullFieldError.checkNotNull(
-        eventType, 'EventSimple', 'eventType');
+        eventType, r'EventSimple', 'eventType');
     BuiltValueNullFieldError.checkNotNull(
-        startDate, 'EventSimple', 'startDate');
-    BuiltValueNullFieldError.checkNotNull(endDate, 'EventSimple', 'endDate');
-    BuiltValueNullFieldError.checkNotNull(year, 'EventSimple', 'year');
+        startDate, r'EventSimple', 'startDate');
+    BuiltValueNullFieldError.checkNotNull(endDate, r'EventSimple', 'endDate');
+    BuiltValueNullFieldError.checkNotNull(year, r'EventSimple', 'year');
   }
 
   @override
@@ -84,31 +84,25 @@ class _$EventSimple extends EventSimple {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc($jc(0, key.hashCode),
-                                            name.hashCode),
-                                        eventCode.hashCode),
-                                    eventType.hashCode),
-                                district.hashCode),
-                            city.hashCode),
-                        stateProv.hashCode),
-                    country.hashCode),
-                startDate.hashCode),
-            endDate.hashCode),
-        year.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, key.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, eventCode.hashCode);
+    _$hash = $jc(_$hash, eventType.hashCode);
+    _$hash = $jc(_$hash, district.hashCode);
+    _$hash = $jc(_$hash, city.hashCode);
+    _$hash = $jc(_$hash, stateProv.hashCode);
+    _$hash = $jc(_$hash, country.hashCode);
+    _$hash = $jc(_$hash, startDate.hashCode);
+    _$hash = $jc(_$hash, endDate.hashCode);
+    _$hash = $jc(_$hash, year.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventSimple')
+    return (newBuiltValueToStringHelper(r'EventSimple')
           ..add('key', key)
           ..add('name', name)
           ..add('eventCode', eventCode)
@@ -173,7 +167,7 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
   set year(int? year) => _$this._year = year;
 
   EventSimpleBuilder() {
-    EventSimple._initializeBuilder(this);
+    EventSimple._defaults(this);
   }
 
   EventSimpleBuilder get _$this {
@@ -207,29 +201,31 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
   }
 
   @override
-  _$EventSimple build() {
+  EventSimple build() => _build();
+
+  _$EventSimple _build() {
     _$EventSimple _$result;
     try {
       _$result = _$v ??
           new _$EventSimple._(
               key: BuiltValueNullFieldError.checkNotNull(
-                  key, 'EventSimple', 'key'),
+                  key, r'EventSimple', 'key'),
               name: BuiltValueNullFieldError.checkNotNull(
-                  name, 'EventSimple', 'name'),
+                  name, r'EventSimple', 'name'),
               eventCode: BuiltValueNullFieldError.checkNotNull(
-                  eventCode, 'EventSimple', 'eventCode'),
+                  eventCode, r'EventSimple', 'eventCode'),
               eventType: BuiltValueNullFieldError.checkNotNull(
-                  eventType, 'EventSimple', 'eventType'),
+                  eventType, r'EventSimple', 'eventType'),
               district: _district?.build(),
               city: city,
               stateProv: stateProv,
               country: country,
               startDate: BuiltValueNullFieldError.checkNotNull(
-                  startDate, 'EventSimple', 'startDate'),
+                  startDate, r'EventSimple', 'startDate'),
               endDate: BuiltValueNullFieldError.checkNotNull(
-                  endDate, 'EventSimple', 'endDate'),
+                  endDate, r'EventSimple', 'endDate'),
               year: BuiltValueNullFieldError.checkNotNull(
-                  year, 'EventSimple', 'year'));
+                  year, r'EventSimple', 'year'));
     } catch (_) {
       late String _$failedField;
       try {
@@ -237,7 +233,7 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
         _district?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventSimple', _$failedField, e.toString());
+            r'EventSimple', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -246,4 +242,4 @@ class EventSimpleBuilder implements Builder<EventSimple, EventSimpleBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

@@ -16,10 +16,10 @@ class _$DistrictRanking extends DistrictRanking {
   @override
   final int pointTotal;
   @override
-  final BuiltList<DistrictRankingEventPoints>? eventPoints;
+  final BuiltList<DistrictRankingEventPointsInner>? eventPoints;
 
   factory _$DistrictRanking([void Function(DistrictRankingBuilder)? updates]) =>
-      (new DistrictRankingBuilder()..update(updates)).build();
+      (new DistrictRankingBuilder()..update(updates))._build();
 
   _$DistrictRanking._(
       {required this.teamKey,
@@ -29,10 +29,10 @@ class _$DistrictRanking extends DistrictRanking {
       this.eventPoints})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        teamKey, 'DistrictRanking', 'teamKey');
-    BuiltValueNullFieldError.checkNotNull(rank, 'DistrictRanking', 'rank');
+        teamKey, r'DistrictRanking', 'teamKey');
+    BuiltValueNullFieldError.checkNotNull(rank, r'DistrictRanking', 'rank');
     BuiltValueNullFieldError.checkNotNull(
-        pointTotal, 'DistrictRanking', 'pointTotal');
+        pointTotal, r'DistrictRanking', 'pointTotal');
   }
 
   @override
@@ -56,17 +56,19 @@ class _$DistrictRanking extends DistrictRanking {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc($jc($jc(0, teamKey.hashCode), rank.hashCode),
-                rookieBonus.hashCode),
-            pointTotal.hashCode),
-        eventPoints.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, teamKey.hashCode);
+    _$hash = $jc(_$hash, rank.hashCode);
+    _$hash = $jc(_$hash, rookieBonus.hashCode);
+    _$hash = $jc(_$hash, pointTotal.hashCode);
+    _$hash = $jc(_$hash, eventPoints.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('DistrictRanking')
+    return (newBuiltValueToStringHelper(r'DistrictRanking')
           ..add('teamKey', teamKey)
           ..add('rank', rank)
           ..add('rookieBonus', rookieBonus)
@@ -96,14 +98,15 @@ class DistrictRankingBuilder
   int? get pointTotal => _$this._pointTotal;
   set pointTotal(int? pointTotal) => _$this._pointTotal = pointTotal;
 
-  ListBuilder<DistrictRankingEventPoints>? _eventPoints;
-  ListBuilder<DistrictRankingEventPoints> get eventPoints =>
-      _$this._eventPoints ??= new ListBuilder<DistrictRankingEventPoints>();
-  set eventPoints(ListBuilder<DistrictRankingEventPoints>? eventPoints) =>
+  ListBuilder<DistrictRankingEventPointsInner>? _eventPoints;
+  ListBuilder<DistrictRankingEventPointsInner> get eventPoints =>
+      _$this._eventPoints ??=
+          new ListBuilder<DistrictRankingEventPointsInner>();
+  set eventPoints(ListBuilder<DistrictRankingEventPointsInner>? eventPoints) =>
       _$this._eventPoints = eventPoints;
 
   DistrictRankingBuilder() {
-    DistrictRanking._initializeBuilder(this);
+    DistrictRanking._defaults(this);
   }
 
   DistrictRankingBuilder get _$this {
@@ -131,18 +134,20 @@ class DistrictRankingBuilder
   }
 
   @override
-  _$DistrictRanking build() {
+  DistrictRanking build() => _build();
+
+  _$DistrictRanking _build() {
     _$DistrictRanking _$result;
     try {
       _$result = _$v ??
           new _$DistrictRanking._(
               teamKey: BuiltValueNullFieldError.checkNotNull(
-                  teamKey, 'DistrictRanking', 'teamKey'),
+                  teamKey, r'DistrictRanking', 'teamKey'),
               rank: BuiltValueNullFieldError.checkNotNull(
-                  rank, 'DistrictRanking', 'rank'),
+                  rank, r'DistrictRanking', 'rank'),
               rookieBonus: rookieBonus,
               pointTotal: BuiltValueNullFieldError.checkNotNull(
-                  pointTotal, 'DistrictRanking', 'pointTotal'),
+                  pointTotal, r'DistrictRanking', 'pointTotal'),
               eventPoints: _eventPoints?.build());
     } catch (_) {
       late String _$failedField;
@@ -151,7 +156,7 @@ class DistrictRankingBuilder
         _eventPoints?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'DistrictRanking', _$failedField, e.toString());
+            r'DistrictRanking', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -160,4 +165,4 @@ class DistrictRankingBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

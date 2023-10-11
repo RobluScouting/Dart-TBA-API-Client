@@ -2,12 +2,20 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'event_oprs.g.dart';
 
+/// OPR, DPR, and CCWM for teams at the event.
+///
+/// Properties:
+/// * [oprs] - A key-value pair with team key (eg `frc254`) as key and OPR as value.
+/// * [dprs] - A key-value pair with team key (eg `frc254`) as key and DPR as value.
+/// * [ccwms] - A key-value pair with team key (eg `frc254`) as key and CCWM as value.
+@BuiltValue()
 abstract class EventOPRs implements Built<EventOPRs, EventOPRsBuilder> {
   /// A key-value pair with team key (eg `frc254`) as key and OPR as value.
   @BuiltValueField(wireName: r'oprs')
@@ -23,80 +31,118 @@ abstract class EventOPRs implements Built<EventOPRs, EventOPRsBuilder> {
 
   EventOPRs._();
 
-  static void _initializeBuilder(EventOPRsBuilder b) => b;
-
   factory EventOPRs([void updates(EventOPRsBuilder b)]) = _$EventOPRs;
+
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(EventOPRsBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
   static Serializer<EventOPRs> get serializer => _$EventOPRsSerializer();
 }
 
-class _$EventOPRsSerializer implements StructuredSerializer<EventOPRs> {
+class _$EventOPRsSerializer implements PrimitiveSerializer<EventOPRs> {
   @override
   final Iterable<Type> types = const [EventOPRs, _$EventOPRs];
 
   @override
   final String wireName = r'EventOPRs';
 
-  @override
-  Iterable<Object?> serialize(Serializers serializers, EventOPRs object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    EventOPRs object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.oprs != null) {
-      result
-        ..add(r'oprs')
-        ..add(serializers.serialize(object.oprs,
-            specifiedType: const FullType(
-                BuiltMap, [FullType(String), FullType(double)])));
+      yield r'oprs';
+      yield serializers.serialize(
+        object.oprs,
+        specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+      );
     }
     if (object.dprs != null) {
-      result
-        ..add(r'dprs')
-        ..add(serializers.serialize(object.dprs,
-            specifiedType: const FullType(
-                BuiltMap, [FullType(String), FullType(double)])));
+      yield r'dprs';
+      yield serializers.serialize(
+        object.dprs,
+        specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+      );
     }
     if (object.ccwms != null) {
-      result
-        ..add(r'ccwms')
-        ..add(serializers.serialize(object.ccwms,
-            specifiedType: const FullType(
-                BuiltMap, [FullType(String), FullType(double)])));
+      yield r'ccwms';
+      yield serializers.serialize(
+        object.ccwms,
+        specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+      );
     }
-    return result;
   }
 
   @override
-  EventOPRs deserialize(Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = EventOPRsBuilder();
+  Object serialize(
+    Serializers serializers,
+    EventOPRs object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
 
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required EventOPRsBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
       switch (key) {
         case r'oprs':
-          result.oprs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltMap, [FullType(String), FullType(double)]))
-              as BuiltMap<String, double>);
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+          ) as BuiltMap<String, double>;
+          result.oprs.replace(valueDes);
           break;
         case r'dprs':
-          result.dprs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltMap, [FullType(String), FullType(double)]))
-              as BuiltMap<String, double>);
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+          ) as BuiltMap<String, double>;
+          result.dprs.replace(valueDes);
           break;
         case r'ccwms':
-          result.ccwms.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltMap, [FullType(String), FullType(double)]))
-              as BuiltMap<String, double>);
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltMap, [FullType(String), FullType(double)]),
+          ) as BuiltMap<String, double>;
+          result.ccwms.replace(valueDes);
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
           break;
       }
     }
+  }
+
+  @override
+  EventOPRs deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = EventOPRsBuilder();
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

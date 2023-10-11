@@ -14,7 +14,7 @@ class _$EventDistrictPointsTiebreakers extends EventDistrictPointsTiebreakers {
 
   factory _$EventDistrictPointsTiebreakers(
           [void Function(EventDistrictPointsTiebreakersBuilder)? updates]) =>
-      (new EventDistrictPointsTiebreakersBuilder()..update(updates)).build();
+      (new EventDistrictPointsTiebreakersBuilder()..update(updates))._build();
 
   _$EventDistrictPointsTiebreakers._({this.highestQualScores, this.qualWins})
       : super._();
@@ -38,12 +38,16 @@ class _$EventDistrictPointsTiebreakers extends EventDistrictPointsTiebreakers {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, highestQualScores.hashCode), qualWins.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, highestQualScores.hashCode);
+    _$hash = $jc(_$hash, qualWins.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('EventDistrictPointsTiebreakers')
+    return (newBuiltValueToStringHelper(r'EventDistrictPointsTiebreakers')
           ..add('highestQualScores', highestQualScores)
           ..add('qualWins', qualWins))
         .toString();
@@ -92,7 +96,9 @@ class EventDistrictPointsTiebreakersBuilder
   }
 
   @override
-  _$EventDistrictPointsTiebreakers build() {
+  EventDistrictPointsTiebreakers build() => _build();
+
+  _$EventDistrictPointsTiebreakers _build() {
     _$EventDistrictPointsTiebreakers _$result;
     try {
       _$result = _$v ??
@@ -106,7 +112,7 @@ class EventDistrictPointsTiebreakersBuilder
         _highestQualScores?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'EventDistrictPointsTiebreakers', _$failedField, e.toString());
+            r'EventDistrictPointsTiebreakers', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -115,4 +121,4 @@ class EventDistrictPointsTiebreakersBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

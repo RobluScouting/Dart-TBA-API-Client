@@ -15,13 +15,13 @@ class _$Zebra extends Zebra {
   final ZebraAlliances alliances;
 
   factory _$Zebra([void Function(ZebraBuilder)? updates]) =>
-      (new ZebraBuilder()..update(updates)).build();
+      (new ZebraBuilder()..update(updates))._build();
 
   _$Zebra._({required this.key, required this.times, required this.alliances})
       : super._() {
-    BuiltValueNullFieldError.checkNotNull(key, 'Zebra', 'key');
-    BuiltValueNullFieldError.checkNotNull(times, 'Zebra', 'times');
-    BuiltValueNullFieldError.checkNotNull(alliances, 'Zebra', 'alliances');
+    BuiltValueNullFieldError.checkNotNull(key, r'Zebra', 'key');
+    BuiltValueNullFieldError.checkNotNull(times, r'Zebra', 'times');
+    BuiltValueNullFieldError.checkNotNull(alliances, r'Zebra', 'alliances');
   }
 
   @override
@@ -42,13 +42,17 @@ class _$Zebra extends Zebra {
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc(0, key.hashCode), times.hashCode), alliances.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, key.hashCode);
+    _$hash = $jc(_$hash, times.hashCode);
+    _$hash = $jc(_$hash, alliances.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Zebra')
+    return (newBuiltValueToStringHelper(r'Zebra')
           ..add('key', key)
           ..add('times', times)
           ..add('alliances', alliances))
@@ -74,7 +78,7 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
       _$this._alliances = alliances;
 
   ZebraBuilder() {
-    Zebra._initializeBuilder(this);
+    Zebra._defaults(this);
   }
 
   ZebraBuilder get _$this {
@@ -100,12 +104,14 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
   }
 
   @override
-  _$Zebra build() {
+  Zebra build() => _build();
+
+  _$Zebra _build() {
     _$Zebra _$result;
     try {
       _$result = _$v ??
           new _$Zebra._(
-              key: BuiltValueNullFieldError.checkNotNull(key, 'Zebra', 'key'),
+              key: BuiltValueNullFieldError.checkNotNull(key, r'Zebra', 'key'),
               times: times.build(),
               alliances: alliances.build());
     } catch (_) {
@@ -117,7 +123,7 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
         alliances.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'Zebra', _$failedField, e.toString());
+            r'Zebra', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -126,4 +132,4 @@ class ZebraBuilder implements Builder<Zebra, ZebraBuilder> {
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

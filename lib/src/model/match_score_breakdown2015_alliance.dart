@@ -2,15 +2,41 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'match_score_breakdown2015_alliance.g.dart';
 
-abstract class MatchScoreBreakdown2015Alliance
-    implements
-        Built<MatchScoreBreakdown2015Alliance,
-            MatchScoreBreakdown2015AllianceBuilder> {
+/// MatchScoreBreakdown2015Alliance
+///
+/// Properties:
+/// * [autoPoints] 
+/// * [teleopPoints] 
+/// * [containerPoints] 
+/// * [totePoints] 
+/// * [litterPoints] 
+/// * [foulPoints] 
+/// * [adjustPoints] 
+/// * [totalPoints] 
+/// * [foulCount] 
+/// * [toteCountFar] 
+/// * [toteCountNear] 
+/// * [toteSet] 
+/// * [toteStack] 
+/// * [containerCountLevel1] 
+/// * [containerCountLevel2] 
+/// * [containerCountLevel3] 
+/// * [containerCountLevel4] 
+/// * [containerCountLevel5] 
+/// * [containerCountLevel6] 
+/// * [containerSet] 
+/// * [litterCountContainer] 
+/// * [litterCountLandfill] 
+/// * [litterCountUnprocessed] 
+/// * [robotSet] 
+@BuiltValue()
+abstract class MatchScoreBreakdown2015Alliance implements Built<MatchScoreBreakdown2015Alliance, MatchScoreBreakdown2015AllianceBuilder> {
   @BuiltValueField(wireName: r'auto_points')
   int? get autoPoints;
 
@@ -85,290 +111,412 @@ abstract class MatchScoreBreakdown2015Alliance
 
   MatchScoreBreakdown2015Alliance._();
 
-  static void _initializeBuilder(MatchScoreBreakdown2015AllianceBuilder b) => b;
+  factory MatchScoreBreakdown2015Alliance([void updates(MatchScoreBreakdown2015AllianceBuilder b)]) = _$MatchScoreBreakdown2015Alliance;
 
-  factory MatchScoreBreakdown2015Alliance(
-          [void updates(MatchScoreBreakdown2015AllianceBuilder b)]) =
-      _$MatchScoreBreakdown2015Alliance;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(MatchScoreBreakdown2015AllianceBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchScoreBreakdown2015Alliance> get serializer =>
-      _$MatchScoreBreakdown2015AllianceSerializer();
+  static Serializer<MatchScoreBreakdown2015Alliance> get serializer => _$MatchScoreBreakdown2015AllianceSerializer();
 }
 
-class _$MatchScoreBreakdown2015AllianceSerializer
-    implements StructuredSerializer<MatchScoreBreakdown2015Alliance> {
+class _$MatchScoreBreakdown2015AllianceSerializer implements PrimitiveSerializer<MatchScoreBreakdown2015Alliance> {
   @override
-  final Iterable<Type> types = const [
-    MatchScoreBreakdown2015Alliance,
-    _$MatchScoreBreakdown2015Alliance
-  ];
+  final Iterable<Type> types = const [MatchScoreBreakdown2015Alliance, _$MatchScoreBreakdown2015Alliance];
 
   @override
   final String wireName = r'MatchScoreBreakdown2015Alliance';
 
-  @override
-  Iterable<Object?> serialize(
-      Serializers serializers, MatchScoreBreakdown2015Alliance object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    MatchScoreBreakdown2015Alliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.autoPoints != null) {
-      result
-        ..add(r'auto_points')
-        ..add(serializers.serialize(object.autoPoints,
-            specifiedType: const FullType(int)));
+      yield r'auto_points';
+      yield serializers.serialize(
+        object.autoPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.teleopPoints != null) {
-      result
-        ..add(r'teleop_points')
-        ..add(serializers.serialize(object.teleopPoints,
-            specifiedType: const FullType(int)));
+      yield r'teleop_points';
+      yield serializers.serialize(
+        object.teleopPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerPoints != null) {
-      result
-        ..add(r'container_points')
-        ..add(serializers.serialize(object.containerPoints,
-            specifiedType: const FullType(int)));
+      yield r'container_points';
+      yield serializers.serialize(
+        object.containerPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.totePoints != null) {
-      result
-        ..add(r'tote_points')
-        ..add(serializers.serialize(object.totePoints,
-            specifiedType: const FullType(int)));
+      yield r'tote_points';
+      yield serializers.serialize(
+        object.totePoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.litterPoints != null) {
-      result
-        ..add(r'litter_points')
-        ..add(serializers.serialize(object.litterPoints,
-            specifiedType: const FullType(int)));
+      yield r'litter_points';
+      yield serializers.serialize(
+        object.litterPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.foulPoints != null) {
-      result
-        ..add(r'foul_points')
-        ..add(serializers.serialize(object.foulPoints,
-            specifiedType: const FullType(int)));
+      yield r'foul_points';
+      yield serializers.serialize(
+        object.foulPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.adjustPoints != null) {
-      result
-        ..add(r'adjust_points')
-        ..add(serializers.serialize(object.adjustPoints,
-            specifiedType: const FullType(int)));
+      yield r'adjust_points';
+      yield serializers.serialize(
+        object.adjustPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.totalPoints != null) {
-      result
-        ..add(r'total_points')
-        ..add(serializers.serialize(object.totalPoints,
-            specifiedType: const FullType(int)));
+      yield r'total_points';
+      yield serializers.serialize(
+        object.totalPoints,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.foulCount != null) {
-      result
-        ..add(r'foul_count')
-        ..add(serializers.serialize(object.foulCount,
-            specifiedType: const FullType(int)));
+      yield r'foul_count';
+      yield serializers.serialize(
+        object.foulCount,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.toteCountFar != null) {
-      result
-        ..add(r'tote_count_far')
-        ..add(serializers.serialize(object.toteCountFar,
-            specifiedType: const FullType(int)));
+      yield r'tote_count_far';
+      yield serializers.serialize(
+        object.toteCountFar,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.toteCountNear != null) {
-      result
-        ..add(r'tote_count_near')
-        ..add(serializers.serialize(object.toteCountNear,
-            specifiedType: const FullType(int)));
+      yield r'tote_count_near';
+      yield serializers.serialize(
+        object.toteCountNear,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.toteSet != null) {
-      result
-        ..add(r'tote_set')
-        ..add(serializers.serialize(object.toteSet,
-            specifiedType: const FullType(bool)));
+      yield r'tote_set';
+      yield serializers.serialize(
+        object.toteSet,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.toteStack != null) {
-      result
-        ..add(r'tote_stack')
-        ..add(serializers.serialize(object.toteStack,
-            specifiedType: const FullType(bool)));
+      yield r'tote_stack';
+      yield serializers.serialize(
+        object.toteStack,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.containerCountLevel1 != null) {
-      result
-        ..add(r'container_count_level1')
-        ..add(serializers.serialize(object.containerCountLevel1,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level1';
+      yield serializers.serialize(
+        object.containerCountLevel1,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerCountLevel2 != null) {
-      result
-        ..add(r'container_count_level2')
-        ..add(serializers.serialize(object.containerCountLevel2,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level2';
+      yield serializers.serialize(
+        object.containerCountLevel2,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerCountLevel3 != null) {
-      result
-        ..add(r'container_count_level3')
-        ..add(serializers.serialize(object.containerCountLevel3,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level3';
+      yield serializers.serialize(
+        object.containerCountLevel3,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerCountLevel4 != null) {
-      result
-        ..add(r'container_count_level4')
-        ..add(serializers.serialize(object.containerCountLevel4,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level4';
+      yield serializers.serialize(
+        object.containerCountLevel4,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerCountLevel5 != null) {
-      result
-        ..add(r'container_count_level5')
-        ..add(serializers.serialize(object.containerCountLevel5,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level5';
+      yield serializers.serialize(
+        object.containerCountLevel5,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerCountLevel6 != null) {
-      result
-        ..add(r'container_count_level6')
-        ..add(serializers.serialize(object.containerCountLevel6,
-            specifiedType: const FullType(int)));
+      yield r'container_count_level6';
+      yield serializers.serialize(
+        object.containerCountLevel6,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.containerSet != null) {
-      result
-        ..add(r'container_set')
-        ..add(serializers.serialize(object.containerSet,
-            specifiedType: const FullType(bool)));
+      yield r'container_set';
+      yield serializers.serialize(
+        object.containerSet,
+        specifiedType: const FullType(bool),
+      );
     }
     if (object.litterCountContainer != null) {
-      result
-        ..add(r'litter_count_container')
-        ..add(serializers.serialize(object.litterCountContainer,
-            specifiedType: const FullType(int)));
+      yield r'litter_count_container';
+      yield serializers.serialize(
+        object.litterCountContainer,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.litterCountLandfill != null) {
-      result
-        ..add(r'litter_count_landfill')
-        ..add(serializers.serialize(object.litterCountLandfill,
-            specifiedType: const FullType(int)));
+      yield r'litter_count_landfill';
+      yield serializers.serialize(
+        object.litterCountLandfill,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.litterCountUnprocessed != null) {
-      result
-        ..add(r'litter_count_unprocessed')
-        ..add(serializers.serialize(object.litterCountUnprocessed,
-            specifiedType: const FullType(int)));
+      yield r'litter_count_unprocessed';
+      yield serializers.serialize(
+        object.litterCountUnprocessed,
+        specifiedType: const FullType(int),
+      );
     }
     if (object.robotSet != null) {
-      result
-        ..add(r'robot_set')
-        ..add(serializers.serialize(object.robotSet,
-            specifiedType: const FullType(bool)));
+      yield r'robot_set';
+      yield serializers.serialize(
+        object.robotSet,
+        specifiedType: const FullType(bool),
+      );
     }
-    return result;
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    MatchScoreBreakdown2015Alliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required MatchScoreBreakdown2015AllianceBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'auto_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.autoPoints = valueDes;
+          break;
+        case r'teleop_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teleopPoints = valueDes;
+          break;
+        case r'container_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerPoints = valueDes;
+          break;
+        case r'tote_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.totePoints = valueDes;
+          break;
+        case r'litter_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.litterPoints = valueDes;
+          break;
+        case r'foul_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.foulPoints = valueDes;
+          break;
+        case r'adjust_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.adjustPoints = valueDes;
+          break;
+        case r'total_points':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.totalPoints = valueDes;
+          break;
+        case r'foul_count':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.foulCount = valueDes;
+          break;
+        case r'tote_count_far':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.toteCountFar = valueDes;
+          break;
+        case r'tote_count_near':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.toteCountNear = valueDes;
+          break;
+        case r'tote_set':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.toteSet = valueDes;
+          break;
+        case r'tote_stack':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.toteStack = valueDes;
+          break;
+        case r'container_count_level1':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel1 = valueDes;
+          break;
+        case r'container_count_level2':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel2 = valueDes;
+          break;
+        case r'container_count_level3':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel3 = valueDes;
+          break;
+        case r'container_count_level4':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel4 = valueDes;
+          break;
+        case r'container_count_level5':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel5 = valueDes;
+          break;
+        case r'container_count_level6':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.containerCountLevel6 = valueDes;
+          break;
+        case r'container_set':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.containerSet = valueDes;
+          break;
+        case r'litter_count_container':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.litterCountContainer = valueDes;
+          break;
+        case r'litter_count_landfill':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.litterCountLandfill = valueDes;
+          break;
+        case r'litter_count_unprocessed':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.litterCountUnprocessed = valueDes;
+          break;
+        case r'robot_set':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.robotSet = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   MatchScoreBreakdown2015Alliance deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = MatchScoreBreakdown2015AllianceBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'auto_points':
-          result.autoPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'teleop_points':
-          result.teleopPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_points':
-          result.containerPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'tote_points':
-          result.totePoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'litter_points':
-          result.litterPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'foul_points':
-          result.foulPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'adjust_points':
-          result.adjustPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'total_points':
-          result.totalPoints = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'foul_count':
-          result.foulCount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'tote_count_far':
-          result.toteCountFar = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'tote_count_near':
-          result.toteCountNear = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'tote_set':
-          result.toteSet = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'tote_stack':
-          result.toteStack = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'container_count_level1':
-          result.containerCountLevel1 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_count_level2':
-          result.containerCountLevel2 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_count_level3':
-          result.containerCountLevel3 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_count_level4':
-          result.containerCountLevel4 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_count_level5':
-          result.containerCountLevel5 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_count_level6':
-          result.containerCountLevel6 = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'container_set':
-          result.containerSet = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case r'litter_count_container':
-          result.litterCountContainer = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'litter_count_landfill':
-          result.litterCountLandfill = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'litter_count_unprocessed':
-          result.litterCountUnprocessed = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'robot_set':
-          result.robotSet = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

@@ -2,16 +2,25 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
+import 'package:tba_api_v3/src/model/elimination_alliance_backup.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:tba_api_v3/src/model/elimination_alliance_status.dart';
-import 'package:tba_api_v3/src/model/elimination_alliance_backup.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'elimination_alliance.g.dart';
 
-abstract class EliminationAlliance
-    implements Built<EliminationAlliance, EliminationAllianceBuilder> {
+/// EliminationAlliance
+///
+/// Properties:
+/// * [name] - Alliance name, may be null.
+/// * [backup] 
+/// * [declines] - List of teams that declined the alliance.
+/// * [picks] - List of team keys picked for the alliance. First pick is captain.
+/// * [status] 
+@BuiltValue()
+abstract class EliminationAlliance implements Built<EliminationAlliance, EliminationAllianceBuilder> {
   /// Alliance name, may be null.
   @BuiltValueField(wireName: r'name')
   String? get name;
@@ -32,101 +41,144 @@ abstract class EliminationAlliance
 
   EliminationAlliance._();
 
-  static void _initializeBuilder(EliminationAllianceBuilder b) => b;
+  factory EliminationAlliance([void updates(EliminationAllianceBuilder b)]) = _$EliminationAlliance;
 
-  factory EliminationAlliance([void updates(EliminationAllianceBuilder b)]) =
-      _$EliminationAlliance;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(EliminationAllianceBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<EliminationAlliance> get serializer =>
-      _$EliminationAllianceSerializer();
+  static Serializer<EliminationAlliance> get serializer => _$EliminationAllianceSerializer();
 }
 
-class _$EliminationAllianceSerializer
-    implements StructuredSerializer<EliminationAlliance> {
+class _$EliminationAllianceSerializer implements PrimitiveSerializer<EliminationAlliance> {
   @override
-  final Iterable<Type> types = const [
-    EliminationAlliance,
-    _$EliminationAlliance
-  ];
+  final Iterable<Type> types = const [EliminationAlliance, _$EliminationAlliance];
 
   @override
   final String wireName = r'EliminationAlliance';
 
-  @override
-  Iterable<Object?> serialize(
-      Serializers serializers, EliminationAlliance object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    EliminationAlliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.name != null) {
-      result
-        ..add(r'name')
-        ..add(serializers.serialize(object.name,
-            specifiedType: const FullType(String)));
+      yield r'name';
+      yield serializers.serialize(
+        object.name,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.backup != null) {
-      result
-        ..add(r'backup')
-        ..add(serializers.serialize(object.backup,
-            specifiedType: const FullType(EliminationAllianceBackup)));
+      yield r'backup';
+      yield serializers.serialize(
+        object.backup,
+        specifiedType: const FullType(EliminationAllianceBackup),
+      );
     }
     if (object.declines != null) {
-      result
-        ..add(r'declines')
-        ..add(serializers.serialize(object.declines,
-            specifiedType: const FullType(BuiltList, [FullType(String)])));
+      yield r'declines';
+      yield serializers.serialize(
+        object.declines,
+        specifiedType: const FullType(BuiltList, [FullType(String)]),
+      );
     }
-    result
-      ..add(r'picks')
-      ..add(serializers.serialize(object.picks,
-          specifiedType: const FullType(BuiltList, [FullType(String)])));
+    yield r'picks';
+    yield serializers.serialize(
+      object.picks,
+      specifiedType: const FullType(BuiltList, [FullType(String)]),
+    );
     if (object.status != null) {
-      result
-        ..add(r'status')
-        ..add(serializers.serialize(object.status,
-            specifiedType: const FullType(EliminationAllianceStatus)));
+      yield r'status';
+      yield serializers.serialize(
+        object.status,
+        specifiedType: const FullType(EliminationAllianceStatus),
+      );
     }
-    return result;
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    EliminationAlliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required EliminationAllianceBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'name':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.name = valueDes;
+          break;
+        case r'backup':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(EliminationAllianceBackup),
+          ) as EliminationAllianceBackup;
+          result.backup.replace(valueDes);
+          break;
+        case r'declines':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltList, [FullType(String)]),
+          ) as BuiltList<String>;
+          result.declines.replace(valueDes);
+          break;
+        case r'picks':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltList, [FullType(String)]),
+          ) as BuiltList<String>;
+          result.picks.replace(valueDes);
+          break;
+        case r'status':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(EliminationAllianceStatus),
+          ) as EliminationAllianceStatus;
+          result.status.replace(valueDes);
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   EliminationAlliance deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = EliminationAllianceBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'backup':
-          result.backup.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(EliminationAllianceBackup))
-              as EliminationAllianceBackup);
-          break;
-        case r'declines':
-          result.declines.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltList, [FullType(String)]))
-              as BuiltList<String>);
-          break;
-        case r'picks':
-          result.picks.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(BuiltList, [FullType(String)]))
-              as BuiltList<String>);
-          break;
-        case r'status':
-          result.status.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(EliminationAllianceStatus))
-              as EliminationAllianceStatus);
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

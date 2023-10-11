@@ -25,7 +25,7 @@ class _$TeamEventStatus extends TeamEventStatus {
   final String? lastMatchKey;
 
   factory _$TeamEventStatus([void Function(TeamEventStatusBuilder)? updates]) =>
-      (new TeamEventStatusBuilder()..update(updates)).build();
+      (new TeamEventStatusBuilder()..update(updates))._build();
 
   _$TeamEventStatus._(
       {this.qual,
@@ -62,23 +62,22 @@ class _$TeamEventStatus extends TeamEventStatus {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc($jc($jc(0, qual.hashCode), alliance.hashCode),
-                            playoff.hashCode),
-                        allianceStatusStr.hashCode),
-                    playoffStatusStr.hashCode),
-                overallStatusStr.hashCode),
-            nextMatchKey.hashCode),
-        lastMatchKey.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, qual.hashCode);
+    _$hash = $jc(_$hash, alliance.hashCode);
+    _$hash = $jc(_$hash, playoff.hashCode);
+    _$hash = $jc(_$hash, allianceStatusStr.hashCode);
+    _$hash = $jc(_$hash, playoffStatusStr.hashCode);
+    _$hash = $jc(_$hash, overallStatusStr.hashCode);
+    _$hash = $jc(_$hash, nextMatchKey.hashCode);
+    _$hash = $jc(_$hash, lastMatchKey.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('TeamEventStatus')
+    return (newBuiltValueToStringHelper(r'TeamEventStatus')
           ..add('qual', qual)
           ..add('alliance', alliance)
           ..add('playoff', playoff)
@@ -136,7 +135,7 @@ class TeamEventStatusBuilder
   set lastMatchKey(String? lastMatchKey) => _$this._lastMatchKey = lastMatchKey;
 
   TeamEventStatusBuilder() {
-    TeamEventStatus._initializeBuilder(this);
+    TeamEventStatus._defaults(this);
   }
 
   TeamEventStatusBuilder get _$this {
@@ -167,7 +166,9 @@ class TeamEventStatusBuilder
   }
 
   @override
-  _$TeamEventStatus build() {
+  TeamEventStatus build() => _build();
+
+  _$TeamEventStatus _build() {
     _$TeamEventStatus _$result;
     try {
       _$result = _$v ??
@@ -191,7 +192,7 @@ class TeamEventStatusBuilder
         _playoff?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'TeamEventStatus', _$failedField, e.toString());
+            r'TeamEventStatus', _$failedField, e.toString());
       }
       rethrow;
     }
@@ -200,4 +201,4 @@ class TeamEventStatusBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

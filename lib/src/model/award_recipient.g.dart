@@ -13,7 +13,7 @@ class _$AwardRecipient extends AwardRecipient {
   final String? awardee;
 
   factory _$AwardRecipient([void Function(AwardRecipientBuilder)? updates]) =>
-      (new AwardRecipientBuilder()..update(updates)).build();
+      (new AwardRecipientBuilder()..update(updates))._build();
 
   _$AwardRecipient._({this.teamKey, this.awardee}) : super._();
 
@@ -35,12 +35,16 @@ class _$AwardRecipient extends AwardRecipient {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, teamKey.hashCode), awardee.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, teamKey.hashCode);
+    _$hash = $jc(_$hash, awardee.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('AwardRecipient')
+    return (newBuiltValueToStringHelper(r'AwardRecipient')
           ..add('teamKey', teamKey)
           ..add('awardee', awardee))
         .toString();
@@ -60,7 +64,7 @@ class AwardRecipientBuilder
   set awardee(String? awardee) => _$this._awardee = awardee;
 
   AwardRecipientBuilder() {
-    AwardRecipient._initializeBuilder(this);
+    AwardRecipient._defaults(this);
   }
 
   AwardRecipientBuilder get _$this {
@@ -85,7 +89,9 @@ class AwardRecipientBuilder
   }
 
   @override
-  _$AwardRecipient build() {
+  AwardRecipient build() => _build();
+
+  _$AwardRecipient _build() {
     final _$result =
         _$v ?? new _$AwardRecipient._(teamKey: teamKey, awardee: awardee);
     replace(_$result);
@@ -93,4 +99,4 @@ class AwardRecipientBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

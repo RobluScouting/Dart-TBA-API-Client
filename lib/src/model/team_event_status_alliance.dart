@@ -2,14 +2,22 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:tba_api_v3/src/model/team_event_status_alliance_backup.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'team_event_status_alliance.g.dart';
 
-abstract class TeamEventStatusAlliance
-    implements Built<TeamEventStatusAlliance, TeamEventStatusAllianceBuilder> {
+/// TeamEventStatusAlliance
+///
+/// Properties:
+/// * [name] - Alliance name, may be null.
+/// * [number] - Alliance number.
+/// * [backup] 
+/// * [pick] - Order the team was picked in the alliance from 0-2, with 0 being alliance captain.
+@BuiltValue()
+abstract class TeamEventStatusAlliance implements Built<TeamEventStatusAlliance, TeamEventStatusAllianceBuilder> {
   /// Alliance name, may be null.
   @BuiltValueField(wireName: r'name')
   String? get name;
@@ -27,87 +35,128 @@ abstract class TeamEventStatusAlliance
 
   TeamEventStatusAlliance._();
 
-  static void _initializeBuilder(TeamEventStatusAllianceBuilder b) => b;
+  factory TeamEventStatusAlliance([void updates(TeamEventStatusAllianceBuilder b)]) = _$TeamEventStatusAlliance;
 
-  factory TeamEventStatusAlliance(
-          [void updates(TeamEventStatusAllianceBuilder b)]) =
-      _$TeamEventStatusAlliance;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(TeamEventStatusAllianceBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<TeamEventStatusAlliance> get serializer =>
-      _$TeamEventStatusAllianceSerializer();
+  static Serializer<TeamEventStatusAlliance> get serializer => _$TeamEventStatusAllianceSerializer();
 }
 
-class _$TeamEventStatusAllianceSerializer
-    implements StructuredSerializer<TeamEventStatusAlliance> {
+class _$TeamEventStatusAllianceSerializer implements PrimitiveSerializer<TeamEventStatusAlliance> {
   @override
-  final Iterable<Type> types = const [
-    TeamEventStatusAlliance,
-    _$TeamEventStatusAlliance
-  ];
+  final Iterable<Type> types = const [TeamEventStatusAlliance, _$TeamEventStatusAlliance];
 
   @override
   final String wireName = r'TeamEventStatusAlliance';
 
-  @override
-  Iterable<Object?> serialize(
-      Serializers serializers, TeamEventStatusAlliance object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    TeamEventStatusAlliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.name != null) {
-      result
-        ..add(r'name')
-        ..add(serializers.serialize(object.name,
-            specifiedType: const FullType(String)));
+      yield r'name';
+      yield serializers.serialize(
+        object.name,
+        specifiedType: const FullType(String),
+      );
     }
-    result
-      ..add(r'number')
-      ..add(serializers.serialize(object.number,
-          specifiedType: const FullType(int)));
+    yield r'number';
+    yield serializers.serialize(
+      object.number,
+      specifiedType: const FullType(int),
+    );
     if (object.backup != null) {
-      result
-        ..add(r'backup')
-        ..add(serializers.serialize(object.backup,
-            specifiedType: const FullType(TeamEventStatusAllianceBackup)));
+      yield r'backup';
+      yield serializers.serialize(
+        object.backup,
+        specifiedType: const FullType(TeamEventStatusAllianceBackup),
+      );
     }
-    result
-      ..add(r'pick')
-      ..add(serializers.serialize(object.pick,
-          specifiedType: const FullType(int)));
-    return result;
+    yield r'pick';
+    yield serializers.serialize(
+      object.pick,
+      specifiedType: const FullType(int),
+    );
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    TeamEventStatusAlliance object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required TeamEventStatusAllianceBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'name':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.name = valueDes;
+          break;
+        case r'number':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.number = valueDes;
+          break;
+        case r'backup':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(TeamEventStatusAllianceBackup),
+          ) as TeamEventStatusAllianceBackup;
+          result.backup.replace(valueDes);
+          break;
+        case r'pick':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.pick = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   TeamEventStatusAlliance deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = TeamEventStatusAllianceBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'number':
-          result.number = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case r'backup':
-          result.backup.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(TeamEventStatusAllianceBackup))
-              as TeamEventStatusAllianceBackup);
-          break;
-        case r'pick':
-          result.pick = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

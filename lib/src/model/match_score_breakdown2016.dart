@@ -2,14 +2,20 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:tba_api_v3/src/model/match_score_breakdown2016_alliance.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'match_score_breakdown2016.g.dart';
 
-abstract class MatchScoreBreakdown2016
-    implements Built<MatchScoreBreakdown2016, MatchScoreBreakdown2016Builder> {
+/// See the 2016 FMS API documentation for a description of each value.
+///
+/// Properties:
+/// * [blue] 
+/// * [red] 
+@BuiltValue()
+abstract class MatchScoreBreakdown2016 implements Built<MatchScoreBreakdown2016, MatchScoreBreakdown2016Builder> {
   @BuiltValueField(wireName: r'blue')
   MatchScoreBreakdown2016Alliance? get blue;
 
@@ -18,74 +24,104 @@ abstract class MatchScoreBreakdown2016
 
   MatchScoreBreakdown2016._();
 
-  static void _initializeBuilder(MatchScoreBreakdown2016Builder b) => b;
+  factory MatchScoreBreakdown2016([void updates(MatchScoreBreakdown2016Builder b)]) = _$MatchScoreBreakdown2016;
 
-  factory MatchScoreBreakdown2016(
-          [void updates(MatchScoreBreakdown2016Builder b)]) =
-      _$MatchScoreBreakdown2016;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(MatchScoreBreakdown2016Builder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<MatchScoreBreakdown2016> get serializer =>
-      _$MatchScoreBreakdown2016Serializer();
+  static Serializer<MatchScoreBreakdown2016> get serializer => _$MatchScoreBreakdown2016Serializer();
 }
 
-class _$MatchScoreBreakdown2016Serializer
-    implements StructuredSerializer<MatchScoreBreakdown2016> {
+class _$MatchScoreBreakdown2016Serializer implements PrimitiveSerializer<MatchScoreBreakdown2016> {
   @override
-  final Iterable<Type> types = const [
-    MatchScoreBreakdown2016,
-    _$MatchScoreBreakdown2016
-  ];
+  final Iterable<Type> types = const [MatchScoreBreakdown2016, _$MatchScoreBreakdown2016];
 
   @override
   final String wireName = r'MatchScoreBreakdown2016';
 
-  @override
-  Iterable<Object?> serialize(
-      Serializers serializers, MatchScoreBreakdown2016 object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    MatchScoreBreakdown2016 object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.blue != null) {
-      result
-        ..add(r'blue')
-        ..add(serializers.serialize(object.blue,
-            specifiedType: const FullType(MatchScoreBreakdown2016Alliance)));
+      yield r'blue';
+      yield serializers.serialize(
+        object.blue,
+        specifiedType: const FullType(MatchScoreBreakdown2016Alliance),
+      );
     }
     if (object.red != null) {
-      result
-        ..add(r'red')
-        ..add(serializers.serialize(object.red,
-            specifiedType: const FullType(MatchScoreBreakdown2016Alliance)));
+      yield r'red';
+      yield serializers.serialize(
+        object.red,
+        specifiedType: const FullType(MatchScoreBreakdown2016Alliance),
+      );
     }
-    return result;
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    MatchScoreBreakdown2016 object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required MatchScoreBreakdown2016Builder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'blue':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(MatchScoreBreakdown2016Alliance),
+          ) as MatchScoreBreakdown2016Alliance;
+          result.blue.replace(valueDes);
+          break;
+        case r'red':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(MatchScoreBreakdown2016Alliance),
+          ) as MatchScoreBreakdown2016Alliance;
+          result.red.replace(valueDes);
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   MatchScoreBreakdown2016 deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = MatchScoreBreakdown2016Builder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'blue':
-          result.blue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(MatchScoreBreakdown2016Alliance))
-              as MatchScoreBreakdown2016Alliance);
-          break;
-        case r'red':
-          result.red.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(MatchScoreBreakdown2016Alliance))
-              as MatchScoreBreakdown2016Alliance);
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

@@ -2,11 +2,23 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'team_simple.g.dart';
 
+/// TeamSimple
+///
+/// Properties:
+/// * [key] - TBA team key with the format `frcXXXX` with `XXXX` representing the team number.
+/// * [teamNumber] - Official team number issued by FIRST.
+/// * [nickname] - Team nickname provided by FIRST.
+/// * [name] - Official long name registered with FIRST.
+/// * [city] - City of team derived from parsing the address registered with FIRST.
+/// * [stateProv] - State of team derived from parsing the address registered with FIRST.
+/// * [country] - Country of team derived from parsing the address registered with FIRST.
+@BuiltValue()
 abstract class TeamSimple implements Built<TeamSimple, TeamSimpleBuilder> {
   /// TBA team key with the format `frcXXXX` with `XXXX` representing the team number.
   @BuiltValueField(wireName: r'key')
@@ -38,105 +50,168 @@ abstract class TeamSimple implements Built<TeamSimple, TeamSimpleBuilder> {
 
   TeamSimple._();
 
-  static void _initializeBuilder(TeamSimpleBuilder b) => b;
-
   factory TeamSimple([void updates(TeamSimpleBuilder b)]) = _$TeamSimple;
+
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(TeamSimpleBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
   static Serializer<TeamSimple> get serializer => _$TeamSimpleSerializer();
 }
 
-class _$TeamSimpleSerializer implements StructuredSerializer<TeamSimple> {
+class _$TeamSimpleSerializer implements PrimitiveSerializer<TeamSimple> {
   @override
   final Iterable<Type> types = const [TeamSimple, _$TeamSimple];
 
   @override
   final String wireName = r'TeamSimple';
 
-  @override
-  Iterable<Object?> serialize(Serializers serializers, TeamSimple object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
-    result
-      ..add(r'key')
-      ..add(serializers.serialize(object.key,
-          specifiedType: const FullType(String)));
-    result
-      ..add(r'team_number')
-      ..add(serializers.serialize(object.teamNumber,
-          specifiedType: const FullType(int)));
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    TeamSimple object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
+    yield r'key';
+    yield serializers.serialize(
+      object.key,
+      specifiedType: const FullType(String),
+    );
+    yield r'team_number';
+    yield serializers.serialize(
+      object.teamNumber,
+      specifiedType: const FullType(int),
+    );
     if (object.nickname != null) {
-      result
-        ..add(r'nickname')
-        ..add(serializers.serialize(object.nickname,
-            specifiedType: const FullType(String)));
+      yield r'nickname';
+      yield serializers.serialize(
+        object.nickname,
+        specifiedType: const FullType(String),
+      );
     }
-    result
-      ..add(r'name')
-      ..add(serializers.serialize(object.name,
-          specifiedType: const FullType(String)));
+    yield r'name';
+    yield serializers.serialize(
+      object.name,
+      specifiedType: const FullType(String),
+    );
     if (object.city != null) {
-      result
-        ..add(r'city')
-        ..add(serializers.serialize(object.city,
-            specifiedType: const FullType(String)));
+      yield r'city';
+      yield serializers.serialize(
+        object.city,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.stateProv != null) {
-      result
-        ..add(r'state_prov')
-        ..add(serializers.serialize(object.stateProv,
-            specifiedType: const FullType(String)));
+      yield r'state_prov';
+      yield serializers.serialize(
+        object.stateProv,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.country != null) {
-      result
-        ..add(r'country')
-        ..add(serializers.serialize(object.country,
-            specifiedType: const FullType(String)));
+      yield r'country';
+      yield serializers.serialize(
+        object.country,
+        specifiedType: const FullType(String),
+      );
     }
-    return result;
   }
 
   @override
-  TeamSimple deserialize(Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = TeamSimpleBuilder();
+  Object serialize(
+    Serializers serializers,
+    TeamSimple object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
 
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required TeamSimpleBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
       switch (key) {
         case r'key':
-          result.key = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.key = valueDes;
           break;
         case r'team_number':
-          result.teamNumber = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.teamNumber = valueDes;
           break;
         case r'nickname':
-          result.nickname = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.nickname = valueDes;
           break;
         case r'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.name = valueDes;
           break;
         case r'city':
-          result.city = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.city = valueDes;
           break;
         case r'state_prov':
-          result.stateProv = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.stateProv = valueDes;
           break;
         case r'country':
-          result.country = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.country = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
           break;
       }
     }
+  }
+
+  @override
+  TeamSimple deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = TeamSimpleBuilder();
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+

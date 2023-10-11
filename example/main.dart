@@ -1,9 +1,9 @@
 import 'package:tba_api_v3/tba_api_v3.dart';
 import 'package:dio/dio.dart';
 
-void main() {
+void main() async {
   Dio dio = Dio(BaseOptions(
-      headers: {"X-TBA-Auth-Key": "Your-TBA-Auth-Key"},
+      headers: <String, String>{"X-TBA-Auth-Key": "Your-TBA-Auth-Key"},
       baseUrl: "https://www.thebluealliance.com/api/v3"));
 
   final api = EventApi(dio, standardSerializers);

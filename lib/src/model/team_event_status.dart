@@ -2,6 +2,7 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+// ignore_for_file: unused_element
 import 'package:tba_api_v3/src/model/team_event_status_rank.dart';
 import 'package:tba_api_v3/src/model/team_event_status_alliance.dart';
 import 'package:tba_api_v3/src/model/team_event_status_playoff.dart';
@@ -10,8 +11,19 @@ import 'package:built_value/serializer.dart';
 
 part 'team_event_status.g.dart';
 
-abstract class TeamEventStatus
-    implements Built<TeamEventStatus, TeamEventStatusBuilder> {
+/// TeamEventStatus
+///
+/// Properties:
+/// * [qual] 
+/// * [alliance] 
+/// * [playoff] 
+/// * [allianceStatusStr] - An HTML formatted string suitable for display to the user containing the team's alliance pick status.
+/// * [playoffStatusStr] - An HTML formatter string suitable for display to the user containing the team's playoff status.
+/// * [overallStatusStr] - An HTML formatted string suitable for display to the user containing the team's overall status summary of the event.
+/// * [nextMatchKey] - TBA match key for the next match the team is scheduled to play in at this event, or null.
+/// * [lastMatchKey] - TBA match key for the last match the team played in at this event, or null.
+@BuiltValue()
+abstract class TeamEventStatus implements Built<TeamEventStatus, TeamEventStatusBuilder> {
   @BuiltValueField(wireName: r'qual')
   TeamEventStatusRank? get qual;
 
@@ -43,128 +55,188 @@ abstract class TeamEventStatus
 
   TeamEventStatus._();
 
-  static void _initializeBuilder(TeamEventStatusBuilder b) => b;
+  factory TeamEventStatus([void updates(TeamEventStatusBuilder b)]) = _$TeamEventStatus;
 
-  factory TeamEventStatus([void updates(TeamEventStatusBuilder b)]) =
-      _$TeamEventStatus;
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(TeamEventStatusBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<TeamEventStatus> get serializer =>
-      _$TeamEventStatusSerializer();
+  static Serializer<TeamEventStatus> get serializer => _$TeamEventStatusSerializer();
 }
 
-class _$TeamEventStatusSerializer
-    implements StructuredSerializer<TeamEventStatus> {
+class _$TeamEventStatusSerializer implements PrimitiveSerializer<TeamEventStatus> {
   @override
   final Iterable<Type> types = const [TeamEventStatus, _$TeamEventStatus];
 
   @override
   final String wireName = r'TeamEventStatus';
 
-  @override
-  Iterable<Object?> serialize(Serializers serializers, TeamEventStatus object,
-      {FullType specifiedType = FullType.unspecified}) {
-    final result = <Object?>[];
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    TeamEventStatus object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
     if (object.qual != null) {
-      result
-        ..add(r'qual')
-        ..add(serializers.serialize(object.qual,
-            specifiedType: const FullType(TeamEventStatusRank)));
+      yield r'qual';
+      yield serializers.serialize(
+        object.qual,
+        specifiedType: const FullType(TeamEventStatusRank),
+      );
     }
     if (object.alliance != null) {
-      result
-        ..add(r'alliance')
-        ..add(serializers.serialize(object.alliance,
-            specifiedType: const FullType(TeamEventStatusAlliance)));
+      yield r'alliance';
+      yield serializers.serialize(
+        object.alliance,
+        specifiedType: const FullType(TeamEventStatusAlliance),
+      );
     }
     if (object.playoff != null) {
-      result
-        ..add(r'playoff')
-        ..add(serializers.serialize(object.playoff,
-            specifiedType: const FullType(TeamEventStatusPlayoff)));
+      yield r'playoff';
+      yield serializers.serialize(
+        object.playoff,
+        specifiedType: const FullType(TeamEventStatusPlayoff),
+      );
     }
     if (object.allianceStatusStr != null) {
-      result
-        ..add(r'alliance_status_str')
-        ..add(serializers.serialize(object.allianceStatusStr,
-            specifiedType: const FullType(String)));
+      yield r'alliance_status_str';
+      yield serializers.serialize(
+        object.allianceStatusStr,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.playoffStatusStr != null) {
-      result
-        ..add(r'playoff_status_str')
-        ..add(serializers.serialize(object.playoffStatusStr,
-            specifiedType: const FullType(String)));
+      yield r'playoff_status_str';
+      yield serializers.serialize(
+        object.playoffStatusStr,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.overallStatusStr != null) {
-      result
-        ..add(r'overall_status_str')
-        ..add(serializers.serialize(object.overallStatusStr,
-            specifiedType: const FullType(String)));
+      yield r'overall_status_str';
+      yield serializers.serialize(
+        object.overallStatusStr,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.nextMatchKey != null) {
-      result
-        ..add(r'next_match_key')
-        ..add(serializers.serialize(object.nextMatchKey,
-            specifiedType: const FullType(String)));
+      yield r'next_match_key';
+      yield serializers.serialize(
+        object.nextMatchKey,
+        specifiedType: const FullType(String),
+      );
     }
     if (object.lastMatchKey != null) {
-      result
-        ..add(r'last_match_key')
-        ..add(serializers.serialize(object.lastMatchKey,
-            specifiedType: const FullType(String)));
+      yield r'last_match_key';
+      yield serializers.serialize(
+        object.lastMatchKey,
+        specifiedType: const FullType(String),
+      );
     }
-    return result;
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    TeamEventStatus object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required TeamEventStatusBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'qual':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(TeamEventStatusRank),
+          ) as TeamEventStatusRank;
+          result.qual.replace(valueDes);
+          break;
+        case r'alliance':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(TeamEventStatusAlliance),
+          ) as TeamEventStatusAlliance;
+          result.alliance.replace(valueDes);
+          break;
+        case r'playoff':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(TeamEventStatusPlayoff),
+          ) as TeamEventStatusPlayoff;
+          result.playoff.replace(valueDes);
+          break;
+        case r'alliance_status_str':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.allianceStatusStr = valueDes;
+          break;
+        case r'playoff_status_str':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.playoffStatusStr = valueDes;
+          break;
+        case r'overall_status_str':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.overallStatusStr = valueDes;
+          break;
+        case r'next_match_key':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.nextMatchKey = valueDes;
+          break;
+        case r'last_match_key':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.lastMatchKey = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
   }
 
   @override
   TeamEventStatus deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = TeamEventStatusBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case r'qual':
-          result.qual.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(TeamEventStatusRank))
-              as TeamEventStatusRank);
-          break;
-        case r'alliance':
-          result.alliance.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(TeamEventStatusAlliance))
-              as TeamEventStatusAlliance);
-          break;
-        case r'playoff':
-          result.playoff.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(TeamEventStatusPlayoff))
-              as TeamEventStatusPlayoff);
-          break;
-        case r'alliance_status_str':
-          result.allianceStatusStr = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'playoff_status_str':
-          result.playoffStatusStr = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'overall_status_str':
-          result.overallStatusStr = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'next_match_key':
-          result.nextMatchKey = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case r'last_match_key':
-          result.lastMatchKey = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-      }
-    }
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
     return result.build();
   }
 }
+
